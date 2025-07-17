@@ -1,0 +1,42 @@
+[
+  {
+    "building": "Huff Hall",
+    "room": "2001",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "12:30",
+          "end": "13:50"
+        },
+        {
+          "start": "12:30",
+          "end": "13:50"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "12:30",
+          "end": "13:50"
+        },
+        {
+          "start": "12:30",
+          "end": "13:50"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "11:00",
+          "end": "11:50"
+        }
+      ]
+    },
+    "courses": [
+      "AHS 125",
+      "AHS 199"
+    ],
+    "room_id": "HuffHall-2001",
+    "semester": "Fall 2025"
+  }
+]

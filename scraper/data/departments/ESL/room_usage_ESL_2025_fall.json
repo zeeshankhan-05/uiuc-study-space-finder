@@ -1,0 +1,372 @@
+[
+  {
+    "building": "Literatures, Cultures, & Ling",
+    "room": "1134",
+    "usage": {
+      "Monday": [
+        {
+          "start": "13:00",
+          "end": "13:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "13:00",
+          "end": "13:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "13:00",
+          "end": "13:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        }
+      ]
+    },
+    "courses": [
+      "ESL 110",
+      "ESL 510"
+    ],
+    "room_id": "Literatures,Cultures,&Ling-1134",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Literatures, Cultures, & Ling",
+    "room": "1032",
+    "usage": {
+      "Monday": [
+        {
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "start": "09:00",
+          "end": "09:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "start": "09:00",
+          "end": "09:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "start": "09:00",
+          "end": "09:50"
+        }
+      ]
+    },
+    "courses": [
+      "ESL 110",
+      "ESL 510"
+    ],
+    "room_id": "Literatures,Cultures,&Ling-1032",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Literatures, Cultures, & Ling",
+    "room": "1118",
+    "usage": {
+      "Monday": [
+        {
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "start": "15:00",
+          "end": "15:50"
+        },
+        {
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "start": "15:00",
+          "end": "15:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "start": "15:00",
+          "end": "15:50"
+        },
+        {
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "start": "15:00",
+          "end": "15:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "start": "15:00",
+          "end": "15:50"
+        },
+        {
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "start": "15:00",
+          "end": "15:50"
+        }
+      ]
+    },
+    "courses": [
+      "ESL 110",
+      "ESL 510"
+    ],
+    "room_id": "Literatures,Cultures,&Ling-1118",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Literatures, Cultures, & Ling",
+    "room": "1024",
+    "usage": {
+      "Monday": [
+        {
+          "start": "15:00",
+          "end": "15:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "15:00",
+          "end": "15:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "15:00",
+          "end": "15:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "15:00",
+          "end": "15:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "15:00",
+          "end": "15:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "15:00",
+          "end": "15:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ]
+    },
+    "courses": [
+      "ESL 110",
+      "ESL 510"
+    ],
+    "room_id": "Literatures,Cultures,&Ling-1024",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Literatures, Cultures, & Ling",
+    "room": "1110",
+    "usage": {
+      "Monday": [
+        {
+          "start": "13:00",
+          "end": "13:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "13:00",
+          "end": "13:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "13:00",
+          "end": "13:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        }
+      ]
+    },
+    "courses": [
+      "ESL 110",
+      "ESL 510"
+    ],
+    "room_id": "Literatures,Cultures,&Ling-1110",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Literatures, Cultures, & Ling",
+    "room": "1048",
+    "usage": {
+      "Monday": [
+        {
+          "start": "09:30",
+          "end": "10:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "09:30",
+          "end": "10:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "ESL 504"
+    ],
+    "room_id": "Literatures,Cultures,&Ling-1048",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Literatures, Cultures, & Ling",
+    "room": "1046",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "15:30",
+          "end": "16:50"
+        },
+        {
+          "start": "09:30",
+          "end": "10:50"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "15:30",
+          "end": "16:50"
+        },
+        {
+          "start": "09:30",
+          "end": "10:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "ESL 506"
+    ],
+    "room_id": "Literatures,Cultures,&Ling-1046",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Literatures, Cultures, & Ling",
+    "room": "1128",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "17:00",
+          "end": "18:50"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "ESL 508"
+    ],
+    "room_id": "Literatures,Cultures,&Ling-1128",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Armory",
+    "room": "428",
+    "usage": {
+      "Monday": [
+        {
+          "start": "15:30",
+          "end": "17:20"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "ESL 508"
+    ],
+    "room_id": "Armory-428",
+    "semester": "Fall 2025"
+  }
+]

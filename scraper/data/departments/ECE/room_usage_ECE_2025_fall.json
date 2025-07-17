@@ -1,0 +1,2865 @@
+[
+  {
+    "building": "Mechanical Engineering Lab",
+    "room": "1009",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [],
+      "Wednesday": [],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "11:00",
+          "end": "12:50"
+        },
+        {
+          "start": "13:00",
+          "end": "14:50"
+        }
+      ]
+    },
+    "courses": [
+      "ECE 101"
+    ],
+    "room_id": "MechanicalEngineeringLab-1009",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Electrical & Computer Eng Bldg",
+    "room": "3081",
+    "usage": {
+      "Monday": [
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "09:30",
+          "end": "10:50"
+        },
+        {
+          "start": "11:00",
+          "end": "12:20"
+        },
+        {
+          "start": "11:00",
+          "end": "12:20"
+        },
+        {
+          "start": "12:30",
+          "end": "13:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "12:00",
+          "end": "12:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "15:00",
+          "end": "15:50"
+        },
+        {
+          "start": "17:00",
+          "end": "17:50"
+        },
+        {
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "start": "16:00",
+          "end": "16:50"
+        },
+        {
+          "start": "09:30",
+          "end": "10:50"
+        },
+        {
+          "start": "11:00",
+          "end": "12:20"
+        },
+        {
+          "start": "11:00",
+          "end": "12:20"
+        },
+        {
+          "start": "12:30",
+          "end": "13:50"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ]
+    },
+    "courses": [
+      "ECE 101",
+      "ECE 120",
+      "ECE 364",
+      "ECE 405",
+      "ECE 490",
+      "ECE 563",
+      "ECE 590"
+    ],
+    "room_id": "Electrical&ComputerEngBldg-3081",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Electrical & Computer Eng Bldg",
+    "room": "1001",
+    "usage": {
+      "Monday": [
+        {
+          "start": "18:00",
+          "end": "20:50"
+        },
+        {
+          "start": "12:00",
+          "end": "14:50"
+        },
+        {
+          "start": "15:00",
+          "end": "17:50"
+        },
+        {
+          "start": "09:00",
+          "end": "11:50"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "12:00",
+          "end": "14:50"
+        },
+        {
+          "start": "18:00",
+          "end": "20:50"
+        },
+        {
+          "start": "09:00",
+          "end": "11:50"
+        },
+        {
+          "start": "15:00",
+          "end": "16:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "09:00",
+          "end": "11:50"
+        },
+        {
+          "start": "12:00",
+          "end": "14:50"
+        },
+        {
+          "start": "18:00",
+          "end": "20:50"
+        },
+        {
+          "start": "15:00",
+          "end": "16:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "09:00",
+          "end": "11:50"
+        },
+        {
+          "start": "12:00",
+          "end": "14:50"
+        },
+        {
+          "start": "18:00",
+          "end": "20:50"
+        },
+        {
+          "start": "15:00",
+          "end": "17:50"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "09:00",
+          "end": "11:50"
+        },
+        {
+          "start": "12:00",
+          "end": "14:50"
+        }
+      ]
+    },
+    "courses": [
+      "ECE 110",
+      "ECE 145"
+    ],
+    "room_id": "Electrical&ComputerEngBldg-1001",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Electrical & Computer Eng Bldg",
+    "room": "1002",
+    "usage": {
+      "Monday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        },
+        {
+          "start": "12:00",
+          "end": "12:50"
+        },
+        {
+          "start": "15:00",
+          "end": "15:50"
+        },
+        {
+          "start": "16:00",
+          "end": "16:50"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "12:30",
+          "end": "13:50"
+        },
+        {
+          "start": "14:00",
+          "end": "15:20"
+        },
+        {
+          "start": "09:30",
+          "end": "10:50"
+        },
+        {
+          "start": "08:00",
+          "end": "09:20"
+        },
+        {
+          "start": "16:00",
+          "end": "17:50"
+        },
+        {
+          "start": "08:00",
+          "end": "09:20"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        },
+        {
+          "start": "17:00",
+          "end": "18:50"
+        },
+        {
+          "start": "12:00",
+          "end": "12:50"
+        },
+        {
+          "start": "15:00",
+          "end": "15:50"
+        },
+        {
+          "start": "16:00",
+          "end": "16:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "12:30",
+          "end": "13:50"
+        },
+        {
+          "start": "14:00",
+          "end": "15:20"
+        },
+        {
+          "start": "09:30",
+          "end": "10:50"
+        },
+        {
+          "start": "08:00",
+          "end": "09:20"
+        },
+        {
+          "start": "08:00",
+          "end": "09:20"
+        },
+        {
+          "start": "16:00",
+          "end": "16:50"
+        },
+        {
+          "start": "16:00",
+          "end": "16:50"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        },
+        {
+          "start": "12:00",
+          "end": "12:50"
+        },
+        {
+          "start": "15:00",
+          "end": "15:50"
+        }
+      ]
+    },
+    "courses": [
+      "ECE 110",
+      "ECE 120",
+      "ECE 200",
+      "ECE 205",
+      "ECE 220",
+      "ECE 310",
+      "ECE 385",
+      "ECE 391",
+      "ECE 408",
+      "ECE 411",
+      "ECE 445",
+      "ECE 498",
+      "ECE 500"
+    ],
+    "room_id": "Electrical&ComputerEngBldg-1002",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Electrical & Computer Eng Bldg",
+    "room": "1013",
+    "usage": {
+      "Monday": [
+        {
+          "start": "16:00",
+          "end": "16:50"
+        },
+        {
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "12:00",
+          "end": "12:50"
+        },
+        {
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "12:00",
+          "end": "12:50"
+        },
+        {
+          "start": "14:00",
+          "end": "14:50"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "12:00",
+          "end": "12:50"
+        },
+        {
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "12:00",
+          "end": "12:50"
+        },
+        {
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "start": "17:00",
+          "end": "18:20"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "16:00",
+          "end": "16:50"
+        },
+        {
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "12:00",
+          "end": "12:50"
+        },
+        {
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "12:00",
+          "end": "12:50"
+        },
+        {
+          "start": "14:00",
+          "end": "14:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "17:00",
+          "end": "18:20"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "12:00",
+          "end": "12:50"
+        },
+        {
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "12:00",
+          "end": "12:50"
+        },
+        {
+          "start": "14:00",
+          "end": "14:50"
+        }
+      ]
+    },
+    "courses": [
+      "ECE 110",
+      "ECE 120",
+      "ECE 210",
+      "ECE 211",
+      "ECE 407"
+    ],
+    "room_id": "Electrical&ComputerEngBldg-1013",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Electrical & Computer Eng Bldg",
+    "room": "2013",
+    "usage": {
+      "Monday": [
+        {
+          "start": "12:00",
+          "end": "12:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "start": "10:00",
+          "end": "11:20"
+        },
+        {
+          "start": "16:00",
+          "end": "16:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "12:00",
+          "end": "12:50"
+        },
+        {
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "12:00",
+          "end": "12:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        },
+        {
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "start": "10:00",
+          "end": "11:20"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "12:00",
+          "end": "12:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ]
+    },
+    "courses": [
+      "ECE 120",
+      "ECE 199",
+      "ECE 304",
+      "ECE 314",
+      "ECE 329",
+      "ECE 508",
+      "ECE 590"
+    ],
+    "room_id": "Electrical&ComputerEngBldg-2013",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Electrical & Computer Eng Bldg",
+    "room": "4070",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "09:30",
+          "end": "10:50"
+        },
+        {
+          "start": "12:30",
+          "end": "13:50"
+        },
+        {
+          "start": "11:00",
+          "end": "12:20"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "12:00",
+          "end": "12:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        },
+        {
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "start": "15:00",
+          "end": "15:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "start": "16:00",
+          "end": "16:50"
+        },
+        {
+          "start": "15:00",
+          "end": "15:50"
+        },
+        {
+          "start": "09:30",
+          "end": "10:50"
+        },
+        {
+          "start": "12:30",
+          "end": "13:50"
+        },
+        {
+          "start": "11:00",
+          "end": "12:20"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "12:00",
+          "end": "12:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        },
+        {
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "start": "15:00",
+          "end": "15:50"
+        }
+      ]
+    },
+    "courses": [
+      "ECE 120",
+      "ECE 374",
+      "ECE 476",
+      "ECE 514",
+      "ECE 598"
+    ],
+    "room_id": "Electrical&ComputerEngBldg-4070",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Electrical & Computer Eng Bldg",
+    "room": "3015",
+    "usage": {
+      "Monday": [
+        {
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "11:00",
+          "end": "12:20"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "14:00",
+          "end": "15:20"
+        },
+        {
+          "start": "12:30",
+          "end": "13:50"
+        },
+        {
+          "start": "09:30",
+          "end": "10:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "11:00",
+          "end": "12:20"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "14:00",
+          "end": "15:20"
+        },
+        {
+          "start": "12:30",
+          "end": "13:50"
+        },
+        {
+          "start": "09:30",
+          "end": "10:50"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ]
+    },
+    "courses": [
+      "ECE 120",
+      "ECE 420",
+      "ECE 444",
+      "ECE 469",
+      "ECE 517",
+      "ECE 557",
+      "ECE 564",
+      "ECE 598"
+    ],
+    "room_id": "Electrical&ComputerEngBldg-3015",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Electrical & Computer Eng Bldg",
+    "room": "2015",
+    "usage": {
+      "Monday": [
+        {
+          "start": "12:00",
+          "end": "12:50"
+        },
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "17:00",
+          "end": "19:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        },
+        {
+          "start": "17:00",
+          "end": "19:50"
+        },
+        {
+          "start": "14:00",
+          "end": "15:20"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "15:30",
+          "end": "16:50"
+        },
+        {
+          "start": "14:00",
+          "end": "15:20"
+        },
+        {
+          "start": "09:30",
+          "end": "10:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "12:00",
+          "end": "12:50"
+        },
+        {
+          "start": "16:00",
+          "end": "16:50"
+        },
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        },
+        {
+          "start": "14:00",
+          "end": "15:20"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "12:00",
+          "end": "12:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        },
+        {
+          "start": "15:30",
+          "end": "16:50"
+        },
+        {
+          "start": "14:00",
+          "end": "15:20"
+        },
+        {
+          "start": "09:30",
+          "end": "10:50"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "15:00",
+          "end": "15:50"
+        },
+        {
+          "start": "12:00",
+          "end": "12:50"
+        },
+        {
+          "start": "16:00",
+          "end": "16:50"
+        },
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        }
+      ]
+    },
+    "courses": [
+      "ECE 120",
+      "ECE 217",
+      "ECE 305",
+      "ECE 350",
+      "ECE 374",
+      "ECE 446",
+      "ECE 457",
+      "ECE 459",
+      "ECE 498",
+      "ECE 520",
+      "ECE 535",
+      "ECE 598"
+    ],
+    "room_id": "Electrical&ComputerEngBldg-2015",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Campus Instructional Facility",
+    "room": "2036",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "15:00",
+          "end": "15:50"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "15:00",
+          "end": "15:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "ECE 199"
+    ],
+    "room_id": "CampusInstructionalFacility-2036",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Electrical & Computer Eng Bldg",
+    "room": "4074",
+    "usage": {
+      "Monday": [
+        {
+          "start": "10:00",
+          "end": "11:50"
+        },
+        {
+          "start": "15:00",
+          "end": "16:50"
+        },
+        {
+          "start": "17:00",
+          "end": "18:50"
+        },
+        {
+          "start": "12:00",
+          "end": "13:50"
+        },
+        {
+          "start": "19:00",
+          "end": "20:50"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "08:00",
+          "end": "09:50"
+        },
+        {
+          "start": "11:00",
+          "end": "13:50"
+        },
+        {
+          "start": "14:00",
+          "end": "16:50"
+        },
+        {
+          "start": "17:00",
+          "end": "19:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "10:00",
+          "end": "11:50"
+        },
+        {
+          "start": "15:00",
+          "end": "16:50"
+        },
+        {
+          "start": "17:00",
+          "end": "18:50"
+        },
+        {
+          "start": "12:00",
+          "end": "13:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "08:00",
+          "end": "09:50"
+        },
+        {
+          "start": "17:00",
+          "end": "18:50"
+        },
+        {
+          "start": "11:00",
+          "end": "13:50"
+        },
+        {
+          "start": "14:00",
+          "end": "16:50"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "10:00",
+          "end": "11:50"
+        },
+        {
+          "start": "15:00",
+          "end": "16:50"
+        },
+        {
+          "start": "08:00",
+          "end": "09:50"
+        },
+        {
+          "start": "12:00",
+          "end": "13:50"
+        }
+      ]
+    },
+    "courses": [
+      "ECE 205",
+      "ECE 206",
+      "ECE 343"
+    ],
+    "room_id": "Electrical&ComputerEngBldg-4074",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Electrical & Computer Eng Bldg",
+    "room": "4072",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "12:00",
+          "end": "13:50"
+        },
+        {
+          "start": "12:00",
+          "end": "13:50"
+        },
+        {
+          "start": "14:00",
+          "end": "15:50"
+        },
+        {
+          "start": "14:00",
+          "end": "15:50"
+        },
+        {
+          "start": "16:00",
+          "end": "17:50"
+        },
+        {
+          "start": "16:00",
+          "end": "17:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "10:00",
+          "end": "11:50"
+        },
+        {
+          "start": "10:00",
+          "end": "11:50"
+        },
+        {
+          "start": "12:00",
+          "end": "13:50"
+        },
+        {
+          "start": "12:00",
+          "end": "13:50"
+        },
+        {
+          "start": "14:00",
+          "end": "15:50"
+        },
+        {
+          "start": "14:00",
+          "end": "15:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "ECE 210"
+    ],
+    "room_id": "Electrical&ComputerEngBldg-4072",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Electrical & Computer Eng Bldg",
+    "room": "2022",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "09:00",
+          "end": "10:50"
+        },
+        {
+          "start": "11:00",
+          "end": "12:50"
+        },
+        {
+          "start": "17:00",
+          "end": "18:50"
+        },
+        {
+          "start": "14:00",
+          "end": "15:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "16:00",
+          "end": "16:50"
+        },
+        {
+          "start": "17:00",
+          "end": "17:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "12:00",
+          "end": "12:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        },
+        {
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "start": "15:00",
+          "end": "15:50"
+        },
+        {
+          "start": "16:00",
+          "end": "16:50"
+        }
+      ]
+    },
+    "courses": [
+      "ECE 220",
+      "ECE 311",
+      "ECE 365"
+    ],
+    "room_id": "Electrical&ComputerEngBldg-2022",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Electrical & Computer Eng Bldg",
+    "room": "2017",
+    "usage": {
+      "Monday": [
+        {
+          "start": "12:00",
+          "end": "12:50"
+        },
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "13:00",
+          "end": "14:20"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "11:00",
+          "end": "12:20"
+        },
+        {
+          "start": "14:00",
+          "end": "15:20"
+        },
+        {
+          "start": "15:30",
+          "end": "16:50"
+        },
+        {
+          "start": "09:00",
+          "end": "10:20"
+        },
+        {
+          "start": "09:00",
+          "end": "10:20"
+        },
+        {
+          "start": "12:30",
+          "end": "13:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "12:00",
+          "end": "12:50"
+        },
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "start": "13:00",
+          "end": "14:20"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "11:00",
+          "end": "12:20"
+        },
+        {
+          "start": "14:00",
+          "end": "15:20"
+        },
+        {
+          "start": "15:30",
+          "end": "16:50"
+        },
+        {
+          "start": "09:00",
+          "end": "10:20"
+        },
+        {
+          "start": "09:00",
+          "end": "10:20"
+        },
+        {
+          "start": "12:30",
+          "end": "13:50"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "12:00",
+          "end": "12:50"
+        },
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ]
+    },
+    "courses": [
+      "ECE 220",
+      "ECE 329",
+      "ECE 342",
+      "ECE 365",
+      "ECE 374",
+      "ECE 404",
+      "ECE 464",
+      "ECE 473",
+      "ECE 551"
+    ],
+    "room_id": "Electrical&ComputerEngBldg-2017",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Electrical & Computer Eng Bldg",
+    "room": "3017",
+    "usage": {
+      "Monday": [
+        {
+          "start": "12:00",
+          "end": "12:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        },
+        {
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "start": "15:00",
+          "end": "15:50"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "09:30",
+          "end": "10:50"
+        },
+        {
+          "start": "12:30",
+          "end": "13:50"
+        },
+        {
+          "start": "14:00",
+          "end": "15:20"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "12:00",
+          "end": "12:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        },
+        {
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "start": "15:00",
+          "end": "15:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "09:30",
+          "end": "10:50"
+        },
+        {
+          "start": "12:30",
+          "end": "13:50"
+        },
+        {
+          "start": "14:00",
+          "end": "15:20"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "12:00",
+          "end": "12:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        },
+        {
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "start": "15:00",
+          "end": "15:50"
+        }
+      ]
+    },
+    "courses": [
+      "ECE 310",
+      "ECE 313",
+      "ECE 330",
+      "ECE 340",
+      "ECE 402",
+      "ECE 486",
+      "ECE 515"
+    ],
+    "room_id": "Electrical&ComputerEngBldg-3017",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Electrical & Computer Eng Bldg",
+    "room": "1015",
+    "usage": {
+      "Monday": [
+        {
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        },
+        {
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "start": "12:00",
+          "end": "12:50"
+        },
+        {
+          "start": "15:00",
+          "end": "15:50"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "09:30",
+          "end": "10:50"
+        },
+        {
+          "start": "12:30",
+          "end": "13:50"
+        },
+        {
+          "start": "11:00",
+          "end": "12:20"
+        },
+        {
+          "start": "14:00",
+          "end": "15:20"
+        },
+        {
+          "start": "14:00",
+          "end": "15:20"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        },
+        {
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "start": "12:00",
+          "end": "12:50"
+        },
+        {
+          "start": "15:00",
+          "end": "15:50"
+        },
+        {
+          "start": "10:00",
+          "end": "11:20"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "09:30",
+          "end": "10:50"
+        },
+        {
+          "start": "12:30",
+          "end": "13:50"
+        },
+        {
+          "start": "11:00",
+          "end": "12:20"
+        },
+        {
+          "start": "14:00",
+          "end": "15:20"
+        },
+        {
+          "start": "14:00",
+          "end": "15:20"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        },
+        {
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "start": "12:00",
+          "end": "12:50"
+        },
+        {
+          "start": "15:00",
+          "end": "15:50"
+        },
+        {
+          "start": "10:00",
+          "end": "11:20"
+        }
+      ]
+    },
+    "courses": [
+      "ECE 313",
+      "ECE 329",
+      "ECE 330",
+      "ECE 333",
+      "ECE 340",
+      "ECE 470",
+      "ECE 482",
+      "ECE 484",
+      "ECE 498",
+      "ECE 534"
+    ],
+    "room_id": "Electrical&ComputerEngBldg-1015",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Gregory Hall",
+    "room": "329",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "11:00",
+          "end": "12:20"
+        },
+        {
+          "start": "14:00",
+          "end": "15:20"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "11:00",
+          "end": "12:20"
+        },
+        {
+          "start": "14:00",
+          "end": "15:20"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "ECE 316"
+    ],
+    "room_id": "GregoryHall-329",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Electrical & Computer Eng Bldg",
+    "room": "3013",
+    "usage": {
+      "Monday": [
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "12:00",
+          "end": "12:50"
+        },
+        {
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "09:30",
+          "end": "10:50"
+        },
+        {
+          "start": "12:30",
+          "end": "13:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "12:00",
+          "end": "12:50"
+        },
+        {
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "14:00",
+          "end": "14:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "09:30",
+          "end": "10:50"
+        },
+        {
+          "start": "12:30",
+          "end": "13:50"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "12:00",
+          "end": "12:50"
+        },
+        {
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ]
+    },
+    "courses": [
+      "ECE 340",
+      "ECE 342",
+      "ECE 453",
+      "ECE 462",
+      "ECE 463",
+      "ECE 518",
+      "ECE 584"
+    ],
+    "room_id": "Electrical&ComputerEngBldg-3013",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Everitt Laboratory",
+    "room": "1302",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "12:00",
+          "end": "12:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        },
+        {
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "start": "15:00",
+          "end": "15:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "12:00",
+          "end": "12:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        },
+        {
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "start": "15:00",
+          "end": "15:50"
+        }
+      ]
+    },
+    "courses": [
+      "ECE 374"
+    ],
+    "room_id": "EverittLaboratory-1302",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Loomis Laboratory",
+    "room": "158",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "09:30",
+          "end": "10:50"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "09:30",
+          "end": "10:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "ECE 380"
+    ],
+    "room_id": "LoomisLaboratory-158",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Electrical & Computer Eng Bldg",
+    "room": "3026",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        },
+        {
+          "start": "15:00",
+          "end": "15:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "12:00",
+          "end": "12:50"
+        },
+        {
+          "start": "09:00",
+          "end": "09:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "ECE 391"
+    ],
+    "room_id": "Electrical&ComputerEngBldg-3026",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Electrical & Computer Eng Bldg",
+    "room": "3020",
+    "usage": {
+      "Monday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "11:00",
+          "end": "12:20"
+        },
+        {
+          "start": "14:00",
+          "end": "15:20"
+        },
+        {
+          "start": "16:00",
+          "end": "16:50"
+        },
+        {
+          "start": "17:00",
+          "end": "18:20"
+        },
+        {
+          "start": "12:30",
+          "end": "13:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "14:00",
+          "end": "15:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "16:00",
+          "end": "16:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "11:00",
+          "end": "12:20"
+        },
+        {
+          "start": "14:00",
+          "end": "15:20"
+        },
+        {
+          "start": "17:00",
+          "end": "18:20"
+        },
+        {
+          "start": "12:30",
+          "end": "13:50"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ]
+    },
+    "courses": [
+      "ECE 398",
+      "ECE 441",
+      "ECE 555",
+      "ECE 566",
+      "ECE 598"
+    ],
+    "room_id": "Electrical&ComputerEngBldg-3020",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Electrical & Computer Eng Bldg",
+    "room": "3014",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "start": "15:00",
+          "end": "15:50"
+        },
+        {
+          "start": "16:00",
+          "end": "16:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "ECE 398"
+    ],
+    "room_id": "Electrical&ComputerEngBldg-3014",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Sidney Lu Mech Engr Bldg",
+    "room": "3100",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "14:00",
+          "end": "15:20"
+        },
+        {
+          "start": "14:00",
+          "end": "15:20"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "14:00",
+          "end": "15:20"
+        },
+        {
+          "start": "14:00",
+          "end": "15:20"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "ECE 410"
+    ],
+    "room_id": "SidneyLuMechEngrBldg-3100",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Everitt Laboratory",
+    "room": "1306",
+    "usage": {
+      "Monday": [
+        {
+          "start": "11:00",
+          "end": "11:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "11:00",
+          "end": "11:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "11:00",
+          "end": "11:50"
+        }
+      ]
+    },
+    "courses": [
+      "ECE 414"
+    ],
+    "room_id": "EverittLaboratory-1306",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Everitt Laboratory",
+    "room": "0201",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "16:00",
+          "end": "18:50"
+        },
+        {
+          "start": "13:00",
+          "end": "15:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "ECE 415"
+    ],
+    "room_id": "EverittLaboratory-0201",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Everitt Laboratory",
+    "room": "2233",
+    "usage": {
+      "Monday": [
+        {
+          "start": "12:00",
+          "end": "12:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "ECE 415"
+    ],
+    "room_id": "EverittLaboratory-2233",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Siebel Center for Comp Sci",
+    "room": "0218",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "17:00",
+          "end": "19:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "12:00",
+          "end": "12:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        },
+        {
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "start": "15:00",
+          "end": "15:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "ECE 419",
+      "ECE 422"
+    ],
+    "room_id": "SiebelCenterforCompSci-0218",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Electrical & Computer Eng Bldg",
+    "room": "5072",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "14:30",
+          "end": "16:20"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "14:00",
+          "end": "15:50"
+        },
+        {
+          "start": "09:00",
+          "end": "10:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "15:00",
+          "end": "16:40"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "17:00",
+          "end": "17:50"
+        },
+        {
+          "start": "18:00",
+          "end": "18:50"
+        },
+        {
+          "start": "19:00",
+          "end": "19:50"
+        }
+      ]
+    },
+    "courses": [
+      "ECE 420",
+      "ECE 484"
+    ],
+    "room_id": "Electrical&ComputerEngBldg-5072",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Digital Computer Laboratory",
+    "room": "1320",
+    "usage": {
+      "Monday": [
+        {
+          "start": "15:30",
+          "end": "16:45"
+        },
+        {
+          "start": "15:30",
+          "end": "16:45"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "12:30",
+          "end": "13:45"
+        },
+        {
+          "start": "12:30",
+          "end": "13:45"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "15:30",
+          "end": "16:45"
+        },
+        {
+          "start": "15:30",
+          "end": "16:45"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "12:30",
+          "end": "13:45"
+        },
+        {
+          "start": "12:30",
+          "end": "13:45"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "ECE 422",
+      "ECE 438"
+    ],
+    "room_id": "DigitalComputerLaboratory-1320",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Electrical & Computer Eng Bldg",
+    "room": "4022",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "16:00",
+          "end": "18:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "09:00",
+          "end": "11:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "ECE 437"
+    ],
+    "room_id": "Electrical&ComputerEngBldg-4022",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Electrical & Computer Eng Bldg n.a.",
+    "room": "3081",
+    "usage": {
+      "Monday": [
+        {
+          "start": "14:00",
+          "end": "15:20"
+        },
+        {
+          "start": "14:00",
+          "end": "15:20"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "ECE 437"
+    ],
+    "room_id": "Electrical&ComputerEngBldgn.a.-3081",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Siebel Center for Comp Sci",
+    "room": "1304",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "09:30",
+          "end": "10:45"
+        },
+        {
+          "start": "09:30",
+          "end": "10:45"
+        }
+      ],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "09:30",
+          "end": "10:45"
+        },
+        {
+          "start": "09:30",
+          "end": "10:45"
+        }
+      ]
+    },
+    "courses": [
+      "ECE 439"
+    ],
+    "room_id": "SiebelCenterforCompSci-1304",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Electrical & Computer Eng Bldg",
+    "room": "3077",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "09:00",
+          "end": "11:50"
+        },
+        {
+          "start": "14:00",
+          "end": "16:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "09:00",
+          "end": "11:50"
+        },
+        {
+          "start": "14:00",
+          "end": "16:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "14:00",
+          "end": "16:50"
+        },
+        {
+          "start": "09:00",
+          "end": "11:50"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "12:00",
+          "end": "14:50"
+        },
+        {
+          "start": "15:00",
+          "end": "17:50"
+        }
+      ]
+    },
+    "courses": [
+      "ECE 446",
+      "ECE 486"
+    ],
+    "room_id": "Electrical&ComputerEngBldg-3077",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Electrical & Computer Eng Bldg",
+    "room": "5080",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "09:00",
+          "end": "11:50"
+        },
+        {
+          "start": "14:30",
+          "end": "17:20"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "09:00",
+          "end": "11:50"
+        },
+        {
+          "start": "13:00",
+          "end": "15:50"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "13:00",
+          "end": "15:50"
+        }
+      ]
+    },
+    "courses": [
+      "ECE 453",
+      "ECE 463"
+    ],
+    "room_id": "Electrical&ComputerEngBldg-5080",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Electrical & Computer Eng Bldg",
+    "room": "4024",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "09:00",
+          "end": "11:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "09:00",
+          "end": "11:50"
+        },
+        {
+          "start": "12:00",
+          "end": "14:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "ECE 469"
+    ],
+    "room_id": "Electrical&ComputerEngBldg-4024",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Electrical & Computer Eng Bldg",
+    "room": "3071",
+    "usage": {
+      "Monday": [
+        {
+          "start": "09:00",
+          "end": "10:50"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "09:00",
+          "end": "10:50"
+        },
+        {
+          "start": "15:00",
+          "end": "16:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "14:00",
+          "end": "15:50"
+        },
+        {
+          "start": "09:00",
+          "end": "10:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "09:00",
+          "end": "10:50"
+        },
+        {
+          "start": "15:00",
+          "end": "16:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "ECE 470"
+    ],
+    "room_id": "Electrical&ComputerEngBldg-3071",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Campus Instructional Facility",
+    "room": "0035",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "11:00",
+          "end": "12:15"
+        },
+        {
+          "start": "11:00",
+          "end": "12:15"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "11:00",
+          "end": "12:15"
+        },
+        {
+          "start": "11:00",
+          "end": "12:15"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "ECE 491"
+    ],
+    "room_id": "CampusInstructionalFacility-0035",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Campus Instructional Facility",
+    "room": "3031",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "15:30",
+          "end": "16:45"
+        },
+        {
+          "start": "15:30",
+          "end": "16:45"
+        }
+      ],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "15:30",
+          "end": "16:45"
+        },
+        {
+          "start": "15:30",
+          "end": "16:45"
+        }
+      ]
+    },
+    "courses": [
+      "ECE 494"
+    ],
+    "room_id": "CampusInstructionalFacility-3031",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Campus Instructional Facility",
+    "room": "4025",
+    "usage": {
+      "Monday": [
+        {
+          "start": "16:00",
+          "end": "17:20"
+        },
+        {
+          "start": "16:00",
+          "end": "17:20"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "16:00",
+          "end": "17:20"
+        },
+        {
+          "start": "16:00",
+          "end": "17:20"
+        }
+      ],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "ECE 498",
+      "ECE 598"
+    ],
+    "room_id": "CampusInstructionalFacility-4025",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Campus Instructional Facility",
+    "room": "4039",
+    "usage": {
+      "Monday": [
+        {
+          "start": "14:00",
+          "end": "14:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "14:00",
+          "end": "14:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "14:00",
+          "end": "14:50"
+        }
+      ]
+    },
+    "courses": [
+      "ECE 523"
+    ],
+    "room_id": "CampusInstructionalFacility-4039",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Siebel Center for Comp Sci",
+    "room": "2406",
+    "usage": {
+      "Monday": [
+        {
+          "start": "15:30",
+          "end": "16:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "15:30",
+          "end": "16:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "ECE 526"
+    ],
+    "room_id": "SiebelCenterforCompSci-2406",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Davenport Hall",
+    "room": "136",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "11:00",
+          "end": "12:20"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "11:00",
+          "end": "12:20"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "ECE 544"
+    ],
+    "room_id": "DavenportHall-136",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Siebel Center for Comp Sci",
+    "room": "1404",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "11:00",
+          "end": "12:15"
+        }
+      ],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "11:00",
+          "end": "12:15"
+        }
+      ]
+    },
+    "courses": [
+      "ECE 549"
+    ],
+    "room_id": "SiebelCenterforCompSci-1404",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Siebel Center for Comp Sci",
+    "room": "1302",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "15:30",
+          "end": "16:45"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "15:30",
+          "end": "16:45"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "ECE 579"
+    ],
+    "room_id": "SiebelCenterforCompSci-1302",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Siebel Center for Comp Sci",
+    "room": "1214",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "16:00",
+          "end": "17:00"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "ECE 590"
+    ],
+    "room_id": "SiebelCenterforCompSci-1214",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Campus Instructional Facility",
+    "room": "3039",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [],
+      "Wednesday": [],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "13:00",
+          "end": "13:50"
+        }
+      ]
+    },
+    "courses": [
+      "ECE 592"
+    ],
+    "room_id": "CampusInstructionalFacility-3039",
+    "semester": "Fall 2025"
+  }
+]

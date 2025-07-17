@@ -1,0 +1,140 @@
+[
+  {
+    "building": "Davenport Hall",
+    "room": "336",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "09:00",
+          "end": "09:50"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "09:00",
+          "end": "09:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "CPSC 326"
+    ],
+    "room_id": "DavenportHall-336",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Bevier Hall n.a.",
+    "room": "108",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "09:00",
+          "end": "09:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "CPSC 433"
+    ],
+    "room_id": "BevierHalln.a.-108",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "National Soybean Res Ctr",
+    "room": "149",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "15:30",
+          "end": "16:50"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "15:30",
+          "end": "16:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "CPSC 440"
+    ],
+    "room_id": "NationalSoybeanResCtr-149",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Natural History Building 2090 Natural History Building",
+    "room": "4072",
+    "usage": {
+      "Monday": [
+        {
+          "start": "14:00",
+          "end": "16:50"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "14:00",
+          "end": "16:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "14:00",
+          "end": "16:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "CPSC 479"
+    ],
+    "room_id": "NaturalHistoryBuilding2090NaturalHistoryBuilding-4072",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "National Soybean Res Ctr",
+    "room": "337",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "16:30",
+          "end": "18:00"
+        },
+        {
+          "start": "16:30",
+          "end": "18:00"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "16:30",
+          "end": "18:00"
+        },
+        {
+          "start": "16:30",
+          "end": "18:00"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "CPSC 499"
+    ],
+    "room_id": "NationalSoybeanResCtr-337",
+    "semester": "Fall 2025"
+  }
+]

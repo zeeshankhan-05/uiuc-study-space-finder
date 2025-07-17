@@ -1,0 +1,845 @@
+[
+  {
+    "building": "Bevier Hall",
+    "room": "132",
+    "usage": {
+      "Monday": [
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        }
+      ]
+    },
+    "courses": [
+      "FSHN 101",
+      "FSHN 414",
+      "FSHN 514"
+    ],
+    "room_id": "BevierHall-132",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Bevier Hall",
+    "room": "286",
+    "usage": {
+      "Monday": [
+        {
+          "start": "10:00",
+          "end": "12:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "14:00",
+          "end": "14:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "start": "15:00",
+          "end": "15:50"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "14:00",
+          "end": "14:50"
+        }
+      ]
+    },
+    "courses": [
+      "FSHN 123",
+      "FSHN 340",
+      "FSHN 419"
+    ],
+    "room_id": "BevierHall-286",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Bevier Hall",
+    "room": "242",
+    "usage": {
+      "Monday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ]
+    },
+    "courses": [
+      "FSHN 140"
+    ],
+    "room_id": "BevierHall-242",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Bevier Hall n.a.",
+    "room": "166",
+    "usage": {
+      "Monday": [
+        {
+          "start": "11:00",
+          "end": "11:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "11:00",
+          "end": "11:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "11:00",
+          "end": "11:50"
+        }
+      ]
+    },
+    "courses": [
+      "FSHN 220"
+    ],
+    "room_id": "BevierHalln.a.-166",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Bevier Hall",
+    "room": "328",
+    "usage": {
+      "Monday": [
+        {
+          "start": "12:00",
+          "end": "13:20"
+        },
+        {
+          "start": "09:00",
+          "end": "10:20"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "11:00",
+          "end": "12:20"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "14:00",
+          "end": "14:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "12:00",
+          "end": "13:20"
+        },
+        {
+          "start": "09:00",
+          "end": "10:20"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "11:00",
+          "end": "12:20"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "start": "15:00",
+          "end": "16:50"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ]
+    },
+    "courses": [
+      "FSHN 230",
+      "FSHN 250",
+      "FSHN 302",
+      "FSHN 441",
+      "FSHN 450",
+      "FSHN 521",
+      "FSHN 593"
+    ],
+    "room_id": "BevierHall-328",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Bevier Hall",
+    "room": "358",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "14:00",
+          "end": "15:40"
+        },
+        {
+          "start": "09:00",
+          "end": "10:50"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "09:00",
+          "end": "10:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "FSHN 231",
+      "FSHN 232"
+    ],
+    "room_id": "BevierHall-358",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Bevier Hall n.a.",
+    "room": "328",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [],
+      "Wednesday": [],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "start": "09:00",
+          "end": "09:50"
+        }
+      ]
+    },
+    "courses": [
+      "FSHN 232"
+    ],
+    "room_id": "BevierHalln.a.-328",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Bevier Hall",
+    "room": "372",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "11:00",
+          "end": "12:50"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "11:00",
+          "end": "12:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "FSHN 302"
+    ],
+    "room_id": "BevierHall-372",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Bevier Hall",
+    "room": "292",
+    "usage": {
+      "Monday": [
+        {
+          "start": "08:30",
+          "end": "13:50"
+        },
+        {
+          "start": "08:30",
+          "end": "13:50"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "08:30",
+          "end": "13:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "08:30",
+          "end": "13:50"
+        },
+        {
+          "start": "08:30",
+          "end": "13:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "08:30",
+          "end": "13:50"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "08:30",
+          "end": "13:50"
+        },
+        {
+          "start": "08:30",
+          "end": "13:50"
+        }
+      ]
+    },
+    "courses": [
+      "FSHN 340"
+    ],
+    "room_id": "BevierHall-292",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Campus Instructional Facility",
+    "room": "0035",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "15:30",
+          "end": "17:10"
+        },
+        {
+          "start": "15:30",
+          "end": "17:10"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "15:30",
+          "end": "17:10"
+        },
+        {
+          "start": "15:30",
+          "end": "17:10"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "FSHN 343"
+    ],
+    "room_id": "CampusInstructionalFacility-0035",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Bevier Hall",
+    "room": "166",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "15:30",
+          "end": "16:50"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "15:30",
+          "end": "16:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "FSHN 345"
+    ],
+    "room_id": "BevierHall-166",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Agricultural Engr Sciences Bld",
+    "room": "280",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "15:00",
+          "end": "17:50"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "15:00",
+          "end": "17:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "FSHN 416"
+    ],
+    "room_id": "AgriculturalEngrSciencesBld-280",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Agricultural Engr Sciences Bld",
+    "room": "272",
+    "usage": {
+      "Monday": [
+        {
+          "start": "10:00",
+          "end": "11:20"
+        },
+        {
+          "start": "14:00",
+          "end": "15:50"
+        },
+        {
+          "start": "14:00",
+          "end": "17:00"
+        },
+        {
+          "start": "14:00",
+          "end": "17:00"
+        },
+        {
+          "start": "11:30",
+          "end": "12:20"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "start": "12:30",
+          "end": "13:50"
+        },
+        {
+          "start": "18:00",
+          "end": "21:00"
+        },
+        {
+          "start": "11:00",
+          "end": "12:20"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "10:00",
+          "end": "11:20"
+        },
+        {
+          "start": "14:00",
+          "end": "15:50"
+        },
+        {
+          "start": "14:00",
+          "end": "16:50"
+        },
+        {
+          "start": "14:00",
+          "end": "16:50"
+        },
+        {
+          "start": "18:00",
+          "end": "21:00"
+        },
+        {
+          "start": "11:30",
+          "end": "12:20"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "start": "12:30",
+          "end": "13:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "FSHN 416",
+      "FSHN 428",
+      "FSHN 460",
+      "FSHN 483",
+      "FSHN 484",
+      "FSHN 574",
+      "FSHN 576",
+      "FSHN 595"
+    ],
+    "room_id": "AgriculturalEngrSciencesBld-272",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Noyes Laboratory",
+    "room": "161",
+    "usage": {
+      "Monday": [
+        {
+          "start": "12:00",
+          "end": "13:20"
+        },
+        {
+          "start": "12:00",
+          "end": "13:20"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "12:00",
+          "end": "13:20"
+        },
+        {
+          "start": "12:00",
+          "end": "13:20"
+        }
+      ],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "FSHN 417"
+    ],
+    "room_id": "NoyesLaboratory-161",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Animal Sciences Laboratory n.a.",
+    "room": "131",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "09:00",
+          "end": "10:50"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "FSHN 420"
+    ],
+    "room_id": "AnimalSciencesLaboratoryn.a.-131",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "National Soybean Res Ctr",
+    "room": "149",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "15:30",
+          "end": "16:50"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "15:30",
+          "end": "16:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "FSHN 440"
+    ],
+    "room_id": "NationalSoybeanResCtr-149",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Bevier Hall n.a.",
+    "room": "108",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "09:00",
+          "end": "09:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "FSHN 480"
+    ],
+    "room_id": "BevierHalln.a.-108",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Animal Sciences Laboratory",
+    "room": "292",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "08:30",
+          "end": "09:50"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "08:30",
+          "end": "09:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "FSHN 510"
+    ],
+    "room_id": "AnimalSciencesLaboratory-292",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Animal Sciences Laboratory",
+    "room": "131",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "14:00",
+          "end": "15:20"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "14:00",
+          "end": "15:20"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "FSHN 510"
+    ],
+    "room_id": "AnimalSciencesLaboratory-131",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Gregory Hall",
+    "room": "327",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "09:30",
+          "end": "10:50"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "09:30",
+          "end": "10:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "FSHN 527"
+    ],
+    "room_id": "GregoryHall-327",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Mumford Hall",
+    "room": "313",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "10:00",
+          "end": "11:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "FSHN 550"
+    ],
+    "room_id": "MumfordHall-313",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Bevier Hall",
+    "room": "144",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "14:00",
+          "end": "15:20"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "14:00",
+          "end": "15:20"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "FSHN 580"
+    ],
+    "room_id": "BevierHall-144",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Bevier Hall 166 Bevier Hall",
+    "room": "328",
+    "usage": {
+      "Monday": [
+        {
+          "start": "15:00",
+          "end": "16:50"
+        },
+        {
+          "start": "15:00",
+          "end": "16:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "15:00",
+          "end": "16:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "15:00",
+          "end": "16:50"
+        }
+      ]
+    },
+    "courses": [
+      "FSHN 595"
+    ],
+    "room_id": "BevierHall166BevierHall-328",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Bevier Hall",
+    "room": "180",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [],
+      "Wednesday": [],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "11:00",
+          "end": "11:50"
+        }
+      ]
+    },
+    "courses": [
+      "FSHN 597"
+    ],
+    "room_id": "BevierHall-180",
+    "semester": "Fall 2025"
+  }
+]

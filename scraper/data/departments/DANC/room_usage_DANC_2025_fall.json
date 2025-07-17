@@ -1,0 +1,705 @@
+[
+  {
+    "building": "907 1/2 W Nevada 2127 Krannert Center for Perf Arts",
+    "room": "109",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "09:00",
+          "end": "10:20"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "09:00",
+          "end": "10:20"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "DANC 100"
+    ],
+    "room_id": "9071/2WNevada2127KrannertCenterforPerfArts-109",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Krannert Center for Perf Arts 109 907 1/2 W Nevada",
+    "room": "2127",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "09:00",
+          "end": "10:20"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "09:00",
+          "end": "10:20"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "DANC 100"
+    ],
+    "room_id": "KrannertCenterforPerfArts1099071/2WNevada-2127",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Dance Studio 109 907 1/2 W Nevada",
+    "room": "111",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "13:00",
+          "end": "14:20"
+        },
+        {
+          "start": "13:00",
+          "end": "14:20"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "13:00",
+          "end": "14:20"
+        },
+        {
+          "start": "13:00",
+          "end": "14:20"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "DANC 100"
+    ],
+    "room_id": "DanceStudio1099071/2WNevada-111",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "907 1/2 W Nevada",
+    "room": "109",
+    "usage": {
+      "Monday": [
+        {
+          "start": "17:00",
+          "end": "18:20"
+        },
+        {
+          "start": "10:35",
+          "end": "11:50"
+        },
+        {
+          "start": "13:00",
+          "end": "14:50"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "17:00",
+          "end": "18:20"
+        },
+        {
+          "start": "13:00",
+          "end": "14:20"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "17:00",
+          "end": "18:20"
+        },
+        {
+          "start": "10:35",
+          "end": "11:50"
+        },
+        {
+          "start": "13:00",
+          "end": "14:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "17:00",
+          "end": "18:20"
+        },
+        {
+          "start": "13:00",
+          "end": "14:20"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "09:00",
+          "end": "10:50"
+        }
+      ]
+    },
+    "courses": [
+      "DANC 104",
+      "DANC 426",
+      "DANC 441",
+      "DANC 451",
+      "DANC 495",
+      "DANC 510"
+    ],
+    "room_id": "9071/2WNevada-109",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Dance Studio",
+    "room": "111",
+    "usage": {
+      "Monday": [
+        {
+          "start": "09:00",
+          "end": "10:30"
+        },
+        {
+          "start": "17:00",
+          "end": "18:20"
+        },
+        {
+          "start": "10:35",
+          "end": "11:50"
+        },
+        {
+          "start": "17:00",
+          "end": "18:20"
+        },
+        {
+          "start": "17:00",
+          "end": "18:20"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "17:00",
+          "end": "18:20"
+        },
+        {
+          "start": "09:00",
+          "end": "10:30"
+        },
+        {
+          "start": "10:35",
+          "end": "11:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "09:00",
+          "end": "10:30"
+        },
+        {
+          "start": "17:00",
+          "end": "18:20"
+        },
+        {
+          "start": "10:35",
+          "end": "11:50"
+        },
+        {
+          "start": "17:00",
+          "end": "18:20"
+        },
+        {
+          "start": "17:00",
+          "end": "18:20"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "17:00",
+          "end": "18:20"
+        },
+        {
+          "start": "09:00",
+          "end": "10:30"
+        },
+        {
+          "start": "10:35",
+          "end": "11:50"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "09:00",
+          "end": "10:30"
+        },
+        {
+          "start": "13:00",
+          "end": "14:50"
+        },
+        {
+          "start": "13:00",
+          "end": "14:50"
+        }
+      ]
+    },
+    "courses": [
+      "DANC 116",
+      "DANC 160",
+      "DANC 216",
+      "DANC 232",
+      "DANC 316",
+      "DANC 401",
+      "DANC 498",
+      "DANC 499",
+      "DANC 516"
+    ],
+    "room_id": "DanceStudio-111",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Krannert Center for Perf Arts",
+    "room": "2500",
+    "usage": {
+      "Monday": [
+        {
+          "start": "17:00",
+          "end": "18:20"
+        },
+        {
+          "start": "08:00",
+          "end": "08:50"
+        },
+        {
+          "start": "09:00",
+          "end": "10:30"
+        },
+        {
+          "start": "10:35",
+          "end": "11:50"
+        },
+        {
+          "start": "08:00",
+          "end": "08:50"
+        },
+        {
+          "start": "17:00",
+          "end": "18:20"
+        },
+        {
+          "start": "13:00",
+          "end": "14:50"
+        },
+        {
+          "start": "17:00",
+          "end": "18:20"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "13:00",
+          "end": "14:20"
+        },
+        {
+          "start": "08:00",
+          "end": "08:50"
+        },
+        {
+          "start": "10:35",
+          "end": "11:50"
+        },
+        {
+          "start": "09:00",
+          "end": "10:30"
+        },
+        {
+          "start": "17:00",
+          "end": "18:20"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "17:00",
+          "end": "18:20"
+        },
+        {
+          "start": "08:00",
+          "end": "08:50"
+        },
+        {
+          "start": "09:00",
+          "end": "10:30"
+        },
+        {
+          "start": "10:35",
+          "end": "11:50"
+        },
+        {
+          "start": "08:00",
+          "end": "08:50"
+        },
+        {
+          "start": "17:00",
+          "end": "18:20"
+        },
+        {
+          "start": "13:00",
+          "end": "14:50"
+        },
+        {
+          "start": "17:00",
+          "end": "18:20"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "13:00",
+          "end": "14:20"
+        },
+        {
+          "start": "08:00",
+          "end": "08:50"
+        },
+        {
+          "start": "10:35",
+          "end": "11:50"
+        },
+        {
+          "start": "09:00",
+          "end": "10:30"
+        },
+        {
+          "start": "17:00",
+          "end": "18:20"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "09:00",
+          "end": "10:30"
+        },
+        {
+          "start": "09:00",
+          "end": "10:30"
+        }
+      ]
+    },
+    "courses": [
+      "DANC 116",
+      "DANC 201",
+      "DANC 259",
+      "DANC 260",
+      "DANC 262",
+      "DANC 270",
+      "DANC 301",
+      "DANC 316",
+      "DANC 424",
+      "DANC 470",
+      "DANC 474",
+      "DANC 516"
+    ],
+    "room_id": "KrannertCenterforPerfArts-2500",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Dance Studio",
+    "room": "103",
+    "usage": {
+      "Monday": [
+        {
+          "start": "17:00",
+          "end": "18:20"
+        },
+        {
+          "start": "11:00",
+          "end": "12:20"
+        },
+        {
+          "start": "13:00",
+          "end": "14:20"
+        },
+        {
+          "start": "17:00",
+          "end": "18:20"
+        },
+        {
+          "start": "11:00",
+          "end": "12:20"
+        },
+        {
+          "start": "09:00",
+          "end": "10:30"
+        },
+        {
+          "start": "09:00",
+          "end": "10:30"
+        },
+        {
+          "start": "17:00",
+          "end": "18:20"
+        },
+        {
+          "start": "11:00",
+          "end": "12:20"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "11:00",
+          "end": "12:20"
+        },
+        {
+          "start": "13:00",
+          "end": "14:20"
+        },
+        {
+          "start": "17:00",
+          "end": "18:20"
+        },
+        {
+          "start": "11:00",
+          "end": "12:20"
+        },
+        {
+          "start": "13:00",
+          "end": "14:20"
+        },
+        {
+          "start": "17:00",
+          "end": "18:20"
+        },
+        {
+          "start": "09:00",
+          "end": "10:30"
+        },
+        {
+          "start": "09:00",
+          "end": "10:30"
+        },
+        {
+          "start": "11:00",
+          "end": "12:20"
+        },
+        {
+          "start": "13:00",
+          "end": "14:20"
+        },
+        {
+          "start": "17:00",
+          "end": "18:20"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "17:00",
+          "end": "18:20"
+        },
+        {
+          "start": "11:00",
+          "end": "12:20"
+        },
+        {
+          "start": "13:00",
+          "end": "14:20"
+        },
+        {
+          "start": "17:00",
+          "end": "18:20"
+        },
+        {
+          "start": "11:00",
+          "end": "12:20"
+        },
+        {
+          "start": "09:00",
+          "end": "10:30"
+        },
+        {
+          "start": "09:00",
+          "end": "10:30"
+        },
+        {
+          "start": "17:00",
+          "end": "18:20"
+        },
+        {
+          "start": "11:00",
+          "end": "12:20"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "11:00",
+          "end": "12:20"
+        },
+        {
+          "start": "13:00",
+          "end": "14:20"
+        },
+        {
+          "start": "17:00",
+          "end": "18:20"
+        },
+        {
+          "start": "11:00",
+          "end": "12:20"
+        },
+        {
+          "start": "13:00",
+          "end": "14:20"
+        },
+        {
+          "start": "17:00",
+          "end": "18:20"
+        },
+        {
+          "start": "09:00",
+          "end": "10:30"
+        },
+        {
+          "start": "09:00",
+          "end": "10:30"
+        },
+        {
+          "start": "11:00",
+          "end": "12:20"
+        },
+        {
+          "start": "13:00",
+          "end": "14:20"
+        },
+        {
+          "start": "17:00",
+          "end": "18:20"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "13:00",
+          "end": "14:20"
+        }
+      ]
+    },
+    "courses": [
+      "DANC 116",
+      "DANC 150",
+      "DANC 216",
+      "DANC 240",
+      "DANC 316",
+      "DANC 360",
+      "DANC 460",
+      "DANC 516"
+    ],
+    "room_id": "DanceStudio-103",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Krannert Center for Perf Arts",
+    "room": "2127",
+    "usage": {
+      "Monday": [
+        {
+          "start": "11:00",
+          "end": "12:20"
+        },
+        {
+          "start": "09:00",
+          "end": "10:20"
+        },
+        {
+          "start": "13:00",
+          "end": "14:20"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "11:00",
+          "end": "12:20"
+        },
+        {
+          "start": "13:00",
+          "end": "14:20"
+        },
+        {
+          "start": "13:00",
+          "end": "14:20"
+        },
+        {
+          "start": "13:00",
+          "end": "14:20"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "11:00",
+          "end": "12:20"
+        },
+        {
+          "start": "09:00",
+          "end": "10:20"
+        },
+        {
+          "start": "13:00",
+          "end": "14:20"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "11:00",
+          "end": "12:20"
+        },
+        {
+          "start": "13:00",
+          "end": "14:20"
+        },
+        {
+          "start": "13:00",
+          "end": "14:20"
+        },
+        {
+          "start": "13:00",
+          "end": "14:20"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "DANC 116",
+      "DANC 209",
+      "DANC 216",
+      "DANC 316",
+      "DANC 516"
+    ],
+    "room_id": "KrannertCenterforPerfArts-2127",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "907 1/2 W Nevada",
+    "room": "110",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [],
+      "Wednesday": [],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "14:30",
+          "end": "16:30"
+        },
+        {
+          "start": "13:00",
+          "end": "14:20"
+        }
+      ]
+    },
+    "courses": [
+      "DANC 330",
+      "DANC 531"
+    ],
+    "room_id": "9071/2WNevada-110",
+    "semester": "Fall 2025"
+  }
+]

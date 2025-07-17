@@ -1,0 +1,705 @@
+[
+  {
+    "building": "Noble Hall",
+    "room": "7",
+    "usage": {
+      "Monday": [
+        {
+          "start": "13:00",
+          "end": "15:40"
+        },
+        {
+          "start": "09:00",
+          "end": "11:40"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "09:30",
+          "end": "12:10"
+        },
+        {
+          "start": "09:30",
+          "end": "12:10"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "13:00",
+          "end": "15:40"
+        },
+        {
+          "start": "09:00",
+          "end": "11:40"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "09:30",
+          "end": "12:10"
+        },
+        {
+          "start": "09:30",
+          "end": "12:10"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "ARTS 205",
+      "ARTS 405"
+    ],
+    "room_id": "NobleHall-7",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Flagg Hall",
+    "room": "123",
+    "usage": {
+      "Monday": [
+        {
+          "start": "13:00",
+          "end": "15:40"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "13:00",
+          "end": "15:40"
+        }
+      ],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "ARTS 210"
+    ],
+    "room_id": "FlaggHall-123",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Allen Residence Hall",
+    "room": "89",
+    "usage": {
+      "Monday": [
+        {
+          "start": "09:00",
+          "end": "11:40"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "09:00",
+          "end": "11:40"
+        }
+      ],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "ARTS 210"
+    ],
+    "room_id": "AllenResidenceHall-89",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Art and Design Building 224 Art and Design Building",
+    "room": "315",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "17:00",
+          "end": "19:40"
+        },
+        {
+          "start": "17:00",
+          "end": "19:40"
+        },
+        {
+          "start": "09:30",
+          "end": "12:10"
+        },
+        {
+          "start": "09:30",
+          "end": "12:10"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "17:00",
+          "end": "19:40"
+        },
+        {
+          "start": "17:00",
+          "end": "19:40"
+        },
+        {
+          "start": "09:30",
+          "end": "12:10"
+        },
+        {
+          "start": "09:30",
+          "end": "12:10"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "ARTS 221",
+      "ARTS 321"
+    ],
+    "room_id": "ArtandDesignBuilding224ArtandDesignBuilding-315",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Art and Design Building",
+    "room": "315",
+    "usage": {
+      "Monday": [
+        {
+          "start": "09:00",
+          "end": "11:40"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "09:00",
+          "end": "11:40"
+        }
+      ],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "ARTS 223"
+    ],
+    "room_id": "ArtandDesignBuilding-315",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Art and Design Building",
+    "room": "228",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "17:00",
+          "end": "19:40"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "17:00",
+          "end": "19:40"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "ARTS 241"
+    ],
+    "room_id": "ArtandDesignBuilding-228",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Art and Design Building",
+    "room": "229",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "14:00",
+          "end": "16:40"
+        },
+        {
+          "start": "09:30",
+          "end": "12:10"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "14:00",
+          "end": "16:40"
+        },
+        {
+          "start": "09:30",
+          "end": "12:10"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "ARTS 243",
+      "ARTS 443"
+    ],
+    "room_id": "ArtandDesignBuilding-229",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Art and Design Building",
+    "room": "209",
+    "usage": {
+      "Monday": [
+        {
+          "start": "09:00",
+          "end": "11:40"
+        },
+        {
+          "start": "16:30",
+          "end": "19:10"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "09:00",
+          "end": "11:40"
+        },
+        {
+          "start": "16:30",
+          "end": "19:10"
+        }
+      ],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "ARTS 245",
+      "ARTS 454"
+    ],
+    "room_id": "ArtandDesignBuilding-209",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Art and Design Building",
+    "room": "219",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "17:00",
+          "end": "19:40"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "17:00",
+          "end": "19:40"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "ARTS 250"
+    ],
+    "room_id": "ArtandDesignBuilding-219",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Art and Design Building",
+    "room": "330",
+    "usage": {
+      "Monday": [
+        {
+          "start": "09:00",
+          "end": "11:40"
+        },
+        {
+          "start": "13:00",
+          "end": "15:40"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "14:00",
+          "end": "16:40"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "09:00",
+          "end": "11:40"
+        },
+        {
+          "start": "13:00",
+          "end": "15:40"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "14:00",
+          "end": "16:40"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "ARTS 251",
+      "ARTS 354"
+    ],
+    "room_id": "ArtandDesignBuilding-330",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Art and Design Building",
+    "room": "40",
+    "usage": {
+      "Monday": [
+        {
+          "start": "09:00",
+          "end": "11:40"
+        },
+        {
+          "start": "13:00",
+          "end": "15:40"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "14:00",
+          "end": "16:40"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "09:00",
+          "end": "11:40"
+        },
+        {
+          "start": "13:00",
+          "end": "15:40"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "14:00",
+          "end": "16:40"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "ARTS 252",
+      "ARTS 280"
+    ],
+    "room_id": "ArtandDesignBuilding-40",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Art and Design Building",
+    "room": "340",
+    "usage": {
+      "Monday": [
+        {
+          "start": "09:00",
+          "end": "11:40"
+        },
+        {
+          "start": "13:00",
+          "end": "15:40"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "17:00",
+          "end": "19:40"
+        },
+        {
+          "start": "09:30",
+          "end": "12:10"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "09:00",
+          "end": "11:40"
+        },
+        {
+          "start": "13:00",
+          "end": "15:40"
+        },
+        {
+          "start": "16:00",
+          "end": "18:40"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "17:00",
+          "end": "19:40"
+        },
+        {
+          "start": "09:30",
+          "end": "12:10"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "ARTS 264",
+      "ARTS 265",
+      "ARTS 593"
+    ],
+    "room_id": "ArtandDesignBuilding-340",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Flagg Hall",
+    "room": "129",
+    "usage": {
+      "Monday": [
+        {
+          "start": "09:00",
+          "end": "11:40"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "09:00",
+          "end": "11:40"
+        }
+      ],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "ARTS 266"
+    ],
+    "room_id": "FlaggHall-129",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Art and Design Building",
+    "room": "312",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "14:00",
+          "end": "16:40"
+        },
+        {
+          "start": "14:00",
+          "end": "16:40"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "14:00",
+          "end": "16:40"
+        },
+        {
+          "start": "14:00",
+          "end": "16:40"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "ARTS 364",
+      "ARTS 461"
+    ],
+    "room_id": "ArtandDesignBuilding-312",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Art and Design Building",
+    "room": "331",
+    "usage": {
+      "Monday": [
+        {
+          "start": "09:00",
+          "end": "11:40"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "09:00",
+          "end": "11:40"
+        }
+      ],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "ARTS 365"
+    ],
+    "room_id": "ArtandDesignBuilding-331",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Art and Design Building",
+    "room": "9",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "09:30",
+          "end": "12:10"
+        },
+        {
+          "start": "17:00",
+          "end": "19:40"
+        },
+        {
+          "start": "17:00",
+          "end": "19:40"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "09:30",
+          "end": "12:10"
+        },
+        {
+          "start": "17:00",
+          "end": "19:40"
+        },
+        {
+          "start": "17:00",
+          "end": "19:40"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "ARTS 365",
+      "ARTS 457",
+      "ARTS 499"
+    ],
+    "room_id": "ArtandDesignBuilding-9",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Flagg Hall",
+    "room": "334",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "14:00",
+          "end": "16:40"
+        },
+        {
+          "start": "14:00",
+          "end": "16:40"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "14:00",
+          "end": "16:40"
+        },
+        {
+          "start": "14:00",
+          "end": "16:40"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "ARTS 446"
+    ],
+    "room_id": "FlaggHall-334",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Flagg Hall",
+    "room": "128",
+    "usage": {
+      "Monday": [
+        {
+          "start": "13:00",
+          "end": "15:40"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "13:00",
+          "end": "15:40"
+        }
+      ],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "ARTS 448"
+    ],
+    "room_id": "FlaggHall-128",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Art and Design Building",
+    "room": "224",
+    "usage": {
+      "Monday": [
+        {
+          "start": "13:00",
+          "end": "15:40"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "13:00",
+          "end": "15:40"
+        }
+      ],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "ARTS 499"
+    ],
+    "room_id": "ArtandDesignBuilding-224",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Siebel Center for Design",
+    "room": "1002",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "09:30",
+          "end": "12:10"
+        },
+        {
+          "start": "09:30",
+          "end": "12:10"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "09:30",
+          "end": "12:10"
+        },
+        {
+          "start": "09:30",
+          "end": "12:10"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "ARTS 499"
+    ],
+    "room_id": "SiebelCenterforDesign-1002",
+    "semester": "Fall 2025"
+  }
+]

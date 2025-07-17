@@ -1,0 +1,341 @@
+[
+  {
+    "building": "Wohlers Hall",
+    "room": "226",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "09:30",
+          "end": "10:50"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "09:30",
+          "end": "10:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "AIS 101"
+    ],
+    "room_id": "WohlersHall-226",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "David Kinley Hall",
+    "room": "115",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "09:30",
+          "end": "10:50"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "09:30",
+          "end": "10:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "AIS 214"
+    ],
+    "room_id": "DavidKinleyHall-115",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Armory",
+    "room": "432",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [],
+      "Wednesday": [],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ]
+    },
+    "courses": [
+      "AIS 277"
+    ],
+    "room_id": "Armory-432",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Literatures, Cultures, & Ling",
+    "room": "1038",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [],
+      "Wednesday": [],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "11:00",
+          "end": "11:50"
+        }
+      ]
+    },
+    "courses": [
+      "AIS 277"
+    ],
+    "room_id": "Literatures,Cultures,&Ling-1038",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Ceramics Building",
+    "room": "218",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "09:30",
+          "end": "10:20"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "09:30",
+          "end": "10:20"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "AIS 277"
+    ],
+    "room_id": "CeramicsBuilding-218",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Transportation Building",
+    "room": "103",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "14:00",
+          "end": "15:20"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "14:00",
+          "end": "15:20"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "AIS 285"
+    ],
+    "room_id": "TransportationBuilding-103",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Sidney Lu Mech Engr Bldg",
+    "room": "1043",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "09:30",
+          "end": "10:50"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "09:30",
+          "end": "10:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "AIS 285"
+    ],
+    "room_id": "SidneyLuMechEngrBldg-1043",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Gregory Hall",
+    "room": "321",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "12:30",
+          "end": "13:50"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "12:30",
+          "end": "13:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "AIS 285"
+    ],
+    "room_id": "GregoryHall-321",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Lincoln Hall",
+    "room": "1027",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "12:30",
+          "end": "13:50"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "12:30",
+          "end": "13:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "AIS 288"
+    ],
+    "room_id": "LincolnHall-1027",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Burrill Hall",
+    "room": "140",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "11:00",
+          "end": "12:20"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "11:00",
+          "end": "12:20"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "AIS 295"
+    ],
+    "room_id": "BurrillHall-140",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Gregory Hall",
+    "room": "219",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "12:30",
+          "end": "13:50"
+        },
+        {
+          "start": "12:30",
+          "end": "13:50"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "12:30",
+          "end": "13:50"
+        },
+        {
+          "start": "12:30",
+          "end": "13:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "AIS 459"
+    ],
+    "room_id": "GregoryHall-219",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Spurlock Museum",
+    "room": "115",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "11:00",
+          "end": "12:20"
+        },
+        {
+          "start": "11:00",
+          "end": "12:20"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "11:00",
+          "end": "12:20"
+        },
+        {
+          "start": "11:00",
+          "end": "12:20"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "AIS 490"
+    ],
+    "room_id": "SpurlockMuseum-115",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Literatures, Cultures, & Ling",
+    "room": "1040",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "13:00",
+          "end": "16:00"
+        }
+      ],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "AIS 502"
+    ],
+    "room_id": "Literatures,Cultures,&Ling-1040",
+    "semester": "Fall 2025"
+  }
+]

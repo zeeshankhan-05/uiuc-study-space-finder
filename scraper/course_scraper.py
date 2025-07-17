@@ -4,11 +4,8 @@ import json
 import re
 import os
 
-DEPARTMENTS = ["MATH"] # Update to contain all departments
-YEAR = "2025" # Update to the desired year
-SEMESTER = "fall" # Update to the desired semester
 
-def get_course_urls(department=DEPARTMENTS[0], year=YEAR, semester=SEMESTER):
+def get_course_urls(department, year, semester):
     """
     Fetches a list of course URLs and metadata for a given department, year, and semester.
     
@@ -134,7 +131,7 @@ def get_course_meetings(course_url):
         meetings.append({"time": time, "days": days, "location": location})
     return meetings, ignored_reasons
 
-def extract_all_courses_meetings(department=DEPARTMENTS[0], year=YEAR, semester=SEMESTER):
+def extract_all_courses_meetings(department, year, semester):
     """
     Extracts and saves all course meeting information to a JSON file in the department subfolder.
     Also includes ignored meeting reasons for transparency.
@@ -164,7 +161,7 @@ def extract_all_courses_meetings(department=DEPARTMENTS[0], year=YEAR, semester=
         all_meetings_data.append(entry)
 
     # Store data into departments folder
-    folder = os.path.join("data", "departments", department)
+    folder = os.path.join(os.path.dirname(__file__), "data", "departments", department)
     os.makedirs(folder, exist_ok=True)
     filename = os.path.join(folder, f"room_usage_{department}_{year}_{semester}.json")
     with open(filename, "w") as f:

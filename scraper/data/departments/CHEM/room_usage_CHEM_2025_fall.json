@@ -1,0 +1,3885 @@
+[
+  {
+    "building": "Noyes Laboratory 2012 Chemistry Annex",
+    "room": "300",
+    "usage": {
+      "Monday": [
+        {
+          "start": "08:00",
+          "end": "08:50"
+        },
+        {
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "start": "15:00",
+          "end": "15:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "08:00",
+          "end": "08:50"
+        },
+        {
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "start": "15:00",
+          "end": "15:50"
+        }
+      ]
+    },
+    "courses": [
+      "CHEM 101"
+    ],
+    "room_id": "NoyesLaboratory2012ChemistryAnnex-300",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Noyes Laboratory 204 Noyes Laboratory",
+    "room": "162",
+    "usage": {
+      "Monday": [
+        {
+          "start": "11:00",
+          "end": "11:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "11:00",
+          "end": "11:50"
+        }
+      ]
+    },
+    "courses": [
+      "CHEM 101"
+    ],
+    "room_id": "NoyesLaboratory204NoyesLaboratory-162",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Noyes Laboratory 2012 Chemistry Annex",
+    "room": "164",
+    "usage": {
+      "Monday": [
+        {
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "start": "15:00",
+          "end": "15:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "start": "15:00",
+          "end": "15:50"
+        }
+      ]
+    },
+    "courses": [
+      "CHEM 101"
+    ],
+    "room_id": "NoyesLaboratory2012ChemistryAnnex-164",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Noyes Laboratory 203 Noyes Laboratory",
+    "room": "164",
+    "usage": {
+      "Monday": [
+        {
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "start": "16:00",
+          "end": "16:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "start": "16:00",
+          "end": "16:50"
+        }
+      ]
+    },
+    "courses": [
+      "CHEM 101"
+    ],
+    "room_id": "NoyesLaboratory203NoyesLaboratory-164",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Noyes Laboratory 203 Noyes Laboratory",
+    "room": "300",
+    "usage": {
+      "Monday": [
+        {
+          "start": "12:00",
+          "end": "12:50"
+        },
+        {
+          "start": "16:00",
+          "end": "16:50"
+        },
+        {
+          "start": "11:00",
+          "end": "11:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "12:00",
+          "end": "12:50"
+        },
+        {
+          "start": "16:00",
+          "end": "16:50"
+        },
+        {
+          "start": "11:00",
+          "end": "11:50"
+        }
+      ]
+    },
+    "courses": [
+      "CHEM 101"
+    ],
+    "room_id": "NoyesLaboratory203NoyesLaboratory-300",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Noyes Laboratory 204 Noyes Laboratory",
+    "room": "300",
+    "usage": {
+      "Monday": [
+        {
+          "start": "13:00",
+          "end": "13:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "13:00",
+          "end": "13:50"
+        }
+      ]
+    },
+    "courses": [
+      "CHEM 101"
+    ],
+    "room_id": "NoyesLaboratory204NoyesLaboratory-300",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Noyes Laboratory",
+    "room": "100",
+    "usage": {
+      "Monday": [
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        },
+        {
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "start": "15:00",
+          "end": "15:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "16:00",
+          "end": "16:50"
+        },
+        {
+          "start": "19:00",
+          "end": "20:50"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "start": "16:00",
+          "end": "16:50"
+        },
+        {
+          "start": "15:00",
+          "end": "15:50"
+        },
+        {
+          "start": "08:00",
+          "end": "08:50"
+        },
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "12:00",
+          "end": "12:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        },
+        {
+          "start": "09:00",
+          "end": "09:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        },
+        {
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "start": "15:00",
+          "end": "15:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "12:00",
+          "end": "12:50"
+        },
+        {
+          "start": "19:00",
+          "end": "20:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "start": "16:00",
+          "end": "16:50"
+        },
+        {
+          "start": "15:00",
+          "end": "15:50"
+        },
+        {
+          "start": "08:00",
+          "end": "08:50"
+        },
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "12:00",
+          "end": "12:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        },
+        {
+          "start": "09:00",
+          "end": "09:50"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "start": "15:00",
+          "end": "15:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "12:00",
+          "end": "12:50"
+        },
+        {
+          "start": "11:00",
+          "end": "11:50"
+        }
+      ]
+    },
+    "courses": [
+      "CHEM 101",
+      "CHEM 102",
+      "CHEM 104",
+      "CHEM 202",
+      "CHEM 203",
+      "CHEM 223",
+      "CHEM 233",
+      "CHEM 237",
+      "CHEM 315",
+      "CHEM 494"
+    ],
+    "room_id": "NoyesLaboratory-100",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Noyes Laboratory 204 Noyes Laboratory",
+    "room": "157",
+    "usage": {
+      "Monday": [
+        {
+          "start": "08:00",
+          "end": "08:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "08:00",
+          "end": "08:50"
+        }
+      ]
+    },
+    "courses": [
+      "CHEM 101"
+    ],
+    "room_id": "NoyesLaboratory204NoyesLaboratory-157",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Noyes Laboratory 204 Noyes Laboratory",
+    "room": "164",
+    "usage": {
+      "Monday": [
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ]
+    },
+    "courses": [
+      "CHEM 101"
+    ],
+    "room_id": "NoyesLaboratory204NoyesLaboratory-164",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Noyes Laboratory 304 Noyes Laboratory",
+    "room": "165",
+    "usage": {
+      "Monday": [
+        {
+          "start": "09:00",
+          "end": "09:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "09:00",
+          "end": "09:50"
+        }
+      ]
+    },
+    "courses": [
+      "CHEM 101"
+    ],
+    "room_id": "NoyesLaboratory304NoyesLaboratory-165",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Noyes Laboratory 304 Noyes Laboratory",
+    "room": "164",
+    "usage": {
+      "Monday": [
+        {
+          "start": "12:00",
+          "end": "12:50"
+        },
+        {
+          "start": "08:00",
+          "end": "08:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "12:00",
+          "end": "12:50"
+        },
+        {
+          "start": "08:00",
+          "end": "08:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        }
+      ]
+    },
+    "courses": [
+      "CHEM 101"
+    ],
+    "room_id": "NoyesLaboratory304NoyesLaboratory-164",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Noyes Laboratory 304 Noyes Laboratory",
+    "room": "157",
+    "usage": {
+      "Monday": [
+        {
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "start": "16:00",
+          "end": "16:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "start": "16:00",
+          "end": "16:50"
+        }
+      ]
+    },
+    "courses": [
+      "CHEM 101"
+    ],
+    "room_id": "NoyesLaboratory304NoyesLaboratory-157",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Noyes Laboratory 300 Noyes Laboratory",
+    "room": "157",
+    "usage": {
+      "Monday": [
+        {
+          "start": "12:00",
+          "end": "12:50"
+        },
+        {
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "start": "15:00",
+          "end": "15:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "12:00",
+          "end": "12:50"
+        },
+        {
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "start": "15:00",
+          "end": "15:50"
+        }
+      ]
+    },
+    "courses": [
+      "CHEM 101"
+    ],
+    "room_id": "NoyesLaboratory300NoyesLaboratory-157",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Noyes Laboratory 301 Noyes Laboratory",
+    "room": "301",
+    "usage": {
+      "Monday": [
+        {
+          "start": "08:00",
+          "end": "08:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        },
+        {
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "start": "16:00",
+          "end": "16:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "08:00",
+          "end": "08:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        },
+        {
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "start": "16:00",
+          "end": "16:50"
+        }
+      ]
+    },
+    "courses": [
+      "CHEM 101"
+    ],
+    "room_id": "NoyesLaboratory301NoyesLaboratory-301",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Noyes Laboratory 300 Noyes Laboratory",
+    "room": "162",
+    "usage": {
+      "Monday": [
+        {
+          "start": "09:00",
+          "end": "09:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "09:00",
+          "end": "09:50"
+        }
+      ]
+    },
+    "courses": [
+      "CHEM 101"
+    ],
+    "room_id": "NoyesLaboratory300NoyesLaboratory-162",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Noyes Laboratory 301 Noyes Laboratory",
+    "room": "157",
+    "usage": {
+      "Monday": [
+        {
+          "start": "13:00",
+          "end": "13:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "13:00",
+          "end": "13:50"
+        }
+      ]
+    },
+    "courses": [
+      "CHEM 101"
+    ],
+    "room_id": "NoyesLaboratory301NoyesLaboratory-157",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Noyes Laboratory 303 Noyes Laboratory",
+    "room": "301",
+    "usage": {
+      "Monday": [
+        {
+          "start": "12:00",
+          "end": "12:50"
+        },
+        {
+          "start": "15:00",
+          "end": "15:50"
+        },
+        {
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "11:00",
+          "end": "11:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "12:00",
+          "end": "12:50"
+        },
+        {
+          "start": "15:00",
+          "end": "15:50"
+        },
+        {
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "11:00",
+          "end": "11:50"
+        }
+      ]
+    },
+    "courses": [
+      "CHEM 101"
+    ],
+    "room_id": "NoyesLaboratory303NoyesLaboratory-301",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Noyes Laboratory 301 Noyes Laboratory",
+    "room": "162",
+    "usage": {
+      "Monday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ]
+    },
+    "courses": [
+      "CHEM 101"
+    ],
+    "room_id": "NoyesLaboratory301NoyesLaboratory-162",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Noyes Laboratory 2012 Chemistry Annex",
+    "room": "162",
+    "usage": {
+      "Monday": [
+        {
+          "start": "08:00",
+          "end": "08:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "08:00",
+          "end": "08:50"
+        }
+      ]
+    },
+    "courses": [
+      "CHEM 101"
+    ],
+    "room_id": "NoyesLaboratory2012ChemistryAnnex-162",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Noyes Laboratory 300A Noyes Laboratory",
+    "room": "162",
+    "usage": {
+      "Monday": [
+        {
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "start": "12:00",
+          "end": "12:50"
+        },
+        {
+          "start": "15:00",
+          "end": "15:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "start": "12:00",
+          "end": "12:50"
+        },
+        {
+          "start": "15:00",
+          "end": "15:50"
+        }
+      ]
+    },
+    "courses": [
+      "CHEM 101"
+    ],
+    "room_id": "NoyesLaboratory300ANoyesLaboratory-162",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Noyes Laboratory 203 Noyes Laboratory",
+    "room": "162",
+    "usage": {
+      "Monday": [
+        {
+          "start": "16:00",
+          "end": "16:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "16:00",
+          "end": "16:50"
+        }
+      ]
+    },
+    "courses": [
+      "CHEM 101"
+    ],
+    "room_id": "NoyesLaboratory203NoyesLaboratory-162",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Noyes Laboratory",
+    "room": "304",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "13:00",
+          "end": "13:50"
+        },
+        {
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "12:00",
+          "end": "12:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "12:00",
+          "end": "12:50"
+        },
+        {
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        },
+        {
+          "start": "08:00",
+          "end": "08:50"
+        },
+        {
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "start": "15:00",
+          "end": "15:50"
+        },
+        {
+          "start": "16:00",
+          "end": "16:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "13:00",
+          "end": "13:50"
+        },
+        {
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "12:00",
+          "end": "12:50"
+        },
+        {
+          "start": "09:00",
+          "end": "09:50"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "12:00",
+          "end": "12:50"
+        },
+        {
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        },
+        {
+          "start": "08:00",
+          "end": "08:50"
+        },
+        {
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "start": "15:00",
+          "end": "15:50"
+        },
+        {
+          "start": "16:00",
+          "end": "16:50"
+        }
+      ]
+    },
+    "courses": [
+      "CHEM 102",
+      "CHEM 104"
+    ],
+    "room_id": "NoyesLaboratory-304",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Noyes Laboratory",
+    "room": "300",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "12:00",
+          "end": "12:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        },
+        {
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "start": "16:00",
+          "end": "16:50"
+        },
+        {
+          "start": "15:00",
+          "end": "15:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "start": "16:00",
+          "end": "16:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "12:00",
+          "end": "12:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        },
+        {
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "start": "16:00",
+          "end": "16:50"
+        },
+        {
+          "start": "15:00",
+          "end": "15:50"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "09:00",
+          "end": "09:50"
+        }
+      ]
+    },
+    "courses": [
+      "CHEM 102",
+      "CHEM 104",
+      "CHEM 150"
+    ],
+    "room_id": "NoyesLaboratory-300",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Noyes Laboratory",
+    "room": "303",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "15:00",
+          "end": "15:50"
+        },
+        {
+          "start": "16:00",
+          "end": "16:50"
+        },
+        {
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "12:00",
+          "end": "12:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        },
+        {
+          "start": "14:00",
+          "end": "14:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "15:00",
+          "end": "15:50"
+        },
+        {
+          "start": "16:00",
+          "end": "16:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        },
+        {
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "12:00",
+          "end": "12:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "15:00",
+          "end": "15:50"
+        },
+        {
+          "start": "16:00",
+          "end": "16:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        },
+        {
+          "start": "12:00",
+          "end": "12:50"
+        },
+        {
+          "start": "14:00",
+          "end": "14:50"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "15:00",
+          "end": "15:50"
+        },
+        {
+          "start": "16:00",
+          "end": "16:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        },
+        {
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "12:00",
+          "end": "12:50"
+        }
+      ]
+    },
+    "courses": [
+      "CHEM 102",
+      "CHEM 104"
+    ],
+    "room_id": "NoyesLaboratory-303",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Noyes Laboratory",
+    "room": "203",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "12:00",
+          "end": "12:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        },
+        {
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "start": "15:00",
+          "end": "15:50"
+        },
+        {
+          "start": "08:00",
+          "end": "08:50"
+        },
+        {
+          "start": "16:00",
+          "end": "16:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "start": "08:00",
+          "end": "08:50"
+        },
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "12:00",
+          "end": "12:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "start": "15:00",
+          "end": "15:50"
+        },
+        {
+          "start": "16:00",
+          "end": "16:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "12:00",
+          "end": "12:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        },
+        {
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "start": "15:00",
+          "end": "15:50"
+        },
+        {
+          "start": "08:00",
+          "end": "08:50"
+        },
+        {
+          "start": "16:00",
+          "end": "16:50"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "start": "08:00",
+          "end": "08:50"
+        },
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "12:00",
+          "end": "12:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "start": "15:00",
+          "end": "15:50"
+        },
+        {
+          "start": "16:00",
+          "end": "16:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        }
+      ]
+    },
+    "courses": [
+      "CHEM 102"
+    ],
+    "room_id": "NoyesLaboratory-203",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Noyes Laboratory",
+    "room": "209",
+    "usage": {
+      "Monday": [
+        {
+          "start": "11:00",
+          "end": "12:50"
+        },
+        {
+          "start": "15:00",
+          "end": "16:50"
+        },
+        {
+          "start": "13:00",
+          "end": "14:50"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "11:00",
+          "end": "12:50"
+        },
+        {
+          "start": "13:00",
+          "end": "14:50"
+        },
+        {
+          "start": "09:00",
+          "end": "10:50"
+        },
+        {
+          "start": "15:00",
+          "end": "16:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "11:00",
+          "end": "12:50"
+        },
+        {
+          "start": "09:00",
+          "end": "10:50"
+        },
+        {
+          "start": "13:00",
+          "end": "14:50"
+        },
+        {
+          "start": "15:00",
+          "end": "16:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "11:00",
+          "end": "12:50"
+        },
+        {
+          "start": "13:00",
+          "end": "14:50"
+        },
+        {
+          "start": "09:00",
+          "end": "10:50"
+        },
+        {
+          "start": "15:00",
+          "end": "16:50"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "11:00",
+          "end": "12:50"
+        },
+        {
+          "start": "09:00",
+          "end": "10:50"
+        },
+        {
+          "start": "13:00",
+          "end": "14:50"
+        }
+      ]
+    },
+    "courses": [
+      "CHEM 102",
+      "CHEM 104",
+      "CHEM 199",
+      "CHEM 236"
+    ],
+    "room_id": "NoyesLaboratory-209",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Noyes Laboratory",
+    "room": "204",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "12:00",
+          "end": "12:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        },
+        {
+          "start": "08:00",
+          "end": "08:50"
+        },
+        {
+          "start": "16:00",
+          "end": "16:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "start": "15:00",
+          "end": "15:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "08:00",
+          "end": "08:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        },
+        {
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "start": "16:00",
+          "end": "16:50"
+        },
+        {
+          "start": "12:00",
+          "end": "12:50"
+        },
+        {
+          "start": "15:00",
+          "end": "15:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "12:00",
+          "end": "12:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        },
+        {
+          "start": "08:00",
+          "end": "08:50"
+        },
+        {
+          "start": "16:00",
+          "end": "16:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "start": "15:00",
+          "end": "15:50"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "08:00",
+          "end": "08:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        },
+        {
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "start": "16:00",
+          "end": "16:50"
+        },
+        {
+          "start": "12:00",
+          "end": "12:50"
+        },
+        {
+          "start": "15:00",
+          "end": "15:50"
+        }
+      ]
+    },
+    "courses": [
+      "CHEM 102"
+    ],
+    "room_id": "NoyesLaboratory-204",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Chemistry Annex",
+    "room": "152",
+    "usage": {
+      "Monday": [
+        {
+          "start": "13:00",
+          "end": "14:50"
+        },
+        {
+          "start": "15:00",
+          "end": "16:50"
+        },
+        {
+          "start": "17:00",
+          "end": "18:50"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "13:00",
+          "end": "14:50"
+        },
+        {
+          "start": "15:00",
+          "end": "16:50"
+        },
+        {
+          "start": "17:00",
+          "end": "18:50"
+        },
+        {
+          "start": "09:00",
+          "end": "10:50"
+        },
+        {
+          "start": "11:00",
+          "end": "12:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "09:00",
+          "end": "10:50"
+        },
+        {
+          "start": "11:00",
+          "end": "12:50"
+        },
+        {
+          "start": "13:00",
+          "end": "14:50"
+        },
+        {
+          "start": "15:00",
+          "end": "16:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "13:00",
+          "end": "14:50"
+        },
+        {
+          "start": "15:00",
+          "end": "16:50"
+        },
+        {
+          "start": "09:00",
+          "end": "10:50"
+        },
+        {
+          "start": "11:00",
+          "end": "12:50"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "09:00",
+          "end": "10:50"
+        },
+        {
+          "start": "11:00",
+          "end": "12:50"
+        },
+        {
+          "start": "13:00",
+          "end": "14:50"
+        }
+      ]
+    },
+    "courses": [
+      "CHEM 102",
+      "CHEM 104",
+      "CHEM 199",
+      "CHEM 202"
+    ],
+    "room_id": "ChemistryAnnex-152",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Chemistry Annex",
+    "room": "2012",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "16:00",
+          "end": "16:50"
+        },
+        {
+          "start": "08:00",
+          "end": "08:50"
+        },
+        {
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "12:00",
+          "end": "12:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        },
+        {
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "start": "15:00",
+          "end": "15:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "12:00",
+          "end": "12:50"
+        },
+        {
+          "start": "16:00",
+          "end": "16:50"
+        },
+        {
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "start": "15:00",
+          "end": "15:50"
+        },
+        {
+          "start": "08:00",
+          "end": "08:50"
+        },
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        },
+        {
+          "start": "14:00",
+          "end": "14:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "12:00",
+          "end": "12:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        },
+        {
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "start": "15:00",
+          "end": "15:50"
+        },
+        {
+          "start": "08:00",
+          "end": "08:50"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "12:00",
+          "end": "12:50"
+        },
+        {
+          "start": "16:00",
+          "end": "16:50"
+        },
+        {
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "start": "15:00",
+          "end": "15:50"
+        },
+        {
+          "start": "08:00",
+          "end": "08:50"
+        },
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        },
+        {
+          "start": "14:00",
+          "end": "14:50"
+        }
+      ]
+    },
+    "courses": [
+      "CHEM 102",
+      "CHEM 104",
+      "CHEM 232"
+    ],
+    "room_id": "ChemistryAnnex-2012",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Chemistry Annex",
+    "room": "006",
+    "usage": {
+      "Monday": [
+        {
+          "start": "12:00",
+          "end": "13:50"
+        },
+        {
+          "start": "14:00",
+          "end": "15:50"
+        },
+        {
+          "start": "16:00",
+          "end": "17:50"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "10:00",
+          "end": "11:50"
+        },
+        {
+          "start": "12:00",
+          "end": "13:50"
+        },
+        {
+          "start": "14:00",
+          "end": "15:50"
+        },
+        {
+          "start": "16:00",
+          "end": "17:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "10:00",
+          "end": "11:50"
+        },
+        {
+          "start": "12:00",
+          "end": "13:50"
+        },
+        {
+          "start": "14:00",
+          "end": "15:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "10:00",
+          "end": "11:50"
+        },
+        {
+          "start": "12:00",
+          "end": "13:50"
+        },
+        {
+          "start": "14:00",
+          "end": "15:50"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "10:00",
+          "end": "11:50"
+        },
+        {
+          "start": "12:00",
+          "end": "13:50"
+        },
+        {
+          "start": "14:00",
+          "end": "15:50"
+        }
+      ]
+    },
+    "courses": [
+      "CHEM 103"
+    ],
+    "room_id": "ChemistryAnnex-006",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Chemistry Annex",
+    "room": "007",
+    "usage": {
+      "Monday": [
+        {
+          "start": "12:00",
+          "end": "13:50"
+        },
+        {
+          "start": "14:00",
+          "end": "15:50"
+        },
+        {
+          "start": "16:00",
+          "end": "17:50"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "10:00",
+          "end": "11:50"
+        },
+        {
+          "start": "12:00",
+          "end": "13:50"
+        },
+        {
+          "start": "14:00",
+          "end": "15:50"
+        },
+        {
+          "start": "16:00",
+          "end": "17:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "10:00",
+          "end": "11:50"
+        },
+        {
+          "start": "12:00",
+          "end": "13:50"
+        },
+        {
+          "start": "14:00",
+          "end": "15:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "10:00",
+          "end": "11:50"
+        },
+        {
+          "start": "12:00",
+          "end": "13:50"
+        },
+        {
+          "start": "14:00",
+          "end": "15:50"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "10:00",
+          "end": "11:50"
+        },
+        {
+          "start": "12:00",
+          "end": "13:50"
+        },
+        {
+          "start": "14:00",
+          "end": "15:50"
+        }
+      ]
+    },
+    "courses": [
+      "CHEM 103"
+    ],
+    "room_id": "ChemistryAnnex-007",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Chemistry Annex",
+    "room": "1006",
+    "usage": {
+      "Monday": [
+        {
+          "start": "12:00",
+          "end": "13:50"
+        },
+        {
+          "start": "14:00",
+          "end": "15:50"
+        },
+        {
+          "start": "16:00",
+          "end": "17:50"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "08:00",
+          "end": "09:50"
+        },
+        {
+          "start": "10:00",
+          "end": "11:50"
+        },
+        {
+          "start": "12:00",
+          "end": "13:50"
+        },
+        {
+          "start": "14:00",
+          "end": "15:50"
+        },
+        {
+          "start": "16:00",
+          "end": "17:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "08:00",
+          "end": "09:50"
+        },
+        {
+          "start": "10:00",
+          "end": "11:50"
+        },
+        {
+          "start": "12:00",
+          "end": "13:50"
+        },
+        {
+          "start": "14:00",
+          "end": "15:50"
+        },
+        {
+          "start": "16:00",
+          "end": "17:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "08:00",
+          "end": "09:50"
+        },
+        {
+          "start": "10:00",
+          "end": "11:50"
+        },
+        {
+          "start": "12:00",
+          "end": "13:50"
+        },
+        {
+          "start": "14:00",
+          "end": "15:50"
+        },
+        {
+          "start": "16:00",
+          "end": "17:50"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "08:00",
+          "end": "09:50"
+        },
+        {
+          "start": "10:00",
+          "end": "11:50"
+        },
+        {
+          "start": "12:00",
+          "end": "13:50"
+        },
+        {
+          "start": "14:00",
+          "end": "15:50"
+        }
+      ]
+    },
+    "courses": [
+      "CHEM 103"
+    ],
+    "room_id": "ChemistryAnnex-1006",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Chemistry Annex",
+    "room": "1007",
+    "usage": {
+      "Monday": [
+        {
+          "start": "12:00",
+          "end": "13:50"
+        },
+        {
+          "start": "14:00",
+          "end": "15:50"
+        },
+        {
+          "start": "16:00",
+          "end": "17:50"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "08:00",
+          "end": "09:50"
+        },
+        {
+          "start": "10:00",
+          "end": "11:50"
+        },
+        {
+          "start": "12:00",
+          "end": "13:50"
+        },
+        {
+          "start": "14:00",
+          "end": "15:50"
+        },
+        {
+          "start": "16:00",
+          "end": "17:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "08:00",
+          "end": "09:50"
+        },
+        {
+          "start": "10:00",
+          "end": "11:50"
+        },
+        {
+          "start": "12:00",
+          "end": "13:50"
+        },
+        {
+          "start": "14:00",
+          "end": "15:50"
+        },
+        {
+          "start": "16:00",
+          "end": "17:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "08:00",
+          "end": "09:50"
+        },
+        {
+          "start": "10:00",
+          "end": "11:50"
+        },
+        {
+          "start": "12:00",
+          "end": "13:50"
+        },
+        {
+          "start": "14:00",
+          "end": "15:50"
+        },
+        {
+          "start": "16:00",
+          "end": "17:50"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "10:00",
+          "end": "11:50"
+        },
+        {
+          "start": "12:00",
+          "end": "13:50"
+        },
+        {
+          "start": "14:00",
+          "end": "15:50"
+        }
+      ]
+    },
+    "courses": [
+      "CHEM 103"
+    ],
+    "room_id": "ChemistryAnnex-1007",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Noyes Laboratory",
+    "room": "164",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "15:00",
+          "end": "16:50"
+        },
+        {
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "15:00",
+          "end": "16:50"
+        },
+        {
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "12:00",
+          "end": "12:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "CHEM 104",
+      "CHEM 202",
+      "CHEM 232",
+      "CHEM 236"
+    ],
+    "room_id": "NoyesLaboratory-164",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Chemistry Annex",
+    "room": "2006",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "08:00",
+          "end": "09:50"
+        },
+        {
+          "start": "10:00",
+          "end": "11:50"
+        },
+        {
+          "start": "12:00",
+          "end": "13:50"
+        },
+        {
+          "start": "14:00",
+          "end": "15:50"
+        },
+        {
+          "start": "16:00",
+          "end": "17:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "12:00",
+          "end": "13:50"
+        },
+        {
+          "start": "14:00",
+          "end": "15:50"
+        },
+        {
+          "start": "16:00",
+          "end": "17:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "08:00",
+          "end": "09:50"
+        },
+        {
+          "start": "10:00",
+          "end": "11:50"
+        },
+        {
+          "start": "12:00",
+          "end": "13:50"
+        },
+        {
+          "start": "14:00",
+          "end": "15:50"
+        },
+        {
+          "start": "16:00",
+          "end": "17:50"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "08:00",
+          "end": "09:50"
+        },
+        {
+          "start": "10:00",
+          "end": "11:50"
+        },
+        {
+          "start": "12:00",
+          "end": "13:50"
+        },
+        {
+          "start": "14:00",
+          "end": "15:50"
+        }
+      ]
+    },
+    "courses": [
+      "CHEM 105"
+    ],
+    "room_id": "ChemistryAnnex-2006",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Chemistry Annex",
+    "room": "2007",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "10:00",
+          "end": "11:50"
+        },
+        {
+          "start": "12:00",
+          "end": "13:50"
+        },
+        {
+          "start": "14:00",
+          "end": "15:50"
+        },
+        {
+          "start": "16:00",
+          "end": "17:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "12:00",
+          "end": "13:50"
+        },
+        {
+          "start": "14:00",
+          "end": "15:50"
+        },
+        {
+          "start": "16:00",
+          "end": "17:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "10:00",
+          "end": "11:50"
+        },
+        {
+          "start": "12:00",
+          "end": "13:50"
+        },
+        {
+          "start": "14:00",
+          "end": "15:50"
+        },
+        {
+          "start": "16:00",
+          "end": "17:50"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "10:00",
+          "end": "11:50"
+        },
+        {
+          "start": "12:00",
+          "end": "13:50"
+        }
+      ]
+    },
+    "courses": [
+      "CHEM 105"
+    ],
+    "room_id": "ChemistryAnnex-2007",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Noyes Laboratory",
+    "room": "301",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "start": "08:00",
+          "end": "08:50"
+        },
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "12:00",
+          "end": "12:50"
+        },
+        {
+          "start": "16:00",
+          "end": "16:50"
+        },
+        {
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "start": "15:00",
+          "end": "15:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "11:00",
+          "end": "11:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "08:00",
+          "end": "08:50"
+        },
+        {
+          "start": "12:00",
+          "end": "12:50"
+        },
+        {
+          "start": "16:00",
+          "end": "16:50"
+        },
+        {
+          "start": "15:00",
+          "end": "15:50"
+        },
+        {
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "CHEM 150",
+      "CHEM 202",
+      "CHEM 232"
+    ],
+    "room_id": "NoyesLaboratory-301",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Lincoln Hall",
+    "room": "1000",
+    "usage": {
+      "Monday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ]
+    },
+    "courses": [
+      "CHEM 199"
+    ],
+    "room_id": "LincolnHall-1000",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Chemistry Annex",
+    "room": "3026",
+    "usage": {
+      "Monday": [
+        {
+          "start": "13:00",
+          "end": "16:50"
+        },
+        {
+          "start": "13:00",
+          "end": "16:50"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "13:00",
+          "end": "16:50"
+        },
+        {
+          "start": "13:00",
+          "end": "16:50"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "13:00",
+          "end": "16:50"
+        },
+        {
+          "start": "13:00",
+          "end": "16:50"
+        },
+        {
+          "start": "08:00",
+          "end": "11:50"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "13:00",
+          "end": "16:50"
+        },
+        {
+          "start": "13:00",
+          "end": "16:50"
+        }
+      ]
+    },
+    "courses": [
+      "CHEM 203"
+    ],
+    "room_id": "ChemistryAnnex-3026",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Chemistry Annex",
+    "room": "1024",
+    "usage": {
+      "Monday": [
+        {
+          "start": "13:00",
+          "end": "13:50"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "15:30",
+          "end": "16:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "13:00",
+          "end": "13:50"
+        },
+        {
+          "start": "17:30",
+          "end": "19:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "15:30",
+          "end": "16:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "CHEM 222",
+      "CHEM 515",
+      "CHEM 585",
+      "CHEM 591"
+    ],
+    "room_id": "ChemistryAnnex-1024",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Chemistry Annex",
+    "room": "3006",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "13:00",
+          "end": "16:50"
+        },
+        {
+          "start": "08:00",
+          "end": "11:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "08:00",
+          "end": "11:50"
+        },
+        {
+          "start": "14:00",
+          "end": "17:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "13:00",
+          "end": "16:50"
+        },
+        {
+          "start": "08:00",
+          "end": "11:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "CHEM 223"
+    ],
+    "room_id": "ChemistryAnnex-3006",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Campus Instructional Facility",
+    "room": "3039",
+    "usage": {
+      "Monday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ]
+    },
+    "courses": [
+      "CHEM 232"
+    ],
+    "room_id": "CampusInstructionalFacility-3039",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Sidney Lu Mech Engr Bldg",
+    "room": "2055",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "15:00",
+          "end": "15:50"
+        },
+        {
+          "start": "16:00",
+          "end": "16:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "CHEM 232"
+    ],
+    "room_id": "SidneyLuMechEngrBldg-2055",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Noyes Laboratory",
+    "room": "255",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "08:00",
+          "end": "11:50"
+        },
+        {
+          "start": "13:00",
+          "end": "16:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "13:00",
+          "end": "16:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "08:00",
+          "end": "11:50"
+        },
+        {
+          "start": "13:00",
+          "end": "16:50"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "13:00",
+          "end": "16:50"
+        }
+      ]
+    },
+    "courses": [
+      "CHEM 233"
+    ],
+    "room_id": "NoyesLaboratory-255",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Noyes Laboratory",
+    "room": "256",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "08:00",
+          "end": "11:50"
+        },
+        {
+          "start": "13:00",
+          "end": "16:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "13:00",
+          "end": "16:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "08:00",
+          "end": "11:50"
+        },
+        {
+          "start": "13:00",
+          "end": "16:50"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "13:00",
+          "end": "16:50"
+        }
+      ]
+    },
+    "courses": [
+      "CHEM 233"
+    ],
+    "room_id": "NoyesLaboratory-256",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Noyes Laboratory",
+    "room": "257",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "08:00",
+          "end": "11:50"
+        },
+        {
+          "start": "13:00",
+          "end": "16:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "13:00",
+          "end": "16:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "08:00",
+          "end": "11:50"
+        },
+        {
+          "start": "13:00",
+          "end": "16:50"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "13:00",
+          "end": "16:50"
+        }
+      ]
+    },
+    "courses": [
+      "CHEM 233"
+    ],
+    "room_id": "NoyesLaboratory-257",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Noyes Laboratory",
+    "room": "262",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "08:00",
+          "end": "11:50"
+        },
+        {
+          "start": "13:00",
+          "end": "16:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "13:00",
+          "end": "16:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "08:00",
+          "end": "11:50"
+        },
+        {
+          "start": "13:00",
+          "end": "16:50"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "13:00",
+          "end": "16:50"
+        }
+      ]
+    },
+    "courses": [
+      "CHEM 233"
+    ],
+    "room_id": "NoyesLaboratory-262",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Gregory Hall",
+    "room": "112",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "15:00",
+          "end": "15:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "CHEM 233"
+    ],
+    "room_id": "GregoryHall-112",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Loomis Laboratory",
+    "room": "137",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "CHEM 236"
+    ],
+    "room_id": "LoomisLaboratory-137",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Noyes Laboratory",
+    "room": "163",
+    "usage": {
+      "Monday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "12:00",
+          "end": "12:50"
+        },
+        {
+          "start": "15:00",
+          "end": "16:20"
+        },
+        {
+          "start": "09:30",
+          "end": "10:50"
+        },
+        {
+          "start": "15:00",
+          "end": "16:20"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "15:00",
+          "end": "16:20"
+        },
+        {
+          "start": "09:30",
+          "end": "10:50"
+        },
+        {
+          "start": "12:00",
+          "end": "13:50"
+        },
+        {
+          "start": "15:00",
+          "end": "16:20"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ]
+    },
+    "courses": [
+      "CHEM 236",
+      "CHEM 452",
+      "CHEM 520",
+      "CHEM 534",
+      "CHEM 575",
+      "CHEM 590"
+    ],
+    "room_id": "NoyesLaboratory-163",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Noyes Laboratory",
+    "room": "157",
+    "usage": {
+      "Monday": [
+        {
+          "start": "12:00",
+          "end": "12:50"
+        },
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "17:30",
+          "end": "18:50"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "start": "09:30",
+          "end": "10:50"
+        },
+        {
+          "start": "08:00",
+          "end": "09:20"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "12:00",
+          "end": "12:50"
+        },
+        {
+          "start": "11:00",
+          "end": "11:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "start": "09:30",
+          "end": "10:50"
+        },
+        {
+          "start": "08:00",
+          "end": "09:20"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "11:00",
+          "end": "11:50"
+        }
+      ]
+    },
+    "courses": [
+      "CHEM 236",
+      "CHEM 332",
+      "CHEM 540",
+      "CHEM 544",
+      "CHEM 570",
+      "CHEM 592"
+    ],
+    "room_id": "NoyesLaboratory-157",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Roger Adams Laboratory",
+    "room": "116",
+    "usage": {
+      "Monday": [
+        {
+          "start": "09:00",
+          "end": "09:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "09:00",
+          "end": "09:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "start": "16:00",
+          "end": "17:50"
+        }
+      ]
+    },
+    "courses": [
+      "CHEM 236",
+      "CHEM 525"
+    ],
+    "room_id": "RogerAdamsLaboratory-116",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Noyes Laboratory",
+    "room": "263",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "08:00",
+          "end": "11:50"
+        },
+        {
+          "start": "13:00",
+          "end": "16:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "13:00",
+          "end": "16:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "08:00",
+          "end": "11:50"
+        },
+        {
+          "start": "13:00",
+          "end": "16:50"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "13:00",
+          "end": "16:50"
+        }
+      ]
+    },
+    "courses": [
+      "CHEM 237"
+    ],
+    "room_id": "NoyesLaboratory-263",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Sidney Lu Mech Engr Bldg",
+    "room": "2100",
+    "usage": {
+      "Monday": [
+        {
+          "start": "15:00",
+          "end": "15:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "CHEM 237"
+    ],
+    "room_id": "SidneyLuMechEngrBldg-2100",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Noyes Laboratory",
+    "room": "161",
+    "usage": {
+      "Monday": [
+        {
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "start": "16:00",
+          "end": "16:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ]
+    },
+    "courses": [
+      "CHEM 312",
+      "CHEM 332",
+      "CHEM 440"
+    ],
+    "room_id": "NoyesLaboratory-161",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Noyes Laboratory",
+    "room": "463",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "13:00",
+          "end": "16:50"
+        },
+        {
+          "start": "13:00",
+          "end": "16:50"
+        },
+        {
+          "start": "08:00",
+          "end": "11:50"
+        },
+        {
+          "start": "08:00",
+          "end": "11:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "13:00",
+          "end": "16:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "13:00",
+          "end": "16:50"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "13:00",
+          "end": "16:50"
+        }
+      ]
+    },
+    "courses": [
+      "CHEM 315"
+    ],
+    "room_id": "NoyesLaboratory-463",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Noyes Laboratory",
+    "room": "250",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "13:00",
+          "end": "16:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "13:00",
+          "end": "16:50"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "13:00",
+          "end": "16:50"
+        }
+      ]
+    },
+    "courses": [
+      "CHEM 317"
+    ],
+    "room_id": "NoyesLaboratory-250",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Noyes Laboratory",
+    "room": "217",
+    "usage": {
+      "Monday": [
+        {
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "13:00",
+          "end": "13:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ]
+    },
+    "courses": [
+      "CHEM 317",
+      "CHEM 442"
+    ],
+    "room_id": "NoyesLaboratory-217",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Gregory Hall",
+    "room": "100",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "11:00",
+          "end": "12:20"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "11:00",
+          "end": "12:20"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "CHEM 332"
+    ],
+    "room_id": "GregoryHall-100",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Noyes Laboratory",
+    "room": "165",
+    "usage": {
+      "Monday": [
+        {
+          "start": "16:00",
+          "end": "16:50"
+        },
+        {
+          "start": "12:00",
+          "end": "12:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "11:00",
+          "end": "11:50"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "09:30",
+          "end": "10:50"
+        },
+        {
+          "start": "14:00",
+          "end": "15:20"
+        },
+        {
+          "start": "14:00",
+          "end": "15:20"
+        },
+        {
+          "start": "08:00",
+          "end": "09:20"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "12:00",
+          "end": "12:50"
+        },
+        {
+          "start": "16:00",
+          "end": "16:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "11:00",
+          "end": "11:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "09:30",
+          "end": "10:50"
+        },
+        {
+          "start": "14:00",
+          "end": "15:20"
+        },
+        {
+          "start": "14:00",
+          "end": "15:20"
+        },
+        {
+          "start": "08:00",
+          "end": "09:20"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "11:00",
+          "end": "11:50"
+        }
+      ]
+    },
+    "courses": [
+      "CHEM 332",
+      "CHEM 444",
+      "CHEM 512",
+      "CHEM 518",
+      "CHEM 532",
+      "CHEM 584"
+    ],
+    "room_id": "NoyesLaboratory-165",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Campus Instructional Facility",
+    "room": "3031",
+    "usage": {
+      "Monday": [
+        {
+          "start": "12:00",
+          "end": "12:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "12:00",
+          "end": "12:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "CHEM 420"
+    ],
+    "room_id": "CampusInstructionalFacility-3031",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Noyes Laboratory",
+    "room": "462",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "13:00",
+          "end": "16:50"
+        },
+        {
+          "start": "13:00",
+          "end": "16:50"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "13:00",
+          "end": "16:50"
+        },
+        {
+          "start": "13:00",
+          "end": "16:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "CHEM 445",
+      "CHEM 447"
+    ],
+    "room_id": "NoyesLaboratory-462",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Everitt Laboratory",
+    "room": "2310",
+    "usage": {
+      "Monday": [
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "11:00",
+          "end": "11:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "11:00",
+          "end": "11:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "11:00",
+          "end": "11:50"
+        }
+      ]
+    },
+    "courses": [
+      "CHEM 480"
+    ],
+    "room_id": "EverittLaboratory-2310",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Everitt Laboratory",
+    "room": "1306",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "12:30",
+          "end": "13:50"
+        },
+        {
+          "start": "12:30",
+          "end": "13:50"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "12:30",
+          "end": "13:50"
+        },
+        {
+          "start": "12:30",
+          "end": "13:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "CHEM 488"
+    ],
+    "room_id": "EverittLaboratory-1306",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Chemistry Annex",
+    "room": "3007",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "14:00",
+          "end": "15:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "12:00",
+          "end": "13:50"
+        }
+      ]
+    },
+    "courses": [
+      "CHEM 495"
+    ],
+    "room_id": "ChemistryAnnex-3007",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Noyes Laboratory 217 Noyes Laboratory",
+    "room": "250",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "13:00",
+          "end": "16:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "13:00",
+          "end": "16:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "CHEM 517"
+    ],
+    "room_id": "NoyesLaboratory217NoyesLaboratory-250",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Roger Adams Laboratory 116 Roger Adams Laboratory",
+    "room": "116",
+    "usage": {
+      "Monday": [
+        {
+          "start": "15:30",
+          "end": "17:20"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "15:30",
+          "end": "17:20"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "15:30",
+          "end": "17:20"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "15:30",
+          "end": "17:20"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "CHEM 535"
+    ],
+    "room_id": "RogerAdamsLaboratory116RogerAdamsLaboratory-116",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Lincoln Hall",
+    "room": "1002",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "12:30",
+          "end": "13:50"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "12:30",
+          "end": "13:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "CHEM 582"
+    ],
+    "room_id": "LincolnHall-1002",
+    "semester": "Fall 2025"
+  }
+]

@@ -1,0 +1,520 @@
+[
+  {
+    "building": "English Building",
+    "room": "36",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "09:30",
+          "end": "10:45"
+        },
+        {
+          "start": "11:00",
+          "end": "12:15"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "09:30",
+          "end": "10:45"
+        },
+        {
+          "start": "11:00",
+          "end": "12:15"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "CW 100"
+    ],
+    "room_id": "EnglishBuilding-36",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "English Building",
+    "room": "61",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "11:00",
+          "end": "12:15"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "11:00",
+          "end": "12:15"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "CW 100"
+    ],
+    "room_id": "EnglishBuilding-61",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Gregory Hall",
+    "room": "331",
+    "usage": {
+      "Monday": [
+        {
+          "start": "12:30",
+          "end": "13:45"
+        },
+        {
+          "start": "11:00",
+          "end": "12:15"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "12:30",
+          "end": "13:45"
+        },
+        {
+          "start": "14:00",
+          "end": "15:15"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "12:30",
+          "end": "13:45"
+        },
+        {
+          "start": "11:00",
+          "end": "12:15"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "12:30",
+          "end": "13:45"
+        },
+        {
+          "start": "14:00",
+          "end": "15:15"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "CW 100",
+      "CW 106"
+    ],
+    "room_id": "GregoryHall-331",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "English Building",
+    "room": "115",
+    "usage": {
+      "Monday": [
+        {
+          "start": "09:30",
+          "end": "10:45"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "09:30",
+          "end": "10:45"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "09:30",
+          "end": "10:45"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "09:30",
+          "end": "10:45"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "CW 100",
+      "CW 243"
+    ],
+    "room_id": "EnglishBuilding-115",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "English Building",
+    "room": "123",
+    "usage": {
+      "Monday": [
+        {
+          "start": "09:30",
+          "end": "10:45"
+        },
+        {
+          "start": "12:30",
+          "end": "13:45"
+        },
+        {
+          "start": "11:00",
+          "end": "12:15"
+        },
+        {
+          "start": "11:00",
+          "end": "12:15"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "11:00",
+          "end": "12:15"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "09:30",
+          "end": "10:45"
+        },
+        {
+          "start": "12:30",
+          "end": "13:45"
+        },
+        {
+          "start": "11:00",
+          "end": "12:15"
+        },
+        {
+          "start": "11:00",
+          "end": "12:15"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "11:00",
+          "end": "12:15"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "CW 104",
+      "CW 202",
+      "CW 204",
+      "CW 406"
+    ],
+    "room_id": "EnglishBuilding-123",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "English Building",
+    "room": "113",
+    "usage": {
+      "Monday": [
+        {
+          "start": "15:30",
+          "end": "16:45"
+        },
+        {
+          "start": "14:00",
+          "end": "15:15"
+        },
+        {
+          "start": "12:30",
+          "end": "13:45"
+        },
+        {
+          "start": "09:30",
+          "end": "10:45"
+        },
+        {
+          "start": "11:00",
+          "end": "12:15"
+        },
+        {
+          "start": "11:00",
+          "end": "12:15"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "09:30",
+          "end": "10:45"
+        },
+        {
+          "start": "11:00",
+          "end": "12:15"
+        },
+        {
+          "start": "12:30",
+          "end": "13:50"
+        },
+        {
+          "start": "14:00",
+          "end": "15:15"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "15:30",
+          "end": "16:45"
+        },
+        {
+          "start": "14:00",
+          "end": "15:15"
+        },
+        {
+          "start": "12:30",
+          "end": "13:45"
+        },
+        {
+          "start": "09:30",
+          "end": "10:45"
+        },
+        {
+          "start": "11:00",
+          "end": "12:15"
+        },
+        {
+          "start": "11:00",
+          "end": "12:15"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "09:30",
+          "end": "10:45"
+        },
+        {
+          "start": "11:00",
+          "end": "12:15"
+        },
+        {
+          "start": "12:30",
+          "end": "13:50"
+        },
+        {
+          "start": "14:00",
+          "end": "15:15"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "CW 104",
+      "CW 106",
+      "CW 204",
+      "CW 404"
+    ],
+    "room_id": "EnglishBuilding-113",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "English Building",
+    "room": "125",
+    "usage": {
+      "Monday": [
+        {
+          "start": "12:30",
+          "end": "13:45"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "12:30",
+          "end": "13:45"
+        }
+      ],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "CW 104"
+    ],
+    "room_id": "EnglishBuilding-125",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "English Building",
+    "room": "131",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "14:00",
+          "end": "15:15"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "14:00",
+          "end": "15:15"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "CW 200"
+    ],
+    "room_id": "EnglishBuilding-131",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "English Building",
+    "room": "135",
+    "usage": {
+      "Monday": [
+        {
+          "start": "11:00",
+          "end": "12:20"
+        },
+        {
+          "start": "15:30",
+          "end": "16:45"
+        },
+        {
+          "start": "15:30",
+          "end": "16:45"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "11:00",
+          "end": "12:20"
+        },
+        {
+          "start": "15:30",
+          "end": "16:45"
+        },
+        {
+          "start": "15:30",
+          "end": "16:45"
+        }
+      ],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "CW 206",
+      "CW 404"
+    ],
+    "room_id": "EnglishBuilding-135",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Wohlers Hall",
+    "room": "174",
+    "usage": {
+      "Monday": [
+        {
+          "start": "11:00",
+          "end": "12:15"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "11:00",
+          "end": "12:15"
+        }
+      ],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "CW 208"
+    ],
+    "room_id": "WohlersHall-174",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "English Building",
+    "room": "23",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "12:30",
+          "end": "13:45"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "12:30",
+          "end": "13:45"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "CW 460"
+    ],
+    "room_id": "EnglishBuilding-23",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "English Building",
+    "room": "127",
+    "usage": {
+      "Monday": [
+        {
+          "start": "12:30",
+          "end": "13:45"
+        },
+        {
+          "start": "12:30",
+          "end": "13:45"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "12:30",
+          "end": "13:45"
+        },
+        {
+          "start": "12:30",
+          "end": "13:45"
+        }
+      ],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "CW 463"
+    ],
+    "room_id": "EnglishBuilding-127",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Literatures, Cultures, & Ling",
+    "room": "1112",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "14:00",
+          "end": "16:30"
+        }
+      ],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "CW 500"
+    ],
+    "room_id": "Literatures,Cultures,&Ling-1112",
+    "semester": "Fall 2025"
+  }
+]

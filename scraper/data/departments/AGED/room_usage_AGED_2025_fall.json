@@ -1,0 +1,48 @@
+[
+  {
+    "building": "Bevier Hall",
+    "room": "122",
+    "usage": {
+      "Monday": [
+        {
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "start": "10:00",
+          "end": "11:20"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "14:00",
+          "end": "16:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "start": "10:00",
+          "end": "11:20"
+        }
+      ],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "09:00",
+          "end": "09:50"
+        }
+      ]
+    },
+    "courses": [
+      "AGED 220",
+      "AGED 350",
+      "AGED 421"
+    ],
+    "room_id": "BevierHall-122",
+    "semester": "Fall 2025"
+  }
+]

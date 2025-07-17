@@ -1,0 +1,79 @@
+[
+  {
+    "building": "Literatures, Cultures, & Ling",
+    "room": "1118",
+    "usage": {
+      "Monday": [
+        {
+          "start": "12:00",
+          "end": "12:50"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "12:00",
+          "end": "12:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "12:00",
+          "end": "12:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "12:00",
+          "end": "12:50"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "12:00",
+          "end": "12:50"
+        }
+      ]
+    },
+    "courses": [
+      "HNDI 201"
+    ],
+    "room_id": "Literatures,Cultures,&Ling-1118",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "English Building",
+    "room": "125",
+    "usage": {
+      "Monday": [
+        {
+          "start": "14:00",
+          "end": "14:50"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "14:00",
+          "end": "14:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "14:00",
+          "end": "14:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "14:00",
+          "end": "14:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "HNDI 403"
+    ],
+    "room_id": "EnglishBuilding-125",
+    "semester": "Fall 2025"
+  }
+]

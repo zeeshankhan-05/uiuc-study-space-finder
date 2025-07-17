@@ -1,0 +1,84 @@
+[
+  {
+    "building": "Armory 100 Armory 101 Armory",
+    "room": "100",
+    "usage": {
+      "Monday": [
+        {
+          "start": "06:00",
+          "end": "07:20"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "06:00",
+          "end": "07:20"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "06:00",
+          "end": "07:20"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "AFAS 102"
+    ],
+    "room_id": "Armory100Armory101Armory-100",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Armory",
+    "room": "384",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "12:30",
+          "end": "13:50"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "12:30",
+          "end": "13:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "AFAS 120"
+    ],
+    "room_id": "Armory-384",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Armory",
+    "room": "325",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "13:00",
+          "end": "13:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "AFAS 221"
+    ],
+    "room_id": "Armory-325",
+    "semester": "Fall 2025"
+  }
+]

@@ -1,0 +1,159 @@
+[
+  {
+    "building": "Medical Sciences Building",
+    "room": "274",
+    "usage": {
+      "Monday": [
+        {
+          "start": "08:00",
+          "end": "11:50"
+        },
+        {
+          "start": "08:00",
+          "end": "11:50"
+        },
+        {
+          "start": "08:00",
+          "end": "11:50"
+        },
+        {
+          "start": "13:00",
+          "end": "16:50"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "08:00",
+          "end": "11:50"
+        },
+        {
+          "start": "08:00",
+          "end": "11:50"
+        },
+        {
+          "start": "08:00",
+          "end": "11:50"
+        },
+        {
+          "start": "13:00",
+          "end": "16:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "08:00",
+          "end": "11:50"
+        },
+        {
+          "start": "08:00",
+          "end": "11:50"
+        },
+        {
+          "start": "08:00",
+          "end": "11:50"
+        },
+        {
+          "start": "13:00",
+          "end": "16:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "08:00",
+          "end": "11:50"
+        },
+        {
+          "start": "08:00",
+          "end": "11:50"
+        },
+        {
+          "start": "08:00",
+          "end": "11:50"
+        },
+        {
+          "start": "13:00",
+          "end": "16:50"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "08:00",
+          "end": "11:50"
+        },
+        {
+          "start": "08:00",
+          "end": "11:50"
+        },
+        {
+          "start": "08:00",
+          "end": "11:50"
+        },
+        {
+          "start": "13:00",
+          "end": "16:50"
+        }
+      ]
+    },
+    "courses": [
+      "BSE 631",
+      "BSE 632",
+      "BSE 633",
+      "BSE 642"
+    ],
+    "room_id": "MedicalSciencesBuilding-274",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Medical Sciences Building 274 Medical Sciences Building 274 Medical Sciences Building",
+    "room": "274",
+    "usage": {
+      "Monday": [
+        {
+          "start": "13:00",
+          "end": "14:50"
+        },
+        {
+          "start": "13:00",
+          "end": "14:50"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "13:00",
+          "end": "14:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "13:00",
+          "end": "14:50"
+        },
+        {
+          "start": "13:00",
+          "end": "14:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "13:00",
+          "end": "14:50"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "13:00",
+          "end": "14:50"
+        },
+        {
+          "start": "13:00",
+          "end": "14:50"
+        }
+      ]
+    },
+    "courses": [
+      "BSE 638"
+    ],
+    "room_id": "MedicalSciencesBuilding274MedicalSciencesBuilding274MedicalSciencesBuilding-274",
+    "semester": "Fall 2025"
+  }
+]
