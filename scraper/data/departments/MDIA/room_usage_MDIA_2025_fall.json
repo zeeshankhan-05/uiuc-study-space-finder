@@ -1,0 +1,217 @@
+[
+  {
+    "building": "Armory",
+    "room": "331",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "15:00",
+          "end": "15:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "MDIA 100"
+    ],
+    "room_id": "Armory-331",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Burrill Hall",
+    "room": "140",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "15:00",
+          "end": "15:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "MDIA 100"
+    ],
+    "room_id": "BurrillHall-140",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Armory",
+    "room": "333",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "15:00",
+          "end": "15:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "MDIA 100"
+    ],
+    "room_id": "Armory-333",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Gregory Hall",
+    "room": "219",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "15:00",
+          "end": "15:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "MDIA 100"
+    ],
+    "room_id": "GregoryHall-219",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Gregory Hall",
+    "room": "100",
+    "usage": {
+      "Monday": [
+        {
+          "start": "15:00",
+          "end": "15:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "MDIA 100"
+    ],
+    "room_id": "GregoryHall-100",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Gregory Hall",
+    "room": "217",
+    "usage": {
+      "Monday": [
+        {
+          "start": "15:00",
+          "end": "15:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "15:00",
+          "end": "15:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "MDIA 199"
+    ],
+    "room_id": "GregoryHall-217",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Gregory Hall",
+    "room": "31",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "12:30",
+          "end": "13:20"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "MDIA 400"
+    ],
+    "room_id": "GregoryHall-31",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Psychology Building",
+    "room": "508",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [],
+      "Wednesday": [],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "10:00",
+          "end": "11:50"
+        }
+      ]
+    },
+    "courses": [
+      "MDIA 524"
+    ],
+    "room_id": "PsychologyBuilding-508",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Psychology Building",
+    "room": "819",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "10:00",
+          "end": "11:50"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "MDIA 525"
+    ],
+    "room_id": "PsychologyBuilding-819",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Gregory Hall",
+    "room": "336",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "15:00",
+          "end": "17:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "MDIA 571"
+    ],
+    "room_id": "GregoryHall-336",
+    "semester": "Fall 2025"
+  }
+]

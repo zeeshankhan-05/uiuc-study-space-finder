@@ -1,0 +1,106 @@
+[
+  {
+    "building": "English Building",
+    "room": "125",
+    "usage": {
+      "Monday": [
+        {
+          "start": "11:00",
+          "end": "11:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "11:00",
+          "end": "11:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "WRIT 300"
+    ],
+    "room_id": "EnglishBuilding-125",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "English Building",
+    "room": "135",
+    "usage": {
+      "Monday": [
+        {
+          "start": "13:00",
+          "end": "13:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "13:00",
+          "end": "13:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "WRIT 300"
+    ],
+    "room_id": "EnglishBuilding-135",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Education Building",
+    "room": "385",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "09:30",
+          "end": "10:45"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "09:30",
+          "end": "10:45"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "WRIT 303"
+    ],
+    "room_id": "EducationBuilding-385",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Education Building",
+    "room": "389",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "11:00",
+          "end": "12:15"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "11:00",
+          "end": "12:15"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "WRIT 303"
+    ],
+    "room_id": "EducationBuilding-389",
+    "semester": "Fall 2025"
+  }
+]

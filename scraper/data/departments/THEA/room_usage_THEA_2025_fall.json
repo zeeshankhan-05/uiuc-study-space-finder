@@ -1,0 +1,1183 @@
+[
+  {
+    "building": "Noyes Laboratory",
+    "room": "217",
+    "usage": {
+      "Monday": [
+        {
+          "start": "14:00",
+          "end": "14:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "14:00",
+          "end": "14:50"
+        }
+      ]
+    },
+    "courses": [
+      "THEA 110"
+    ],
+    "room_id": "NoyesLaboratory-217",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Henry Administration Bldg",
+    "room": "156",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "14:00",
+          "end": "14:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "THEA 110"
+    ],
+    "room_id": "HenryAdministrationBldg-156",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Davenport Hall",
+    "room": "329",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "14:00",
+          "end": "14:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "THEA 110"
+    ],
+    "room_id": "DavenportHall-329",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Krannert Center for Perf Arts",
+    "room": "4114",
+    "usage": {
+      "Monday": [
+        {
+          "start": "13:00",
+          "end": "15:50"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "10:30",
+          "end": "11:50"
+        },
+        {
+          "start": "08:30",
+          "end": "09:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "09:00",
+          "end": "10:50"
+        },
+        {
+          "start": "15:00",
+          "end": "16:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "10:30",
+          "end": "11:50"
+        },
+        {
+          "start": "08:30",
+          "end": "09:50"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "09:00",
+          "end": "10:50"
+        }
+      ]
+    },
+    "courses": [
+      "THEA 119",
+      "THEA 424",
+      "THEA 430",
+      "THEA 435",
+      "THEA 437",
+      "THEA 492",
+      "THEA 494"
+    ],
+    "room_id": "KrannertCenterforPerfArts-4114",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Krannert Center for Perf Arts",
+    "room": "3607",
+    "usage": {
+      "Monday": [
+        {
+          "start": "09:00",
+          "end": "10:50"
+        },
+        {
+          "start": "13:00",
+          "end": "15:50"
+        },
+        {
+          "start": "09:00",
+          "end": "10:50"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "13:30",
+          "end": "14:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "15:00",
+          "end": "15:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "09:00",
+          "end": "11:50"
+        },
+        {
+          "start": "13:30",
+          "end": "14:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "THEA 119",
+      "THEA 391",
+      "THEA 414",
+      "THEA 423",
+      "THEA 434",
+      "THEA 591",
+      "THEA 595"
+    ],
+    "room_id": "KrannertCenterforPerfArts-3607",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Krannert Center for Perf Arts",
+    "room": "4118",
+    "usage": {
+      "Monday": [
+        {
+          "start": "15:00",
+          "end": "16:50"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "17:00",
+          "end": "18:20"
+        },
+        {
+          "start": "10:30",
+          "end": "12:20"
+        },
+        {
+          "start": "13:30",
+          "end": "15:20"
+        },
+        {
+          "start": "17:00",
+          "end": "18:20"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "15:00",
+          "end": "16:50"
+        },
+        {
+          "start": "08:00",
+          "end": "10:50"
+        },
+        {
+          "start": "08:00",
+          "end": "10:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "THEA 119",
+      "THEA 220",
+      "THEA 225",
+      "THEA 425",
+      "THEA 457",
+      "THEA 591"
+    ],
+    "room_id": "KrannertCenterforPerfArts-4118",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Krannert Center for Perf Arts",
+    "room": "4506",
+    "usage": {
+      "Monday": [
+        {
+          "start": "15:00",
+          "end": "16:50"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "08:30",
+          "end": "09:50"
+        },
+        {
+          "start": "13:30",
+          "end": "14:50"
+        },
+        {
+          "start": "10:30",
+          "end": "11:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "15:00",
+          "end": "16:50"
+        },
+        {
+          "start": "17:00",
+          "end": "18:50"
+        },
+        {
+          "start": "17:00",
+          "end": "18:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "08:30",
+          "end": "09:50"
+        },
+        {
+          "start": "13:30",
+          "end": "14:50"
+        },
+        {
+          "start": "10:30",
+          "end": "11:50"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "11:00",
+          "end": "12:20"
+        },
+        {
+          "start": "13:00",
+          "end": "14:20"
+        },
+        {
+          "start": "11:00",
+          "end": "12:20"
+        }
+      ]
+    },
+    "courses": [
+      "THEA 119",
+      "THEA 126",
+      "THEA 211",
+      "THEA 359",
+      "THEA 391",
+      "THEA 392",
+      "THEA 450",
+      "THEA 451",
+      "THEA 559",
+      "THEA 591"
+    ],
+    "room_id": "KrannertCenterforPerfArts-4506",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Krannert Center for Perf Arts",
+    "room": "4503",
+    "usage": {
+      "Monday": [
+        {
+          "start": "09:00",
+          "end": "10:20"
+        },
+        {
+          "start": "09:00",
+          "end": "10:20"
+        },
+        {
+          "start": "13:00",
+          "end": "14:50"
+        },
+        {
+          "start": "17:30",
+          "end": "20:20"
+        },
+        {
+          "start": "16:00",
+          "end": "17:00"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "10:30",
+          "end": "12:20"
+        },
+        {
+          "start": "08:30",
+          "end": "09:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "09:00",
+          "end": "10:20"
+        },
+        {
+          "start": "09:00",
+          "end": "10:20"
+        },
+        {
+          "start": "11:00",
+          "end": "12:20"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "10:30",
+          "end": "12:20"
+        },
+        {
+          "start": "08:30",
+          "end": "09:50"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "08:30",
+          "end": "09:50"
+        },
+        {
+          "start": "11:00",
+          "end": "12:20"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        },
+        {
+          "start": "08:30",
+          "end": "09:50"
+        }
+      ]
+    },
+    "courses": [
+      "THEA 119",
+      "THEA 413",
+      "THEA 419",
+      "THEA 422",
+      "THEA 430",
+      "THEA 452",
+      "THEA 562",
+      "THEA 591"
+    ],
+    "room_id": "KrannertCenterforPerfArts-4503",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Krannert Center for Perf Arts",
+    "room": "2310",
+    "usage": {
+      "Monday": [
+        {
+          "start": "08:30",
+          "end": "09:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "08:30",
+          "end": "09:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "08:30",
+          "end": "09:50"
+        }
+      ]
+    },
+    "courses": [
+      "THEA 121"
+    ],
+    "room_id": "KrannertCenterforPerfArts-2310",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Krannert Center for Perf Arts",
+    "room": "3604",
+    "usage": {
+      "Monday": [
+        {
+          "start": "08:30",
+          "end": "09:50"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "11:00",
+          "end": "12:20"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "08:30",
+          "end": "09:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "11:00",
+          "end": "12:20"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "08:30",
+          "end": "09:50"
+        }
+      ]
+    },
+    "courses": [
+      "THEA 121",
+      "THEA 498"
+    ],
+    "room_id": "KrannertCenterforPerfArts-3604",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Krannert Center for Perf Arts",
+    "room": "2317",
+    "usage": {
+      "Monday": [
+        {
+          "start": "11:00",
+          "end": "12:20"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "09:00",
+          "end": "10:20"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "11:00",
+          "end": "12:20"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "09:00",
+          "end": "10:20"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "14:00",
+          "end": "14:50"
+        }
+      ]
+    },
+    "courses": [
+      "THEA 123",
+      "THEA 404",
+      "THEA 426"
+    ],
+    "room_id": "KrannertCenterforPerfArts-2317",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Armory",
+    "room": "160",
+    "usage": {
+      "Monday": [
+        {
+          "start": "10:30",
+          "end": "11:50"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "10:30",
+          "end": "11:50"
+        },
+        {
+          "start": "09:00",
+          "end": "10:20"
+        },
+        {
+          "start": "15:00",
+          "end": "16:50"
+        },
+        {
+          "start": "17:00",
+          "end": "18:50"
+        },
+        {
+          "start": "15:00",
+          "end": "16:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "10:30",
+          "end": "11:50"
+        },
+        {
+          "start": "17:00",
+          "end": "18:50"
+        },
+        {
+          "start": "13:30",
+          "end": "16:30"
+        },
+        {
+          "start": "13:30",
+          "end": "16:30"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "10:30",
+          "end": "11:50"
+        },
+        {
+          "start": "09:00",
+          "end": "10:20"
+        },
+        {
+          "start": "15:00",
+          "end": "16:50"
+        },
+        {
+          "start": "17:00",
+          "end": "18:50"
+        },
+        {
+          "start": "15:00",
+          "end": "16:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "THEA 170",
+      "THEA 270",
+      "THEA 399",
+      "THEA 400",
+      "THEA 412",
+      "THEA 418"
+    ],
+    "room_id": "Armory-160",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Music Building",
+    "room": "0300",
+    "usage": {
+      "Monday": [
+        {
+          "start": "11:00",
+          "end": "12:20"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "11:00",
+          "end": "12:20"
+        }
+      ],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "THEA 170"
+    ],
+    "room_id": "MusicBuilding-0300",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Allen Residence Hall",
+    "room": "40",
+    "usage": {
+      "Monday": [
+        {
+          "start": "13:00",
+          "end": "14:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "13:00",
+          "end": "14:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "THEA 218"
+    ],
+    "room_id": "AllenResidenceHall-40",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Krannert Center for Perf Arts",
+    "room": "2312",
+    "usage": {
+      "Monday": [
+        {
+          "start": "09:00",
+          "end": "11:50"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "09:00",
+          "end": "11:50"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "09:00",
+          "end": "11:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "THEA 242",
+      "THEA 442",
+      "THEA 448"
+    ],
+    "room_id": "KrannertCenterforPerfArts-2312",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "805 W Pennsylvania",
+    "room": "121",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "09:30",
+          "end": "10:50"
+        },
+        {
+          "start": "13:00",
+          "end": "14:20"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "09:30",
+          "end": "10:50"
+        },
+        {
+          "start": "13:00",
+          "end": "14:20"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "THEA 260",
+      "THEA 399"
+    ],
+    "room_id": "805WPennsylvania-121",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Krannert Center for Perf Arts",
+    "room": "3605",
+    "usage": {
+      "Monday": [
+        {
+          "start": "11:10",
+          "end": "12:30"
+        },
+        {
+          "start": "09:40",
+          "end": "11:00"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "13:30",
+          "end": "14:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "11:10",
+          "end": "12:30"
+        },
+        {
+          "start": "09:40",
+          "end": "11:00"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "13:30",
+          "end": "14:50"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "13:30",
+          "end": "14:50"
+        }
+      ]
+    },
+    "courses": [
+      "THEA 270",
+      "THEA 372",
+      "THEA 373"
+    ],
+    "room_id": "KrannertCenterforPerfArts-3605",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Krannert Center for Perf Arts",
+    "room": "2418",
+    "usage": {
+      "Monday": [
+        {
+          "start": "13:30",
+          "end": "14:50"
+        },
+        {
+          "start": "09:00",
+          "end": "09:30"
+        },
+        {
+          "start": "09:00",
+          "end": "09:30"
+        },
+        {
+          "start": "09:40",
+          "end": "12:30"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "09:00",
+          "end": "09:30"
+        },
+        {
+          "start": "09:00",
+          "end": "09:30"
+        },
+        {
+          "start": "09:40",
+          "end": "11:00"
+        },
+        {
+          "start": "11:10",
+          "end": "12:30"
+        },
+        {
+          "start": "13:30",
+          "end": "14:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "13:30",
+          "end": "14:50"
+        },
+        {
+          "start": "09:00",
+          "end": "09:30"
+        },
+        {
+          "start": "09:00",
+          "end": "09:30"
+        },
+        {
+          "start": "09:40",
+          "end": "12:30"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "09:00",
+          "end": "09:30"
+        },
+        {
+          "start": "09:00",
+          "end": "09:30"
+        },
+        {
+          "start": "09:40",
+          "end": "11:00"
+        },
+        {
+          "start": "11:10",
+          "end": "12:30"
+        },
+        {
+          "start": "13:30",
+          "end": "14:50"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "09:40",
+          "end": "12:30"
+        }
+      ]
+    },
+    "courses": [
+      "THEA 271",
+      "THEA 371",
+      "THEA 471",
+      "THEA 472",
+      "THEA 473",
+      "THEA 474"
+    ],
+    "room_id": "KrannertCenterforPerfArts-2418",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Noyes Laboratory",
+    "room": "163",
+    "usage": {
+      "Monday": [
+        {
+          "start": "13:30",
+          "end": "14:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "13:30",
+          "end": "14:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "THEA 364"
+    ],
+    "room_id": "NoyesLaboratory-163",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Krannert Center for Perf Arts 3605 Krannert Center for Perf Arts",
+    "room": "3605",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "09:40",
+          "end": "12:30"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "09:40",
+          "end": "12:30"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "09:40",
+          "end": "12:30"
+        }
+      ]
+    },
+    "courses": [
+      "THEA 374"
+    ],
+    "room_id": "KrannertCenterforPerfArts3605KrannertCenterforPerfArts-3605",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Siebel Center for Design",
+    "room": "1002",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "14:30",
+          "end": "16:50"
+        },
+        {
+          "start": "14:30",
+          "end": "16:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "THEA 391",
+      "THEA 591"
+    ],
+    "room_id": "SiebelCenterforDesign-1002",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "ARR Art-East Annex, Studio",
+    "room": "2",
+    "usage": {
+      "Monday": [
+        {
+          "start": "13:00",
+          "end": "16:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "THEA 399"
+    ],
+    "room_id": "ARRArt-EastAnnex,Studio-2",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Armory",
+    "room": "428",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "16:00",
+          "end": "17:50"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "16:00",
+          "end": "17:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "THEA 417"
+    ],
+    "room_id": "Armory-428",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Krannert Center for Perf Arts",
+    "room": "2119",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [],
+      "Wednesday": [],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "10:00",
+          "end": "12:50"
+        }
+      ]
+    },
+    "courses": [
+      "THEA 427"
+    ],
+    "room_id": "KrannertCenterforPerfArts-2119",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Krannert Center for Perf Arts",
+    "room": "3601",
+    "usage": {
+      "Monday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "12:30",
+          "end": "13:20"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "10:00",
+          "end": "11:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "12:30",
+          "end": "13:20"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "10:00",
+          "end": "11:50"
+        },
+        {
+          "start": "15:30",
+          "end": "16:50"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "12:30",
+          "end": "13:20"
+        }
+      ]
+    },
+    "courses": [
+      "THEA 453",
+      "THEA 470",
+      "THEA 497",
+      "THEA 595"
+    ],
+    "room_id": "KrannertCenterforPerfArts-3601",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Krannert Center for Perf Arts",
+    "room": "2406",
+    "usage": {
+      "Monday": [
+        {
+          "start": "11:00",
+          "end": "12:20"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "11:00",
+          "end": "12:20"
+        }
+      ],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "THEA 455"
+    ],
+    "room_id": "KrannertCenterforPerfArts-2406",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Krannert Center for Perf Arts",
+    "room": "2122",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "09:00",
+          "end": "12:00"
+        }
+      ],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "THEA 480"
+    ],
+    "room_id": "KrannertCenterforPerfArts-2122",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Literatures, Cultures, & Ling",
+    "room": "1032",
+    "usage": {
+      "Monday": [
+        {
+          "start": "13:30",
+          "end": "14:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "13:30",
+          "end": "14:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "THEA 560"
+    ],
+    "room_id": "Literatures,Cultures,&Ling-1032",
+    "semester": "Fall 2025"
+  }
+]

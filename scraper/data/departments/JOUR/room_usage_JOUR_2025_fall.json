@@ -1,0 +1,541 @@
+[
+  {
+    "building": "Gregory Hall",
+    "room": "31",
+    "usage": {
+      "Monday": [
+        {
+          "start": "09:00",
+          "end": "09:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "09:00",
+          "end": "09:50"
+        }
+      ]
+    },
+    "courses": [
+      "JOUR 100",
+      "JOUR 494"
+    ],
+    "room_id": "GregoryHall-31",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Armory",
+    "room": "143",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "15:30",
+          "end": "16:50"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "15:30",
+          "end": "16:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "JOUR 102"
+    ],
+    "room_id": "Armory-143",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Gregory Hall",
+    "room": "307",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "16:00",
+          "end": "17:20"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "16:00",
+          "end": "17:20"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "JOUR 161"
+    ],
+    "room_id": "GregoryHall-307",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Gregory Hall",
+    "room": "319",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "14:00",
+          "end": "15:20"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "14:00",
+          "end": "15:20"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "JOUR 205"
+    ],
+    "room_id": "GregoryHall-319",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Gregory Hall",
+    "room": "13",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "09:30",
+          "end": "11:20"
+        },
+        {
+          "start": "11:30",
+          "end": "13:20"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "09:30",
+          "end": "11:20"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "JOUR 210",
+      "JOUR 400"
+    ],
+    "room_id": "GregoryHall-13",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Gregory Hall n.a.",
+    "room": "13",
+    "usage": {
+      "Monday": [
+        {
+          "start": "11:00",
+          "end": "12:20"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "11:00",
+          "end": "12:20"
+        }
+      ],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "11:00",
+          "end": "12:20"
+        }
+      ]
+    },
+    "courses": [
+      "JOUR 215"
+    ],
+    "room_id": "GregoryHalln.a.-13",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Richmond Studio",
+    "room": "103",
+    "usage": {
+      "Monday": [
+        {
+          "start": "13:00",
+          "end": "15:50"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "11:00",
+          "end": "12:20"
+        },
+        {
+          "start": "12:30",
+          "end": "15:20"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "13:00",
+          "end": "15:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "11:00",
+          "end": "12:20"
+        },
+        {
+          "start": "12:30",
+          "end": "15:20"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "JOUR 240",
+      "JOUR 340"
+    ],
+    "room_id": "RichmondStudio-103",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Armory",
+    "room": "386",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "11:00",
+          "end": "12:20"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "11:00",
+          "end": "12:20"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "JOUR 250"
+    ],
+    "room_id": "Armory-386",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Lincoln Hall",
+    "room": "1027",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "15:30",
+          "end": "16:50"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "15:30",
+          "end": "16:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "JOUR 293"
+    ],
+    "room_id": "LincolnHall-1027",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Lincoln Hall",
+    "room": "1000",
+    "usage": {
+      "Monday": [
+        {
+          "start": "11:00",
+          "end": "12:20"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "11:00",
+          "end": "12:20"
+        }
+      ],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "JOUR 311"
+    ],
+    "room_id": "LincolnHall-1000",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Gregory Hall 13 Gregory Hall",
+    "room": "13",
+    "usage": {
+      "Monday": [
+        {
+          "start": "13:00",
+          "end": "14:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "13:00",
+          "end": "14:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "JOUR 315"
+    ],
+    "room_id": "GregoryHall13GregoryHall-13",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Gregory Hall",
+    "room": "223",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "16:00",
+          "end": "17:20"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "16:00",
+          "end": "17:20"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "JOUR 361"
+    ],
+    "room_id": "GregoryHall-223",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Richmond Studio",
+    "room": "108",
+    "usage": {
+      "Monday": [
+        {
+          "start": "09:00",
+          "end": "11:50"
+        },
+        {
+          "start": "16:00",
+          "end": "18:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "15:00",
+          "end": "17:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "09:00",
+          "end": "11:50"
+        },
+        {
+          "start": "13:30",
+          "end": "16:20"
+        }
+      ]
+    },
+    "courses": [
+      "JOUR 400"
+    ],
+    "room_id": "RichmondStudio-108",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Gregory Hall",
+    "room": "123",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "09:30",
+          "end": "11:20"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "JOUR 400"
+    ],
+    "room_id": "GregoryHall-123",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Campbell Hall 1026 Lincoln Hall",
+    "room": "109",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "08:00",
+          "end": "09:20"
+        },
+        {
+          "start": "08:00",
+          "end": "09:20"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "08:00",
+          "end": "09:20"
+        },
+        {
+          "start": "08:00",
+          "end": "09:20"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "JOUR 400"
+    ],
+    "room_id": "CampbellHall1026LincolnHall-109",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Gregory Hall",
+    "room": "336",
+    "usage": {
+      "Monday": [
+        {
+          "start": "10:00",
+          "end": "11:50"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "12:30",
+          "end": "13:50"
+        },
+        {
+          "start": "16:00",
+          "end": "17:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "10:00",
+          "end": "11:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "12:30",
+          "end": "13:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "JOUR 410",
+      "JOUR 483",
+      "JOUR 505"
+    ],
+    "room_id": "GregoryHall-336",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Richmond Studio 109 Campbell Hall",
+    "room": "103",
+    "usage": {
+      "Monday": [
+        {
+          "start": "16:30",
+          "end": "18:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "16:30",
+          "end": "18:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "JOUR 445"
+    ],
+    "room_id": "RichmondStudio109CampbellHall-103",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Education Building",
+    "room": "37",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "09:30",
+          "end": "10:50"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "09:30",
+          "end": "10:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "JOUR 451"
+    ],
+    "room_id": "EducationBuilding-37",
+    "semester": "Fall 2025"
+  }
+]

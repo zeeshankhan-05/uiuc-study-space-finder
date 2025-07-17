@@ -1,0 +1,183 @@
+[
+  {
+    "building": "David Kinley Hall",
+    "room": "310",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "14:00",
+          "end": "14:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "LEAD 260"
+    ],
+    "room_id": "DavidKinleyHall-310",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Mumford Hall",
+    "room": "320",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "13:00",
+          "end": "13:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "LEAD 260"
+    ],
+    "room_id": "MumfordHall-320",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "David Kinley Hall",
+    "room": "113",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "11:00",
+          "end": "11:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "LEAD 260"
+    ],
+    "room_id": "DavidKinleyHall-113",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Weston Hall",
+    "room": "5",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "12:30",
+          "end": "13:20"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "LEAD 260"
+    ],
+    "room_id": "WestonHall-5",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "David Kinley Hall",
+    "room": "312",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "11:00",
+          "end": "11:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "LEAD 260"
+    ],
+    "room_id": "DavidKinleyHall-312",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Bevier Hall",
+    "room": "166",
+    "usage": {
+      "Monday": [
+        {
+          "start": "14:00",
+          "end": "15:20"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "11:00",
+          "end": "12:20"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "14:00",
+          "end": "15:20"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "11:00",
+          "end": "12:20"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "LEAD 340",
+      "LEAD 425"
+    ],
+    "room_id": "BevierHall-166",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Burrill Hall",
+    "room": "140",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "09:30",
+          "end": "10:50"
+        },
+        {
+          "start": "09:30",
+          "end": "10:50"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "09:30",
+          "end": "10:50"
+        },
+        {
+          "start": "09:30",
+          "end": "10:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "LEAD 480"
+    ],
+    "room_id": "BurrillHall-140",
+    "semester": "Fall 2025"
+  }
+]

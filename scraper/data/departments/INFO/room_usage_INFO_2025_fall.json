@@ -1,0 +1,309 @@
+[
+  {
+    "building": "Campus Instructional Facility",
+    "room": "0035",
+    "usage": {
+      "Monday": [
+        {
+          "start": "09:00",
+          "end": "09:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "09:00",
+          "end": "09:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "INFO 202"
+    ],
+    "room_id": "CampusInstructionalFacility-0035",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Education Building",
+    "room": "385",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "09:30",
+          "end": "10:45"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "09:30",
+          "end": "10:45"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "INFO 303"
+    ],
+    "room_id": "EducationBuilding-385",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Education Building",
+    "room": "389",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "11:00",
+          "end": "12:15"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "11:00",
+          "end": "12:15"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "INFO 303"
+    ],
+    "room_id": "EducationBuilding-389",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Grad Sch of Lib & Info Science",
+    "room": "46",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "13:30",
+          "end": "14:50"
+        },
+        {
+          "start": "15:00",
+          "end": "16:20"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "13:30",
+          "end": "14:50"
+        },
+        {
+          "start": "15:00",
+          "end": "16:20"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "INFO 310"
+    ],
+    "room_id": "GradSchofLib&InfoScience-46",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "English Building",
+    "room": "108",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "15:30",
+          "end": "16:50"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "15:30",
+          "end": "16:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "INFO 326"
+    ],
+    "room_id": "EnglishBuilding-108",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Lincoln Hall",
+    "room": "1066",
+    "usage": {
+      "Monday": [
+        {
+          "start": "15:00",
+          "end": "16:20"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "15:00",
+          "end": "16:20"
+        }
+      ],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "INFO 390"
+    ],
+    "room_id": "LincolnHall-1066",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Everitt Laboratory",
+    "room": "2101",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "15:30",
+          "end": "16:50"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "15:30",
+          "end": "16:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "INFO 390"
+    ],
+    "room_id": "EverittLaboratory-2101",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Armory",
+    "room": "146",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "09:30",
+          "end": "10:45"
+        },
+        {
+          "start": "13:00",
+          "end": "14:20"
+        },
+        {
+          "start": "13:00",
+          "end": "14:20"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "09:30",
+          "end": "10:45"
+        },
+        {
+          "start": "13:00",
+          "end": "14:20"
+        },
+        {
+          "start": "13:00",
+          "end": "14:20"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "INFO 390",
+      "INFO 490"
+    ],
+    "room_id": "Armory-146",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "FAB LAB Art-East Annex, Studio",
+    "room": "2",
+    "usage": {
+      "Monday": [
+        {
+          "start": "14:00",
+          "end": "15:20"
+        },
+        {
+          "start": "14:00",
+          "end": "15:20"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "11:00",
+          "end": "12:20"
+        },
+        {
+          "start": "11:00",
+          "end": "12:20"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "14:00",
+          "end": "15:20"
+        },
+        {
+          "start": "14:00",
+          "end": "15:20"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "11:00",
+          "end": "12:20"
+        },
+        {
+          "start": "11:00",
+          "end": "12:20"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "INFO 415",
+      "INFO 418"
+    ],
+    "room_id": "FABLABArt-EastAnnex,Studio-2",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "English Building",
+    "room": "115",
+    "usage": {
+      "Monday": [
+        {
+          "start": "16:00",
+          "end": "16:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "INFO 500"
+    ],
+    "room_id": "EnglishBuilding-115",
+    "semester": "Fall 2025"
+  }
+]

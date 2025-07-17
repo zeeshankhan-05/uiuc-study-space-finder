@@ -1,0 +1,74 @@
+[
+  {
+    "building": "Gregory Hall",
+    "room": "313",
+    "usage": {
+      "Monday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "POL 101"
+    ],
+    "room_id": "GregoryHall-313",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Education Building",
+    "room": "385",
+    "usage": {
+      "Monday": [
+        {
+          "start": "12:00",
+          "end": "12:50"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "12:00",
+          "end": "12:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "12:00",
+          "end": "12:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "12:00",
+          "end": "12:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "POL 201"
+    ],
+    "room_id": "EducationBuilding-385",
+    "semester": "Fall 2025"
+  }
+]

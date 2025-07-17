@@ -1,0 +1,283 @@
+[
+  {
+    "building": "Temple Hoyne Buell Hall",
+    "room": "134",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "12:30",
+          "end": "13:50"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "LA 101"
+    ],
+    "room_id": "TempleHoyneBuellHall-134",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Mumford Hall",
+    "room": "200",
+    "usage": {
+      "Monday": [
+        {
+          "start": "14:00",
+          "end": "16:50"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "14:00",
+          "end": "16:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "14:00",
+          "end": "16:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "14:00",
+          "end": "16:50"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "14:00",
+          "end": "16:50"
+        }
+      ]
+    },
+    "courses": [
+      "LA 233",
+      "LA 250"
+    ],
+    "room_id": "MumfordHall-200",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Temple Hoyne Buell Hall",
+    "room": "219",
+    "usage": {
+      "Monday": [
+        {
+          "start": "13:00",
+          "end": "16:50"
+        },
+        {
+          "start": "13:00",
+          "end": "16:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "13:00",
+          "end": "16:50"
+        },
+        {
+          "start": "13:00",
+          "end": "16:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "LA 335",
+      "LA 537"
+    ],
+    "room_id": "TempleHoyneBuellHall-219",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Temple Hoyne Buell Hall",
+    "room": "327",
+    "usage": {
+      "Monday": [
+        {
+          "start": "13:00",
+          "end": "16:50"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "14:00",
+          "end": "16:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "13:00",
+          "end": "16:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "14:00",
+          "end": "16:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "LA 342",
+      "LA 533"
+    ],
+    "room_id": "TempleHoyneBuellHall-327",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Temple Hoyne Buell Hall",
+    "room": "325",
+    "usage": {
+      "Monday": [
+        {
+          "start": "09:00",
+          "end": "10:50"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "17:00",
+          "end": "18:20"
+        },
+        {
+          "start": "12:30",
+          "end": "13:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "09:00",
+          "end": "10:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "12:30",
+          "end": "13:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "LA 346",
+      "LA 452",
+      "LA 501"
+    ],
+    "room_id": "TempleHoyneBuellHall-325",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Bevier Hall 103 Bevier Hall",
+    "room": "103",
+    "usage": {
+      "Monday": [
+        {
+          "start": "08:00",
+          "end": "10:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "08:00",
+          "end": "10:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "LA 352"
+    ],
+    "room_id": "BevierHall103BevierHall-103",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Temple Hoyne Buell Hall",
+    "room": "319",
+    "usage": {
+      "Monday": [
+        {
+          "start": "13:00",
+          "end": "16:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "13:00",
+          "end": "16:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "LA 437"
+    ],
+    "room_id": "TempleHoyneBuellHall-319",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Wohlers Hall n.a.",
+    "room": "138",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "09:00",
+          "end": "10:50"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "09:00",
+          "end": "10:50"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "09:00",
+          "end": "10:50"
+        }
+      ]
+    },
+    "courses": [
+      "LA 563"
+    ],
+    "room_id": "WohlersHalln.a.-138",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "David Kinley Hall",
+    "room": "209",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "12:30",
+          "end": "13:50"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "LA 590"
+    ],
+    "room_id": "DavidKinleyHall-209",
+    "semester": "Fall 2025"
+  }
+]

@@ -1,0 +1,54 @@
+[
+  {
+    "building": "Campus Instructional Facility n.a.",
+    "room": "2018",
+    "usage": {
+      "Monday": [
+        {
+          "start": "14:00",
+          "end": "15:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "14:00",
+          "end": "15:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "SAME 150"
+    ],
+    "room_id": "CampusInstructionalFacilityn.a.-2018",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Armory n.a.",
+    "room": "429",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "11:00",
+          "end": "12:20"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "11:00",
+          "end": "12:20"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "SAME 272"
+    ],
+    "room_id": "Armoryn.a.-429",
+    "semester": "Fall 2025"
+  }
+]

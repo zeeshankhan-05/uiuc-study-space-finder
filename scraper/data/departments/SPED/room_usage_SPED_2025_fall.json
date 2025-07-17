@@ -1,0 +1,283 @@
+[
+  {
+    "building": "Education Building",
+    "room": "242",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "13:00",
+          "end": "15:50"
+        },
+        {
+          "start": "16:00",
+          "end": "18:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "16:00",
+          "end": "18:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "SPED 405",
+      "SPED 444",
+      "SPED 471"
+    ],
+    "room_id": "EducationBuilding-242",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Armory",
+    "room": "333",
+    "usage": {
+      "Monday": [
+        {
+          "start": "16:00",
+          "end": "18:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "SPED 405"
+    ],
+    "room_id": "Armory-333",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Armory",
+    "room": "370",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "13:00",
+          "end": "15:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "SPED 405"
+    ],
+    "room_id": "Armory-370",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Education Building",
+    "room": "17",
+    "usage": {
+      "Monday": [
+        {
+          "start": "16:00",
+          "end": "18:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "16:00",
+          "end": "18:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "SPED 414",
+      "SPED 418"
+    ],
+    "room_id": "EducationBuilding-17",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Education Building",
+    "room": "22",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "16:00",
+          "end": "18:50"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "SPED 450"
+    ],
+    "room_id": "EducationBuilding-22",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Education Building",
+    "room": "323",
+    "usage": {
+      "Monday": [
+        {
+          "start": "16:00",
+          "end": "18:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "13:00",
+          "end": "15:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "SPED 461",
+      "SPED 470"
+    ],
+    "room_id": "EducationBuilding-323",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Education Building",
+    "room": "389",
+    "usage": {
+      "Monday": [
+        {
+          "start": "16:30",
+          "end": "19:20"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "16:00",
+          "end": "18:50"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "SPED 517",
+      "SPED 591"
+    ],
+    "room_id": "EducationBuilding-389",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Education Building",
+    "room": "376",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "16:00",
+          "end": "16:30"
+        }
+      ],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "SPED 524"
+    ],
+    "room_id": "EducationBuilding-376",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Education Building",
+    "room": "162",
+    "usage": {
+      "Monday": [
+        {
+          "start": "17:00",
+          "end": "19:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "SPED 550"
+    ],
+    "room_id": "EducationBuilding-162",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "David Kinley Hall",
+    "room": "108",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "12:00",
+          "end": "14:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "SPED 575"
+    ],
+    "room_id": "DavidKinleyHall-108",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Literatures, Cultures, & Ling",
+    "room": "1118",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [],
+      "Wednesday": [],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "09:00",
+          "end": "10:50"
+        }
+      ]
+    },
+    "courses": [
+      "SPED 590"
+    ],
+    "room_id": "Literatures,Cultures,&Ling-1118",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Education Building",
+    "room": "385",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "13:00",
+          "end": "15:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "SPED 592"
+    ],
+    "room_id": "EducationBuilding-385",
+    "semester": "Fall 2025"
+  }
+]

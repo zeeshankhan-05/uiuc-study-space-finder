@@ -1,0 +1,202 @@
+[
+  {
+    "building": "Inst Labor & Industrial Rel",
+    "room": "51",
+    "usage": {
+      "Monday": [
+        {
+          "start": "14:00",
+          "end": "16:50"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "11:00",
+          "end": "12:20"
+        },
+        {
+          "start": "14:00",
+          "end": "16:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "14:00",
+          "end": "16:50"
+        },
+        {
+          "start": "08:00",
+          "end": "10:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "11:00",
+          "end": "12:20"
+        },
+        {
+          "start": "14:00",
+          "end": "16:50"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "08:00",
+          "end": "08:50"
+        },
+        {
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "11:00",
+          "end": "11:50"
+        }
+      ]
+    },
+    "courses": [
+      "LER 320",
+      "LER 510",
+      "LER 527",
+      "LER 546",
+      "LER 562",
+      "LER 568",
+      "LER 593"
+    ],
+    "room_id": "InstLabor&IndustrialRel-51",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Inst Labor & Industrial Rel",
+    "room": "53",
+    "usage": {
+      "Monday": [
+        {
+          "start": "08:00",
+          "end": "10:30"
+        },
+        {
+          "start": "11:30",
+          "end": "13:50"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "11:00",
+          "end": "13:50"
+        },
+        {
+          "start": "11:00",
+          "end": "13:50"
+        },
+        {
+          "start": "08:00",
+          "end": "10:50"
+        },
+        {
+          "start": "14:00",
+          "end": "16:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "08:00",
+          "end": "10:50"
+        },
+        {
+          "start": "14:00",
+          "end": "16:50"
+        },
+        {
+          "start": "11:00",
+          "end": "13:50"
+        },
+        {
+          "start": "11:00",
+          "end": "13:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "11:00",
+          "end": "13:50"
+        },
+        {
+          "start": "08:00",
+          "end": "10:50"
+        },
+        {
+          "start": "14:00",
+          "end": "16:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "LER 522",
+      "LER 523",
+      "LER 542",
+      "LER 561",
+      "LER 567",
+      "LER 569",
+      "LER 570",
+      "LER 572",
+      "LER 590",
+      "LER 591",
+      "LER 593"
+    ],
+    "room_id": "InstLabor&IndustrialRel-53",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Psychology Building",
+    "room": "608",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "13:00",
+          "end": "15:50"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "LER 530"
+    ],
+    "room_id": "PsychologyBuilding-608",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "David Kinley Hall",
+    "room": "106",
+    "usage": {
+      "Monday": [
+        {
+          "start": "09:30",
+          "end": "10:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "09:30",
+          "end": "10:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "LER 540"
+    ],
+    "room_id": "DavidKinleyHall-106",
+    "semester": "Fall 2025"
+  }
+]

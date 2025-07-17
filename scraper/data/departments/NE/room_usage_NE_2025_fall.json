@@ -1,0 +1,145 @@
+[
+  {
+    "building": "Campus Instructional Facility",
+    "room": "3018",
+    "usage": {
+      "Monday": [
+        {
+          "start": "11:00",
+          "end": "11:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "11:00",
+          "end": "11:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "NE 100"
+    ],
+    "room_id": "CampusInstructionalFacility-3018",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Siebel Center for Comp Sci",
+    "room": "1304",
+    "usage": {
+      "Monday": [
+        {
+          "start": "13:00",
+          "end": "13:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "13:00",
+          "end": "13:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "13:00",
+          "end": "13:50"
+        }
+      ]
+    },
+    "courses": [
+      "NE 330"
+    ],
+    "room_id": "SiebelCenterforCompSci-1304",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Sidney Lu Mech Engr Bldg",
+    "room": "3100",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "14:00",
+          "end": "15:20"
+        },
+        {
+          "start": "14:00",
+          "end": "15:20"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "14:00",
+          "end": "15:20"
+        },
+        {
+          "start": "14:00",
+          "end": "15:20"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "NE 410"
+    ],
+    "room_id": "SidneyLuMechEngrBldg-3100",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Campus Instructional Facility",
+    "room": "2018",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "11:00",
+          "end": "12:20"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "11:00",
+          "end": "12:20"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "NE 430"
+    ],
+    "room_id": "CampusInstructionalFacility-2018",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Everitt Laboratory 3109 Everitt Laboratory",
+    "room": "3109",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "12:00",
+          "end": "14:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "12:00",
+          "end": "14:50"
+        }
+      ]
+    },
+    "courses": [
+      "NE 431"
+    ],
+    "room_id": "EverittLaboratory3109EverittLaboratory-3109",
+    "semester": "Fall 2025"
+  }
+]

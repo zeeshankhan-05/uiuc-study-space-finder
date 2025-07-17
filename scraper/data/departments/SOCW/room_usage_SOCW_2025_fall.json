@@ -1,0 +1,654 @@
+[
+  {
+    "building": "1010 W Nevada",
+    "room": "2027",
+    "usage": {
+      "Monday": [
+        {
+          "start": "16:00",
+          "end": "16:50"
+        },
+        {
+          "start": "11:00",
+          "end": "12:15"
+        },
+        {
+          "start": "14:00",
+          "end": "15:15"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "16:00",
+          "end": "16:50"
+        },
+        {
+          "start": "09:30",
+          "end": "10:45"
+        },
+        {
+          "start": "12:30",
+          "end": "13:45"
+        },
+        {
+          "start": "11:00",
+          "end": "12:15"
+        },
+        {
+          "start": "14:00",
+          "end": "15:15"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "16:00",
+          "end": "16:50"
+        },
+        {
+          "start": "11:00",
+          "end": "12:15"
+        },
+        {
+          "start": "08:00",
+          "end": "10:50"
+        },
+        {
+          "start": "14:00",
+          "end": "15:15"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "16:00",
+          "end": "16:50"
+        },
+        {
+          "start": "09:30",
+          "end": "10:45"
+        },
+        {
+          "start": "12:30",
+          "end": "13:45"
+        },
+        {
+          "start": "11:00",
+          "end": "12:15"
+        },
+        {
+          "start": "14:00",
+          "end": "15:15"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "SOCW 101",
+      "SOCW 200",
+      "SOCW 300",
+      "SOCW 403",
+      "SOCW 410",
+      "SOCW 427"
+    ],
+    "room_id": "1010WNevada-2027",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Education Building",
+    "room": "385",
+    "usage": {
+      "Monday": [
+        {
+          "start": "16:00",
+          "end": "17:15"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "16:00",
+          "end": "17:15"
+        }
+      ],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "SOCW 200"
+    ],
+    "room_id": "EducationBuilding-385",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Davenport Hall",
+    "room": "214",
+    "usage": {
+      "Monday": [
+        {
+          "start": "16:00",
+          "end": "17:15"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "14:00",
+          "end": "15:15"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "16:00",
+          "end": "17:15"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "14:00",
+          "end": "15:15"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "SOCW 220",
+      "SOCW 240"
+    ],
+    "room_id": "DavenportHall-214",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Davenport Hall",
+    "room": "169",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "16:00",
+          "end": "17:15"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "16:00",
+          "end": "17:15"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "SOCW 240"
+    ],
+    "room_id": "DavenportHall-169",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Architecture Building",
+    "room": "302",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "09:30",
+          "end": "10:45"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "09:30",
+          "end": "10:45"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "SOCW 297"
+    ],
+    "room_id": "ArchitectureBuilding-302",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Bevier Hall",
+    "room": "242",
+    "usage": {
+      "Monday": [
+        {
+          "start": "17:00",
+          "end": "18:15"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "14:00",
+          "end": "15:15"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "17:00",
+          "end": "18:15"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "14:00",
+          "end": "15:15"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "SOCW 297",
+      "SOCW 410"
+    ],
+    "room_id": "BevierHall-242",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Siebel Center for Comp Sci",
+    "room": "1304",
+    "usage": {
+      "Monday": [
+        {
+          "start": "14:00",
+          "end": "15:15"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "14:00",
+          "end": "15:15"
+        }
+      ],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "SOCW 300"
+    ],
+    "room_id": "SiebelCenterforCompSci-1304",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "1010 W Nevada n.a.",
+    "room": "2023",
+    "usage": {
+      "Monday": [
+        {
+          "start": "09:30",
+          "end": "10:45"
+        },
+        {
+          "start": "11:00",
+          "end": "12:15"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "14:00",
+          "end": "15:15"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "09:30",
+          "end": "10:45"
+        },
+        {
+          "start": "11:00",
+          "end": "12:15"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "14:00",
+          "end": "15:15"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "SOCW 315",
+      "SOCW 451"
+    ],
+    "room_id": "1010WNevadan.a.-2023",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "1010 W Nevada n.a.",
+    "room": "2101",
+    "usage": {
+      "Monday": [
+        {
+          "start": "09:30",
+          "end": "10:45"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "09:30",
+          "end": "10:45"
+        }
+      ],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "SOCW 370"
+    ],
+    "room_id": "1010WNevadan.a.-2101",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "1010 W Nevada",
+    "room": "2030",
+    "usage": {
+      "Monday": [
+        {
+          "start": "11:00",
+          "end": "12:50"
+        },
+        {
+          "start": "09:00",
+          "end": "10:15"
+        },
+        {
+          "start": "13:00",
+          "end": "15:50"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "08:00",
+          "end": "09:50"
+        },
+        {
+          "start": "11:00",
+          "end": "12:50"
+        },
+        {
+          "start": "13:00",
+          "end": "15:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "11:00",
+          "end": "12:50"
+        },
+        {
+          "start": "09:00",
+          "end": "10:15"
+        },
+        {
+          "start": "13:00",
+          "end": "15:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "08:00",
+          "end": "09:50"
+        },
+        {
+          "start": "11:00",
+          "end": "12:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "SOCW 401",
+      "SOCW 403",
+      "SOCW 505",
+      "SOCW 510",
+      "SOCW 552"
+    ],
+    "room_id": "1010WNevada-2030",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "1010 W Nevada",
+    "room": "2101",
+    "usage": {
+      "Monday": [
+        {
+          "start": "11:00",
+          "end": "12:15"
+        },
+        {
+          "start": "13:00",
+          "end": "15:50"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "09:30",
+          "end": "10:45"
+        },
+        {
+          "start": "13:00",
+          "end": "15:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "11:00",
+          "end": "12:15"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "09:30",
+          "end": "10:45"
+        },
+        {
+          "start": "13:00",
+          "end": "15:50"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "09:00",
+          "end": "11:50"
+        }
+      ]
+    },
+    "courses": [
+      "SOCW 402",
+      "SOCW 427",
+      "SOCW 509",
+      "SOCW 520",
+      "SOCW 561",
+      "SOCW 593"
+    ],
+    "room_id": "1010WNevada-2101",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "1010 W Nevada",
+    "room": "2019",
+    "usage": {
+      "Monday": [
+        {
+          "start": "13:00",
+          "end": "14:15"
+        },
+        {
+          "start": "09:00",
+          "end": "11:50"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "09:00",
+          "end": "11:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "13:00",
+          "end": "14:15"
+        },
+        {
+          "start": "09:00",
+          "end": "11:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "SOCW 402",
+      "SOCW 427",
+      "SOCW 506",
+      "SOCW 541"
+    ],
+    "room_id": "1010WNevada-2019",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "1010 W Nevada",
+    "room": "2023",
+    "usage": {
+      "Monday": [
+        {
+          "start": "09:00",
+          "end": "11:50"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "15:30",
+          "end": "16:45"
+        },
+        {
+          "start": "09:00",
+          "end": "11:50"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "09:00",
+          "end": "11:50"
+        },
+        {
+          "start": "15:30",
+          "end": "16:45"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "SOCW 410",
+      "SOCW 420",
+      "SOCW 427",
+      "SOCW 509"
+    ],
+    "room_id": "1010WNevada-2023",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Gregory Hall",
+    "room": "217",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "11:00",
+          "end": "12:15"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "11:00",
+          "end": "12:15"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "SOCW 410"
+    ],
+    "room_id": "GregoryHall-217",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "1010 W Nevada n.a.",
+    "room": "2019",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "10:00",
+          "end": "11:15"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "10:00",
+          "end": "11:15"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "SOCW 451"
+    ],
+    "room_id": "1010WNevadan.a.-2019",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "1010 W Nevada",
+    "room": "2018",
+    "usage": {
+      "Monday": [
+        {
+          "start": "09:00",
+          "end": "11:50"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "09:00",
+          "end": "11:50"
+        },
+        {
+          "start": "13:00",
+          "end": "15:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "09:00",
+          "end": "11:50"
+        },
+        {
+          "start": "13:00",
+          "end": "15:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "09:00",
+          "end": "11:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "SOCW 501",
+      "SOCW 522",
+      "SOCW 542",
+      "SOCW 552",
+      "SOCW 589"
+    ],
+    "room_id": "1010WNevada-2018",
+    "semester": "Fall 2025"
+  }
+]

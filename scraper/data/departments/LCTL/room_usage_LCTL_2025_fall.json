@@ -1,0 +1,69 @@
+[
+  {
+    "building": "English Building",
+    "room": "125",
+    "usage": {
+      "Monday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "LCTL 101"
+    ],
+    "room_id": "EnglishBuilding-125",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Literatures, Cultures, & Ling",
+    "room": "1118",
+    "usage": {
+      "Monday": [
+        {
+          "start": "16:00",
+          "end": "16:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "16:00",
+          "end": "16:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "16:00",
+          "end": "16:50"
+        }
+      ]
+    },
+    "courses": [
+      "LCTL 201"
+    ],
+    "room_id": "Literatures,Cultures,&Ling-1118",
+    "semester": "Fall 2025"
+  }
+]

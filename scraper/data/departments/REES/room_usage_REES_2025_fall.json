@@ -1,0 +1,54 @@
+[
+  {
+    "building": "Noyes Laboratory",
+    "room": "162",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "09:30",
+          "end": "10:50"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "09:30",
+          "end": "10:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "REES 200"
+    ],
+    "room_id": "NoyesLaboratory-162",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Literatures, Cultures, & Ling",
+    "room": "1032",
+    "usage": {
+      "Monday": [
+        {
+          "start": "15:00",
+          "end": "16:50"
+        },
+        {
+          "start": "15:00",
+          "end": "16:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "REES 495",
+      "REES 550"
+    ],
+    "room_id": "Literatures,Cultures,&Ling-1032",
+    "semester": "Fall 2025"
+  }
+]
