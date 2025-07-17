@@ -1,0 +1,343 @@
+[
+  {
+    "building": "Grad Sch of Lib & Info Science",
+    "room": "131",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "14:30",
+          "end": "15:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "GSD 101"
+    ],
+    "room_id": "GradSchofLib&InfoScience-131",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Sidney Lu Mech Engr Bldg",
+    "room": "1047",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "13:00",
+          "end": "14:20"
+        }
+      ],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "GSD 101"
+    ],
+    "room_id": "SidneyLuMechEngrBldg-1047",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Grad Sch of Lib & Info Science",
+    "room": "53",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "13:00",
+          "end": "15:20"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "16:00",
+          "end": "17:20"
+        }
+      ],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "GSD 101",
+      "GSD 204"
+    ],
+    "room_id": "GradSchofLib&InfoScience-53",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Sidney Lu Mech Engr Bldg",
+    "room": "1043",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "17:30",
+          "end": "18:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "GSD 101"
+    ],
+    "room_id": "SidneyLuMechEngrBldg-1043",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Literatures, Cultures, & Ling",
+    "room": "1136",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "15:30",
+          "end": "16:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "GSD 102"
+    ],
+    "room_id": "Literatures,Cultures,&Ling-1136",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Armory",
+    "room": "241",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "14:00",
+          "end": "15:20"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "GSD 102"
+    ],
+    "room_id": "Armory-241",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Armory",
+    "room": "428",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "14:00",
+          "end": "15:20"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "GSD 102"
+    ],
+    "room_id": "Armory-428",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Wymer Hall",
+    "room": "2060",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "14:00",
+          "end": "15:20"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "GSD 102"
+    ],
+    "room_id": "WymerHall-2060",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Campus Instructional Facility",
+    "room": "4035",
+    "usage": {
+      "Monday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "GSD 103"
+    ],
+    "room_id": "CampusInstructionalFacility-4035",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Siebel Center for Design",
+    "room": "0060",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "14:00",
+          "end": "15:20"
+        },
+        {
+          "start": "15:30",
+          "end": "16:50"
+        },
+        {
+          "start": "09:30",
+          "end": "12:10"
+        },
+        {
+          "start": "09:30",
+          "end": "12:10"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "14:00",
+          "end": "15:20"
+        },
+        {
+          "start": "15:30",
+          "end": "16:50"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "13:00",
+          "end": "15:40"
+        },
+        {
+          "start": "09:30",
+          "end": "12:10"
+        }
+      ]
+    },
+    "courses": [
+      "GSD 390",
+      "GSD 490"
+    ],
+    "room_id": "SiebelCenterforDesign-0060",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Architecture Building",
+    "room": "301",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "15:00",
+          "end": "16:20"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "15:00",
+          "end": "16:20"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "GSD 390"
+    ],
+    "room_id": "ArchitectureBuilding-301",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Siebel Center for Design",
+    "room": "1002",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "09:00",
+          "end": "11:20"
+        }
+      ],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "GSD 390"
+    ],
+    "room_id": "SiebelCenterforDesign-1002",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Speech & Hearing Science Bldg",
+    "room": "110",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "09:30",
+          "end": "10:50"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "09:30",
+          "end": "10:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "GSD 403"
+    ],
+    "room_id": "Speech&HearingScienceBldg-110",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "English Building",
+    "room": "135",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [],
+      "Wednesday": [],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "13:00",
+          "end": "15:20"
+        }
+      ]
+    },
+    "courses": [
+      "GSD 503"
+    ],
+    "room_id": "EnglishBuilding-135",
+    "semester": "Fall 2025"
+  }
+]

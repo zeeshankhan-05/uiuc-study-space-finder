@@ -1,0 +1,49 @@
+[
+  {
+    "building": "Chemistry Annex",
+    "room": "1024",
+    "usage": {
+      "Monday": [
+        {
+          "start": "16:00",
+          "end": "16:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "BIOC 190"
+    ],
+    "room_id": "ChemistryAnnex-1024",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Lincoln Hall",
+    "room": "1002",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "15:30",
+          "end": "16:50"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "15:30",
+          "end": "16:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "BIOC 460"
+    ],
+    "room_id": "LincolnHall-1002",
+    "semester": "Fall 2025"
+  }
+]

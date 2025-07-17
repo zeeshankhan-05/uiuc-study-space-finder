@@ -1,0 +1,28 @@
+[
+  {
+    "building": "Burrill Hall",
+    "room": "136",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "09:30",
+          "end": "10:50"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "09:30",
+          "end": "10:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "ENSU 302"
+    ],
+    "room_id": "BurrillHall-136",
+    "semester": "Fall 2025"
+  }
+]

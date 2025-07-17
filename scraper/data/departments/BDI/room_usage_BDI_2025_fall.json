@@ -1,0 +1,143 @@
+[
+  {
+    "building": "Business Instructional Fac",
+    "room": "3007",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "15:30",
+          "end": "16:50"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "15:30",
+          "end": "16:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "BDI 475"
+    ],
+    "room_id": "BusinessInstructionalFac-3007",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Business Instructional Fac",
+    "room": "3041",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "14:00",
+          "end": "15:20"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "14:00",
+          "end": "15:20"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "BDI 475"
+    ],
+    "room_id": "BusinessInstructionalFac-3041",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Business Instructional Fac",
+    "room": "3009",
+    "usage": {
+      "Monday": [
+        {
+          "start": "15:30",
+          "end": "16:50"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "12:30",
+          "end": "13:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "15:30",
+          "end": "16:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "12:30",
+          "end": "13:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "BDI 475",
+      "BDI 513"
+    ],
+    "room_id": "BusinessInstructionalFac-3009",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Business Instructional Fac",
+    "room": "2011",
+    "usage": {
+      "Monday": [
+        {
+          "start": "12:30",
+          "end": "13:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "12:30",
+          "end": "13:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "BDI 513"
+    ],
+    "room_id": "BusinessInstructionalFac-2011",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Business Instructional Fac",
+    "room": "3039",
+    "usage": {
+      "Monday": [
+        {
+          "start": "08:00",
+          "end": "09:20"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "08:00",
+          "end": "09:20"
+        }
+      ],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "BDI 513"
+    ],
+    "room_id": "BusinessInstructionalFac-3039",
+    "semester": "Fall 2025"
+  }
+]

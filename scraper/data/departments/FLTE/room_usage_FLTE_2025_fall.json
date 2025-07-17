@@ -1,0 +1,23 @@
+[
+  {
+    "building": "Gregory Hall",
+    "room": "221",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "16:30",
+          "end": "19:00"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "FLTE 478"
+    ],
+    "room_id": "GregoryHall-221",
+    "semester": "Fall 2025"
+  }
+]

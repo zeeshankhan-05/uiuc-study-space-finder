@@ -1,0 +1,102 @@
+[
+  {
+    "building": "Mumford Hall",
+    "room": "65",
+    "usage": {
+      "Monday": [
+        {
+          "start": "14:00",
+          "end": "14:50"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "15:00",
+          "end": "16:15"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "15:00",
+          "end": "16:15"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "ACES 123",
+      "ACES 199"
+    ],
+    "room_id": "MumfordHall-65",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Animal Sciences Laboratory",
+    "room": "150",
+    "usage": {
+      "Monday": [
+        {
+          "start": "12:00",
+          "end": "12:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "ACES 200"
+    ],
+    "room_id": "AnimalSciencesLaboratory-150",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Bevier Hall",
+    "room": "122",
+    "usage": {
+      "Monday": [
+        {
+          "start": "12:00",
+          "end": "13:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "ACES 298"
+    ],
+    "room_id": "BevierHall-122",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Agricultural Engr Sciences Bld",
+    "room": "248",
+    "usage": {
+      "Monday": [
+        {
+          "start": "10:00",
+          "end": "11:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "ACES 298"
+    ],
+    "room_id": "AgriculturalEngrSciencesBld-248",
+    "semester": "Fall 2025"
+  }
+]

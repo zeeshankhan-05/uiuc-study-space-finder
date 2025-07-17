@@ -1,4 +1,14 @@
-DEPARTMENTS = [""] # Update to contain all departments
+from course_scraper import extract_all_courses_meetings
+from room_normalizer import department_room_usage, merge_department_room_usages
+
+DEPARTMENTS = ["INFO", "IS", "ITAL", "JAPN", "JOUR", "JS", "KOR", "LA", "LAS", "LAST",
+    "LAT", "LAW", "LCTL", "LEAD", "LER", "LING", "LLS", "MACS", "MATH", "MBA",
+    "MCB", "MDIA", "MDVL", "ME", "MICR", "MILS", "MIP", "MSE", "MUS", "MUSC",
+    "MUSE", "NE", "NEUR", "NPRE", "NRES", "NS", "NUTR", "PATH", "PERS", "PHIL",
+    "PHYS", "PLPA", "POL", "PORT", "PS", "PSM", "PSYC", "QUEC", "REES", "REL",
+    "RHET", "RST", "RUSS", "SAME", "SBC", "SCAN", "SE", "SHS", "SLAV", "SLCL",
+    "SOC", "SOCW", "SPAN", "SPED", "STAT", "SWAH", "TAM", "TE", "THEA", "TMGT",
+    "TRST", "TURK", "UKR", "UP", "VCM", "VM", "WLOF", "WRIT", "YDSH"] # Update to contain all departments
 YEAR = "2025" # Update to the desired year
 SEMESTER = "fall" # Update to the desired semester
 

@@ -1,0 +1,539 @@
+[
+  {
+    "building": "Education Building",
+    "room": "162",
+    "usage": {
+      "Monday": [
+        {
+          "start": "13:00",
+          "end": "15:50"
+        },
+        {
+          "start": "17:00",
+          "end": "19:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "13:00",
+          "end": "15:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "16:00",
+          "end": "17:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "CI 210",
+      "CI 402",
+      "CI 476",
+      "CI 550"
+    ],
+    "room_id": "EducationBuilding-162",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "David Kinley Hall",
+    "room": "322",
+    "usage": {
+      "Monday": [
+        {
+          "start": "13:00",
+          "end": "15:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "13:00",
+          "end": "14:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "CI 210",
+      "CI 415"
+    ],
+    "room_id": "DavidKinleyHall-322",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Armory",
+    "room": "384",
+    "usage": {
+      "Monday": [
+        {
+          "start": "13:00",
+          "end": "13:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "CI 210"
+    ],
+    "room_id": "Armory-384",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Education Building",
+    "room": "37",
+    "usage": {
+      "Monday": [
+        {
+          "start": "15:00",
+          "end": "17:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "13:00",
+          "end": "15:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "CI 312",
+      "CI 406"
+    ],
+    "room_id": "EducationBuilding-37",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Education Building",
+    "room": "176",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "14:00",
+          "end": "16:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "CI 380"
+    ],
+    "room_id": "EducationBuilding-176",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Education Building",
+    "room": "389",
+    "usage": {
+      "Monday": [
+        {
+          "start": "13:00",
+          "end": "15:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "09:00",
+          "end": "11:50"
+        }
+      ]
+    },
+    "courses": [
+      "CI 402",
+      "CI 475"
+    ],
+    "room_id": "EducationBuilding-389",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Education Building",
+    "room": "17",
+    "usage": {
+      "Monday": [
+        {
+          "start": "13:00",
+          "end": "15:50"
+        },
+        {
+          "start": "09:00",
+          "end": "11:50"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "14:00",
+          "end": "15:50"
+        },
+        {
+          "start": "16:00",
+          "end": "18:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "13:00",
+          "end": "15:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "09:00",
+          "end": "11:50"
+        }
+      ]
+    },
+    "courses": [
+      "CI 402",
+      "CI 406",
+      "CI 422",
+      "CI 467",
+      "CI 485",
+      "CI 593"
+    ],
+    "room_id": "EducationBuilding-17",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Education Building",
+    "room": "242",
+    "usage": {
+      "Monday": [
+        {
+          "start": "13:00",
+          "end": "15:50"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "13:00",
+          "end": "15:50"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "13:00",
+          "end": "15:50"
+        },
+        {
+          "start": "09:00",
+          "end": "11:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "CI 410",
+      "CI 465",
+      "CI 467",
+      "CI 471"
+    ],
+    "room_id": "EducationBuilding-242",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Education Building",
+    "room": "22",
+    "usage": {
+      "Monday": [
+        {
+          "start": "09:00",
+          "end": "11:50"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "14:00",
+          "end": "15:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "16:00",
+          "end": "18:50"
+        },
+        {
+          "start": "16:00",
+          "end": "18:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "16:00",
+          "end": "18:50"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "09:00",
+          "end": "11:50"
+        }
+      ]
+    },
+    "courses": [
+      "CI 415",
+      "CI 452",
+      "CI 467",
+      "CI 476",
+      "CI 485",
+      "CI 568"
+    ],
+    "room_id": "EducationBuilding-22",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Education Building 37 Education Building",
+    "room": "385",
+    "usage": {
+      "Monday": [
+        {
+          "start": "09:00",
+          "end": "11:20"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "09:00",
+          "end": "11:20"
+        }
+      ],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "09:00",
+          "end": "11:20"
+        }
+      ]
+    },
+    "courses": [
+      "CI 421"
+    ],
+    "room_id": "EducationBuilding37EducationBuilding-385",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "David Kinley Hall",
+    "room": "106",
+    "usage": {
+      "Monday": [
+        {
+          "start": "13:00",
+          "end": "15:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "CI 452"
+    ],
+    "room_id": "DavidKinleyHall-106",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Education Building",
+    "room": "323",
+    "usage": {
+      "Monday": [
+        {
+          "start": "13:00",
+          "end": "15:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "09:00",
+          "end": "11:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "13:00",
+          "end": "15:50"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "09:00",
+          "end": "11:50"
+        }
+      ]
+    },
+    "courses": [
+      "CI 452",
+      "CI 467",
+      "CI 476"
+    ],
+    "room_id": "EducationBuilding-323",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Armory",
+    "room": "243",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "13:00",
+          "end": "15:50"
+        },
+        {
+          "start": "13:00",
+          "end": "15:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "CI 467",
+      "CI 568"
+    ],
+    "room_id": "Armory-243",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Education Building",
+    "room": "382",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "13:00",
+          "end": "15:50"
+        },
+        {
+          "start": "13:00",
+          "end": "15:50"
+        },
+        {
+          "start": "16:30",
+          "end": "19:20"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "CI 479",
+      "CI 530"
+    ],
+    "room_id": "EducationBuilding-382",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Education Building",
+    "room": "166",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "14:00",
+          "end": "15:50"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "CI 485"
+    ],
+    "room_id": "EducationBuilding-166",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Education Building",
+    "room": "2",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "13:00",
+          "end": "13:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "CI 485"
+    ],
+    "room_id": "EducationBuilding-2",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Education Building",
+    "room": "376",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "16:00",
+          "end": "18:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "CI 536"
+    ],
+    "room_id": "EducationBuilding-376",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "English Building",
+    "room": "123",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "14:00",
+          "end": "15:15"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "14:00",
+          "end": "15:15"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "CI 563"
+    ],
+    "room_id": "EnglishBuilding-123",
+    "semester": "Fall 2025"
+  }
+]

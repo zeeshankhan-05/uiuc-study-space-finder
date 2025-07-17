@@ -1,0 +1,38 @@
+[
+  {
+    "building": "Literatures, Cultures, & Ling",
+    "room": "1018",
+    "usage": {
+      "Monday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "BCS 201"
+    ],
+    "room_id": "Literatures,Cultures,&Ling-1018",
+    "semester": "Fall 2025"
+  }
+]

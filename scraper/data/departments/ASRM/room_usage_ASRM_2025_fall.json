@@ -1,0 +1,811 @@
+[
+  {
+    "building": "Transportation Building",
+    "room": "101",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "ASRM 101"
+    ],
+    "room_id": "TransportationBuilding-101",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Wohlers Hall",
+    "room": "130",
+    "usage": {
+      "Monday": [
+        {
+          "start": "15:00",
+          "end": "16:20"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "15:00",
+          "end": "16:20"
+        }
+      ],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "ASRM 195"
+    ],
+    "room_id": "WohlersHall-130",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Campus Instructional Facility",
+    "room": "4036",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [],
+      "Wednesday": [],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ]
+    },
+    "courses": [
+      "ASRM 210"
+    ],
+    "room_id": "CampusInstructionalFacility-4036",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Armory",
+    "room": "333",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "14:00",
+          "end": "15:20"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "14:00",
+          "end": "15:20"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "ASRM 210"
+    ],
+    "room_id": "Armory-333",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "David Kinley Hall 156 Henry Administration Bldg",
+    "room": "125",
+    "usage": {
+      "Monday": [
+        {
+          "start": "10:30",
+          "end": "11:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "10:30",
+          "end": "11:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "10:30",
+          "end": "11:50"
+        }
+      ]
+    },
+    "courses": [
+      "ASRM 401"
+    ],
+    "room_id": "DavidKinleyHall156HenryAdministrationBldg-125",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Loomis Laboratory",
+    "room": "136",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "14:00",
+          "end": "14:50"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "ASRM 402"
+    ],
+    "room_id": "LoomisLaboratory-136",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Roger Adams Laboratory",
+    "room": "116",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "09:30",
+          "end": "10:50"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "09:30",
+          "end": "10:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "ASRM 402"
+    ],
+    "room_id": "RogerAdamsLaboratory-116",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Armory",
+    "room": "429",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "12:30",
+          "end": "13:50"
+        },
+        {
+          "start": "12:30",
+          "end": "13:50"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "12:30",
+          "end": "13:50"
+        },
+        {
+          "start": "12:30",
+          "end": "13:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "ASRM 406"
+    ],
+    "room_id": "Armory-429",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Henry Administration Bldg",
+    "room": "149",
+    "usage": {
+      "Monday": [
+        {
+          "start": "12:00",
+          "end": "13:20"
+        },
+        {
+          "start": "12:00",
+          "end": "13:20"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "12:00",
+          "end": "13:20"
+        },
+        {
+          "start": "12:00",
+          "end": "13:20"
+        }
+      ],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "ASRM 409"
+    ],
+    "room_id": "HenryAdministrationBldg-149",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Wymer Hall",
+    "room": "1010",
+    "usage": {
+      "Monday": [
+        {
+          "start": "09:00",
+          "end": "10:20"
+        },
+        {
+          "start": "09:00",
+          "end": "10:20"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "11:00",
+          "end": "12:20"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "09:00",
+          "end": "10:20"
+        },
+        {
+          "start": "09:00",
+          "end": "10:20"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "11:00",
+          "end": "12:20"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "ASRM 410",
+      "ASRM 471"
+    ],
+    "room_id": "WymerHall-1010",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Henry Administration Bldg 329 Davenport Hall",
+    "room": "138",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "12:00",
+          "end": "12:50"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "12:00",
+          "end": "12:50"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "12:00",
+          "end": "12:50"
+        }
+      ]
+    },
+    "courses": [
+      "ASRM 441"
+    ],
+    "room_id": "HenryAdministrationBldg329DavenportHall-138",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Architecture Building 302 Architecture Building",
+    "room": "302",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "16:00",
+          "end": "16:50"
+        },
+        {
+          "start": "16:00",
+          "end": "16:50"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "16:00",
+          "end": "16:50"
+        },
+        {
+          "start": "16:00",
+          "end": "16:50"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "16:00",
+          "end": "16:50"
+        },
+        {
+          "start": "16:00",
+          "end": "16:50"
+        }
+      ]
+    },
+    "courses": [
+      "ASRM 442"
+    ],
+    "room_id": "ArchitectureBuilding302ArchitectureBuilding-302",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Transportation Building",
+    "room": "112",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "12:30",
+          "end": "13:50"
+        },
+        {
+          "start": "12:30",
+          "end": "13:50"
+        },
+        {
+          "start": "11:00",
+          "end": "12:20"
+        },
+        {
+          "start": "11:00",
+          "end": "12:20"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "12:30",
+          "end": "13:50"
+        },
+        {
+          "start": "12:30",
+          "end": "13:50"
+        },
+        {
+          "start": "11:00",
+          "end": "12:20"
+        },
+        {
+          "start": "11:00",
+          "end": "12:20"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "ASRM 451"
+    ],
+    "room_id": "TransportationBuilding-112",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Campus Instructional Facility",
+    "room": "4025",
+    "usage": {
+      "Monday": [
+        {
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "start": "14:00",
+          "end": "14:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "start": "14:00",
+          "end": "14:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "start": "14:00",
+          "end": "14:50"
+        }
+      ]
+    },
+    "courses": [
+      "ASRM 453"
+    ],
+    "room_id": "CampusInstructionalFacility-4025",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Transportation Building",
+    "room": "114",
+    "usage": {
+      "Monday": [
+        {
+          "start": "12:00",
+          "end": "12:50"
+        },
+        {
+          "start": "12:00",
+          "end": "12:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "12:00",
+          "end": "12:50"
+        },
+        {
+          "start": "12:00",
+          "end": "12:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "12:00",
+          "end": "12:50"
+        },
+        {
+          "start": "12:00",
+          "end": "12:50"
+        }
+      ]
+    },
+    "courses": [
+      "ASRM 453"
+    ],
+    "room_id": "TransportationBuilding-114",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Psychology Building",
+    "room": "32",
+    "usage": {
+      "Monday": [
+        {
+          "start": "15:00",
+          "end": "16:20"
+        },
+        {
+          "start": "15:00",
+          "end": "16:20"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "15:00",
+          "end": "16:20"
+        },
+        {
+          "start": "15:00",
+          "end": "16:20"
+        }
+      ],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "ASRM 455"
+    ],
+    "room_id": "PsychologyBuilding-32",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Armory",
+    "room": "384",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [],
+      "Wednesday": [],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "15:00",
+          "end": "15:50"
+        }
+      ]
+    },
+    "courses": [
+      "ASRM 461"
+    ],
+    "room_id": "Armory-384",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Armory",
+    "room": "432",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "14:00",
+          "end": "15:20"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "14:00",
+          "end": "15:20"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "ASRM 461"
+    ],
+    "room_id": "Armory-432",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "English Building 207 Psychology Building",
+    "room": "104",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "13:00",
+          "end": "13:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "13:00",
+          "end": "13:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "13:00",
+          "end": "13:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        }
+      ]
+    },
+    "courses": [
+      "ASRM 462",
+      "ASRM 561"
+    ],
+    "room_id": "EnglishBuilding207PsychologyBuilding-104",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Armory",
+    "room": "428",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [],
+      "Wednesday": [],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "11:00",
+          "end": "11:50"
+        }
+      ]
+    },
+    "courses": [
+      "ASRM 471"
+    ],
+    "room_id": "Armory-428",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Architecture Building",
+    "room": "301",
+    "usage": {
+      "Monday": [
+        {
+          "start": "13:30",
+          "end": "14:50"
+        },
+        {
+          "start": "13:30",
+          "end": "14:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "13:30",
+          "end": "14:50"
+        },
+        {
+          "start": "13:30",
+          "end": "14:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "ASRM 499",
+      "ASRM 595"
+    ],
+    "room_id": "ArchitectureBuilding-301",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Armory",
+    "room": "241",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "15:30",
+          "end": "16:50"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "15:30",
+          "end": "16:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "ASRM 533"
+    ],
+    "room_id": "Armory-241",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "English Building",
+    "room": "36",
+    "usage": {
+      "Monday": [
+        {
+          "start": "16:30",
+          "end": "17:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "ASRM 539"
+    ],
+    "room_id": "EnglishBuilding-36",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Sidney Lu Mech Engr Bldg",
+    "room": "3101",
+    "usage": {
+      "Monday": [
+        {
+          "start": "14:00",
+          "end": "14:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "14:00",
+          "end": "14:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "14:00",
+          "end": "14:50"
+        }
+      ]
+    },
+    "courses": [
+      "ASRM 551"
+    ],
+    "room_id": "SidneyLuMechEngrBldg-3101",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Armory",
+    "room": "147",
+    "usage": {
+      "Monday": [
+        {
+          "start": "10:30",
+          "end": "11:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "10:30",
+          "end": "11:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "ASRM 563"
+    ],
+    "room_id": "Armory-147",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Lincoln Hall",
+    "room": "1020",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [],
+      "Wednesday": [],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "14:00",
+          "end": "14:50"
+        }
+      ]
+    },
+    "courses": [
+      "ASRM 598"
+    ],
+    "room_id": "LincolnHall-1020",
+    "semester": "Fall 2025"
+  }
+]

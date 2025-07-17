@@ -1,0 +1,38 @@
+[
+  {
+    "building": "1205 W Oregon",
+    "room": "212",
+    "usage": {
+      "Monday": [
+        {
+          "start": "09:00",
+          "end": "10:20"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "14:00",
+          "end": "15:20"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "09:00",
+          "end": "10:20"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "14:00",
+          "end": "15:20"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "CHP 395"
+    ],
+    "room_id": "1205WOregon-212",
+    "semester": "Fall 2025"
+  }
+]

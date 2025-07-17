@@ -1,0 +1,603 @@
+[
+  {
+    "building": "Transportation Building",
+    "room": "103",
+    "usage": {
+      "Monday": [
+        {
+          "start": "13:00",
+          "end": "14:20"
+        },
+        {
+          "start": "09:00",
+          "end": "10:40"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "15:30",
+          "end": "16:50"
+        },
+        {
+          "start": "12:30",
+          "end": "13:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "13:00",
+          "end": "14:20"
+        },
+        {
+          "start": "09:00",
+          "end": "10:40"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "15:30",
+          "end": "16:50"
+        },
+        {
+          "start": "12:30",
+          "end": "13:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "IE 300",
+      "IE 412",
+      "IE 521",
+      "IE 522"
+    ],
+    "room_id": "TransportationBuilding-103",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Campus Instructional Facility",
+    "room": "3025",
+    "usage": {
+      "Monday": [
+        {
+          "start": "11:00",
+          "end": "11:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "11:00",
+          "end": "11:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "11:00",
+          "end": "11:50"
+        }
+      ]
+    },
+    "courses": [
+      "IE 300"
+    ],
+    "room_id": "CampusInstructionalFacility-3025",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Campus Instructional Facility",
+    "room": "4025",
+    "usage": {
+      "Monday": [
+        {
+          "start": "15:00",
+          "end": "15:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "15:00",
+          "end": "15:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "15:00",
+          "end": "15:50"
+        }
+      ]
+    },
+    "courses": [
+      "IE 310"
+    ],
+    "room_id": "CampusInstructionalFacility-4025",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Materials Science & Eng Bld",
+    "room": "4101",
+    "usage": {
+      "Monday": [
+        {
+          "start": "14:00",
+          "end": "15:20"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "16:00",
+          "end": "17:50"
+        },
+        {
+          "start": "14:00",
+          "end": "15:20"
+        }
+      ],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "13:00",
+          "end": "14:50"
+        }
+      ]
+    },
+    "courses": [
+      "IE 360",
+      "IE 546"
+    ],
+    "room_id": "MaterialsScience&EngBld-4101",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Burrill Hall",
+    "room": "136",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "16:00",
+          "end": "17:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "IE 360"
+    ],
+    "room_id": "BurrillHall-136",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Ceramics Building",
+    "room": "218",
+    "usage": {
+      "Monday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "IE 360"
+    ],
+    "room_id": "CeramicsBuilding-218",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Transportation Building",
+    "room": "114",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "15:30",
+          "end": "16:50"
+        },
+        {
+          "start": "15:30",
+          "end": "16:50"
+        },
+        {
+          "start": "09:30",
+          "end": "10:50"
+        },
+        {
+          "start": "09:30",
+          "end": "10:50"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "15:30",
+          "end": "16:50"
+        },
+        {
+          "start": "15:30",
+          "end": "16:50"
+        },
+        {
+          "start": "09:30",
+          "end": "10:50"
+        },
+        {
+          "start": "09:30",
+          "end": "10:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "IE 405",
+      "IE 498",
+      "IE 517"
+    ],
+    "room_id": "TransportationBuilding-114",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Sidney Lu Mech Engr Bldg 1043 Sidney Lu Mech Engr Bldg",
+    "room": "1043",
+    "usage": {
+      "Monday": [
+        {
+          "start": "16:00",
+          "end": "16:50"
+        },
+        {
+          "start": "16:00",
+          "end": "16:50"
+        },
+        {
+          "start": "16:00",
+          "end": "16:50"
+        },
+        {
+          "start": "16:00",
+          "end": "16:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "16:00",
+          "end": "16:50"
+        },
+        {
+          "start": "16:00",
+          "end": "16:50"
+        },
+        {
+          "start": "16:00",
+          "end": "16:50"
+        },
+        {
+          "start": "16:00",
+          "end": "16:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "IE 410"
+    ],
+    "room_id": "SidneyLuMechEngrBldg1043SidneyLuMechEngrBldg-1043",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Transportation Building",
+    "room": "101",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "14:00",
+          "end": "15:20"
+        },
+        {
+          "start": "14:00",
+          "end": "15:20"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "14:00",
+          "end": "15:20"
+        },
+        {
+          "start": "14:00",
+          "end": "15:20"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "IE 411"
+    ],
+    "room_id": "TransportationBuilding-101",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Digital Computer Laboratory",
+    "room": "1310",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "08:00",
+          "end": "09:20"
+        },
+        {
+          "start": "08:00",
+          "end": "09:20"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "17:30",
+          "end": "20:30"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "08:00",
+          "end": "09:20"
+        },
+        {
+          "start": "08:00",
+          "end": "09:20"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ]
+    },
+    "courses": [
+      "IE 421",
+      "IE 434",
+      "IE 590"
+    ],
+    "room_id": "DigitalComputerLaboratory-1310",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Education Building",
+    "room": "162",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "14:00",
+          "end": "15:20"
+        },
+        {
+          "start": "14:00",
+          "end": "15:20"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "14:00",
+          "end": "15:20"
+        },
+        {
+          "start": "14:00",
+          "end": "15:20"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "IE 445"
+    ],
+    "room_id": "EducationBuilding-162",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Henry Administration Bldg",
+    "room": "138",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "15:30",
+          "end": "16:50"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "15:30",
+          "end": "16:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "IE 518"
+    ],
+    "room_id": "HenryAdministrationBldg-138",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Everitt Laboratory",
+    "room": "2233",
+    "usage": {
+      "Monday": [
+        {
+          "start": "15:00",
+          "end": "16:20"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "15:00",
+          "end": "16:20"
+        }
+      ],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "IE 523"
+    ],
+    "room_id": "EverittLaboratory-2233",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Loomis Laboratory",
+    "room": "144",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "15:00",
+          "end": "16:40"
+        },
+        {
+          "start": "15:00",
+          "end": "16:40"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "15:00",
+          "end": "16:40"
+        },
+        {
+          "start": "15:00",
+          "end": "16:40"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "IE 524"
+    ],
+    "room_id": "LoomisLaboratory-144",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Campus Instructional Facility",
+    "room": "4035",
+    "usage": {
+      "Monday": [
+        {
+          "start": "11:00",
+          "end": "11:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "IE 527"
+    ],
+    "room_id": "CampusInstructionalFacility-4035",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "English Building",
+    "room": "259",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "14:00",
+          "end": "15:20"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "14:00",
+          "end": "15:20"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "IE 532"
+    ],
+    "room_id": "EnglishBuilding-259",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Transportation Building",
+    "room": "206",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "15:30",
+          "end": "16:50"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "15:30",
+          "end": "16:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "IE 598"
+    ],
+    "room_id": "TransportationBuilding-206",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Loomis Laboratory",
+    "room": "137",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "14:00",
+          "end": "15:20"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "14:00",
+          "end": "15:20"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "IE 598"
+    ],
+    "room_id": "LoomisLaboratory-137",
+    "semester": "Fall 2025"
+  }
+]

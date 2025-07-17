@@ -2,10 +2,7 @@ import json
 import re
 from collections import defaultdict
 import os
-
-DEPARTMENTS = ["MATH"] # Update to contain all departments
-YEAR = "2025" # Update to the desired year
-SEMESTER = "fall" # Update to the desired semester
+from course_scraper import get_course_urls, get_course_meetings
 
 def parse_days(days_str):
     """
@@ -73,7 +70,7 @@ def parse_building_room(location):
         return " ".join(parts[:-1]), parts[-1]
     return location, ""
 
-def department_room_usage(department=DEPARTMENTS[0], year=YEAR, semester=SEMESTER):
+def department_room_usage(department, year, semester):
     """
     Aggregates all room usage by building/room/day for a department and saves to a JSON file in a department subfolder.
     Each entry includes:
@@ -81,14 +78,19 @@ def department_room_usage(department=DEPARTMENTS[0], year=YEAR, semester=SEMESTE
       - room
       - usage (dict of days to list of {start, end} objects)
       - courses (list of course numbers using the room)
+      - room_id (unique string, e.g., 'Wohlers Hall-241')
+      - semester (e.g., 'Fall 2025')
     """
     courses = get_course_urls(department, year, semester)
     weekdays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday']
+    # Add room_id and semester to each room entry
     room_dict = defaultdict(lambda: {
         "building": "", 
         "room": "", 
         "usage": {day: [] for day in weekdays},
-        "courses": set()
+        "courses": set(),
+        "room_id": "",
+        "semester": ""
     })
 
     for course in courses:
@@ -103,6 +105,10 @@ def department_room_usage(department=DEPARTMENTS[0], year=YEAR, semester=SEMESTE
                 key = (building, room)
                 room_dict[key]["building"] = building
                 room_dict[key]["room"] = room
+                # Compose room_id as 'Building-Room' (no spaces in building)
+                room_dict[key]["room_id"] = f"{building.replace(' ', '')}-{room}"
+                # Compose semester as 'Fall 2025' (capitalize first letter)
+                room_dict[key]["semester"] = f"{semester.capitalize()} {year}"
                 # Parse each time string into {start, end} object
                 usage_obj = parse_usage_time_range(meeting['time'])
                 if usage_obj:
@@ -117,28 +123,52 @@ def department_room_usage(department=DEPARTMENTS[0], year=YEAR, semester=SEMESTE
         v["courses"] = sorted(v["courses"])
 
     # Store data into departments folder
-    folder = os.path.join("data", "departments", department)
+    folder = os.path.join(os.path.dirname(__file__), "data", "departments", department)
     os.makedirs(folder, exist_ok=True)
-    filename = os.path.join(folder, f"room_usage_{department}_{year}_{semester}.json")
+    filename = os.path.abspath(os.path.join(folder, f"room_usage_{department}_{year}_{semester}.json"))
     with open(filename, "w") as f:
         json.dump(list(room_dict.values()), f, indent=2)
     print(f"✅ Room usage saved to {filename}")
 
-def merge_department_room_usages(departments=DEPARTMENTS, year=YEAR, semester=SEMESTER, output_filename=None):
+def merge_department_room_usages(departments, year, semester, output_filename=None):
     """
     Reads all department room usage files and merges them into a single master file, combining usage and courses for duplicate rooms.
+    Preserves 'room_id' and 'semester' fields. Appends new department data to the master file if it already exists.
     """
     from collections import defaultdict
+    import json
+    import os
     if output_filename is None:
         output_filename = f"room_usage_{semester}{year}.json"
+    # Save master file in the same directory as this script, using absolute path
+    output_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "data", output_filename))
     master_dict = defaultdict(lambda: {
         "building": "",
         "room": "",
         "usage": {day: [] for day in ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday']},
-        "courses": set()
+        "courses": set(),
+        "room_id": "",
+        "semester": ""
     })
+    # If master file exists, load its data first
+    if os.path.exists(output_path):
+        with open(output_path) as f:
+            try:
+                existing_data = json.load(f)
+                for entry in existing_data:
+                    key = (entry["building"], entry["room"])
+                    master_dict[key]["building"] = entry["building"]
+                    master_dict[key]["room"] = entry["room"]
+                    master_dict[key]["room_id"] = entry.get("room_id", f"{entry['building'].replace(' ', '')}-{entry['room']}")
+                    master_dict[key]["semester"] = entry.get("semester", f"{semester.capitalize()} {year}")
+                    for day, slots in entry["usage"].items():
+                        master_dict[key]["usage"][day].extend(slots)
+                    master_dict[key]["courses"].update(entry["courses"])
+            except Exception as e:
+                print(f"⚠️ Failed to load existing master file: {e}")
+    # Merge in new department data
     for dept in departments:
-        filename = os.path.join(dept, f"room_usage_{dept}_{year}_{semester}.json")
+        filename = os.path.join(os.path.dirname(__file__), "data", "departments", dept, f"room_usage_{dept}_{year}_{semester}.json")
         if not os.path.exists(filename):
             print(f"⚠️ File not found: {filename}")
             continue
@@ -148,6 +178,8 @@ def merge_department_room_usages(departments=DEPARTMENTS, year=YEAR, semester=SE
             key = (entry["building"], entry["room"])
             master_dict[key]["building"] = entry["building"]
             master_dict[key]["room"] = entry["room"]
+            master_dict[key]["room_id"] = entry.get("room_id", f"{entry['building'].replace(' ', '')}-{entry['room']}")
+            master_dict[key]["semester"] = entry.get("semester", f"{semester.capitalize()} {year}")
             # Merge usage for each day
             for day, slots in entry["usage"].items():
                 master_dict[key]["usage"][day].extend(slots)
@@ -158,7 +190,6 @@ def merge_department_room_usages(departments=DEPARTMENTS, year=YEAR, semester=SE
     for v in master_dict.values():
         # Sort and deduplicate usage slots for each day
         for day in v["usage"]:
-            # Remove duplicates by converting to tuple, then back to dict
             seen = set()
             unique_slots = []
             for slot in v["usage"][day]:
@@ -166,11 +197,10 @@ def merge_department_room_usages(departments=DEPARTMENTS, year=YEAR, semester=SE
                 if slot_tuple not in seen:
                     seen.add(slot_tuple)
                     unique_slots.append(slot)
-            # Sort by start time
             unique_slots.sort(key=lambda s: s["start"])
             v["usage"][day] = unique_slots
         v["courses"] = sorted(v["courses"])
         result.append(v)
-    with open(output_filename, "w") as f:
+    with open(output_path, "w") as f:
         json.dump(result, f, indent=2)
-    print(f"✅ Master room usage saved to {output_filename}")
+    print(f"✅ Master room usage saved to {output_path}")

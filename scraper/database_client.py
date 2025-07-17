@@ -1,6 +1,5 @@
 from pymongo import MongoClient
 import json
-import os
 
 def connect_to_mongo(uri="mongodb://localhost:27017/", db_name="studyspaces"):
     client = MongoClient(uri)

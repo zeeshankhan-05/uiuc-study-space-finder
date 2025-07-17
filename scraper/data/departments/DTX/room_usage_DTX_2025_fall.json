@@ -1,0 +1,68 @@
+[
+  {
+    "building": "Siebel Center for Design",
+    "room": "1000",
+    "usage": {
+      "Monday": [
+        {
+          "start": "15:00",
+          "end": "16:20"
+        },
+        {
+          "start": "10:00",
+          "end": "11:20"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "14:00",
+          "end": "16:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "15:00",
+          "end": "16:20"
+        },
+        {
+          "start": "10:00",
+          "end": "11:20"
+        }
+      ],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "DTX 180",
+      "DTX 451"
+    ],
+    "room_id": "SiebelCenterforDesign-1000",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Siebel Center for Design",
+    "room": "1002",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "14:00",
+          "end": "15:20"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "14:00",
+          "end": "15:20"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "DTX 495"
+    ],
+    "room_id": "SiebelCenterforDesign-1002",
+    "semester": "Fall 2025"
+  }
+]

@@ -1,0 +1,37 @@
+[
+  {
+    "building": "Art and Design Building",
+    "room": "316",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "15:30",
+          "end": "16:50"
+        },
+        {
+          "start": "11:00",
+          "end": "12:20"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "15:30",
+          "end": "16:50"
+        },
+        {
+          "start": "11:00",
+          "end": "12:20"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "ARTJ 299",
+      "ARTJ 301"
+    ],
+    "room_id": "ArtandDesignBuilding-316",
+    "semester": "Fall 2025"
+  }
+]
