@@ -1,0 +1,147 @@
+[
+  {
+    "building": "Armory",
+    "room": "101",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "06:00",
+          "end": "07:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "NS 100"
+    ],
+    "room_id": "Armory-101",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Armory",
+    "room": "241",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "09:00",
+          "end": "09:50"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "09:00",
+          "end": "09:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "NS 101"
+    ],
+    "room_id": "Armory-241",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Armory",
+    "room": "384",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "12:30",
+          "end": "13:50"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "12:30",
+          "end": "13:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "NS 120"
+    ],
+    "room_id": "Armory-384",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Armory",
+    "room": "337",
+    "usage": {
+      "Monday": [
+        {
+          "start": "13:00",
+          "end": "14:15"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "08:00",
+          "end": "09:20"
+        },
+        {
+          "start": "11:00",
+          "end": "12:20"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "13:00",
+          "end": "14:15"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "08:00",
+          "end": "09:20"
+        },
+        {
+          "start": "11:00",
+          "end": "12:20"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "NS 303",
+      "NS 307",
+      "NS 323"
+    ],
+    "room_id": "Armory-337",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Armory",
+    "room": "151",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "08:00",
+          "end": "09:20"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "08:00",
+          "end": "09:20"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "NS 305"
+    ],
+    "room_id": "Armory-151",
+    "semester": "Fall 2025"
+  }
+]

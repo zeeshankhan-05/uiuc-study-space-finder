@@ -1,0 +1,380 @@
+[
+  {
+    "building": "Literatures, Cultures, & Ling",
+    "room": "1112",
+    "usage": {
+      "Monday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "15:00",
+          "end": "17:50"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "ITAL 101",
+      "ITAL 505"
+    ],
+    "room_id": "Literatures,Cultures,&Ling-1112",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Literatures, Cultures, & Ling",
+    "room": "1128",
+    "usage": {
+      "Monday": [
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "12:00",
+          "end": "12:50"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "12:00",
+          "end": "12:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "12:00",
+          "end": "12:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "12:00",
+          "end": "12:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "ITAL 101"
+    ],
+    "room_id": "Literatures,Cultures,&Ling-1128",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Literatures, Cultures, & Ling",
+    "room": "1120",
+    "usage": {
+      "Monday": [
+        {
+          "start": "13:00",
+          "end": "13:50"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "13:00",
+          "end": "13:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "13:00",
+          "end": "13:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "13:00",
+          "end": "13:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "ITAL 101"
+    ],
+    "room_id": "Literatures,Cultures,&Ling-1120",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Gregory Hall",
+    "room": "313",
+    "usage": {
+      "Monday": [
+        {
+          "start": "11:00",
+          "end": "11:50"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "11:00",
+          "end": "11:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "11:00",
+          "end": "11:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "11:00",
+          "end": "11:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "ITAL 102"
+    ],
+    "room_id": "GregoryHall-313",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Literatures, Cultures, & Ling",
+    "room": "1140",
+    "usage": {
+      "Monday": [
+        {
+          "start": "13:00",
+          "end": "13:50"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "13:00",
+          "end": "13:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "13:00",
+          "end": "13:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "13:00",
+          "end": "13:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "ITAL 102"
+    ],
+    "room_id": "Literatures,Cultures,&Ling-1140",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Literatures, Cultures, & Ling",
+    "room": "1030",
+    "usage": {
+      "Monday": [
+        {
+          "start": "11:00",
+          "end": "11:50"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "11:00",
+          "end": "11:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "11:00",
+          "end": "11:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "11:00",
+          "end": "11:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "ITAL 103"
+    ],
+    "room_id": "Literatures,Cultures,&Ling-1030",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Davenport Hall",
+    "room": "215",
+    "usage": {
+      "Monday": [
+        {
+          "start": "13:00",
+          "end": "13:50"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "13:00",
+          "end": "13:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "13:00",
+          "end": "13:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "13:00",
+          "end": "13:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "ITAL 103"
+    ],
+    "room_id": "DavenportHall-215",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Literatures, Cultures, & Ling",
+    "room": "1038",
+    "usage": {
+      "Monday": [
+        {
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "ITAL 103",
+      "ITAL 104"
+    ],
+    "room_id": "Literatures,Cultures,&Ling-1038",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Noyes Laboratory",
+    "room": "161",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "09:30",
+          "end": "10:50"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "09:30",
+          "end": "10:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "ITAL 156"
+    ],
+    "room_id": "NoyesLaboratory-161",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Architecture Building",
+    "room": "301",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "11:00",
+          "end": "12:20"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "11:00",
+          "end": "12:20"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "ITAL 240"
+    ],
+    "room_id": "ArchitectureBuilding-301",
+    "semester": "Fall 2025"
+  }
+]

@@ -1,0 +1,568 @@
+[
+  {
+    "building": "Everitt Laboratory",
+    "room": "2233",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "15:30",
+          "end": "16:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "NPRE 100"
+    ],
+    "room_id": "EverittLaboratory-2233",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Campus Instructional Facility",
+    "room": "4039",
+    "usage": {
+      "Monday": [
+        {
+          "start": "15:00",
+          "end": "15:50"
+        },
+        {
+          "start": "14:00",
+          "end": "14:50"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "09:30",
+          "end": "10:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "15:00",
+          "end": "15:50"
+        },
+        {
+          "start": "14:00",
+          "end": "14:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "09:30",
+          "end": "10:50"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "15:00",
+          "end": "15:50"
+        },
+        {
+          "start": "14:00",
+          "end": "14:50"
+        }
+      ]
+    },
+    "courses": [
+      "NPRE 200",
+      "NPRE 321",
+      "NPRE 527"
+    ],
+    "room_id": "CampusInstructionalFacility-4039",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Campus Instructional Facility",
+    "room": "4029",
+    "usage": {
+      "Monday": [
+        {
+          "start": "12:00",
+          "end": "12:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "12:00",
+          "end": "12:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "NPRE 201"
+    ],
+    "room_id": "CampusInstructionalFacility-4029",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Campus Instructional Facility 4029 Campus Instructional Facility",
+    "room": "4029",
+    "usage": {
+      "Monday": [
+        {
+          "start": "12:00",
+          "end": "12:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "12:00",
+          "end": "12:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "12:00",
+          "end": "12:50"
+        }
+      ]
+    },
+    "courses": [
+      "NPRE 201"
+    ],
+    "room_id": "CampusInstructionalFacility4029CampusInstructionalFacility-4029",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Everitt Laboratory",
+    "room": "3117",
+    "usage": {
+      "Monday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ]
+    },
+    "courses": [
+      "NPRE 247"
+    ],
+    "room_id": "EverittLaboratory-3117",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Campus Instructional Facility",
+    "room": "3018",
+    "usage": {
+      "Monday": [
+        {
+          "start": "13:00",
+          "end": "13:50"
+        },
+        {
+          "start": "09:00",
+          "end": "10:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "13:00",
+          "end": "13:50"
+        },
+        {
+          "start": "09:00",
+          "end": "10:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "13:00",
+          "end": "13:50"
+        }
+      ]
+    },
+    "courses": [
+      "NPRE 330",
+      "NPRE 523"
+    ],
+    "room_id": "CampusInstructionalFacility-3018",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Campus Instructional Facility",
+    "room": "3031",
+    "usage": {
+      "Monday": [
+        {
+          "start": "08:00",
+          "end": "08:50"
+        },
+        {
+          "start": "08:00",
+          "end": "08:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "08:00",
+          "end": "08:50"
+        },
+        {
+          "start": "08:00",
+          "end": "08:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "08:00",
+          "end": "08:50"
+        },
+        {
+          "start": "08:00",
+          "end": "08:50"
+        }
+      ]
+    },
+    "courses": [
+      "NPRE 402"
+    ],
+    "room_id": "CampusInstructionalFacility-3031",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Nuclear Radiations Laboratory",
+    "room": "114",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "12:00",
+          "end": "15:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "16:00",
+          "end": "19:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "16:00",
+          "end": "19:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "NPRE 423"
+    ],
+    "room_id": "NuclearRadiationsLaboratory-114",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Loomis Laboratory",
+    "room": "139",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "12:30",
+          "end": "13:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "NPRE 423"
+    ],
+    "room_id": "LoomisLaboratory-139",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Talbot Laboratory",
+    "room": "201",
+    "usage": {
+      "Monday": [
+        {
+          "start": "16:00",
+          "end": "17:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "NPRE 432"
+    ],
+    "room_id": "TalbotLaboratory-201",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Campus Instructional Facility",
+    "room": "3038",
+    "usage": {
+      "Monday": [
+        {
+          "start": "12:00",
+          "end": "12:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "NPRE 432"
+    ],
+    "room_id": "CampusInstructionalFacility-3038",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Loomis Laboratory",
+    "room": "147",
+    "usage": {
+      "Monday": [
+        {
+          "start": "14:00",
+          "end": "14:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "14:00",
+          "end": "14:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "14:00",
+          "end": "14:50"
+        }
+      ]
+    },
+    "courses": [
+      "NPRE 435"
+    ],
+    "room_id": "LoomisLaboratory-147",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Campus Instructional Facility",
+    "room": "1035",
+    "usage": {
+      "Monday": [
+        {
+          "start": "10:00",
+          "end": "11:50"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "09:30",
+          "end": "10:50"
+        },
+        {
+          "start": "11:00",
+          "end": "12:20"
+        },
+        {
+          "start": "11:00",
+          "end": "12:20"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "10:00",
+          "end": "11:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "09:30",
+          "end": "10:50"
+        },
+        {
+          "start": "11:00",
+          "end": "12:20"
+        },
+        {
+          "start": "11:00",
+          "end": "12:20"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "NPRE 445",
+      "NPRE 449",
+      "NPRE 481"
+    ],
+    "room_id": "CampusInstructionalFacility-1035",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Campus Instructional Facility",
+    "room": "2036",
+    "usage": {
+      "Monday": [
+        {
+          "start": "09:00",
+          "end": "09:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "09:00",
+          "end": "09:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "NPRE 451"
+    ],
+    "room_id": "CampusInstructionalFacility-2036",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Campus Instructional Facility",
+    "room": "2018",
+    "usage": {
+      "Monday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "09:00",
+          "end": "10:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "09:00",
+          "end": "10:50"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ]
+    },
+    "courses": [
+      "NPRE 452",
+      "NPRE 498",
+      "NPRE 501"
+    ],
+    "room_id": "CampusInstructionalFacility-2018",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Transportation Building",
+    "room": "203",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "14:00",
+          "end": "15:20"
+        },
+        {
+          "start": "14:00",
+          "end": "15:20"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "14:00",
+          "end": "15:20"
+        },
+        {
+          "start": "14:00",
+          "end": "15:20"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "NPRE 461"
+    ],
+    "room_id": "TransportationBuilding-203",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Everitt Laboratory",
+    "room": "1306",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "16:00",
+          "end": "16:50"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "NPRE 596"
+    ],
+    "room_id": "EverittLaboratory-1306",
+    "semester": "Fall 2025"
+  }
+]

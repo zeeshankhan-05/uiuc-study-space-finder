@@ -1,0 +1,1238 @@
+[
+  {
+    "building": "Natural History Building",
+    "room": "2078",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [],
+      "Wednesday": [],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ]
+    },
+    "courses": [
+      "PHIL 100"
+    ],
+    "room_id": "NaturalHistoryBuilding-2078",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Davenport Hall",
+    "room": "113",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [],
+      "Wednesday": [],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        }
+      ]
+    },
+    "courses": [
+      "PHIL 100"
+    ],
+    "room_id": "DavenportHall-113",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "David Kinley Hall",
+    "room": "209",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [],
+      "Wednesday": [],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "13:00",
+          "end": "13:50"
+        }
+      ]
+    },
+    "courses": [
+      "PHIL 100"
+    ],
+    "room_id": "DavidKinleyHall-209",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Psychology Building",
+    "room": "207",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [],
+      "Wednesday": [],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ]
+    },
+    "courses": [
+      "PHIL 100",
+      "PHIL 103"
+    ],
+    "room_id": "PsychologyBuilding-207",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Education Building",
+    "room": "2",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "11:00",
+          "end": "11:50"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "11:00",
+          "end": "11:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "PHIL 100"
+    ],
+    "room_id": "EducationBuilding-2",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Armory",
+    "room": "429",
+    "usage": {
+      "Monday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "11:00",
+          "end": "11:50"
+        }
+      ]
+    },
+    "courses": [
+      "PHIL 101",
+      "PHIL 110"
+    ],
+    "room_id": "Armory-429",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Gregory Hall",
+    "room": "402",
+    "usage": {
+      "Monday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "15:00",
+          "end": "17:20"
+        },
+        {
+          "start": "15:00",
+          "end": "17:20"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "15:00",
+          "end": "17:20"
+        },
+        {
+          "start": "15:00",
+          "end": "17:20"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "15:00",
+          "end": "17:20"
+        },
+        {
+          "start": "15:00",
+          "end": "17:20"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "15:00",
+          "end": "17:20"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ]
+    },
+    "courses": [
+      "PHIL 101",
+      "PHIL 501",
+      "PHIL 512",
+      "PHIL 513",
+      "PHIL 521"
+    ],
+    "room_id": "GregoryHall-402",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "English Building",
+    "room": "303",
+    "usage": {
+      "Monday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ]
+    },
+    "courses": [
+      "PHIL 102"
+    ],
+    "room_id": "EnglishBuilding-303",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Lincoln Hall",
+    "room": "1051",
+    "usage": {
+      "Monday": [
+        {
+          "start": "13:00",
+          "end": "13:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "13:00",
+          "end": "13:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "13:00",
+          "end": "13:50"
+        }
+      ]
+    },
+    "courses": [
+      "PHIL 103"
+    ],
+    "room_id": "LincolnHall-1051",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Gregory Hall",
+    "room": "321",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [],
+      "Wednesday": [],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "11:00",
+          "end": "11:50"
+        }
+      ]
+    },
+    "courses": [
+      "PHIL 103"
+    ],
+    "room_id": "GregoryHall-321",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Gregory Hall",
+    "room": "307",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [],
+      "Wednesday": [],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "13:00",
+          "end": "13:50"
+        }
+      ]
+    },
+    "courses": [
+      "PHIL 103"
+    ],
+    "room_id": "GregoryHall-307",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Burrill Hall",
+    "room": "124",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "PHIL 103"
+    ],
+    "room_id": "BurrillHall-124",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Gregory Hall",
+    "room": "315",
+    "usage": {
+      "Monday": [
+        {
+          "start": "12:00",
+          "end": "12:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "12:00",
+          "end": "12:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "12:00",
+          "end": "12:50"
+        }
+      ]
+    },
+    "courses": [
+      "PHIL 104"
+    ],
+    "room_id": "GregoryHall-315",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Bevier Hall 180 Bevier Hall",
+    "room": "103",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ]
+    },
+    "courses": [
+      "PHIL 105"
+    ],
+    "room_id": "BevierHall180BevierHall-103",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Bevier Hall",
+    "room": "103",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "12:30",
+          "end": "13:50"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "12:30",
+          "end": "13:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "PHIL 106"
+    ],
+    "room_id": "BevierHall-103",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Materials Science & Eng Bld",
+    "room": "119",
+    "usage": {
+      "Monday": [
+        {
+          "start": "11:00",
+          "end": "11:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "11:00",
+          "end": "11:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "11:00",
+          "end": "11:50"
+        }
+      ]
+    },
+    "courses": [
+      "PHIL 107"
+    ],
+    "room_id": "MaterialsScience&EngBld-119",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Armory",
+    "room": "428",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "12:00",
+          "end": "12:50"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "12:00",
+          "end": "12:50"
+        },
+        {
+          "start": "09:00",
+          "end": "09:50"
+        }
+      ]
+    },
+    "courses": [
+      "PHIL 110"
+    ],
+    "room_id": "Armory-428",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Sidney Lu Mech Engr Bldg",
+    "room": "1047",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "13:00",
+          "end": "13:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "PHIL 110"
+    ],
+    "room_id": "SidneyLuMechEngrBldg-1047",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Bevier Hall",
+    "room": "108",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [],
+      "Wednesday": [],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ]
+    },
+    "courses": [
+      "PHIL 110"
+    ],
+    "room_id": "BevierHall-108",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Armory",
+    "room": "145",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [],
+      "Wednesday": [],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "13:00",
+          "end": "13:50"
+        }
+      ]
+    },
+    "courses": [
+      "PHIL 110"
+    ],
+    "room_id": "Armory-145",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Armory",
+    "room": "136",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [],
+      "Wednesday": [],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "14:00",
+          "end": "14:50"
+        }
+      ]
+    },
+    "courses": [
+      "PHIL 110"
+    ],
+    "room_id": "Armory-136",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Gregory Hall",
+    "room": "112",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "09:00",
+          "end": "09:50"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "09:00",
+          "end": "09:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "PHIL 110"
+    ],
+    "room_id": "GregoryHall-112",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Wymer Hall",
+    "room": "1020",
+    "usage": {
+      "Monday": [
+        {
+          "start": "13:00",
+          "end": "13:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "13:00",
+          "end": "13:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "13:00",
+          "end": "13:50"
+        }
+      ]
+    },
+    "courses": [
+      "PHIL 202"
+    ],
+    "room_id": "WymerHall-1020",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Noyes Laboratory",
+    "room": "161",
+    "usage": {
+      "Monday": [
+        {
+          "start": "11:00",
+          "end": "11:50"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "15:30",
+          "end": "16:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "11:00",
+          "end": "11:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "15:30",
+          "end": "16:50"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "11:00",
+          "end": "11:50"
+        }
+      ]
+    },
+    "courses": [
+      "PHIL 203",
+      "PHIL 206"
+    ],
+    "room_id": "NoyesLaboratory-161",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Lincoln Hall",
+    "room": "1065",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "12:30",
+          "end": "13:50"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "12:30",
+          "end": "13:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "PHIL 219"
+    ],
+    "room_id": "LincolnHall-1065",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Armory",
+    "room": "430",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "11:00",
+          "end": "12:20"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "11:00",
+          "end": "12:20"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "PHIL 222"
+    ],
+    "room_id": "Armory-430",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Davenport Hall",
+    "room": "329",
+    "usage": {
+      "Monday": [
+        {
+          "start": "09:00",
+          "end": "09:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "09:00",
+          "end": "09:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "09:00",
+          "end": "09:50"
+        }
+      ]
+    },
+    "courses": [
+      "PHIL 307"
+    ],
+    "room_id": "DavenportHall-329",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Gregory Hall",
+    "room": "329",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "11:00",
+          "end": "12:20"
+        },
+        {
+          "start": "14:00",
+          "end": "15:20"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "11:00",
+          "end": "12:20"
+        },
+        {
+          "start": "14:00",
+          "end": "15:20"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "PHIL 316"
+    ],
+    "room_id": "GregoryHall-329",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Wohlers Hall",
+    "room": "130",
+    "usage": {
+      "Monday": [
+        {
+          "start": "14:00",
+          "end": "14:50"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "09:30",
+          "end": "10:50"
+        },
+        {
+          "start": "09:30",
+          "end": "10:50"
+        },
+        {
+          "start": "09:30",
+          "end": "10:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "14:00",
+          "end": "14:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "09:30",
+          "end": "10:50"
+        },
+        {
+          "start": "09:30",
+          "end": "10:50"
+        },
+        {
+          "start": "09:30",
+          "end": "10:50"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "14:00",
+          "end": "14:50"
+        }
+      ]
+    },
+    "courses": [
+      "PHIL 380",
+      "PHIL 419",
+      "PHIL 420"
+    ],
+    "room_id": "WohlersHall-130",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Wymer Hall",
+    "room": "1060",
+    "usage": {
+      "Monday": [
+        {
+          "start": "13:00",
+          "end": "13:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "13:00",
+          "end": "13:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "13:00",
+          "end": "13:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        }
+      ]
+    },
+    "courses": [
+      "PHIL 421"
+    ],
+    "room_id": "WymerHall-1060",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "English Building",
+    "room": "104",
+    "usage": {
+      "Monday": [
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "11:00",
+          "end": "11:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "11:00",
+          "end": "11:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "11:00",
+          "end": "11:50"
+        }
+      ]
+    },
+    "courses": [
+      "PHIL 426"
+    ],
+    "room_id": "EnglishBuilding-104",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "David Kinley Hall",
+    "room": "215",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "15:30",
+          "end": "17:00"
+        },
+        {
+          "start": "15:30",
+          "end": "17:00"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "15:30",
+          "end": "17:00"
+        },
+        {
+          "start": "15:30",
+          "end": "17:00"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "PHIL 430"
+    ],
+    "room_id": "DavidKinleyHall-215",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Architecture Building",
+    "room": "120",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "09:30",
+          "end": "10:50"
+        },
+        {
+          "start": "09:30",
+          "end": "10:50"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "09:30",
+          "end": "10:50"
+        },
+        {
+          "start": "09:30",
+          "end": "10:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "PHIL 433"
+    ],
+    "room_id": "ArchitectureBuilding-120",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Transportation Building",
+    "room": "203",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "15:30",
+          "end": "16:50"
+        },
+        {
+          "start": "15:30",
+          "end": "16:50"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "15:30",
+          "end": "16:50"
+        },
+        {
+          "start": "15:30",
+          "end": "16:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "PHIL 435"
+    ],
+    "room_id": "TransportationBuilding-203",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Siebel Center for Comp Sci",
+    "room": "1302",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "14:00",
+          "end": "15:20"
+        },
+        {
+          "start": "14:00",
+          "end": "15:20"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "14:00",
+          "end": "15:20"
+        },
+        {
+          "start": "14:00",
+          "end": "15:20"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "PHIL 436"
+    ],
+    "room_id": "SiebelCenterforCompSci-1302",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Armory",
+    "room": "331",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "12:30",
+          "end": "13:50"
+        },
+        {
+          "start": "12:30",
+          "end": "13:50"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "12:30",
+          "end": "13:50"
+        },
+        {
+          "start": "12:30",
+          "end": "13:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "PHIL 453"
+    ],
+    "room_id": "Armory-331",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Psychology Building",
+    "room": "23",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "15:30",
+          "end": "16:50"
+        },
+        {
+          "start": "15:30",
+          "end": "16:50"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "15:30",
+          "end": "16:50"
+        },
+        {
+          "start": "15:30",
+          "end": "16:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "PHIL 458",
+      "PHIL 514"
+    ],
+    "room_id": "PsychologyBuilding-23",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "David Kinley Hall",
+    "room": "212",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "12:30",
+          "end": "13:50"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "12:30",
+          "end": "13:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "PHIL 499"
+    ],
+    "room_id": "DavidKinleyHall-212",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Wohlers Hall",
+    "room": "170",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "14:00",
+          "end": "15:20"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "14:00",
+          "end": "15:20"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "PHIL 499"
+    ],
+    "room_id": "WohlersHall-170",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "English Building",
+    "room": "36",
+    "usage": {
+      "Monday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ]
+    },
+    "courses": [
+      "PHIL 507"
+    ],
+    "room_id": "EnglishBuilding-36",
+    "semester": "Fall 2025"
+  }
+]

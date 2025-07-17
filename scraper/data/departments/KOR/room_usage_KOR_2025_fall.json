@@ -1,0 +1,228 @@
+[
+  {
+    "building": "Gregory Hall",
+    "room": "313",
+    "usage": {
+      "Monday": [
+        {
+          "start": "12:00",
+          "end": "12:50"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "12:00",
+          "end": "12:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "12:00",
+          "end": "12:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "12:00",
+          "end": "12:50"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "12:00",
+          "end": "12:50"
+        }
+      ]
+    },
+    "courses": [
+      "KOR 201"
+    ],
+    "room_id": "GregoryHall-313",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Literatures, Cultures, & Ling",
+    "room": "1022",
+    "usage": {
+      "Monday": [
+        {
+          "start": "09:00",
+          "end": "09:50"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "09:00",
+          "end": "09:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "09:00",
+          "end": "09:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "09:00",
+          "end": "09:50"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "09:00",
+          "end": "09:50"
+        }
+      ]
+    },
+    "courses": [
+      "KOR 203"
+    ],
+    "room_id": "Literatures,Cultures,&Ling-1022",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Davenport Hall",
+    "room": "215",
+    "usage": {
+      "Monday": [
+        {
+          "start": "12:00",
+          "end": "12:50"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "12:00",
+          "end": "12:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "12:00",
+          "end": "12:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "12:00",
+          "end": "12:50"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "12:00",
+          "end": "12:50"
+        }
+      ]
+    },
+    "courses": [
+      "KOR 203"
+    ],
+    "room_id": "DavenportHall-215",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Literatures, Cultures, & Ling",
+    "room": "1126",
+    "usage": {
+      "Monday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "KOR 221"
+    ],
+    "room_id": "Literatures,Cultures,&Ling-1126",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Literatures, Cultures, & Ling",
+    "room": "1140",
+    "usage": {
+      "Monday": [
+        {
+          "start": "12:00",
+          "end": "12:50"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "12:00",
+          "end": "12:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "12:00",
+          "end": "12:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "12:00",
+          "end": "12:50"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "12:00",
+          "end": "12:50"
+        }
+      ]
+    },
+    "courses": [
+      "KOR 305"
+    ],
+    "room_id": "Literatures,Cultures,&Ling-1140",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Literatures, Cultures, & Ling",
+    "room": "1040",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "12:30",
+          "end": "13:50"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "12:30",
+          "end": "13:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "KOR 440"
+    ],
+    "room_id": "Literatures,Cultures,&Ling-1040",
+    "semester": "Fall 2025"
+  }
+]

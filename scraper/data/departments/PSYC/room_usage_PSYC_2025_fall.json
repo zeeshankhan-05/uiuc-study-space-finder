@@ -1,0 +1,2496 @@
+[
+  {
+    "building": "Henry Administration Bldg",
+    "room": "138",
+    "usage": {
+      "Monday": [
+        {
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        },
+        {
+          "start": "14:00",
+          "end": "14:50"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "12:30",
+          "end": "13:50"
+        },
+        {
+          "start": "14:00",
+          "end": "15:20"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        },
+        {
+          "start": "14:00",
+          "end": "14:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "12:30",
+          "end": "13:50"
+        },
+        {
+          "start": "14:00",
+          "end": "15:20"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        },
+        {
+          "start": "14:00",
+          "end": "14:50"
+        }
+      ]
+    },
+    "courses": [
+      "PSYC 100"
+    ],
+    "room_id": "HenryAdministrationBldg-138",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Psychology Building",
+    "room": "207",
+    "usage": {
+      "Monday": [
+        {
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "start": "12:00",
+          "end": "12:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        },
+        {
+          "start": "10:00",
+          "end": "11:50"
+        },
+        {
+          "start": "15:00",
+          "end": "16:50"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "11:00",
+          "end": "12:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "start": "12:00",
+          "end": "12:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        },
+        {
+          "start": "10:00",
+          "end": "11:50"
+        },
+        {
+          "start": "15:00",
+          "end": "16:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "11:00",
+          "end": "12:50"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "start": "12:00",
+          "end": "12:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        },
+        {
+          "start": "15:00",
+          "end": "16:50"
+        }
+      ]
+    },
+    "courses": [
+      "PSYC 100",
+      "PSYC 363",
+      "PSYC 506"
+    ],
+    "room_id": "PsychologyBuilding-207",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Psychology Building",
+    "room": "17",
+    "usage": {
+      "Monday": [
+        {
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        },
+        {
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "start": "12:00",
+          "end": "12:50"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "09:30",
+          "end": "10:50"
+        },
+        {
+          "start": "11:00",
+          "end": "12:20"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        },
+        {
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "start": "12:00",
+          "end": "12:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "09:30",
+          "end": "10:50"
+        },
+        {
+          "start": "11:00",
+          "end": "12:20"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        },
+        {
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "start": "12:00",
+          "end": "12:50"
+        }
+      ]
+    },
+    "courses": [
+      "PSYC 100",
+      "PSYC 201"
+    ],
+    "room_id": "PsychologyBuilding-17",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Psychology Building",
+    "room": "11",
+    "usage": {
+      "Monday": [
+        {
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        },
+        {
+          "start": "14:00",
+          "end": "14:50"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "15:30",
+          "end": "16:50"
+        },
+        {
+          "start": "11:00",
+          "end": "12:20"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        },
+        {
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "start": "15:00",
+          "end": "17:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "15:30",
+          "end": "16:50"
+        },
+        {
+          "start": "11:00",
+          "end": "12:20"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        },
+        {
+          "start": "14:00",
+          "end": "14:50"
+        }
+      ]
+    },
+    "courses": [
+      "PSYC 100",
+      "PSYC 336",
+      "PSYC 496",
+      "PSYC 534"
+    ],
+    "room_id": "PsychologyBuilding-11",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Psychology Building 1051 Lincoln Hall",
+    "room": "21",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "14:00",
+          "end": "14:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "14:00",
+          "end": "14:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "14:00",
+          "end": "14:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "PSYC 100"
+    ],
+    "room_id": "PsychologyBuilding1051LincolnHall-21",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "English Building",
+    "room": "259",
+    "usage": {
+      "Monday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ]
+    },
+    "courses": [
+      "PSYC 100"
+    ],
+    "room_id": "EnglishBuilding-259",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Henry Administration Bldg",
+    "room": "143",
+    "usage": {
+      "Monday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ]
+    },
+    "courses": [
+      "PSYC 100"
+    ],
+    "room_id": "HenryAdministrationBldg-143",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "English Building",
+    "room": "149",
+    "usage": {
+      "Monday": [
+        {
+          "start": "14:00",
+          "end": "14:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "14:00",
+          "end": "14:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "14:00",
+          "end": "14:50"
+        }
+      ]
+    },
+    "courses": [
+      "PSYC 100"
+    ],
+    "room_id": "EnglishBuilding-149",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Lincoln Hall",
+    "room": "1060",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "08:00",
+          "end": "09:20"
+        },
+        {
+          "start": "09:30",
+          "end": "10:50"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "08:00",
+          "end": "09:20"
+        },
+        {
+          "start": "09:30",
+          "end": "10:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "PSYC 100"
+    ],
+    "room_id": "LincolnHall-1060",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "David Kinley Hall",
+    "room": "317",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "11:00",
+          "end": "12:20"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "11:00",
+          "end": "12:20"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "PSYC 100"
+    ],
+    "room_id": "DavidKinleyHall-317",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Henry Administration Bldg",
+    "room": "156",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "11:00",
+          "end": "12:20"
+        },
+        {
+          "start": "12:30",
+          "end": "13:50"
+        },
+        {
+          "start": "14:00",
+          "end": "15:20"
+        },
+        {
+          "start": "15:30",
+          "end": "16:50"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "11:00",
+          "end": "12:20"
+        },
+        {
+          "start": "12:30",
+          "end": "13:50"
+        },
+        {
+          "start": "14:00",
+          "end": "15:20"
+        },
+        {
+          "start": "15:30",
+          "end": "16:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "PSYC 100"
+    ],
+    "room_id": "HenryAdministrationBldg-156",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Armory",
+    "room": "134",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "12:30",
+          "end": "13:50"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "12:30",
+          "end": "13:50"
+        },
+        {
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "PSYC 100",
+      "PSYC 235"
+    ],
+    "room_id": "Armory-134",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Psychology Building",
+    "room": "815",
+    "usage": {
+      "Monday": [
+        {
+          "start": "15:00",
+          "end": "16:50"
+        },
+        {
+          "start": "10:00",
+          "end": "11:20"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "12:30",
+          "end": "13:50"
+        },
+        {
+          "start": "14:00",
+          "end": "15:20"
+        },
+        {
+          "start": "15:30",
+          "end": "17:15"
+        },
+        {
+          "start": "09:00",
+          "end": "10:20"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "12:00",
+          "end": "13:20"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "12:30",
+          "end": "13:50"
+        },
+        {
+          "start": "14:00",
+          "end": "15:20"
+        },
+        {
+          "start": "09:00",
+          "end": "10:20"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "10:00",
+          "end": "11:50"
+        }
+      ]
+    },
+    "courses": [
+      "PSYC 100",
+      "PSYC 334",
+      "PSYC 340",
+      "PSYC 490",
+      "PSYC 498",
+      "PSYC 598"
+    ],
+    "room_id": "PsychologyBuilding-815",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Allen Residence Hall",
+    "room": "40",
+    "usage": {
+      "Monday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ]
+    },
+    "courses": [
+      "PSYC 100"
+    ],
+    "room_id": "AllenResidenceHall-40",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Psychology Building",
+    "room": "21",
+    "usage": {
+      "Monday": [
+        {
+          "start": "14:00",
+          "end": "14:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "12:00",
+          "end": "13:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "15:30",
+          "end": "18:20"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "PSYC 102",
+      "PSYC 500",
+      "PSYC 593"
+    ],
+    "room_id": "PsychologyBuilding-21",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Psychology Building",
+    "room": "27",
+    "usage": {
+      "Monday": [
+        {
+          "start": "13:00",
+          "end": "13:50"
+        },
+        {
+          "start": "12:00",
+          "end": "12:50"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        },
+        {
+          "start": "14:00",
+          "end": "14:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "12:00",
+          "end": "12:50"
+        },
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        },
+        {
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "15:00",
+          "end": "15:50"
+        },
+        {
+          "start": "16:00",
+          "end": "16:50"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        }
+      ]
+    },
+    "courses": [
+      "PSYC 102"
+    ],
+    "room_id": "PsychologyBuilding-27",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Psychology Building",
+    "room": "142",
+    "usage": {
+      "Monday": [
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "12:00",
+          "end": "12:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        },
+        {
+          "start": "14:00",
+          "end": "14:50"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "09:30",
+          "end": "10:50"
+        },
+        {
+          "start": "11:00",
+          "end": "12:20"
+        },
+        {
+          "start": "12:30",
+          "end": "13:50"
+        },
+        {
+          "start": "14:00",
+          "end": "15:20"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "12:00",
+          "end": "12:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        },
+        {
+          "start": "14:00",
+          "end": "14:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "09:30",
+          "end": "10:50"
+        },
+        {
+          "start": "11:00",
+          "end": "12:20"
+        },
+        {
+          "start": "12:30",
+          "end": "13:50"
+        },
+        {
+          "start": "14:00",
+          "end": "15:20"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "12:00",
+          "end": "12:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        },
+        {
+          "start": "14:00",
+          "end": "14:50"
+        }
+      ]
+    },
+    "courses": [
+      "PSYC 102",
+      "PSYC 238"
+    ],
+    "room_id": "PsychologyBuilding-142",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Psychology Building",
+    "room": "31",
+    "usage": {
+      "Monday": [
+        {
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "12:30",
+          "end": "13:50"
+        },
+        {
+          "start": "14:00",
+          "end": "15:20"
+        },
+        {
+          "start": "09:30",
+          "end": "10:50"
+        },
+        {
+          "start": "11:00",
+          "end": "12:20"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "12:30",
+          "end": "13:50"
+        },
+        {
+          "start": "14:00",
+          "end": "15:20"
+        },
+        {
+          "start": "09:30",
+          "end": "10:50"
+        },
+        {
+          "start": "11:00",
+          "end": "12:20"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        }
+      ]
+    },
+    "courses": [
+      "PSYC 201"
+    ],
+    "room_id": "PsychologyBuilding-31",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Psychology Building",
+    "room": "23",
+    "usage": {
+      "Monday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "15:00",
+          "end": "16:50"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "14:00",
+          "end": "15:20"
+        },
+        {
+          "start": "11:00",
+          "end": "12:20"
+        },
+        {
+          "start": "09:30",
+          "end": "10:50"
+        },
+        {
+          "start": "15:30",
+          "end": "16:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "15:00",
+          "end": "17:20"
+        },
+        {
+          "start": "15:00",
+          "end": "17:20"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "14:00",
+          "end": "15:20"
+        },
+        {
+          "start": "11:00",
+          "end": "12:20"
+        },
+        {
+          "start": "09:30",
+          "end": "10:50"
+        },
+        {
+          "start": "15:30",
+          "end": "16:50"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "11:00",
+          "end": "11:50"
+        }
+      ]
+    },
+    "courses": [
+      "PSYC 204",
+      "PSYC 245",
+      "PSYC 250",
+      "PSYC 313",
+      "PSYC 332",
+      "PSYC 353",
+      "PSYC 465",
+      "PSYC 514"
+    ],
+    "room_id": "PsychologyBuilding-23",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Gregory Hall",
+    "room": "319",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "15:30",
+          "end": "16:50"
+        },
+        {
+          "start": "11:00",
+          "end": "12:20"
+        },
+        {
+          "start": "11:00",
+          "end": "12:20"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "15:30",
+          "end": "16:50"
+        },
+        {
+          "start": "11:00",
+          "end": "12:20"
+        },
+        {
+          "start": "11:00",
+          "end": "12:20"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "PSYC 207",
+      "PSYC 475"
+    ],
+    "room_id": "GregoryHall-319",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Gregory Hall",
+    "room": "100",
+    "usage": {
+      "Monday": [
+        {
+          "start": "11:00",
+          "end": "11:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "11:00",
+          "end": "11:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "11:00",
+          "end": "11:50"
+        }
+      ]
+    },
+    "courses": [
+      "PSYC 210"
+    ],
+    "room_id": "GregoryHall-100",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Campus Instructional Facility",
+    "room": "2035",
+    "usage": {
+      "Monday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ]
+    },
+    "courses": [
+      "PSYC 214"
+    ],
+    "room_id": "CampusInstructionalFacility-2035",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "David Kinley Hall",
+    "room": "114",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "15:30",
+          "end": "16:50"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "15:30",
+          "end": "16:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "PSYC 216"
+    ],
+    "room_id": "DavidKinleyHall-114",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Library",
+    "room": "66",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "14:00",
+          "end": "15:20"
+        },
+        {
+          "start": "12:30",
+          "end": "13:50"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "14:00",
+          "end": "15:20"
+        },
+        {
+          "start": "12:30",
+          "end": "13:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "PSYC 224",
+      "PSYC 248"
+    ],
+    "room_id": "Library-66",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Education Building",
+    "room": "166",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [],
+      "Wednesday": [],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ]
+    },
+    "courses": [
+      "PSYC 225"
+    ],
+    "room_id": "EducationBuilding-166",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Architecture Building",
+    "room": "302",
+    "usage": {
+      "Monday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "PSYC 225"
+    ],
+    "room_id": "ArchitectureBuilding-302",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Natural History Building",
+    "room": "2079",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "12:30",
+          "end": "13:50"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "12:30",
+          "end": "13:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "PSYC 230"
+    ],
+    "room_id": "NaturalHistoryBuilding-2079",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Armory",
+    "room": "331",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "11:00",
+          "end": "12:20"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "11:00",
+          "end": "12:20"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "PSYC 235"
+    ],
+    "room_id": "Armory-331",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Psychology Building",
+    "room": "32",
+    "usage": {
+      "Monday": [
+        {
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "start": "14:00",
+          "end": "14:50"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "12:30",
+          "end": "13:50"
+        },
+        {
+          "start": "11:00",
+          "end": "12:20"
+        },
+        {
+          "start": "14:00",
+          "end": "15:20"
+        },
+        {
+          "start": "09:30",
+          "end": "10:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "start": "14:00",
+          "end": "14:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "12:30",
+          "end": "13:50"
+        },
+        {
+          "start": "11:00",
+          "end": "12:20"
+        },
+        {
+          "start": "14:00",
+          "end": "15:20"
+        },
+        {
+          "start": "09:30",
+          "end": "10:50"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "start": "12:00",
+          "end": "13:20"
+        },
+        {
+          "start": "12:00",
+          "end": "13:20"
+        },
+        {
+          "start": "15:00",
+          "end": "16:20"
+        }
+      ]
+    },
+    "courses": [
+      "PSYC 239",
+      "PSYC 306",
+      "PSYC 339",
+      "PSYC 363",
+      "PSYC 413",
+      "PSYC 453",
+      "PSYC 598"
+    ],
+    "room_id": "PsychologyBuilding-32",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Gregory Hall",
+    "room": "223",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "12:30",
+          "end": "13:50"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "12:30",
+          "end": "13:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "PSYC 308"
+    ],
+    "room_id": "GregoryHall-223",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Psychology Building",
+    "room": "258",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "13:00",
+          "end": "15:50"
+        },
+        {
+          "start": "09:00",
+          "end": "11:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "09:00",
+          "end": "11:50"
+        },
+        {
+          "start": "13:00",
+          "end": "15:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "14:00",
+          "end": "16:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "PSYC 311"
+    ],
+    "room_id": "PsychologyBuilding-258",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Gregory Hall",
+    "room": "213",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "15:30",
+          "end": "16:50"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "15:30",
+          "end": "16:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "PSYC 312"
+    ],
+    "room_id": "GregoryHall-213",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Animal Sciences Laboratory",
+    "room": "150",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "14:00",
+          "end": "15:20"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "14:00",
+          "end": "15:20"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "PSYC 328"
+    ],
+    "room_id": "AnimalSciencesLaboratory-150",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Psychology Building",
+    "room": "455",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "09:00",
+          "end": "10:50"
+        },
+        {
+          "start": "11:00",
+          "end": "12:50"
+        },
+        {
+          "start": "13:00",
+          "end": "14:50"
+        },
+        {
+          "start": "15:00",
+          "end": "16:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "11:00",
+          "end": "12:20"
+        },
+        {
+          "start": "11:00",
+          "end": "12:20"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "09:00",
+          "end": "10:50"
+        },
+        {
+          "start": "11:00",
+          "end": "12:50"
+        },
+        {
+          "start": "13:00",
+          "end": "14:50"
+        },
+        {
+          "start": "15:00",
+          "end": "16:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "PSYC 332",
+      "PSYC 496"
+    ],
+    "room_id": "PsychologyBuilding-455",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Psychology Building",
+    "room": "37",
+    "usage": {
+      "Monday": [
+        {
+          "start": "10:00",
+          "end": "11:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "10:00",
+          "end": "11:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "PSYC 334"
+    ],
+    "room_id": "PsychologyBuilding-37",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "David Kinley Hall",
+    "room": "222",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "15:00",
+          "end": "16:50"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "15:00",
+          "end": "16:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "PSYC 340"
+    ],
+    "room_id": "DavidKinleyHall-222",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "English Building",
+    "room": "160",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "11:00",
+          "end": "12:20"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "11:00",
+          "end": "12:20"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "PSYC 379"
+    ],
+    "room_id": "EnglishBuilding-160",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Psychology Building",
+    "room": "29",
+    "usage": {
+      "Monday": [
+        {
+          "start": "14:00",
+          "end": "16:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "15:00",
+          "end": "17:20"
+        }
+      ],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "PSYC 396",
+      "PSYC 496"
+    ],
+    "room_id": "PsychologyBuilding-29",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Armory",
+    "room": "101",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "10:00",
+          "end": "11:20"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "15:00",
+          "end": "17:20"
+        },
+        {
+          "start": "15:00",
+          "end": "17:20"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "10:00",
+          "end": "11:20"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "PSYC 403",
+      "PSYC 420"
+    ],
+    "room_id": "Armory-101",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Lincoln Hall",
+    "room": "1002",
+    "usage": {
+      "Monday": [
+        {
+          "start": "13:00",
+          "end": "13:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "13:00",
+          "end": "13:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "13:00",
+          "end": "13:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        }
+      ]
+    },
+    "courses": [
+      "PSYC 408"
+    ],
+    "room_id": "LincolnHall-1002",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Noyes Laboratory",
+    "room": "161",
+    "usage": {
+      "Monday": [
+        {
+          "start": "12:00",
+          "end": "13:20"
+        },
+        {
+          "start": "12:00",
+          "end": "13:20"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "12:00",
+          "end": "13:20"
+        },
+        {
+          "start": "12:00",
+          "end": "13:20"
+        }
+      ],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "PSYC 417"
+    ],
+    "room_id": "NoyesLaboratory-161",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Transportation Building",
+    "room": "114",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "12:30",
+          "end": "13:50"
+        },
+        {
+          "start": "12:30",
+          "end": "13:50"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "12:30",
+          "end": "13:50"
+        },
+        {
+          "start": "12:30",
+          "end": "13:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "PSYC 421"
+    ],
+    "room_id": "TransportationBuilding-114",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Architecture Building",
+    "room": "120",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "09:30",
+          "end": "10:50"
+        },
+        {
+          "start": "09:30",
+          "end": "10:50"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "09:30",
+          "end": "10:50"
+        },
+        {
+          "start": "09:30",
+          "end": "10:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "PSYC 433"
+    ],
+    "room_id": "ArchitectureBuilding-120",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Education Building",
+    "room": "162",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "14:00",
+          "end": "15:20"
+        },
+        {
+          "start": "14:00",
+          "end": "15:20"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "14:00",
+          "end": "15:20"
+        },
+        {
+          "start": "14:00",
+          "end": "15:20"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "PSYC 456"
+    ],
+    "room_id": "EducationBuilding-162",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Wymer Hall",
+    "room": "1010",
+    "usage": {
+      "Monday": [
+        {
+          "start": "11:00",
+          "end": "11:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "11:00",
+          "end": "11:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "11:00",
+          "end": "11:50"
+        }
+      ]
+    },
+    "courses": [
+      "PSYC 468"
+    ],
+    "room_id": "WymerHall-1010",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Psychology Building",
+    "room": "819",
+    "usage": {
+      "Monday": [
+        {
+          "start": "15:30",
+          "end": "16:50"
+        },
+        {
+          "start": "10:00",
+          "end": "11:30"
+        },
+        {
+          "start": "14:00",
+          "end": "15:20"
+        },
+        {
+          "start": "12:00",
+          "end": "13:20"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "10:00",
+          "end": "11:50"
+        },
+        {
+          "start": "14:00",
+          "end": "15:20"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "12:00",
+          "end": "13:20"
+        },
+        {
+          "start": "15:00",
+          "end": "16:50"
+        },
+        {
+          "start": "10:00",
+          "end": "11:50"
+        },
+        {
+          "start": "13:30",
+          "end": "14:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "14:00",
+          "end": "15:20"
+        },
+        {
+          "start": "12:30",
+          "end": "13:20"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "09:30",
+          "end": "10:50"
+        },
+        {
+          "start": "12:00",
+          "end": "13:20"
+        },
+        {
+          "start": "13:30",
+          "end": "14:50"
+        }
+      ]
+    },
+    "courses": [
+      "PSYC 490",
+      "PSYC 492",
+      "PSYC 525",
+      "PSYC 551",
+      "PSYC 593",
+      "PSYC 598"
+    ],
+    "room_id": "PsychologyBuilding-819",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Psychology Building",
+    "room": "508",
+    "usage": {
+      "Monday": [
+        {
+          "start": "09:30",
+          "end": "11:20"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "12:00",
+          "end": "14:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "10:00",
+          "end": "11:50"
+        }
+      ]
+    },
+    "courses": [
+      "PSYC 524",
+      "PSYC 539",
+      "PSYC 552"
+    ],
+    "room_id": "PsychologyBuilding-508",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Psychology Building",
+    "room": "608",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "13:00",
+          "end": "15:50"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "11:00",
+          "end": "13:20"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "11:00",
+          "end": "12:50"
+        }
+      ]
+    },
+    "courses": [
+      "PSYC 530",
+      "PSYC 541",
+      "PSYC 593"
+    ],
+    "room_id": "PsychologyBuilding-608",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Psychology Building",
+    "room": "708",
+    "usage": {
+      "Monday": [
+        {
+          "start": "13:00",
+          "end": "14:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "09:30",
+          "end": "11:20"
+        },
+        {
+          "start": "15:00",
+          "end": "15:50"
+        },
+        {
+          "start": "13:00",
+          "end": "14:30"
+        }
+      ],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "15:00",
+          "end": "16:50"
+        }
+      ]
+    },
+    "courses": [
+      "PSYC 532",
+      "PSYC 570",
+      "PSYC 598"
+    ],
+    "room_id": "PsychologyBuilding-708",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Beckman Institute",
+    "room": "4269",
+    "usage": {
+      "Monday": [
+        {
+          "start": "16:00",
+          "end": "17:15"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "16:00",
+          "end": "17:15"
+        }
+      ],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "PSYC 542"
+    ],
+    "room_id": "BeckmanInstitute-4269",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Education Building",
+    "room": "242",
+    "usage": {
+      "Monday": [
+        {
+          "start": "10:00",
+          "end": "11:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "10:00",
+          "end": "11:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "PSYC 589"
+    ],
+    "room_id": "EducationBuilding-242",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Education Building",
+    "room": "376",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "12:30",
+          "end": "15:20"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "13:00",
+          "end": "15:50"
+        }
+      ]
+    },
+    "courses": [
+      "PSYC 593"
+    ],
+    "room_id": "EducationBuilding-376",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Education Building",
+    "room": "389",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "15:00",
+          "end": "17:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "PSYC 593"
+    ],
+    "room_id": "EducationBuilding-389",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Ceramics Building",
+    "room": "218",
+    "usage": {
+      "Monday": [
+        {
+          "start": "13:00",
+          "end": "15:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "PSYC 594"
+    ],
+    "room_id": "CeramicsBuilding-218",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Education Building",
+    "room": "17",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "13:00",
+          "end": "15:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "PSYC 595"
+    ],
+    "room_id": "EducationBuilding-17",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Beckman Institute",
+    "room": "2269",
+    "usage": {
+      "Monday": [
+        {
+          "start": "12:00",
+          "end": "13:20"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "PSYC 598"
+    ],
+    "room_id": "BeckmanInstitute-2269",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Beckman Institute",
+    "room": "2169",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "11:00",
+          "end": "12:20"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "PSYC 598"
+    ],
+    "room_id": "BeckmanInstitute-2169",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Psychology Building",
+    "room": "211",
+    "usage": {
+      "Monday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "PSYC 598"
+    ],
+    "room_id": "PsychologyBuilding-211",
+    "semester": "Fall 2025"
+  }
+]

@@ -1,0 +1,427 @@
+[
+  {
+    "building": "Temple Hoyne Buell Hall",
+    "room": "223",
+    "usage": {
+      "Monday": [
+        {
+          "start": "14:00",
+          "end": "15:20"
+        },
+        {
+          "start": "11:00",
+          "end": "12:20"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "11:00",
+          "end": "12:20"
+        },
+        {
+          "start": "14:00",
+          "end": "15:20"
+        },
+        {
+          "start": "12:30",
+          "end": "13:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "14:00",
+          "end": "15:20"
+        },
+        {
+          "start": "11:00",
+          "end": "12:20"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "11:00",
+          "end": "12:20"
+        },
+        {
+          "start": "14:00",
+          "end": "15:20"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "14:00",
+          "end": "14:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        },
+        {
+          "start": "12:00",
+          "end": "12:50"
+        }
+      ]
+    },
+    "courses": [
+      "UP 101",
+      "UP 401",
+      "UP 438",
+      "UP 460",
+      "UP 473",
+      "UP 510",
+      "UP 592"
+    ],
+    "room_id": "TempleHoyneBuellHall-223",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Temple Hoyne Buell Hall",
+    "room": "225",
+    "usage": {
+      "Monday": [
+        {
+          "start": "14:00",
+          "end": "15:20"
+        },
+        {
+          "start": "11:00",
+          "end": "12:20"
+        },
+        {
+          "start": "15:30",
+          "end": "16:50"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "12:30",
+          "end": "13:50"
+        },
+        {
+          "start": "14:00",
+          "end": "15:20"
+        },
+        {
+          "start": "14:00",
+          "end": "15:20"
+        },
+        {
+          "start": "11:00",
+          "end": "12:20"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "14:00",
+          "end": "15:20"
+        },
+        {
+          "start": "11:00",
+          "end": "12:20"
+        },
+        {
+          "start": "15:30",
+          "end": "16:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "12:30",
+          "end": "13:50"
+        },
+        {
+          "start": "14:00",
+          "end": "15:20"
+        },
+        {
+          "start": "14:00",
+          "end": "15:20"
+        },
+        {
+          "start": "11:00",
+          "end": "12:20"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "12:00",
+          "end": "12:50"
+        }
+      ]
+    },
+    "courses": [
+      "UP 101",
+      "UP 160",
+      "UP 260",
+      "UP 357",
+      "UP 406",
+      "UP 479",
+      "UP 545",
+      "UP 591"
+    ],
+    "room_id": "TempleHoyneBuellHall-225",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "901 W Oregon",
+    "room": "101",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [],
+      "Wednesday": [],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "11:00",
+          "end": "11:50"
+        }
+      ]
+    },
+    "courses": [
+      "UP 203"
+    ],
+    "room_id": "901WOregon-101",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Loomis Laboratory",
+    "room": "136",
+    "usage": {
+      "Monday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "UP 203"
+    ],
+    "room_id": "LoomisLaboratory-136",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Gregory Hall",
+    "room": "313",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [],
+      "Wednesday": [],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "11:00",
+          "end": "11:50"
+        }
+      ]
+    },
+    "courses": [
+      "UP 210"
+    ],
+    "room_id": "GregoryHall-313",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Lincoln Hall",
+    "room": "1092",
+    "usage": {
+      "Monday": [
+        {
+          "start": "14:00",
+          "end": "14:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "14:00",
+          "end": "14:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": []
+    },
+    "courses": [
+      "UP 210"
+    ],
+    "room_id": "LincolnHall-1092",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Temple Hoyne Buell Hall 227 Temple Hoyne Buell Hall",
+    "room": "227",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "14:00",
+          "end": "15:20"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "14:00",
+          "end": "15:20"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "UP 312"
+    ],
+    "room_id": "TempleHoyneBuellHall227TempleHoyneBuellHall-227",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Temple Hoyne Buell Hall",
+    "room": "227",
+    "usage": {
+      "Monday": [
+        {
+          "start": "14:00",
+          "end": "15:20"
+        },
+        {
+          "start": "11:00",
+          "end": "12:20"
+        },
+        {
+          "start": "09:30",
+          "end": "10:50"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "11:00",
+          "end": "12:20"
+        },
+        {
+          "start": "12:30",
+          "end": "13:50"
+        },
+        {
+          "start": "09:30",
+          "end": "10:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "14:00",
+          "end": "15:20"
+        },
+        {
+          "start": "11:00",
+          "end": "12:20"
+        },
+        {
+          "start": "09:30",
+          "end": "10:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "11:00",
+          "end": "12:20"
+        },
+        {
+          "start": "12:30",
+          "end": "13:50"
+        },
+        {
+          "start": "09:30",
+          "end": "10:50"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "09:00",
+          "end": "11:50"
+        },
+        {
+          "start": "13:00",
+          "end": "15:50"
+        }
+      ]
+    },
+    "courses": [
+      "UP 327",
+      "UP 340",
+      "UP 430",
+      "UP 456",
+      "UP 501",
+      "UP 505",
+      "UP 510",
+      "UP 526"
+    ],
+    "room_id": "TempleHoyneBuellHall-227",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Armory 146 Armory",
+    "room": "146",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "15:30",
+          "end": "17:00"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "15:30",
+          "end": "17:00"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "UP 447"
+    ],
+    "room_id": "Armory146Armory-146",
+    "semester": "Fall 2025"
+  }
+]

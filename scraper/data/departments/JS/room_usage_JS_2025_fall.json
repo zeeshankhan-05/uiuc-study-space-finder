@@ -1,0 +1,137 @@
+[
+  {
+    "building": "Noyes Laboratory",
+    "room": "165",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "12:00",
+          "end": "13:20"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "12:00",
+          "end": "13:20"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "JS 120"
+    ],
+    "room_id": "NoyesLaboratory-165",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Wohlers Hall",
+    "room": "236",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "11:00",
+          "end": "12:20"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "11:00",
+          "end": "12:20"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "JS 209"
+    ],
+    "room_id": "WohlersHall-236",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "English Building",
+    "room": "160",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "09:30",
+          "end": "10:50"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "09:30",
+          "end": "10:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "JS 252"
+    ],
+    "room_id": "EnglishBuilding-160",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Everitt Laboratory",
+    "room": "1302",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "12:00",
+          "end": "13:20"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "12:00",
+          "end": "13:20"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "JS 261"
+    ],
+    "room_id": "EverittLaboratory-1302",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Lincoln Hall",
+    "room": "1090",
+    "usage": {
+      "Monday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ],
+      "Tuesday": [],
+      "Wednesday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ],
+      "Thursday": [],
+      "Friday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ]
+    },
+    "courses": [
+      "JS 355"
+    ],
+    "room_id": "LincolnHall-1090",
+    "semester": "Fall 2025"
+  }
+]

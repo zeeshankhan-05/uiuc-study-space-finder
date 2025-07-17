@@ -1,0 +1,261 @@
+[
+  {
+    "building": "Literatures, Cultures, & Ling",
+    "room": "1128",
+    "usage": {
+      "Monday": [
+        {
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "09:00",
+          "end": "09:50"
+        },
+        {
+          "start": "10:00",
+          "end": "10:50"
+        }
+      ]
+    },
+    "courses": [
+      "JAPN 201"
+    ],
+    "room_id": "Literatures,Cultures,&Ling-1128",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Literatures, Cultures, & Ling",
+    "room": "1030",
+    "usage": {
+      "Monday": [
+        {
+          "start": "14:00",
+          "end": "14:50"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "14:00",
+          "end": "14:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "14:00",
+          "end": "14:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "14:00",
+          "end": "14:50"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "14:00",
+          "end": "14:50"
+        }
+      ]
+    },
+    "courses": [
+      "JAPN 201"
+    ],
+    "room_id": "Literatures,Cultures,&Ling-1030",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Literatures, Cultures, & Ling",
+    "room": "1022",
+    "usage": {
+      "Monday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "12:00",
+          "end": "12:50"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "12:00",
+          "end": "12:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "12:00",
+          "end": "12:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "12:00",
+          "end": "12:50"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "10:00",
+          "end": "10:50"
+        },
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "12:00",
+          "end": "12:50"
+        }
+      ]
+    },
+    "courses": [
+      "JAPN 203",
+      "JAPN 305"
+    ],
+    "room_id": "Literatures,Cultures,&Ling-1022",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Literatures, Cultures, & Ling",
+    "room": "1038",
+    "usage": {
+      "Monday": [
+        {
+          "start": "12:00",
+          "end": "12:50"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "12:00",
+          "end": "12:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "12:00",
+          "end": "12:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "12:00",
+          "end": "12:50"
+        }
+      ],
+      "Friday": [
+        {
+          "start": "12:00",
+          "end": "12:50"
+        }
+      ]
+    },
+    "courses": [
+      "JAPN 203"
+    ],
+    "room_id": "Literatures,Cultures,&Ling-1038",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Lincoln Hall",
+    "room": "1020",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "09:00",
+          "end": "10:20"
+        },
+        {
+          "start": "09:00",
+          "end": "10:20"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "09:00",
+          "end": "10:20"
+        },
+        {
+          "start": "09:00",
+          "end": "10:20"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "JAPN 440"
+    ],
+    "room_id": "LincolnHall-1020",
+    "semester": "Fall 2025"
+  }
+]

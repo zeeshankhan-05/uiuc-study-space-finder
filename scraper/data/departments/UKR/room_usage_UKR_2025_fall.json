@@ -1,0 +1,38 @@
+[
+  {
+    "building": "Literatures, Cultures, & Ling",
+    "room": "1024",
+    "usage": {
+      "Monday": [
+        {
+          "start": "09:00",
+          "end": "09:50"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "09:00",
+          "end": "09:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "09:00",
+          "end": "09:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "09:00",
+          "end": "09:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "UKR 201"
+    ],
+    "room_id": "Literatures,Cultures,&Ling-1024",
+    "semester": "Fall 2025"
+  }
+]

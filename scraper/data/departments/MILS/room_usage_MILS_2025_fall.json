@@ -1,0 +1,150 @@
+[
+  {
+    "building": "Armory",
+    "room": "133",
+    "usage": {
+      "Monday": [
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "12:00",
+          "end": "12:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        }
+      ],
+      "Tuesday": [
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "14:00",
+          "end": "14:50"
+        }
+      ],
+      "Wednesday": [
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "12:00",
+          "end": "12:50"
+        },
+        {
+          "start": "13:00",
+          "end": "13:50"
+        }
+      ],
+      "Thursday": [
+        {
+          "start": "11:00",
+          "end": "11:50"
+        },
+        {
+          "start": "14:00",
+          "end": "14:50"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "MILS 101",
+      "MILS 201"
+    ],
+    "room_id": "Armory-133",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Armory",
+    "room": "384",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "12:30",
+          "end": "13:50"
+        },
+        {
+          "start": "14:00",
+          "end": "15:20"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "12:30",
+          "end": "13:50"
+        },
+        {
+          "start": "14:00",
+          "end": "15:20"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "MILS 120",
+      "MILS 301"
+    ],
+    "room_id": "Armory-384",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Armory",
+    "room": "428",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "10:00",
+          "end": "11:20"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "10:00",
+          "end": "11:20"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "MILS 301"
+    ],
+    "room_id": "Armory-428",
+    "semester": "Fall 2025"
+  },
+  {
+    "building": "Armory",
+    "room": "137",
+    "usage": {
+      "Monday": [],
+      "Tuesday": [
+        {
+          "start": "08:00",
+          "end": "09:20"
+        }
+      ],
+      "Wednesday": [],
+      "Thursday": [
+        {
+          "start": "08:00",
+          "end": "09:20"
+        }
+      ],
+      "Friday": []
+    },
+    "courses": [
+      "MILS 341"
+    ],
+    "room_id": "Armory-137",
+    "semester": "Fall 2025"
+  }
+]
