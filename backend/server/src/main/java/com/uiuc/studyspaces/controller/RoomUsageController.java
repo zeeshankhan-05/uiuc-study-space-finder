@@ -30,10 +30,10 @@ public class RoomUsageController {
         return service.getAllBuildings();
     }
 
-    @GetMapping("/room")
+    @GetMapping("/rooms/{building}/{room}")
     public RoomUsage getRoomDetails(
-            @RequestParam String building,
-            @RequestParam String room) {
+            @PathVariable String building,
+            @PathVariable String room) {
         return service.getRoomByName(building, room);
     }
 }
