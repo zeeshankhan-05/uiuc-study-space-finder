@@ -13,8 +13,10 @@ public class RoomUsage {
 
     private String building;
     private String room;
-
     private Usage usage;
+    private List<String> courses;
+    private String room_id;
+    private String semester;
 
     // Getters and setters
     public String getId() {
@@ -49,48 +51,81 @@ public class RoomUsage {
         this.usage = usage;
     }
 
+    public List<String> getCourses() {
+        return courses;
+    }
+
+    public void setCourses(List<String> courses) {
+        this.courses = courses;
+    }
+
+    public String getRoom_id() {
+        return room_id;
+    }
+
+    public void setRoom_id(String room_id) {
+        this.room_id = room_id;
+    }
+
+    public String getSemester() {
+        return semester;
+    }
+
+    public void setSemester(String semester) {
+        this.semester = semester;
+    }
+
     public static class Usage {
-        private List<Course> courses;
-        private String room_id;
-        private String semester;
+        private List<TimeRange> Monday;
+        private List<TimeRange> Tuesday;
+        private List<TimeRange> Wednesday;
+        private List<TimeRange> Thursday;
+        private List<TimeRange> Friday;
 
-        public List<Course> getCourses() {
-            return courses;
+        public List<TimeRange> getMonday() {
+            return Monday;
         }
 
-        public void setCourses(List<Course> courses) {
-            this.courses = courses;
+        public void setMonday(List<TimeRange> monday) {
+            Monday = monday;
         }
 
-        public String getRoom_id() {
-            return room_id;
+        public List<TimeRange> getTuesday() {
+            return Tuesday;
         }
 
-        public void setRoom_id(String room_id) {
-            this.room_id = room_id;
+        public void setTuesday(List<TimeRange> tuesday) {
+            Tuesday = tuesday;
         }
 
-        public String getSemester() {
-            return semester;
+        public List<TimeRange> getWednesday() {
+            return Wednesday;
         }
 
-        public void setSemester(String semester) {
-            this.semester = semester;
+        public void setWednesday(List<TimeRange> wednesday) {
+            Wednesday = wednesday;
+        }
+
+        public List<TimeRange> getThursday() {
+            return Thursday;
+        }
+
+        public void setThursday(List<TimeRange> thursday) {
+            Thursday = thursday;
+        }
+
+        public List<TimeRange> getFriday() {
+            return Friday;
+        }
+
+        public void setFriday(List<TimeRange> friday) {
+            Friday = friday;
         }
     }
 
-    public static class Course {
-        private String day;
+    public static class TimeRange {
         private String start;
         private String end;
-
-        public String getDay() {
-            return day;
-        }
-
-        public void setDay(String day) {
-            this.day = day;
-        }
 
         public String getStart() {
             return start;

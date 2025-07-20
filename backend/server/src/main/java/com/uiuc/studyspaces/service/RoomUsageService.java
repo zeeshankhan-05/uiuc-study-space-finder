@@ -36,22 +36,41 @@ public class RoomUsageService {
                 .filter(room -> {
                     System.out.println("Checking room: " + room.getRoom());
 
-                    if (room.getUsage() == null || room.getUsage().getCourses() == null) {
+                    if (room.getUsage() == null) {
                         System.out.println("No usage data found for room " + room.getRoom() + " — assuming free");
                         return true;
                     }
 
-                    List<RoomUsage.Course> coursesOnDay = room.getUsage().getCourses().stream()
-                            .filter(course -> course.getDay().equalsIgnoreCase(day))
-                            .toList();
+                    List<RoomUsage.TimeRange> slotsOnDay = null;
+                    switch (day.toLowerCase()) {
+                        case "monday":
+                            slotsOnDay = room.getUsage().getMonday();
+                            break;
+                        case "tuesday":
+                            slotsOnDay = room.getUsage().getTuesday();
+                            break;
+                        case "wednesday":
+                            slotsOnDay = room.getUsage().getWednesday();
+                            break;
+                        case "thursday":
+                            slotsOnDay = room.getUsage().getThursday();
+                            break;
+                        case "friday":
+                            slotsOnDay = room.getUsage().getFriday();
+                            break;
+                        default:
+                            slotsOnDay = List.of();
+                            break;
+                    }
+                    if (slotsOnDay == null)
+                        slotsOnDay = List.of();
 
-                    System.out
-                            .println("Courses on " + day + " for room " + room.getRoom() + ": " + coursesOnDay.size());
+                    System.out.println("Slots on " + day + " for room " + room.getRoom() + ": " + slotsOnDay.size());
 
-                    for (RoomUsage.Course course : coursesOnDay) {
-                        LocalTime start = LocalTime.parse(course.getStart());
-                        LocalTime end = LocalTime.parse(course.getEnd());
-                        System.out.println("Checking course time: " + start + " - " + end);
+                    for (RoomUsage.TimeRange slot : slotsOnDay) {
+                        LocalTime start = LocalTime.parse(slot.getStart());
+                        LocalTime end = LocalTime.parse(slot.getEnd());
+                        System.out.println("Checking slot time: " + start + " - " + end);
 
                         if (!queryTime.isBefore(start) && queryTime.isBefore(end)) {
                             System.out.println("Room " + room.getRoom() + " is occupied at " + timeStr);
@@ -75,16 +94,8 @@ public class RoomUsageService {
     }
 
     public RoomUsage getRoomByName(String building, String room) {
-        System.out.println("Looking for building='" + building + "', room='" + room + "'");
-        return repository.findByBuildingAndRoom(building, room)
-                .map(result -> {
-                    System.out.println("✅ Found: " + result);
-                    return result;
-                })
-                .orElseGet(() -> {
-                    System.out.println("❌ Not found");
-                    return null;
-                });
+        return repository.findByBuildingAndRoom(building.trim(), room.trim())
+                .orElse(null);
     }
 
     @PostConstruct
