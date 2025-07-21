@@ -11,6 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import java.time.LocalTime;
 import java.util.List;
+import java.util.Set;
 import java.util.stream.Collectors;
 
 @Service
@@ -26,6 +27,11 @@ public class RoomUsageService {
     }
 
     public List<RoomUsage> getAvailableRooms(String building, String day, String timeStr) {
+        String normalizedDay = day.trim().toLowerCase();
+        if (!Set.of("monday", "tuesday", "wednesday", "thursday", "friday").contains(normalizedDay)) {
+            throw new IllegalArgumentException("Invalid day: " + day);
+        }
+        
         LocalTime queryTime = LocalTime.parse(timeStr);
         List<RoomUsage> rooms = repository.findByBuilding(building);
 
@@ -34,10 +40,10 @@ public class RoomUsageService {
 
         return rooms.stream()
                 .filter(room -> {
-                    System.out.println("Checking room: " + room.getRoom());
+                    System.out.println("Checking room: " + room.getRoomNumber());
 
                     if (room.getUsage() == null) {
-                        System.out.println("No usage data found for room " + room.getRoom() + " — assuming free");
+                        System.out.println("No usage data found for room " + room.getRoomNumber() + " — assuming free");
                         return true;
                     }
 
@@ -65,7 +71,8 @@ public class RoomUsageService {
                     if (slotsOnDay == null)
                         slotsOnDay = List.of();
 
-                    System.out.println("Slots on " + day + " for room " + room.getRoom() + ": " + slotsOnDay.size());
+                    System.out.println(
+                            "Slots on " + day + " for room " + room.getRoomNumber() + ": " + slotsOnDay.size());
 
                     for (RoomUsage.TimeRange slot : slotsOnDay) {
                         LocalTime start = LocalTime.parse(slot.getStart());
@@ -73,12 +80,12 @@ public class RoomUsageService {
                         System.out.println("Checking slot time: " + start + " - " + end);
 
                         if (!queryTime.isBefore(start) && queryTime.isBefore(end)) {
-                            System.out.println("Room " + room.getRoom() + " is occupied at " + timeStr);
+                            System.out.println("Room " + room.getRoomNumber() + " is occupied at " + timeStr);
                             return false;
                         }
                     }
 
-                    System.out.println("Room " + room.getRoom() + " is free at " + timeStr);
+                    System.out.println("Room " + room.getRoomNumber() + " is free at " + timeStr);
                     return true;
                 })
                 .collect(Collectors.toList());
@@ -104,7 +111,7 @@ public class RoomUsageService {
         for (RoomUsage room : all) {
             System.out.println("📄 Room from DB -> " +
                     "building='" + room.getBuilding() + "' (length=" + room.getBuilding().length() + "), " +
-                    "room='" + room.getRoom() + "' (length=" + room.getRoom().length() + ")");
+                    "room='" + room.getRoomNumber() + "' (length=" + room.getRoomNumber().length() + ")");
         }
     }
 }

@@ -35,11 +35,11 @@ public class RoomUsage {
         this.building = building;
     }
 
-    public String getRoom() {
+    public String getRoomNumber() {
         return room;
     }
 
-    public void setRoom(String room) {
+    public void setRoomNumber(String room) {
         this.room = room;
     }
 
@@ -120,6 +120,23 @@ public class RoomUsage {
 
         public void setFriday(List<TimeRange> friday) {
             Friday = friday;
+        }
+
+        public List<TimeRange> getTimeRangesForDay(String day) {
+            switch (day.toLowerCase()) {
+                case "monday":
+                    return Monday;
+                case "tuesday":
+                    return Tuesday;
+                case "wednesday":
+                    return Wednesday;
+                case "thursday":
+                    return Thursday;
+                case "friday":
+                    return Friday;
+                default:
+                    return null;
+            }
         }
     }
 
