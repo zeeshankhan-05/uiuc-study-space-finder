@@ -1,14 +1,18 @@
-// Home.jsx - Home page for UIUC Study Space Finder
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Home = () => (
   <section className="text-center">
-    <h2 className="text-3xl font-bold mb-4">Welcome to UIUC Study Space Finder</h2>
+    <h1 className="text-4xl font-bold text-blue-600 mb-4">Welcome to UIUC Study Space Finder</h1>
     <p className="text-lg text-gray-700 mb-6">
-      Discover available study spaces across the UIUC campus in real-time. Use the interactive map to find open classrooms, libraries, and more.
+      Discover available study spaces across the UIUC campus in real-time.
+      Use the interactive map to find open classrooms, libraries, and more.
     </p>
-    <p className="text-md text-gray-500">Start by exploring the <span className="font-semibold">Map</span> or learn more <span className="font-semibold">About</span> this project.</p>
+    <div className="space-x-4">
+      <Link to="/map" className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Go to Map</Link>
+      <Link to="/about" className="bg-gray-300 text-gray-800 px-4 py-2 rounded hover:bg-gray-400 transition">Learn More</Link>
+    </div>
   </section>
 );
 
-export default Home; 
+export default Home;
