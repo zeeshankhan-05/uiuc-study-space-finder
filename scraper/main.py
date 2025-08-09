@@ -57,7 +57,6 @@ def process_multiple_departments(
 
 
 def push_to_mongodb(filepath: str):
-    
     try:
         with open(filepath, "r") as f:
             data = json.load(f)
