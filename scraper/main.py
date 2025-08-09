@@ -46,6 +46,7 @@ def process_multiple_departments(
     year=YEAR,
     semester=SEMESTER,
 ):
+
     for dept in departments:
         print(f"\n===== Processing {dept} =====")
         extract_all_courses_meetings(dept, year, semester)
@@ -56,6 +57,7 @@ def process_multiple_departments(
 
 
 def push_to_mongodb(filepath: str):
+    
     try:
         with open(filepath, "r") as f:
             data = json.load(f)
@@ -71,6 +73,7 @@ def push_to_mongodb(filepath: str):
         print("✅ Successfully inserted all data into MongoDB!")
     except Exception as e:
         print(f"❌ Failed to push data: {e}")
+
 
 if __name__ == "__main__":
     BASE_DIR = os.path.dirname(os.path.abspath(__file__))

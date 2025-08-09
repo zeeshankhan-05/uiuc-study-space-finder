@@ -1,11 +1,10 @@
-import React from 'react';
-import CampusMapViewer from '../components/CampusMapViewer';
+import CampusMap from '../components/CampusMap';
 
 export default function Map() {
   return (
     <div>
-      <h2 className="text-xl font-semibold mb-4">Click a building to see room availability</h2>
-      <CampusMapViewer />
+      <h2 className="text-xl font-semibold mb-4">Interactive Campus Map</h2>
+      <CampusMap />
     </div>
   );
 }
