@@ -1,14 +1,11 @@
-// Map.jsx - Map page for UIUC Study Space Finder
 import React from 'react';
+import CampusMapViewer from '../components/CampusMapViewer';
 
-const Map = () => (
-  <section>
-    <h2 className="text-2xl font-bold mb-4">Campus Map</h2>
-    <div className="w-full h-96 bg-gray-200 flex items-center justify-center rounded-lg shadow-inner">
-      {/* TODO: Integrate React-Leaflet map here */}
-      <span className="text-gray-500">Interactive campus map coming soon...</span>
+export default function Map() {
+  return (
+    <div>
+      <h2 className="text-xl font-semibold mb-4">Click a building to see room availability</h2>
+      <CampusMapViewer />
     </div>
-  </section>
-);
-
-export default Map; 
+  );
+}

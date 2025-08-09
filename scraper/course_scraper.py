@@ -7,12 +7,15 @@ import os
 
 def get_course_urls(department, year, semester):
     """
-    Fetches a list of course URLs and metadata for a given department, year, and semester.
-    
+    Fetch a list of course URLs and metadata for a department, year, and
+    semester.
+
     Returns:
-        List of dicts: Each dict contains 'number', 'title', and 'url' of a course.
+        List of dicts: each dict contains 'number', 'title', and 'url' of a
+        course.
     """
-    url = f"https://courses.illinois.edu/schedule/{year}/{semester}/{department}"
+    base = "https://courses.illinois.edu/schedule"
+    url = f"{base}/{year}/{semester}/{department}"
     headers = {'User-Agent': 'Mozilla/5.0'}
     response = requests.get(url, headers=headers)
     response.raise_for_status()
@@ -31,7 +34,9 @@ def get_course_urls(department, year, semester):
             if len(parts) >= 2:
                 dept = parts[0]
                 num = parts[1]
-                course_url = f"https://courses.illinois.edu/schedule/{year}/{semester}/{dept}/{num}"
+                course_url = (
+                    f"{base}/{year}/{semester}/{dept}/{num}"
+                )
                 courses.append({
                     "number": course_number,
                     "title": course_title,
@@ -39,14 +44,15 @@ def get_course_urls(department, year, semester):
                 })
     return courses
 
+
 def get_course_meetings(course_url):
     """
-    Scrapes meeting information from a specific course page.
+    Scrape meeting information from a specific course page.
 
     Returns:
-        Tuple:
-            - List of meeting dicts with keys: time, days, location
-            - List of tuples containing reasons for ignored meetings
+        Tuple of:
+            - list of meeting dicts with keys: time, days, location
+            - list of tuples containing reasons for ignored meetings
     """
     headers = {'User-Agent': 'Mozilla/5.0'}
     response = requests.get(course_url, headers=headers)
@@ -60,7 +66,11 @@ def get_course_meetings(course_url):
     section_data_json = None
     for script in script_tags:
         if "var sectionDataObj" in script.string:
-            match = re.search(r"var sectionDataObj\s*=\s*(\[.*?\]);", script.string, re.DOTALL)
+            match = re.search(
+                r"var sectionDataObj\s*=\s*(\[.*?\]);",
+                script.string,
+                re.DOTALL,
+            )
             if match:
                 section_data_json = match.group(1)
             break
@@ -71,18 +81,24 @@ def get_course_meetings(course_url):
             section_data = json.loads(section_data_json)
             for sec in section_data:
                 def extract_text(html):
-                    return BeautifulSoup(html, "html.parser").get_text(" ", strip=True)
-                
+                    return BeautifulSoup(html, "html.parser").get_text(
+                        " ", strip=True
+                    )
+
                 location = extract_text(sec.get("location", ""))
                 days = extract_text(sec.get("day", ""))
                 time = extract_text(sec.get("time", ""))
-                
+
                 # Apply filters for invalid meeting entries
                 if "pending" in location.lower():
-                    ignored_reasons.append(("Location contains 'pending'", None))
+                    ignored_reasons.append(
+                        ("Location contains 'pending'", None)
+                    )
                     continue
                 elif "illini center" in location.lower():
-                    ignored_reasons.append(("Location contains 'Illini Center'", None))
+                    ignored_reasons.append(
+                        ("Location contains 'Illini Center'", None)
+                    )
                     continue
                 elif not days or days.lower() == "n.a.":
                     ignored_reasons.append(("Days is n.a.", None))
@@ -91,7 +107,11 @@ def get_course_meetings(course_url):
                     ignored_reasons.append(("Location is n.a.", None))
                     continue
 
-                meetings.append({"time": time, "days": days, "location": location})
+                meetings.append({
+                    "time": time,
+                    "days": days,
+                    "location": location,
+                })
             return meetings, ignored_reasons
         except Exception:
             pass  # If JSON parsing fails, fall back to HTML table parsing
@@ -106,6 +126,7 @@ def get_course_meetings(course_url):
         cells = row.find_all("td")
         if len(cells) < 10:
             continue
+
         def get_meeting_text(cell_idx):
             div = cells[cell_idx].find("div", class_="app-meeting")
             return div.text.strip() if div else "N/A"
@@ -128,15 +149,23 @@ def get_course_meetings(course_url):
             ignored_reasons.append(("Location is N/A or empty", None))
             continue
 
-        meetings.append({"time": time, "days": days, "location": location})
+        meetings.append({
+            "time": time,
+            "days": days,
+            "location": location,
+        })
     return meetings, ignored_reasons
+
 
 def extract_all_courses_meetings(department, year, semester):
     """
-    Extracts and saves all course meeting information to a JSON file in the department subfolder.
-    Also includes ignored meeting reasons for transparency.
+    Extract and save course meeting information to a JSON file in the
+    department subfolder. Also include ignored meeting reasons for
+    transparency.
     """
-    print(f"📦 Extracting and saving meeting info for {department} courses")
+    print(
+        f"📦 Extracting and saving meeting info for {department} courses"
+    )
     courses = get_course_urls(department, year, semester)
     if not courses:
         print("❌ No courses found!")
@@ -161,9 +190,14 @@ def extract_all_courses_meetings(department, year, semester):
         all_meetings_data.append(entry)
 
     # Store data into departments folder
-    folder = os.path.join(os.path.dirname(__file__), "data", "departments", department)
+    folder = os.path.join(
+        os.path.dirname(__file__), "data", "departments", department
+    )
     os.makedirs(folder, exist_ok=True)
-    filename = os.path.join(folder, f"room_usage_{department}_{year}_{semester}.json")
+    filename = os.path.join(
+        folder,
+        f"room_usage_{department}_{year}_{semester}.json",
+    )
     with open(filename, "w") as f:
         json.dump(all_meetings_data, f, indent=2)
     print(f"✅ Meeting info saved to {filename}")
