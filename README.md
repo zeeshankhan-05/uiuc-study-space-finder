@@ -63,7 +63,7 @@ uiuc-study-space-finder/
    cd backend/studyspaces
    ./mvnw spring-boot:run
    ```
-   Backend will be available at `http://localhost:8080 **Start the Frontend**
+   Backend will be available at `http://localhost:3000 **Start the Frontend**
    ```bash
    cd frontend
    npm install
