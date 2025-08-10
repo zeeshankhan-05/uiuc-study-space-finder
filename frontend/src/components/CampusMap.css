@@ -1,0 +1,43 @@
+/* Campus Map Styles */
+.campus-map-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.image-mapper-shape {
+  fill: rgba(0, 0, 0, 0);
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.image-mapper-shape:hover {
+  fill: rgba(0, 123, 255, 0.3);
+  stroke: #007bff;
+  stroke-width: 2px;
+}
+
+/* Make sure the SVG scales properly */
+.campus-map-container svg {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
+/* Ensure clickable areas are visible */
+.campus-map-container a {
+  cursor: pointer;
+}
+
+/* Building tooltip styles */
+.building-tooltip {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  pointer-events: none;
+  z-index: 1000;
+  white-space: nowrap;
+}
