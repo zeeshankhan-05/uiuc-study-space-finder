@@ -10,4 +10,11 @@ public interface RoomUsageRepository extends MongoRepository<RoomUsage, String> 
     List<RoomUsage> findByBuilding(String building);
 
     Optional<RoomUsage> findByBuildingAndRoom(String building, String room);
+
+    /**
+     * Find all rooms in a building for a specific day
+     * This method will be used to get all rooms regardless of their availability
+     * status
+     */
+    List<RoomUsage> findByBuildingAndUsageNotNull(String building);
 }

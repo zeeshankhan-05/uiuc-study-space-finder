@@ -1,6 +1,7 @@
 package com.uiuc.studyspaces.controller;
 
 import com.uiuc.studyspaces.model.RoomUsage;
+import com.uiuc.studyspaces.model.RoomStatusResponse;
 import com.uiuc.studyspaces.service.RoomUsageService;
 import org.springframework.web.bind.annotation.*;
 
@@ -35,5 +36,23 @@ public class RoomUsageController {
             @PathVariable String building,
             @PathVariable String room) {
         return service.getRoomByName(building, room);
+    }
+
+    /**
+     * Get all rooms in a building with their availability status for a specific day
+     * and time
+     * 
+     * @param building The building name (path variable)
+     * @param day      The day of the week (query parameter)
+     * @param time     The time to check availability in HH:mm format (query
+     *                 parameter)
+     * @return List of RoomStatusResponse objects containing room status information
+     */
+    @GetMapping("/buildings/{building}/rooms")
+    public List<RoomStatusResponse> getAllRoomsInBuilding(
+            @PathVariable String building,
+            @RequestParam String day,
+            @RequestParam String time) {
+        return service.getAllRoomsWithStatus(building, day, time);
     }
 }

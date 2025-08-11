@@ -1,6 +1,7 @@
 package com.uiuc.studyspaces.service;
 
 import com.uiuc.studyspaces.model.RoomUsage;
+import com.uiuc.studyspaces.model.RoomStatusResponse;
 import com.uiuc.studyspaces.repository.RoomUsageRepository;
 
 import jakarta.annotation.PostConstruct;
@@ -10,6 +11,7 @@ import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
 import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
@@ -31,7 +33,7 @@ public class RoomUsageService {
         if (!Set.of("monday", "tuesday", "wednesday", "thursday", "friday").contains(normalizedDay)) {
             throw new IllegalArgumentException("Invalid day: " + day);
         }
-        
+
         LocalTime queryTime = LocalTime.parse(timeStr);
         List<RoomUsage> rooms = repository.findByBuilding(building);
 
@@ -89,6 +91,120 @@ public class RoomUsageService {
                     return true;
                 })
                 .collect(Collectors.toList());
+    }
+
+    /**
+     * Get all rooms in a building with their availability status for a specific day
+     * and time
+     * 
+     * @param building The building name
+     * @param day      The day of the week (Monday, Tuesday, etc.)
+     * @param timeStr  The time to check availability (HH:mm format)
+     * @return List of RoomStatusResponse objects containing room status information
+     */
+    public List<RoomStatusResponse> getAllRoomsWithStatus(String building, String day, String timeStr) {
+        String normalizedDay = day.trim().toLowerCase();
+        if (!Set.of("monday", "tuesday", "wednesday", "thursday", "friday").contains(normalizedDay)) {
+            throw new IllegalArgumentException("Invalid day: " + day);
+        }
+
+        LocalTime queryTime = LocalTime.parse(timeStr);
+        List<RoomUsage> rooms = repository.findByBuilding(building);
+
+        return rooms.stream()
+                .map(room -> createRoomStatusResponse(room, normalizedDay, queryTime))
+                .collect(Collectors.toList());
+    }
+
+    /**
+     * Create a RoomStatusResponse object for a given room, day, and time
+     * 
+     * @param room      The room usage data
+     * @param day       The normalized day string
+     * @param queryTime The time to check availability
+     * @return RoomStatusResponse object
+     */
+    private RoomStatusResponse createRoomStatusResponse(RoomUsage room, String day, LocalTime queryTime) {
+        String roomNumber = room.getRoomNumber();
+        List<RoomUsage.TimeRange> timeRanges = getTimeRangesForDay(room, day);
+
+        if (timeRanges == null || timeRanges.isEmpty()) {
+            // Room is free for the entire day
+            return new RoomStatusResponse(roomNumber, "OPEN", null, null);
+        }
+
+        // Check if room is occupied at the query time
+        boolean isOccupied = timeRanges.stream()
+                .anyMatch(range -> {
+                    LocalTime start = LocalTime.parse(range.getStart());
+                    LocalTime end = LocalTime.parse(range.getEnd());
+                    return !queryTime.isBefore(start) && queryTime.isBefore(end);
+                });
+
+        if (isOccupied) {
+            // Room is occupied, return all occupied ranges
+            return new RoomStatusResponse(roomNumber, "OCCUPIED", null, timeRanges);
+        } else {
+            // Room is open, find when it becomes occupied next
+            String availableUntil = findNextOccupiedTime(timeRanges, queryTime);
+            return new RoomStatusResponse(roomNumber, "OPEN", availableUntil, null);
+        }
+    }
+
+    /**
+     * Get time ranges for a specific day from room usage
+     * 
+     * @param room The room usage data
+     * @param day  The normalized day string
+     * @return List of time ranges for the specified day
+     */
+    private List<RoomUsage.TimeRange> getTimeRangesForDay(RoomUsage room, String day) {
+        if (room.getUsage() == null) {
+            return null;
+        }
+
+        switch (day) {
+            case "monday":
+                return room.getUsage().getMonday();
+            case "tuesday":
+                return room.getUsage().getTuesday();
+            case "wednesday":
+                return room.getUsage().getWednesday();
+            case "thursday":
+                return room.getUsage().getThursday();
+            case "friday":
+                return room.getUsage().getFriday();
+            default:
+                return null;
+        }
+    }
+
+    /**
+     * Find the next time when the room becomes occupied after the query time
+     * 
+     * @param timeRanges List of occupied time ranges
+     * @param queryTime  The current query time
+     * @return Time string in HH:mm format when room becomes occupied, or null if
+     *         free for rest of day
+     */
+    private String findNextOccupiedTime(List<RoomUsage.TimeRange> timeRanges, LocalTime queryTime) {
+        if (timeRanges == null || timeRanges.isEmpty()) {
+            return null;
+        }
+
+        // Find the next occupied range that starts after the query time
+        return timeRanges.stream()
+                .filter(range -> {
+                    LocalTime start = LocalTime.parse(range.getStart());
+                    return start.isAfter(queryTime);
+                })
+                .min((r1, r2) -> {
+                    LocalTime start1 = LocalTime.parse(r1.getStart());
+                    LocalTime start2 = LocalTime.parse(r2.getStart());
+                    return start1.compareTo(start2);
+                })
+                .map(range -> range.getStart())
+                .orElse(null); // Room is free for the rest of the day
     }
 
     public List<String> getAllBuildings() {
