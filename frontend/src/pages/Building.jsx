@@ -1,13 +1,21 @@
-import React from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import { useNavigate, useParams } from "react-router-dom";
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
+import { fetchRoomsForBuilding } from "../api/rooms";
 
 export default function Building() {
   const { buildingId } = useParams();
   const navigate = useNavigate();
 
+  const [selectedDate, setSelectedDate] = useState(new Date());
+  const [selectedTime, setSelectedTime] = useState("12:00");
+  const [rooms, setRooms] = useState([]);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
+
   const formatBuildingName = (id) => {
     if (!id) return "Unknown Building";
-
     return id
       .split("-")
       .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
@@ -17,6 +25,31 @@ export default function Building() {
   const getBuildingDescription = () => {
     return "This building is part of the University of Illinois Urbana-Champaign campus.";
   };
+
+  const getDayOfWeek = (date) => {
+    return date.toLocaleDateString("en-US", { weekday: "long" });
+  };
+
+  const fetchRooms = useCallback(async () => {
+    try {
+      setLoading(true);
+      setError("");
+      const day = getDayOfWeek(selectedDate);
+      const data = await fetchRoomsForBuilding(buildingId, day, selectedTime);
+      setRooms(data || []);
+    } catch (err) {
+      console.error("Error fetching rooms:", err);
+      setError("Failed to fetch room data. Please try again.");
+    } finally {
+      setLoading(false);
+    }
+  }, [buildingId, selectedDate, selectedTime]);
+
+  useEffect(() => {
+    if (buildingId) {
+      fetchRooms();
+    }
+  }, [buildingId, fetchRooms]);
 
   return (
     <div className="max-w-4xl mx-auto">
@@ -52,17 +85,14 @@ export default function Building() {
           </p>
         </div>
 
-        {/* Building content */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          {/* Building description */}
+        {/* Building info */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-6">
           <div>
             <h2 className="text-xl font-semibold text-gray-900 mb-4">About</h2>
             <p className="text-gray-700 leading-relaxed">
               {getBuildingDescription()}
             </p>
           </div>
-
-          {/* Building details */}
           <div>
             <h2 className="text-xl font-semibold text-gray-900 mb-4">
               Details
@@ -84,16 +114,105 @@ export default function Building() {
           </div>
         </div>
 
-        {/* Study space information */}
+        {/* Date and time selectors */}
+        <div className="flex flex-col sm:flex-row sm:items-center gap-4 mb-6">
+          <div>
+            <label className="block text-gray-700 font-medium mb-1">
+              Select Date
+            </label>
+            <DatePicker
+              selected={selectedDate}
+              onChange={(date) => setSelectedDate(date)}
+              className="border rounded p-2 w-full"
+              dateFormat="MMMM d, yyyy"
+            />
+          </div>
+          <div>
+            <label className="block text-gray-700 font-medium mb-1">
+              Select Time
+            </label>
+            <input
+              type="time"
+              value={selectedTime}
+              onChange={(e) => setSelectedTime(e.target.value)}
+              className="border rounded p-2 w-full"
+            />
+          </div>
+        </div>
+
+        {/* Study space availability */}
         <div className="mt-8 p-6 bg-blue-50 rounded-lg">
           <h3 className="text-lg font-semibold text-blue-900 mb-3">
             Study Spaces
           </h3>
-          <p className="text-blue-800">
-            Study space information for this building will be available soon.
-            Check back for details about quiet study areas, group study rooms,
-            and other learning spaces.
-          </p>
+
+          {loading && (
+            <p className="text-blue-800">Loading available rooms...</p>
+          )}
+          {error && (
+            <p className="text-red-600">
+              {error}{" "}
+              <button
+                onClick={fetchRooms}
+                className="underline text-blue-600 hover:text-blue-800"
+              >
+                Retry
+              </button>
+            </p>
+          )}
+          {!loading && !error && rooms.length === 0 && (
+            <p className="text-blue-800">
+              No available rooms at this time. Try another date or time.
+            </p>
+          )}
+          {!loading && !error && rooms.length > 0 && (
+            <ul className="space-y-3">
+              {rooms.map((room, idx) => (
+                <li
+                  key={room.roomNumber || idx}
+                  className="p-4 bg-white rounded shadow flex justify-between items-center"
+                >
+                  <div className="flex-1">
+                    <span className="font-medium text-lg">
+                      {room.roomNumber}
+                    </span>
+                    <div className="flex items-center mt-1">
+                      <span
+                        className={`px-2 py-1 rounded-full text-xs font-medium ${
+                          room.status === "OPEN"
+                            ? "bg-green-100 text-green-800"
+                            : "bg-red-100 text-red-800"
+                        }`}
+                      >
+                        {room.status}
+                      </span>
+                      {room.availableUntil && (
+                        <span className="ml-2 text-sm text-gray-600">
+                          Available until {room.availableUntil}
+                        </span>
+                      )}
+                    </div>
+                  </div>
+                  <div className="text-right text-sm text-gray-600">
+                    {room.occupiedRanges && room.occupiedRanges.length > 0 ? (
+                      <div>
+                        <div className="font-medium">Occupied:</div>
+                        {room.occupiedRanges.map((range, rangeIdx) => (
+                          <div key={rangeIdx} className="text-xs">
+                            {range.start} - {range.end}
+                          </div>
+                        ))}
+                      </div>
+                    ) : (
+                      <span className="text-green-600 font-medium">
+                        Free all day
+                      </span>
+                    )}
+                  </div>
+                </li>
+              ))}
+            </ul>
+          )}
         </div>
       </div>
     </div>
