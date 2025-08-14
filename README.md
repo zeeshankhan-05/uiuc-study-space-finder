@@ -138,7 +138,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Zeeshan Khan** - Computer Science 26' @ UIUC
 
-- GitHub: [@zeeshankhan-05](https://github.com/zeeshankhan-05)
+- GitHub: [zeeshankhan-05](https://github.com/zeeshankhan-05)
 - LinkedIn: [zeeshankhan05](https://www.linkedin.com/in/zeeshankhan05/)
 
 ## 🙏 Acknowledgments

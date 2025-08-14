@@ -70,11 +70,6 @@ python main.py --push-only
 - Use the time picker to check availability at different times
 - The table updates automatically
 
-### 5. Test the API
-
-- Visit `/test` to test the API functionality directly
-- Select buildings, days, and times to see room data
-
 ## API Endpoints
 
 ### Get All Buildings
@@ -148,4 +143,3 @@ The application uses course schedule data from UIUC to determine room availabili
 ## License
 
 This project is for educational/portfolio use only.
-

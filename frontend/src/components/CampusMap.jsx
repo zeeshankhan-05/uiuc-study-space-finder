@@ -112,19 +112,6 @@ export default function CampusMap() {
         dangerouslySetInnerHTML={{ __html: processedSVG }}
       />
 
-      {/* Fallback image if SVG doesn't work */}
-      <div className="mt-4 text-center">
-        <p className="text-xs md:text-sm text-gray-500 mb-2">
-          If the interactive map doesn't display, here's the campus map:
-        </p>
-        <img
-          src={campusMapImage}
-          alt="UIUC Campus Map"
-          className="max-w-full h-auto mx-auto border border-gray-200 rounded-lg"
-          style={{ maxHeight: "400px" }}
-        />
-      </div>
-
       {/* Tooltip */}
       {tooltip.show && (
         <div
