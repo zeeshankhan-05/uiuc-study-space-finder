@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import campusMap from "../assets/campusMapWithBuildings.svg?raw";
 import campusMapImage from "../assets/uiuc-campus-map.png";
+import { mapBuildingPathToName } from "../utils/buildingMapper";
 import "./CampusMap.css";
 
 export default function CampusMap() {
@@ -12,9 +13,13 @@ export default function CampusMap() {
   // Function to handle building clicks
   const handleBuildingClick = (buildingPath) => {
     if (buildingPath && buildingPath !== "#") {
-      // Extract the building identifier from the path
-      const buildingId = buildingPath.replace(/^\//, "").replace(/\/$/, "");
-      navigate(`/building/${buildingId}`);
+      // Map the building path to the API building name
+      const buildingName = mapBuildingPathToName(buildingPath);
+      if (buildingName) {
+        navigate(`/building/${encodeURIComponent(buildingName)}`);
+      } else {
+        console.warn("Unknown building path:", buildingPath);
+      }
     }
   };
 

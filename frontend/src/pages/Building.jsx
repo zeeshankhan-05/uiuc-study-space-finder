@@ -3,16 +3,23 @@ import { useNavigate, useParams } from "react-router-dom";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { fetchRoomsForBuilding } from "../api/rooms";
+import RoomTable from "../components/RoomTable";
 
 export default function Building() {
   const { buildingId } = useParams();
   const navigate = useNavigate();
 
-  const [selectedDate, setSelectedDate] = useState(new Date());
+  // Decode the building ID from URL
+  const decodedBuildingId = buildingId ? decodeURIComponent(buildingId) : "";
+
+  // Set default date to first day of Fall 2025 semester
+  const [selectedDate, setSelectedDate] = useState(new Date("2025-08-25"));
   const [selectedTime, setSelectedTime] = useState("12:00");
   const [rooms, setRooms] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
+  const [searchQuery, setSearchQuery] = useState("");
+  const [showOpenOnly, setShowOpenOnly] = useState(false);
 
   const formatBuildingName = (id) => {
     if (!id) return "Unknown Building";
@@ -35,7 +42,11 @@ export default function Building() {
       setLoading(true);
       setError("");
       const day = getDayOfWeek(selectedDate);
-      const data = await fetchRoomsForBuilding(buildingId, day, selectedTime);
+      const data = await fetchRoomsForBuilding(
+        decodedBuildingId,
+        day,
+        selectedTime
+      );
       setRooms(data || []);
     } catch (err) {
       console.error("Error fetching rooms:", err);
@@ -43,13 +54,13 @@ export default function Building() {
     } finally {
       setLoading(false);
     }
-  }, [buildingId, selectedDate, selectedTime]);
+  }, [decodedBuildingId, selectedDate, selectedTime]);
 
   useEffect(() => {
-    if (buildingId) {
+    if (decodedBuildingId) {
       fetchRooms();
     }
-  }, [buildingId, fetchRooms]);
+  }, [decodedBuildingId, selectedDate, selectedTime, fetchRooms]);
 
   return (
     <div className="max-w-4xl mx-auto">
@@ -78,7 +89,7 @@ export default function Building() {
         {/* Building header */}
         <div className="border-b border-gray-200 pb-6 mb-6">
           <h1 className="text-3xl font-bold text-gray-900 mb-2">
-            {formatBuildingName(buildingId)}
+            {formatBuildingName(decodedBuildingId)}
           </h1>
           <p className="text-gray-600 text-lg">
             University of Illinois Urbana-Champaign
@@ -100,7 +111,7 @@ export default function Building() {
             <div className="space-y-3">
               <div className="flex justify-between py-2 border-b border-gray-100">
                 <span className="font-medium text-gray-600">Building ID:</span>
-                <span className="text-gray-900">{buildingId}</span>
+                <span className="text-gray-900">{decodedBuildingId}</span>
               </div>
               <div className="flex justify-between py-2 border-b border-gray-100">
                 <span className="font-medium text-gray-600">Campus:</span>
@@ -114,7 +125,6 @@ export default function Building() {
           </div>
         </div>
 
-        {/* Date and time selectors */}
         <div className="flex flex-col sm:flex-row sm:items-center gap-4 mb-6">
           <div>
             <label className="block text-gray-700 font-medium mb-1">
@@ -125,6 +135,13 @@ export default function Building() {
               onChange={(date) => setSelectedDate(date)}
               className="border rounded p-2 w-full"
               dateFormat="MMMM d, yyyy"
+              minDate={new Date("2025-08-25")}
+              maxDate={new Date("2025-12-10")}
+              filterDate={(date) => {
+                const day = date.getDay();
+                // Only allow Monday (1) through Friday (5)
+                return day >= 1 && day <= 5;
+              }}
             />
           </div>
           <div>
@@ -142,9 +159,18 @@ export default function Building() {
 
         {/* Study space availability */}
         <div className="mt-8 p-6 bg-blue-50 rounded-lg">
-          <h3 className="text-lg font-semibold text-blue-900 mb-3">
-            Study Spaces
-          </h3>
+          <div className="flex justify-between items-center mb-3">
+            <h3 className="text-lg font-semibold text-blue-900">
+              Study Spaces
+            </h3>
+            <button
+              onClick={fetchRooms}
+              disabled={loading}
+              className="px-3 py-1 bg-blue-600 text-white rounded hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed text-sm"
+            >
+              {loading ? "Loading..." : "Refresh"}
+            </button>
+          </div>
 
           {loading && (
             <p className="text-blue-800">Loading available rooms...</p>
@@ -166,52 +192,13 @@ export default function Building() {
             </p>
           )}
           {!loading && !error && rooms.length > 0 && (
-            <ul className="space-y-3">
-              {rooms.map((room, idx) => (
-                <li
-                  key={room.roomNumber || idx}
-                  className="p-4 bg-white rounded shadow flex justify-between items-center"
-                >
-                  <div className="flex-1">
-                    <span className="font-medium text-lg">
-                      {room.roomNumber}
-                    </span>
-                    <div className="flex items-center mt-1">
-                      <span
-                        className={`px-2 py-1 rounded-full text-xs font-medium ${
-                          room.status === "OPEN"
-                            ? "bg-green-100 text-green-800"
-                            : "bg-red-100 text-red-800"
-                        }`}
-                      >
-                        {room.status}
-                      </span>
-                      {room.availableUntil && (
-                        <span className="ml-2 text-sm text-gray-600">
-                          Available until {room.availableUntil}
-                        </span>
-                      )}
-                    </div>
-                  </div>
-                  <div className="text-right text-sm text-gray-600">
-                    {room.occupiedRanges && room.occupiedRanges.length > 0 ? (
-                      <div>
-                        <div className="font-medium">Occupied:</div>
-                        {room.occupiedRanges.map((range, rangeIdx) => (
-                          <div key={rangeIdx} className="text-xs">
-                            {range.start} - {range.end}
-                          </div>
-                        ))}
-                      </div>
-                    ) : (
-                      <span className="text-green-600 font-medium">
-                        Free all day
-                      </span>
-                    )}
-                  </div>
-                </li>
-              ))}
-            </ul>
+            <RoomTable
+              rooms={rooms}
+              searchQuery={searchQuery}
+              setSearchQuery={setSearchQuery}
+              showOpenOnly={showOpenOnly}
+              setShowOpenOnly={setShowOpenOnly}
+            />
           )}
         </div>
       </div>

@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Map from "./pages/Map";
 import About from "./pages/About";
 import Building from "./pages/Building";
+import Test from "./pages/Test";
 
 function App() {
   return (
@@ -25,6 +26,9 @@ function App() {
               <Link to="/about" className="hover:underline">
                 About
               </Link>
+              <Link to="/test" className="hover:underline">
+                Test
+              </Link>
             </nav>
           </div>
         </header>
@@ -35,6 +39,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/map" element={<Map />} />
             <Route path="/about" element={<About />} />
+            <Route path="/test" element={<Test />} />
             <Route path="/building/:buildingId" element={<Building />} />
           </Routes>
         </main>
