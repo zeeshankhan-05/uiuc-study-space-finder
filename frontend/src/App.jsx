@@ -12,21 +12,24 @@ function App() {
       <div className="min-h-screen flex flex-col bg-gray-50">
         {/* Header */}
         <header className="bg-blue-900 text-white shadow-md">
-          <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-            <h1 className="text-2xl font-bold tracking-tight">
+          <div className="container mx-auto px-4 py-3 md:py-4 flex flex-col md:flex-row md:justify-between md:items-center gap-3 md:gap-0">
+            <h1 className="text-xl md:text-2xl font-bold tracking-tight text-center md:text-left">
               UIUC Study Space Finder
             </h1>
-            <nav className="space-x-6">
-              <Link to="/" className="hover:underline">
+            <nav className="flex justify-center md:justify-end space-x-4 md:space-x-6">
+              <Link to="/" className="text-sm md:text-base hover:underline">
                 Home
               </Link>
-              <Link to="/map" className="hover:underline">
+              <Link to="/map" className="text-sm md:text-base hover:underline">
                 Map
               </Link>
-              <Link to="/about" className="hover:underline">
+              <Link
+                to="/about"
+                className="text-sm md:text-base hover:underline"
+              >
                 About
               </Link>
-              <Link to="/test" className="hover:underline">
+              <Link to="/test" className="text-sm md:text-base hover:underline">
                 Test
               </Link>
             </nav>
@@ -34,7 +37,7 @@ function App() {
         </header>
 
         {/* Main Content */}
-        <main className="flex-1 container mx-auto px-4 py-8">
+        <main className="flex-1 container mx-auto px-4 py-6 md:py-8">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/map" element={<Map />} />
@@ -45,7 +48,7 @@ function App() {
         </main>
 
         {/* Footer */}
-        <footer className="bg-gray-200 text-center py-4 text-sm text-gray-600">
+        <footer className="bg-gray-200 text-center py-3 md:py-4 text-xs md:text-sm text-gray-600">
           &copy; {new Date().getFullYear()} UIUC Study Space Finder. Built for
           portfolio use.
         </footer>

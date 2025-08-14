@@ -22,6 +22,7 @@
   width: 100%;
   height: auto;
   max-width: 100%;
+  max-height: 100%;
 }
 
 /* Ensure clickable areas are visible */
@@ -34,10 +35,24 @@
   position: absolute;
   background: rgba(0, 0, 0, 0.8);
   color: white;
-  padding: 8px 12px;
+  padding: 6px 10px;
   border-radius: 4px;
-  font-size: 14px;
+  font-size: 12px;
   pointer-events: none;
   z-index: 1000;
   white-space: nowrap;
+  max-width: 200px;
+  word-wrap: break-word;
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 1023px) {
+  .campus-map-container svg {
+    max-height: 300px;
+  }
+  
+  .building-tooltip {
+    font-size: 11px;
+    padding: 4px 8px;
+  }
 }

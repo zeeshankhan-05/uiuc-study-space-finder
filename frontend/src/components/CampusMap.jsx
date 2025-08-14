@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import campusMap from "../assets/campusMapWithBuildings.svg?raw";
 import campusMapImage from "../assets/uiuc-campus-map.png";
@@ -11,17 +11,20 @@ export default function CampusMap() {
   const [tooltip, setTooltip] = useState({ show: false, text: "", x: 0, y: 0 });
 
   // Function to handle building clicks
-  const handleBuildingClick = (buildingPath) => {
-    if (buildingPath && buildingPath !== "#") {
-      // Map the building path to the API building name
-      const buildingName = mapBuildingPathToName(buildingPath);
-      if (buildingName) {
-        navigate(`/building/${encodeURIComponent(buildingName)}`);
-      } else {
-        console.warn("Unknown building path:", buildingPath);
+  const handleBuildingClick = useCallback(
+    (buildingPath) => {
+      if (buildingPath && buildingPath !== "#") {
+        // Map the building path to the API building name
+        const buildingName = mapBuildingPathToName(buildingPath);
+        if (buildingName) {
+          navigate(`/building/${encodeURIComponent(buildingName)}`);
+        } else {
+          console.warn("Unknown building path:", buildingPath);
+        }
       }
-    }
-  };
+    },
+    [navigate]
+  );
 
   // Function to show tooltip
   const showTooltip = (event, title) => {
@@ -98,27 +101,27 @@ export default function CampusMap() {
     return () => {
       delete window.handleBuildingClick;
     };
-  }, [navigate]);
+  }, [handleBuildingClick, processedSVG.length]);
 
   return (
-    <div className="max-w-full mx-auto mt-6 campus-map-container">
-      {/* Try both approaches - first the processed SVG, then fallback to image */}
+    <div className="w-full campus-map-container">
+      {/* Interactive SVG Map */}
       <div
         ref={mapRef}
-        className="w-full h-full"
+        className="w-full h-auto max-h-96 md:max-h-none"
         dangerouslySetInnerHTML={{ __html: processedSVG }}
       />
 
       {/* Fallback image if SVG doesn't work */}
       <div className="mt-4 text-center">
-        <p className="text-sm text-gray-500 mb-2">
+        <p className="text-xs md:text-sm text-gray-500 mb-2">
           If the interactive map doesn't display, here's the campus map:
         </p>
         <img
           src={campusMapImage}
           alt="UIUC Campus Map"
           className="max-w-full h-auto mx-auto border border-gray-200 rounded-lg"
-          style={{ maxHeight: "600px" }}
+          style={{ maxHeight: "400px" }}
         />
       </div>
 

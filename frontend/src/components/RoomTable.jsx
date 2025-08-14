@@ -28,7 +28,7 @@ export default function RoomTable({
           placeholder="Search by room number..."
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
-          className="border rounded px-2 py-1 w-full md:w-1/3 text-sm"
+          className="border rounded px-3 py-2 w-full md:w-2/3 text-sm md:text-base focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
         />
       </div>
 
@@ -39,14 +39,16 @@ export default function RoomTable({
             type="checkbox"
             checked={showOpenOnly}
             onChange={(e) => setShowOpenOnly(e.target.checked)}
-            className="w-4 h-4"
+            className="w-4 h-4 md:w-5 md:h-5"
           />
-          <span className="text-sm text-gray-700">Show open rooms only</span>
+          <span className="text-xs md:text-sm text-gray-700">
+            Show open rooms only
+          </span>
         </label>
       </div>
 
       {/* Results count */}
-      <div className="text-sm text-gray-600 text-center">
+      <div className="text-xs md:text-sm text-gray-600 text-center">
         {filteredRooms.length} of {rooms.length} rooms
         {showOpenOnly && (
           <span className="ml-1 text-blue-600">
@@ -57,20 +59,20 @@ export default function RoomTable({
 
       {/* Rooms table */}
       {filteredRooms.length > 0 ? (
-        <div className="overflow-x-auto">
-          <table className="w-full bg-white rounded-lg shadow">
+        <div className="overflow-x-auto border border-gray-200 rounded-lg">
+          <table className="w-full bg-white min-w-full">
             <thead className="bg-gray-50">
               <tr>
-                <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                  Room Number
+                <th className="px-2 md:px-4 py-2 md:py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                  Room
                 </th>
-                <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                <th className="px-2 md:px-4 py-2 md:py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                   Status
                 </th>
-                <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                <th className="px-2 md:px-4 py-2 md:py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                   Available Until
                 </th>
-                <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                <th className="px-2 md:px-4 py-2 md:py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                   Occupied Times
                 </th>
               </tr>
@@ -78,12 +80,12 @@ export default function RoomTable({
             <tbody className="divide-y divide-gray-200">
               {filteredRooms.map((room, idx) => (
                 <tr key={room.roomNumber || idx} className="hover:bg-gray-50">
-                  <td className="px-4 py-4 whitespace-nowrap">
-                    <span className="font-medium text-lg text-gray-900">
+                  <td className="px-2 md:px-4 py-2 md:py-4 whitespace-nowrap">
+                    <span className="font-medium text-sm md:text-lg text-gray-900">
                       {room.roomNumber}
                     </span>
                   </td>
-                  <td className="px-4 py-4 whitespace-nowrap">
+                  <td className="px-2 md:px-4 py-2 md:py-4 whitespace-nowrap">
                     <span
                       className={`px-2 py-1 rounded-full text-xs font-medium ${
                         room.status === "OPEN"
@@ -94,10 +96,10 @@ export default function RoomTable({
                       {room.status}
                     </span>
                   </td>
-                  <td className="px-4 py-4 whitespace-nowrap text-sm text-gray-900">
+                  <td className="px-2 md:px-4 py-2 md:py-4 whitespace-nowrap text-xs md:text-sm text-gray-900">
                     {room.availableUntil || "N/A"}
                   </td>
-                  <td className="px-4 py-4 whitespace-nowrap text-sm text-gray-900">
+                  <td className="px-2 md:px-4 py-2 md:py-4 whitespace-nowrap text-xs md:text-sm text-gray-900">
                     {room.occupiedRanges && room.occupiedRanges.length > 0 ? (
                       <div className="space-y-1">
                         {room.occupiedRanges.map((range, rangeIdx) => (
@@ -107,7 +109,7 @@ export default function RoomTable({
                         ))}
                       </div>
                     ) : (
-                      <span className="text-green-600 font-medium">
+                      <span className="text-green-600 font-medium text-xs md:text-sm">
                         Free all day
                       </span>
                     )}
@@ -118,12 +120,14 @@ export default function RoomTable({
           </table>
         </div>
       ) : (
-        <div className="text-center py-8 text-gray-500">
-          {searchQuery.trim() ? (
-            <p>No rooms found matching "{searchQuery}"</p>
-          ) : (
-            <p>No rooms available</p>
-          )}
+        <div className="text-center py-6 md:py-8 text-gray-500">
+          <p className="text-sm md:text-base">
+            {searchQuery.trim() ? (
+              <>No rooms found matching "{searchQuery}"</>
+            ) : (
+              "No rooms available"
+            )}
+          </p>
         </div>
       )}
     </div>
