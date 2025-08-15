@@ -97,7 +97,7 @@ pip install -r requirements.txt
 
 ```bash
 # Backend tests
-cd backend/studyspaces
+cd backend/server
 ./mvnw test
 
 # Frontend tests
