@@ -2,6 +2,8 @@
  * API functions for room-related operations
  */
 
+import { getCleanBuildingNameForAPI } from '../utils/buildingMapper';
+
 const API_BASE_URL = 'http://localhost:8080/api';
 
 /**
@@ -13,8 +15,11 @@ const API_BASE_URL = 'http://localhost:8080/api';
  */
 export const fetchRoomsForBuilding = async (buildingId, day, time) => {
   try {
+    // Clean the building name to handle duplicates
+    const cleanBuildingId = getCleanBuildingNameForAPI(buildingId);
+    
     const response = await fetch(
-      `${API_BASE_URL}/buildings/${encodeURIComponent(buildingId)}/rooms?day=${encodeURIComponent(day)}&time=${encodeURIComponent(time)}`,
+      `${API_BASE_URL}/buildings/${encodeURIComponent(cleanBuildingId)}/rooms?day=${encodeURIComponent(day)}&time=${encodeURIComponent(time)}`,
       {
         method: 'GET',
         headers: {
@@ -44,8 +49,11 @@ export const fetchRoomsForBuilding = async (buildingId, day, time) => {
  */
 export const fetchAvailableRooms = async (buildingId, day, time) => {
   try {
+    // Clean the building name to handle duplicates
+    const cleanBuildingId = getCleanBuildingNameForAPI(buildingId);
+    
     const response = await fetch(
-      `${API_BASE_URL}/rooms?building=${encodeURIComponent(buildingId)}&day=${encodeURIComponent(day)}&time=${encodeURIComponent(time)}`,
+      `${API_BASE_URL}/rooms?building=${encodeURIComponent(cleanBuildingId)}&day=${encodeURIComponent(day)}&time=${encodeURIComponent(time)}`,
       {
         method: 'GET',
         headers: {
@@ -99,8 +107,11 @@ export const fetchAllBuildings = async () => {
  */
 export const fetchRoomDetails = async (buildingId, roomNumber) => {
   try {
+    // Clean the building name to handle duplicates
+    const cleanBuildingId = getCleanBuildingNameForAPI(buildingId);
+    
     const response = await fetch(
-      `${API_BASE_URL}/rooms/${encodeURIComponent(buildingId)}/${encodeURIComponent(roomNumber)}`,
+      `${API_BASE_URL}/rooms/${encodeURIComponent(cleanBuildingId)}/${encodeURIComponent(roomNumber)}`,
       {
         method: 'GET',
         headers: {

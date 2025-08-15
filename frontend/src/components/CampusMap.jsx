@@ -9,16 +9,17 @@ export default function CampusMap() {
   const navigate = useNavigate();
   const mapRef = useRef(null);
   const containerRef = useRef(null);
+
+  const [selectedBuilding, setSelectedBuilding] = useState(null);
   const [tooltip, setTooltip] = useState({ show: false, text: "", x: 0, y: 0 });
 
-  // Function to handle building clicks
+  // Click handler
   const handleBuildingClick = useCallback(
     (buildingPath) => {
       if (buildingPath && buildingPath !== "#") {
-        // Map the building path to the API building name
+        setSelectedBuilding(buildingPath); // highlight
         const buildingName = mapBuildingPathToName(buildingPath);
         if (buildingName) {
-          // Always navigate to building page
           navigate(`/building/${encodeURIComponent(buildingName)}`);
         } else {
           console.warn("Unknown building path:", buildingPath);
@@ -28,7 +29,6 @@ export default function CampusMap() {
     [navigate]
   );
 
-  // Function to show tooltip
   const showTooltip = (event, title) => {
     if (title) {
       setTooltip({
@@ -40,25 +40,40 @@ export default function CampusMap() {
     }
   };
 
-  // Function to hide tooltip
   const hideTooltip = () => {
     setTooltip({ show: false, text: "", x: 0, y: 0 });
   };
 
-  // Function to handle resize
+  // Highlight selected building
+  const updateBuildingHighlight = useCallback(() => {
+    if (mapRef.current) {
+      const polygons = mapRef.current.querySelectorAll(".image-mapper-shape");
+
+      polygons.forEach((polygon) => {
+        polygon.classList.remove("selected-building");
+        const parentLink = polygon.closest("a");
+        if (parentLink && selectedBuilding) {
+          const href = parentLink.getAttribute("xlink:href");
+          if (href === selectedBuilding) {
+            polygon.classList.add("selected-building");
+          }
+        }
+      });
+    }
+  }, [selectedBuilding]);
+
+  // Resize fix
   const handleResize = useCallback(() => {
     if (mapRef.current) {
-      // Trigger a re-render of the SVG content
       const svg = mapRef.current.querySelector("svg");
       if (svg) {
-        // Force SVG to recalculate its dimensions
         svg.style.width = "100%";
         svg.style.height = "auto";
       }
     }
   }, []);
 
-  // Process the SVG content to fix image path and remove problematic target attributes
+  // Process SVG: add <title> to <a> using mapBuildingPathToName
   const processedSVG = campusMap
     .replace(
       /xlink:href="\.\/uiuc-campus-map\.png"/g,
@@ -67,27 +82,20 @@ export default function CampusMap() {
     .replace(/target="---"/g, "")
     .replace(/<a xlink:href="([^"]*)"[^>]*>/g, (match, href) => {
       if (href && href !== "#") {
-        return `<a xlink:href="#" onclick="window.handleBuildingClick('${href}')" style="cursor: pointer;">`;
+        const buildingName = mapBuildingPathToName(href);
+        return `<a onclick="window.handleBuildingClick('${href}')" style="cursor: pointer;"><title>${buildingName}</title>`;
       }
       return match;
     });
-
-  // Add the global click handler function and set up event listeners
   useEffect(() => {
-    console.log("CampusMap mounted, processedSVG length:", processedSVG.length);
-    console.log("Image path:", campusMapImage);
-
     window.handleBuildingClick = handleBuildingClick;
 
-    // Add click event listeners to all building polygons after the SVG is rendered
     if (mapRef.current) {
       const polygons = mapRef.current.querySelectorAll(".image-mapper-shape");
-      console.log("Found polygons:", polygons.length);
 
       polygons.forEach((polygon) => {
         polygon.style.cursor = "pointer";
 
-        // Add click event
         polygon.addEventListener("click", (e) => {
           e.preventDefault();
           const parentLink = polygon.closest("a");
@@ -99,10 +107,10 @@ export default function CampusMap() {
           }
         });
 
-        // Add hover events for tooltip
         const parentLink = polygon.closest("a");
         if (parentLink) {
-          const title = parentLink.getAttribute("xlink:title");
+          const titleElement = parentLink.querySelector("title");
+          const title = titleElement?.textContent;
           if (title) {
             polygon.addEventListener("mouseenter", (e) =>
               showTooltip(e, title)
@@ -113,7 +121,7 @@ export default function CampusMap() {
       });
     }
 
-    // Set up resize observer for responsive behavior
+    // Resize observer
     if (containerRef.current) {
       const resizeObserver = new ResizeObserver(() => {
         handleResize();
@@ -131,9 +139,13 @@ export default function CampusMap() {
     };
   }, [handleBuildingClick, handleResize, processedSVG.length]);
 
+  useEffect(() => {
+    updateBuildingHighlight();
+  }, [selectedBuilding, updateBuildingHighlight]);
+
   return (
     <div ref={containerRef} className="w-full h-full campus-map-container">
-      {/* Interactive SVG Map */}
+      {/* SVG map with building polygons */}
       <div
         ref={mapRef}
         className="w-full h-full"
@@ -143,11 +155,8 @@ export default function CampusMap() {
       {/* Tooltip */}
       {tooltip.show && (
         <div
-          className="building-tooltip"
-          style={{
-            left: tooltip.x,
-            top: tooltip.y,
-          }}
+          className="absolute bg-gray-800 text-white text-xs px-2 py-1 rounded shadow-lg pointer-events-none z-50"
+          style={{ left: tooltip.x, top: tooltip.y }}
         >
           {tooltip.text}
         </div>
