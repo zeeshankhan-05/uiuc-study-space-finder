@@ -8,6 +8,7 @@ import "./CampusMap.css";
 export default function CampusMap() {
   const navigate = useNavigate();
   const mapRef = useRef(null);
+  const containerRef = useRef(null);
   const [tooltip, setTooltip] = useState({ show: false, text: "", x: 0, y: 0 });
 
   // Function to handle building clicks
@@ -17,6 +18,7 @@ export default function CampusMap() {
         // Map the building path to the API building name
         const buildingName = mapBuildingPathToName(buildingPath);
         if (buildingName) {
+          // Always navigate to building page
           navigate(`/building/${encodeURIComponent(buildingName)}`);
         } else {
           console.warn("Unknown building path:", buildingPath);
@@ -42,6 +44,19 @@ export default function CampusMap() {
   const hideTooltip = () => {
     setTooltip({ show: false, text: "", x: 0, y: 0 });
   };
+
+  // Function to handle resize
+  const handleResize = useCallback(() => {
+    if (mapRef.current) {
+      // Trigger a re-render of the SVG content
+      const svg = mapRef.current.querySelector("svg");
+      if (svg) {
+        // Force SVG to recalculate its dimensions
+        svg.style.width = "100%";
+        svg.style.height = "auto";
+      }
+    }
+  }, []);
 
   // Process the SVG content to fix image path and remove problematic target attributes
   const processedSVG = campusMap
@@ -98,17 +113,30 @@ export default function CampusMap() {
       });
     }
 
+    // Set up resize observer for responsive behavior
+    if (containerRef.current) {
+      const resizeObserver = new ResizeObserver(() => {
+        handleResize();
+      });
+      resizeObserver.observe(containerRef.current);
+
+      return () => {
+        delete window.handleBuildingClick;
+        resizeObserver.disconnect();
+      };
+    }
+
     return () => {
       delete window.handleBuildingClick;
     };
-  }, [handleBuildingClick, processedSVG.length]);
+  }, [handleBuildingClick, handleResize, processedSVG.length]);
 
   return (
-    <div className="w-full campus-map-container">
+    <div ref={containerRef} className="w-full h-full campus-map-container">
       {/* Interactive SVG Map */}
       <div
         ref={mapRef}
-        className="w-full h-auto max-h-96 md:max-h-none"
+        className="w-full h-full"
         dangerouslySetInnerHTML={{ __html: processedSVG }}
       />
 

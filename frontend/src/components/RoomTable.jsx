@@ -28,7 +28,7 @@ export default function RoomTable({
           placeholder="Search by room number..."
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
-          className="border rounded px-3 py-2 w-full md:w-2/3 text-sm md:text-base focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+          className="border rounded-lg px-3 py-2 w-full md:w-2/3 text-sm md:text-base focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent h-11"
         />
       </div>
 
@@ -57,22 +57,22 @@ export default function RoomTable({
         )}
       </div>
 
-      {/* Rooms table */}
+      {/* Rooms table with overflow wrapper */}
       {filteredRooms.length > 0 ? (
-        <div className="overflow-x-auto border border-gray-200 rounded-lg">
-          <table className="w-full bg-white min-w-full">
-            <thead className="bg-gray-50">
+        <div className="overflow-x-auto border border-gray-200 rounded-lg min-w-[600px]">
+          <table className="w-full bg-white">
+            <thead className="sticky top-0 bg-white/90 backdrop-blur-sm z-10">
               <tr>
-                <th className="px-2 md:px-4 py-2 md:py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                <th className="px-2 md:px-4 py-2 md:py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider border-b border-gray-200">
                   Room
                 </th>
-                <th className="px-2 md:px-4 py-2 md:py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                <th className="px-2 md:px-4 py-2 md:py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider border-b border-gray-200">
                   Status
                 </th>
-                <th className="px-2 md:px-4 py-2 md:py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                <th className="px-2 md:px-4 py-2 md:py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider border-b border-gray-200">
                   Available Until
                 </th>
-                <th className="px-2 md:px-4 py-2 md:py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                <th className="px-2 md:px-4 py-2 md:py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider border-b border-gray-200">
                   Occupied Times
                 </th>
               </tr>

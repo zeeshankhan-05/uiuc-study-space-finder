@@ -12,9 +12,28 @@ export default function Building() {
   // Decode the building ID from URL
   const decodedBuildingId = buildingId ? decodeURIComponent(buildingId) : "";
 
-  // Set default date to first day of Fall 2025 semester
-  const [selectedDate, setSelectedDate] = useState(new Date("2025-08-25"));
-  const [selectedTime, setSelectedTime] = useState("12:00");
+  // Get current date and time in CST
+  const getCurrentDateTime = () => {
+    const now = new Date();
+    // Convert to CST (Central Standard Time)
+    const cstTime = new Date(
+      now.toLocaleString("en-US", { timeZone: "America/Chicago" })
+    );
+    return cstTime;
+  };
+
+  const getCurrentTimeString = () => {
+    const now = new Date();
+    // Get current time in CST and format as HH:mm
+    const cstTime = new Date(
+      now.toLocaleString("en-US", { timeZone: "America/Chicago" })
+    );
+    return cstTime.toTimeString().slice(0, 5); // Get HH:mm format
+  };
+
+  // Set default date and time to current CST date/time
+  const [selectedDate, setSelectedDate] = useState(getCurrentDateTime());
+  const [selectedTime, setSelectedTime] = useState(getCurrentTimeString());
   const [rooms, setRooms] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
@@ -27,10 +46,6 @@ export default function Building() {
       .split("-")
       .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
       .join(" ");
-  };
-
-  const getBuildingDescription = () => {
-    return "This building is part of the University of Illinois Urbana-Champaign campus.";
   };
 
   const getDayOfWeek = (date) => {
@@ -63,77 +78,50 @@ export default function Building() {
   }, [decodedBuildingId, selectedDate, selectedTime, fetchRooms]);
 
   return (
-    <div className="max-w-4xl mx-auto">
-      <div className="bg-white rounded-lg shadow-lg p-8">
-        {/* Back button */}
-        <button
-          onClick={() => navigate(-1)}
-          className="mb-6 flex items-center text-blue-600 hover:text-blue-800 transition-colors"
+    <div className="max-w-7xl mx-auto p-4 md:p-6">
+      {/* Back button */}
+      <button
+        onClick={() => navigate(-1)}
+        className="mb-6 flex items-center text-blue-600 hover:text-blue-800 transition-colors"
+      >
+        <svg
+          className="w-5 h-5 mr-2"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
         >
-          <svg
-            className="w-5 h-5 mr-2"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M15 19l-7-7 7-7"
-            />
-          </svg>
-          Back to Map
-        </button>
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M15 19l-7-7 7-7"
+          />
+        </svg>
+        Back to Map
+      </button>
 
-        {/* Building header */}
-        <div className="border-b border-gray-200 pb-6 mb-6">
-          <h1 className="text-3xl font-bold text-gray-900 mb-2">
-            {formatBuildingName(decodedBuildingId)}
-          </h1>
-          <p className="text-gray-600 text-lg">
-            University of Illinois Urbana-Champaign
-          </p>
-        </div>
+      {/* Building header */}
+      <div className="border-b border-gray-200 pb-6 mb-6">
+        <h1 className="text-3xl font-bold text-gray-900 mb-2">
+          {formatBuildingName(decodedBuildingId)}
+        </h1>
+        <p className="text-gray-600 text-lg">
+          University of Illinois Urbana-Champaign
+        </p>
+      </div>
 
-        {/* Building info */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-6">
-          <div>
-            <h2 className="text-xl font-semibold text-gray-900 mb-4">About</h2>
-            <p className="text-gray-700 leading-relaxed">
-              {getBuildingDescription()}
-            </p>
-          </div>
-          <div>
-            <h2 className="text-xl font-semibold text-gray-900 mb-4">
-              Details
-            </h2>
-            <div className="space-y-3">
-              <div className="flex justify-between py-2 border-b border-gray-100">
-                <span className="font-medium text-gray-600">Building ID:</span>
-                <span className="text-gray-900">{decodedBuildingId}</span>
-              </div>
-              <div className="flex justify-between py-2 border-b border-gray-100">
-                <span className="font-medium text-gray-600">Campus:</span>
-                <span className="text-gray-900">Urbana-Champaign</span>
-              </div>
-              <div className="flex justify-between py-2 border-b border-gray-100">
-                <span className="font-medium text-gray-600">University:</span>
-                <span className="text-gray-900">University of Illinois</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="flex flex-col sm:flex-row sm:items-center gap-4 mb-6">
-          <div>
-            <label className="block text-gray-700 font-medium mb-1">
+      {/* Filters Section */}
+      <div className="bg-white rounded-lg border shadow-sm p-4 md:p-6 mb-6">
+        <h2 className="text-lg font-semibold text-gray-900 mb-4">Filters</h2>
+        <div className="flex flex-col md:flex-row md:items-end gap-4">
+          <div className="flex-1">
+            <label className="block text-gray-700 font-medium mb-2">
               Select Date
             </label>
             <DatePicker
               selected={selectedDate}
               onChange={(date) => setSelectedDate(date)}
-              className="border rounded p-2 w-full"
+              className="border rounded-lg p-3 w-full h-11 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
               dateFormat="MMMM d, yyyy"
               minDate={new Date("2025-08-25")}
               maxDate={new Date("2025-12-10")}
@@ -144,33 +132,35 @@ export default function Building() {
               }}
             />
           </div>
-          <div>
-            <label className="block text-gray-700 font-medium mb-1">
+          <div className="flex-1">
+            <label className="block text-gray-700 font-medium mb-2">
               Select Time
             </label>
             <input
               type="time"
               value={selectedTime}
               onChange={(e) => setSelectedTime(e.target.value)}
-              className="border rounded p-2 w-full"
+              className="border rounded-lg p-3 w-full h-11 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
             />
           </div>
-        </div>
-
-        {/* Study space availability */}
-        <div className="mt-8 p-6 bg-blue-50 rounded-lg">
-          <div className="flex justify-between items-center mb-3">
-            <h3 className="text-lg font-semibold text-blue-900">
-              Study Spaces
-            </h3>
+          <div className="md:w-auto">
             <button
               onClick={fetchRooms}
               disabled={loading}
-              className="px-3 py-1 bg-blue-600 text-white rounded hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed text-sm"
+              className="w-full md:w-auto px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed font-medium h-11 transition-colors"
             >
               {loading ? "Loading..." : "Refresh"}
             </button>
           </div>
+        </div>
+      </div>
+
+      {/* Rooms Section - Full width since no map */}
+      <div className="w-full">
+        <div className="bg-white rounded-lg border shadow-sm p-4 md:p-6">
+          <h2 className="text-lg font-semibold text-gray-900 mb-4">
+            Study Spaces
+          </h2>
 
           {loading && (
             <p className="text-blue-800">Loading available rooms...</p>
