@@ -1,79 +1,45 @@
-/* Campus Map Styles */
-.campus-map-container {
-  position: relative;
-  width: 100%;
-  height: auto;
-}
-
+/* Campus Map Styles - Tailwind Compatible */
 .image-mapper-shape {
-  fill: rgba(0, 0, 0, 0);
+  fill: rgba(0, 0, 0, 0) !important; /* Transparent by default */
   transition: all 0.2s ease;
   cursor: pointer;
+  pointer-events: auto !important; /* Ensure pointer events work */
+  stroke: transparent !important; /* No stroke by default */
 }
 
 .image-mapper-shape:hover {
-  fill: rgba(0, 123, 255, 0.3);
-  stroke: #007bff;
-  stroke-width: 2px;
+  cursor: pointer !important;
 }
 
 /* Selected building highlight styles */
 .image-mapper-shape.selected-building {
-  fill: rgba(255, 193, 7, 0.4);
-  stroke: #ffc107;
-  stroke-width: 3px;
-  filter: drop-shadow(0 0 8px rgba(255, 193, 7, 0.6));
+  fill: rgba(232, 74, 39, 0.8) !important; /* UIUC Orange with transparency */
+  stroke: #E84A27 !important;
+  stroke-width: 3px !important;
+  filter: drop-shadow(0 0 8px rgba(232, 74, 39, 0.6));
   animation: selectedGlow 2s ease-in-out infinite alternate;
 }
 
 @keyframes selectedGlow {
   from {
-    filter: drop-shadow(0 0 8px rgba(255, 193, 7, 0.6));
+    filter: drop-shadow(0 0 8px rgba(232, 74, 39, 0.6));
   }
 
   to {
-    filter: drop-shadow(0 0 12px rgba(255, 193, 7, 0.8));
+    filter: drop-shadow(0 0 12px rgba(232, 74, 39, 0.8));
   }
+}
+
+/* Hovered building styles */
+.image-mapper-shape.hovered-building {
+  fill: rgba(19, 41, 75, 0.8) !important; /* UIUC Navy with transparency */
+  stroke: #E84A27 !important;
+  stroke-width: 3px !important;
+  filter: brightness(1.1);
+  cursor: pointer !important;
 }
 
 /* Make sure the SVG scales properly */
-.campus-map-container {
-  position: relative;
-  width: 100%;
-  height: auto;
-}
-
-.image-mapper-shape {
-  fill: rgba(0, 0, 0, 0);
-  transition: all 0.2s ease;
-  cursor: pointer;
-}
-
-.image-mapper-shape:hover {
-  fill: rgba(0, 123, 255, 0.3);
-  stroke: #007bff;
-  stroke-width: 2px;
-}
-
-/* Selected building highlight styles */
-.image-mapper-shape.selected-building {
-  fill: rgba(255, 193, 7, 0.4);
-  stroke: #ffc107;
-  stroke-width: 3px;
-  filter: drop-shadow(0 0 8px rgba(255, 193, 7, 0.6));
-  animation: selectedGlow 2s ease-in-out infinite alternate;
-}
-
-@keyframes selectedGlow {
-  from {
-    filter: drop-shadow(0 0 8px rgba(255, 193, 7, 0.6));
-  }
-
-  to {
-    filter: drop-shadow(0 0 12px rgba(255, 193, 7, 0.8));
-  }
-}
-
 .campus-map-container svg {
   width: 100%;
   height: auto;
@@ -83,15 +49,266 @@
 
 .campus-map-container a {
   cursor: pointer;
+  pointer-events: auto !important;
 }
 
+/* Map interaction styles with improved cursor handling */
+.map-container {
+  transition: cursor 0.1s ease;
+  cursor: grab; /* Default grab cursor for map dragging */
+  user-select: none; /* Prevent text selection during dragging */
+  -webkit-user-select: none; /* Safari support */
+  -moz-user-select: none; /* Firefox support */
+  -ms-user-select: none; /* IE support */
+  touch-action: pan-x pan-y; /* Enable touch panning */
+  overflow: hidden;
+}
+
+.map-container.dragging {
+  cursor: grabbing !important; /* Grabbing cursor while dragging */
+  transition: none; /* Disable transitions during dragging for better performance */
+}
+
+/* Ensure building hover overrides drag cursor */
+.map-container:has(.image-mapper-shape:hover) {
+  cursor: pointer !important; /* Pointer cursor when hovering over buildings */
+}
+
+/* Additional cursor states for better UX */
+.map-container.grabbing {
+  cursor: grabbing !important;
+}
+
+.map-container.grab {
+  cursor: grab !important;
+}
+
+/* Smooth zoom and pan transitions */
+.map-svg-container {
+  transition: transform 0.1s ease-out;
+  transform-origin: center;
+  will-change: transform; /* Optimize for transform animations */
+}
+
+/* Disable transitions during dragging for better performance */
+.map-container.dragging .map-svg-container {
+  transition: none;
+}
+
+/* Interactive controls */
+.map-controls button {
+  transition: all 0.2s ease;
+  pointer-events: auto;
+  z-index: 20;
+}
+
+.map-controls button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.map-controls button:active {
+  transform: translateY(0);
+}
+
+/* Zoom level indicator */
+.zoom-indicator {
+  backdrop-filter: blur(8px);
+  transition: all 0.2s ease;
+  pointer-events: none;
+  z-index: 15;
+}
+
+.zoom-indicator:hover {
+  background-color: rgba(255, 255, 255, 0.95);
+}
+
+/* Building labels */
+.building-label {
+  font-size: 12px;
+  font-weight: 500;
+  fill: #1f2937;
+  text-anchor: middle;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* Prevent text selection during interactions */
+.map-container * {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version */
+}
+
+/* CRITICAL FIX: Ensure SVG elements don't interfere with dragging */
+.map-svg-container svg {
+  pointer-events: none !important; /* Prevent SVG from blocking events */
+}
+
+.map-svg-container svg a {
+  pointer-events: auto !important; /* Allow links to receive events */
+}
+
+.map-svg-container svg .image-mapper-shape {
+  pointer-events: auto !important; /* Ensure building shapes receive events */
+}
+
+/* Responsive adjustments */
 @media (max-width: 1023px) {
   .campus-map-container svg {
     max-height: 300px;
   }
 
   .image-mapper-shape.selected-building {
-    filter: drop-shadow(0 0 4px rgba(255, 193, 7, 0.6));
+    filter: drop-shadow(0 0 4px rgba(232, 74, 39, 0.6));
     animation: none;
   }
+
+  .map-controls {
+    transform: scale(0.9);
+  }
+
+  .zoom-indicator {
+    font-size: 11px;
+    padding: 6px 10px;
+  }
+}
+
+/* Touch device optimizations */
+@media (hover: none) and (pointer: coarse) {
+  .map-controls button {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  .map-controls button svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  /* Improve touch targets */
+  .map-controls {
+    transform: scale(1.1);
+  }
+
+  .zoom-indicator {
+    transform: scale(1.1);
+  }
+  
+  /* Optimize touch interactions */
+  .map-container {
+    touch-action: manipulation; /* Disable double-tap zoom on touch devices */
+  }
+}
+
+/* High DPI displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .map-controls button {
+    border-width: 0.5px;
+  }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .map-controls button {
+    background-color: #1f2937;
+    border-color: #374151;
+    color: #f9fafb;
+  }
+  
+  .map-controls button:hover {
+    background-color: #374151;
+  }
+  
+  .zoom-indicator {
+    background-color: rgba(31, 41, 55, 0.9);
+    color: #f9fafb;
+  }
+}
+
+/* Accessibility improvements */
+@media (prefers-reduced-motion: reduce) {
+  .map-svg-container {
+    transition: none;
+  }
+  
+  .map-controls button {
+    transition: none;
+  }
+  
+  .zoom-indicator {
+    transition: none;
+  }
+}
+
+/* Focus styles for keyboard navigation */
+.map-controls button:focus-visible {
+  outline: 2px solid #E84A27;
+  outline-offset: 2px;
+}
+
+/* Building focus styles for keyboard navigation */
+.image-mapper-shape:focus-visible {
+  outline: 3px solid #E84A27 !important;
+  outline-offset: 2px !important;
+  fill: rgba(19, 41, 75, 0.6) !important;
+  stroke: #E84A27 !important;
+  stroke-width: 2px !important;
+}
+
+/* Ensure focus styles work with hover states */
+.image-mapper-shape.hovered-building:focus-visible {
+  outline: 3px solid #E84A27 !important;
+  outline-offset: 2px !important;
+  fill: rgba(19, 41, 75, 0.8) !important;
+  stroke: #E84A27 !important;
+  stroke-width: 3px !important;
+}
+
+/* Performance optimizations */
+.map-container * {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+}
+
+/* Ensure proper layering */
+.map-svg-container {
+  position: relative;
+  z-index: 1;
+}
+
+.map-controls {
+  position: relative;
+  z-index: 10;
+}
+
+.zoom-indicator {
+  position: relative;
+  z-index: 5;
+}
+
+/* Additional fixes for building interactions */
+.map-svg-container svg g {
+  pointer-events: none !important;
+}
+
+.map-svg-container svg a[data-building-path] {
+  pointer-events: auto !important;
+  cursor: pointer !important;
+}
+
+.map-svg-container svg a[data-building-path] .image-mapper-shape {
+  pointer-events: auto !important;
+  cursor: pointer !important;
+}
+
+/* Ensure building shapes are always interactive */
+.image-mapper-shape[data-index] {
+  pointer-events: auto !important;
+  cursor: pointer !important;
 }

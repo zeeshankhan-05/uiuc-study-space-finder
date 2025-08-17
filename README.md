@@ -10,6 +10,57 @@ A modern web application that helps University of Illinois Urbana-Champaign stud
 - **Room Status API**: Comprehensive endpoint to get all rooms in a building with their availability status
 - **Mobile Responsive**: Optimized for both desktop and mobile devices
 - **Course Integration**: Links study spaces to course schedules for better planning
+- **Dual Zoom System**: Independent browser and map zoom controls for optimal user experience
+- **Keyboard Navigation**: Full keyboard support for map interaction and navigation
+- **Smart Date Filtering**: Automatically adjusts weekend dates to nearest valid weekday for optimal study space availability
+
+## 🗺️ Map Interaction & Zoom System
+
+### Dual Zoom Architecture
+
+The application features a sophisticated dual zoom system that separates browser zoom from map zoom functionality:
+
+#### Browser Zoom (Global)
+
+- **Cmd + / Ctrl +** - Zoom in entire website
+- **Cmd - / Ctrl -** - Zoom out entire website
+- **Cmd 0 / Ctrl 0** - Reset website zoom to 100%
+- Affects all page elements (text, UI, images)
+- Standard browser behavior maintained
+
+#### Map Zoom (Local)
+
+- **Custom + Button** - Zoom into campus map
+- **Custom - Button** - Zoom out of campus map
+- **Custom Reset Button** - Reset map view to default
+- Independent of browser zoom level
+- Maintains map-specific state
+
+### Keyboard Navigation
+
+#### Map-Focused Controls
+
+When the map is focused (Tab navigation), these shortcuts are available:
+
+- **+ / =** - Map zoom in
+- **-** - Map zoom out
+- **0** - Reset map view
+- **Arrow Keys** - Pan map in all directions
+- **Escape** - Reset map view
+
+#### Focus Management
+
+- Use **Tab** to navigate to the map container
+- Visual focus indicator shows when map is active
+- Keyboard shortcuts only work when map is focused
+- Browser zoom shortcuts always work globally
+
+### Touch & Mobile Support
+
+- **Pinch to zoom** on touch devices
+- **Swipe to pan** across the map
+- **Responsive controls** optimized for mobile
+- **Touch-friendly button sizes** (44px minimum)
 
 ## 🛠️ Tech Stack
 

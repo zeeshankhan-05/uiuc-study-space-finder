@@ -1,3 +1,343 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* UIUC Brand Colors */
+:root {
+  --uiuc-navy: #13294B;
+  --uiuc-navy-light: #1e3a5f;
+  --uiuc-navy-dark: #0d1f35;
+  --uiuc-orange: #E84A27;
+  --uiuc-orange-light: #ff5f05;
+  --uiuc-blue: #13294B;
+  --uiuc-gray: #f8f9fa;
+}
+
+/* Custom scrollbar styles */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Focus styles for accessibility - using UIUC Orange */
+*:focus {
+  outline: 2px solid #E84A27;
+  outline-offset: 2px;
+}
+
+/* Modern button hover effects */
+.btn-modern {
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-modern:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(232, 74, 39, 0.3);
+}
+
+/* Card hover effects */
+.card-modern {
+  transition: all 0.2s ease-in-out;
+}
+
+.card-modern:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Smooth transitions for all interactive elements */
+* {
+  transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Enhanced gradients and modern effects */
+.gradient-text {
+  background: linear-gradient(135deg, #13294B 0%, #E84A27 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.glass-effect {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Professional shadows */
+.shadow-academic {
+  box-shadow: 0 10px 25px -3px rgba(19, 41, 75, 0.1), 0 4px 6px -2px rgba(19, 41, 75, 0.05);
+}
+
+.shadow-academic-lg {
+  box-shadow: 0 20px 25px -5px rgba(19, 41, 75, 0.1), 0 10px 10px -5px rgba(19, 41, 75, 0.04);
+}
+
+/* Smooth animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* Enhanced button styles with UIUC theme */
+.btn-academic {
+  @apply px-6 py-3 font-semibold rounded-xl transition-all duration-300;
+  background: linear-gradient(135deg, #E84A27 0%, #ff5f05 100%);
+  color: white;
+  box-shadow: 0 4px 15px rgba(232, 74, 39, 0.3);
+}
+
+.btn-academic:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(232, 74, 39, 0.4);
+}
+
+/* Professional form styling */
+.input-academic {
+  @apply border border-storm-gray-lighter rounded-xl px-4 py-3 text-base;
+  transition: all 0.2s ease;
+}
+
+.input-academic:focus {
+  @apply outline-none ring-2 ring-uiuc-orange border-transparent;
+  box-shadow: 0 0 0 3px rgba(232, 74, 39, 0.1);
+}
+
+/* Enhanced card styles */
+.card-academic {
+  @apply bg-white rounded-2xl border border-storm-gray-lighter;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+}
+
+.card-academic:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Search dropdown styles */
+.search-dropdown {
+  animation: fadeInUp 0.2s ease-out;
+}
+
+/* Building highlight styles */
+.selected-building {
+  fill: #E84A27 !important;
+  opacity: 0.9;
+  transition: all 0.3s ease;
+  filter: brightness(1.1);
+  stroke: #E84A27 !important;
+  stroke-width: 3px !important;
+}
+
+.selected-building:hover {
+  opacity: 1;
+  filter: brightness(1.2);
+  stroke-width: 4px !important;
+}
+
+/* Enhanced building hover effect with UIUC theme colors */
+.hovered-building {
+  fill: #13294B !important;
+  opacity: 0.8;
+  transition: all 0.2s ease;
+  stroke: #E84A27 !important;
+  stroke-width: 3px !important;
+  filter: brightness(1.1);
+  cursor: pointer !important;
+}
+
+.hovered-building:hover {
+  opacity: 0.9;
+  filter: brightness(1.2);
+  stroke-width: 4px !important;
+}
+
+/* Enhanced building interaction states - NO DEFAULT HIGHLIGHTING */
+.image-mapper-shape {
+  transition: all 0.2s ease;
+  cursor: pointer;
+  fill: rgba(0, 0, 0, 0) !important; /* Transparent by default */
+  stroke: transparent !important; /* No stroke by default */
+}
+
+.image-mapper-shape:hover {
+  /* Hover effect handled by .hovered-building class */
+  cursor: pointer !important;
+}
+
+/* Building tooltip styling */
+.image-mapper-shape[title] {
+  position: relative;
+}
+
+.image-mapper-shape[title]:hover::after {
+  content: attr(title);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(19, 41, 75, 0.95);
+  color: white;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  white-space: nowrap;
+  z-index: 1000;
+  pointer-events: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  border: 2px solid #E84A27;
+}
+
+.image-mapper-shape[title]:hover::before {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 6px solid transparent;
+  border-top-color: rgba(19, 41, 75, 0.95);
+  margin-bottom: -6px;
+  z-index: 1000;
+  pointer-events: none;
+}
+
+/* Map controls */
+.map-controls {
+  z-index: 10;
+}
+
+.map-container {
+  cursor: grab;
+}
+
+.map-container.dragging {
+  cursor: grabbing;
+}
+
+.map-svg-container {
+  transition: transform 0.1s ease-out;
+}
+
+/* Zoom indicator */
+.zoom-indicator {
+  z-index: 10;
+}
+
+/* Enhanced navigation button styles with UIUC theme */
+.nav-button {
+  @apply px-6 py-3 font-medium rounded-xl transition-all duration-300;
+  background: #13294B;
+  color: white;
+  border: 1px solid rgba(19, 41, 75, 0.2);
+  box-shadow: 0 4px 15px rgba(19, 41, 75, 0.2);
+}
+
+.nav-button:hover {
+  background-color: #1e3a5f;
+  border-color: rgba(19, 41, 75, 0.3);
+  box-shadow: 0 8px 25px rgba(19, 41, 75, 0.3);
+  transform: translateY(-2px) scale(1.05);
+}
+
+.nav-button:active {
+  transform: translateY(0) scale(1.02);
+}
+
+/* Map container optimization */
+.map-container-optimized {
+  aspect-ratio: 16/12;
+  min-height: 700px;
+}
+
+/* Responsive map sizing */
+@media (max-width: 768px) {
+  .map-container-optimized {
+    min-height: 500px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .map-container-optimized {
+    min-height: 800px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .map-container-optimized {
+    min-height: 900px;
+  }
+}
+
+/* Enhanced header title hover effects */
+.header-title {
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-title:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+/* Smooth section transitions */
+.section-transition {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Enhanced button focus states */
+button:focus-visible {
+  outline: 2px solid #E84A27;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 4px rgba(232, 74, 39, 0.1);
+}
+
+/* Improved accessibility for navigation */
+nav button {
+  position: relative;
+  overflow: hidden;
+}
+
+nav button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  transition: left 0.5s;
+}
+
+nav button:hover::before {
+  left: 100%;
+}

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map Interaction Test</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+        .test-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .test-section {
+            margin-bottom: 30px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        .test-button {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        .test-button:hover {
+            background: #0056b3;
+        }
+        .status {
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 4px;
+        }
+        .status.success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        .status.error {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        .status.info {
+            background: #d1ecf1;
+            color: #0c5460;
+            border: 1px solid #bee5eb;
+        }
+    </style>
+</head>
+<body>
+    <div class="test-container">
+        <h1>UIUC Study Space Finder - Map Interaction Test</h1>
+        
+        <div class="test-section">
+            <h2>Test Instructions</h2>
+            <p>This test page helps verify that the map interactions are working properly.</p>
+            <ol>
+                <li>Open the main application in another tab</li>
+                <li>Test the following interactions:</li>
+                <ul>
+                    <li><strong>Drag/Pan:</strong> Click and drag on empty map areas to move the map</li>
+                    <li><strong>Building Hover:</strong> Hover over buildings to see highlighting</li>
+                    <li><strong>Building Click:</strong> Click on buildings to navigate to detail pages</li>
+                    <li><strong>Zoom:</strong> Use mouse wheel or zoom buttons to zoom in/out</li>
+                    <li><strong>Touch:</strong> Test on mobile devices for touch interactions</li>
+                </ul>
+            </ol>
+        </div>
+
+        <div class="test-section">
+            <h2>Expected Behavior</h2>
+            <div class="status info">
+                <strong>✅ Drag/Pan:</strong> Map should move smoothly when dragging on empty areas
+            </div>
+            <div class="status info">
+                <strong>✅ Building Hover:</strong> Buildings should highlight with UIUC navy blue when hovered
+            </div>
+            <div class="status info">
+                <strong>✅ Building Click:</strong> Clicking buildings should navigate to building detail pages
+            </div>
+            <div class="status info">
+                <strong>✅ Zoom:</strong> Mouse wheel and zoom buttons should work properly
+            </div>
+            <div class="status info">
+                <strong>✅ Cursor States:</strong> Cursor should change to grab/grabbing/pointer appropriately
+            </div>
+        </div>
+
+        <div class="test-section">
+            <h2>Common Issues & Solutions</h2>
+            <div class="status error">
+                <strong>❌ Map not draggable:</strong> Check if pointer-events CSS is blocking interactions
+            </div>
+            <div class="status error">
+                <strong>❌ Buildings not clickable:</strong> Verify event listeners are properly attached
+            </div>
+            <div class="status error">
+                <strong>❌ No hover effects:</strong> Check CSS classes and hover state management
+            </div>
+            <div class="status error">
+                <strong>❌ Navigation not working:</strong> Verify routing and building ID mapping
+            </div>
+        </div>
+
+        <div class="test-section">
+            <h2>Debug Information</h2>
+            <button class="test-button" onclick="checkConsole()">Check Console for Errors</button>
+            <button class="test-button" onclick="testEventListeners()">Test Event Listeners</button>
+            <button class="test-button" onclick="testBuildingData()">Test Building Data</button>
+            <div id="debug-output"></div>
+        </div>
+
+        <div class="test-section">
+            <h2>Quick Fixes</h2>
+            <p>If interactions are still not working:</p>
+            <ol>
+                <li>Check browser console for JavaScript errors</li>
+                <li>Verify CSS pointer-events are not blocking interactions</li>
+                <li>Ensure event listeners are properly attached to building elements</li>
+                <li>Check if SVG elements have proper data attributes</li>
+                <li>Verify building mapper utility is working correctly</li>
+            </ol>
+        </div>
+    </div>
+
+    <script>
+        function checkConsole() {
+            const output = document.getElementById('debug-output');
+            output.innerHTML = '<div class="status info">Check the browser console (F12) for any JavaScript errors or warnings.</div>';
+        }
+
+        function testEventListeners() {
+            const output = document.getElementById('debug-output');
+            try {
+                // Test if we can access the map elements
+                const mapContainer = document.querySelector('.map-container');
+                if (mapContainer) {
+                    output.innerHTML = '<div class="status success">✅ Map container found</div>';
+                } else {
+                    output.innerHTML = '<div class="status error">❌ Map container not found</div>';
+                }
+            } catch (error) {
+                output.innerHTML = `<div class="status error">❌ Error testing event listeners: ${error.message}</div>`;
+            }
+        }
+
+        function testBuildingData() {
+            const output = document.getElementById('debug-output');
+            try {
+                // Test building data access
+                if (typeof getBuildingByPath === 'function') {
+                    output.innerHTML = '<div class="status success">✅ Building mapper utility available</div>';
+                } else {
+                    output.innerHTML = '<div class="status error">❌ Building mapper utility not available</div>';
+                }
+            } catch (error) {
+                output.innerHTML = `<div class="status error">❌ Error testing building data: ${error.message}</div>`;
+            }
+        }
+    </script>
+</body>
+</html>

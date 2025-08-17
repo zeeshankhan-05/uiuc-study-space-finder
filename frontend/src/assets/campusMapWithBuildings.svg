@@ -2,12 +2,10 @@
 <style>
 .image-mapper-shape {
     fill: rgba(0, 0, 0, 0);
+    stroke: transparent;
+    transition: all 0.2s ease;
 }
-g:hover .image-mapper-shape {
-    stroke: white;
-    stroke-width: 2px;
-    opacity: 20%;
-}
+/* Remove default hover effects - handled by CSS classes */
 </style>
         
 <image xlink:href="./uiuc-campus-map.png" style="width: 1040px;"></image>
@@ -151,7 +149,7 @@ g:hover .image-mapper-shape {
 <polygon class="image-mapper-shape" data-index="42" points="531.249 1155.56 551.274 1155.56 551.274 1163.8 539.495 1163.8 538.317 1216.81 553.63 1217.99 553.63 1228.59 531.249 1228.59"></polygon>
 </g>
 </a>
-<a xlink:href="/animal-sciences-lab/" target="---" xlink:title="Animal Sciences Laboratory">
+<a xlink:href="/animal-sciences-laboratory/" target="---" xlink:title="Animal Sciences Laboratory">
 <g>
 <polygon class="image-mapper-shape" data-index="43" points="567.765 1157.91 630.196 1156.73 630.196 1179.11 572.477 1182.65"></polygon>
 </g>
@@ -236,7 +234,7 @@ g:hover .image-mapper-shape {
 <rect x="527.7154684747102" y="604.2813288560855" width="37.69396203390784" height="73.03205144069648" class="image-mapper-shape" data-index="64"></rect>
 </g>
 </a>
-<a xlink:href="/noyes-lab/" target="---" xlink:title="Noyes Laboratory">
+<a xlink:href="/noyes-laboratory/" target="---" xlink:title="Noyes Laboratory">
 <g>
 <rect x="513.5802327119947" y="712.6514697035706" width="49.47332516950405" height="54.18507042374256" class="image-mapper-shape" data-index="65"></rect>
 </g>
@@ -281,17 +279,12 @@ g:hover .image-mapper-shape {
 <rect x="520.6478505933524" y="395.7866013560326" width="45.939516228825255" height="57.71887936442141" class="image-mapper-shape" data-index="79"></rect>
 </g>
 </a>
-<a xlink:href="/grainger-engineering-library/" target="---" xlink:title="Grainger Engineering Library">
-<g>
-<rect x="449.97167177977514" y="347.4912125000881" width="83.63347826273315" height="31.804280466109788" class="image-mapper-shape" data-index="80"></rect>
-</g>
-</a>
 <a xlink:href="/burrill-hall/" target="---" xlink:title="Burrill Hall">
 <g>
 <rect x="594.8578383476085" y="640.7973545764337" width="93.05696877121" height="111.90394978816403" class="image-mapper-shape" data-index="82"></rect>
 </g>
 </a>
-<a xlink:href="/roger-adams-lab/" target="---" xlink:title="Roger Adams Laboratory">
+<a xlink:href="/roger-adams-laboratory/" target="---" xlink:title="Roger Adams Laboratory">
 <g>
 <rect x="597.2137109747277" y="769.1924127544324" width="82.4555419491735" height="77.74379669493487" class="image-mapper-shape" data-index="85"></rect>
 </g>
@@ -301,7 +294,7 @@ g:hover .image-mapper-shape {
 <rect x="601.9254562289663" y="409.92183711874804" width="20.024917330513517" height="48.29538885594445" class="image-mapper-shape" data-index="86"></rect>
 </g>
 </a>
-<a xlink:href="/nuclear-radiations-lab/" target="---" xlink:title="Nuclear Radiations Laboratory">
+<a xlink:href="/nuclear-radiations-laboratory/" target="---" xlink:title="Nuclear Radiations Laboratory">
 <g>
 <rect x="638.4414819493145" y="471.1745254238483" width="47.117452542384854" height="16.49110838983472" class="image-mapper-shape" data-index="88"></rect>
 </g>
@@ -346,7 +339,7 @@ g:hover .image-mapper-shape {
 <rect x="718.5411512713687" y="353.38089406788623" width="95.4128413983293" height="24.736662584752025" class="image-mapper-shape" data-index="102"></rect>
 </g>
 </a>
-<a xlink:href="/loomis-lab/" target="---" xlink:title="Loomis Laboratory">
+<a xlink:href="/loomis-laboratory/" target="---" xlink:title="Loomis Laboratory">
 <g>
 <rect x="715.0073423306899" y="485.3097611865638" width="73.03205144069648" height="41.22777097458669" class="image-mapper-shape" data-index="106"></rect>
 </g>
