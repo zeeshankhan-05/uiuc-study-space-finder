@@ -111,7 +111,8 @@ class RoomUsageServiceTest {
         assertNotNull(room2Response);
         assertEquals("OPEN", room2Response.getStatus());
         assertEquals("14:00", room2Response.getAvailableUntil()); // Next occupied time
-        assertNull(room2Response.getOccupiedRanges());
+        assertNotNull(room2Response.getOccupiedRanges());
+        assertEquals(2, room2Response.getOccupiedRanges().size());
 
         // Room 3: Occupied room
         RoomStatusResponse room3Response = result.stream()
