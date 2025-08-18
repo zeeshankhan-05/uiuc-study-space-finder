@@ -2,7 +2,7 @@
 
 ## Overview
 
-This application helps students find available study spaces on the UIUC campus by showing room availability in real-time.
+This application helps students find available study spaces on the UIUC campus by showing room availability based on course schedules.
 
 ## Features
 
@@ -10,10 +10,19 @@ This application helps students find available study spaces on the UIUC campus b
 - **Real-time Room Status**: See which rooms are open or occupied
 - **Time-based Filtering**: Change date and time to see availability
 - **Responsive Design**: Works on desktop and mobile devices
+- **Dual Zoom System**: Separate browser and map zoom controls
+
+### Dual Zoom System
+
+The application features a sophisticated dual zoom system that separates browser zoom from map zoom functionality:
+
+- **Browser Zoom**: Standard browser zoom (Cmd+/Ctrl+, Cmd-/Ctrl-, Cmd0/Ctrl0) affects the entire page
+- **Map Zoom**: Custom map zoom controls work independently for the campus map only
+- **Independent Controls**: Both zoom systems operate simultaneously without interference
 
 ## Prerequisites
 
-- Node.js (v16 or higher)
+- Node.js (v18 or higher)
 - Java 17 or higher
 - MongoDB (local or Atlas)
 - Python 3.8+ (for data scraping)
@@ -37,12 +46,15 @@ npm install
 npm run dev
 ```
 
-The frontend will start on `http://localhost:3000` (or next available port)
+The frontend will start on `http://localhost:5173` (Vite's default port)
 
 ### 3. Load Sample Data (if needed)
 
 ```bash
 cd scraper
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+pip install -r requirements.txt
 python main.py --push-only
 ```
 
@@ -50,8 +62,8 @@ python main.py --push-only
 
 ### 1. Navigate to the Map
 
-- Open your browser and go to `http://localhost:3000`
-- Click on "Map" in the navigation
+- Open your browser and go to `http://localhost:5173`
+- The main page shows the interactive campus map
 
 ### 2. Select a Building
 
@@ -88,6 +100,12 @@ GET /api/buildings/{building}/rooms?day={day}&time={time}
 
 ```
 GET /api/rooms?building={building}&day={day}&time={time}
+```
+
+### Get Room Details
+
+```
+GET /api/rooms/{building}/{room}
 ```
 
 ## Troubleshooting
@@ -131,6 +149,25 @@ GET /api/rooms?building={building}&day={day}&time={time}
 ## Data Sources
 
 The application uses course schedule data from UIUC to determine room availability. The scraper processes this data and stores it in MongoDB for real-time access.
+
+## Environment Setup
+
+### MongoDB
+
+- Install MongoDB locally or use MongoDB Atlas
+- Create a database for the application
+- Update connection string in backend configuration
+
+### Python Environment
+
+- Create a virtual environment for the scraper
+- Install required packages from `requirements.txt`
+- Ensure Python 3.8+ is available
+
+### Java Environment
+
+- Install Java 17 or higher
+- Ensure Maven is available (or use the included `mvnw` wrapper)
 
 ## Contributing
 

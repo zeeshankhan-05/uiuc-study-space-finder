@@ -1,10 +1,23 @@
 # UIUC Study Space Finder
 
-A modern web application that helps University of Illinois Urbana-Champaign students find available study spaces across campus by tracking classroom schedules and occupancy in real-time.
+A modern web application that helps University of Illinois Urbana-Champaign students find available study spaces across campus by tracking classroom schedules and occupancy.
+
+## Project Overview
+
+This project is a comprehensive study space finder designed for the University of Illinois Urbana-Champaign, benefiting over 50,000 students. It utilizes a MongoDB database to store all building and room availability information, a Spring Boot application to create a RESTful API for the backend, and a ReactJS frontend for intuitive user interaction.
+
+## Visit The Site
+
+Feel free to check out the project here!
+
+[EMBED_LINK_PLACEHOLDER]
 
 ## 🚀 Features
 
-- **Interactive Campus Map**: Visual representation of study spaces with real-time availability
+- **MongoDB Database**: Stores detailed information about buildings, rooms, and course schedules, including availability times, room types, and capacity.
+- **Spring Boot Backend**: Provides a robust RESTful API to manage study space data efficiently. The backend is packaged with Maven and can be deployed to any cloud platform.
+- **ReactJS Frontend**: A user-friendly interface for viewing building information, checking room availability, and navigating the interactive campus map. The frontend is built with Vite and can be hosted on any static hosting service.
+- **Interactive Campus Map**: Visual representation of study spaces with clickable building areas
 - **Smart Scheduling**: Tracks classroom schedules to predict study space availability
 - **Real-time Updates**: Live data on space occupancy and availability
 - **Room Status API**: Comprehensive endpoint to get all rooms in a building with their availability status
@@ -66,9 +79,10 @@ When the map is focused (Tab navigation), these shortcuts are available:
 
 ### Backend
 
-- **Spring Boot 3.x** - RESTful API server
+- **Spring Boot 3.5.3** - RESTful API server
 - **MongoDB** - NoSQL database for flexible data storage
 - **Maven** - Dependency management and build tool
+- **Java 17** - Runtime environment
 
 ### Frontend
 
@@ -76,12 +90,12 @@ When the map is focused (Tab navigation), these shortcuts are available:
 - **Vite** - Fast build tool and development server
 - **Tailwind CSS** - Utility-first CSS framework
 - **React Router** - Client-side routing
-- **Leaflet** - Interactive maps
+- **SVG** - Interactive campus map with clickable building areas
 - **Axios** - HTTP client for API communication
 
 ### Data Pipeline
 
-- **Python 3.x** - Web scraping and data processing
+- **Python 3.8+** - Web scraping and data processing
 - **BeautifulSoup** - HTML parsing
 - **Selenium** - Dynamic content scraping
 - **PyMongo** - MongoDB Python driver
@@ -90,52 +104,74 @@ When the map is focused (Tab navigation), these shortcuts are available:
 
 ```
 uiuc-study-space-finder/
-├── backend/studyspaces/     # Spring Boot API server
+├── backend/server/          # Spring Boot API server
 ├── frontend/                # React + Vite application
 ├── scraper/                 # Python data collection scripts
 ├── docs/                    # Project documentation
 └── .github/workflows/       # CI/CD pipelines
 ```
 
-## 🚀 Quick Start
+## Prerequisites
 
-### Prerequisites
+Before running this project locally, ensure you have the following installed:
 
-- Java 17+ (for Spring Boot)
-- Node.js 18+ (for React frontend)
-- Python 3.8+ (for data scraping)
-- MongoDB (local or cloud instance)
+- **Java Development Kit (JDK) 17 or higher**
+- **Node.js 18+ and npm (Node Package Manager)**
+- **MongoDB database (local or cloud instance)**
+- **Python 3.8+ (for data scraping)**
+- **IDE (IntelliJ IDEA, Eclipse, VS Code, etc.)**
 
-### Development Setup
+## 🚀 Installation
 
-1. **Clone the repository**
+### Backend Setup
 
-   ```bash
-   git clone https://github.com/zeeshankhan-05/uiuc-study-space-finder.git
-   cd uiuc-study-space-finder
-   ```
+1. **Clone this repository**
+2. **Open the backend/server directory in your preferred IDE**
+3. **Configure the application.properties file in the src/main/resources directory with your MongoDB database credentials**
+4. **Run the Spring Boot application**
 
-2. **Start the Backend**
-   ```bash
-   cd backend/studyspaces
-   ./mvnw spring-boot:run
-   ```
-   Backend will be available at `http://localhost:3000 **Start the Frontend**
-   ```bash
-   cd frontend
-   npm install
-   npm run dev
-   ```
-   Frontend will be available at `http://localhost:3000`
+```bash
+cd backend/server
+./mvnw spring-boot:run
+```
 
-4 **Setup Data Scraper** (Optional)
+The backend will start on `http://localhost:8080`
+
+### Frontend Setup
+
+1. **Navigate to the frontend directory in your terminal**
+2. **Run npm install to install the necessary dependencies**
+3. **Update the API configuration if needed**
+4. **Run npm run dev to start the React application**
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+The frontend will start on `http://localhost:5173`
+
+### Data Scraper Setup (Optional)
 
 ```bash
 cd scraper
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
+python main.py --push-only
 ```
+
+## Usage
+
+Access the frontend application via `http://localhost:5173`.
+
+Use the provided API endpoints to perform operations on study space data:
+
+- **`/api/buildings`** - GET all available buildings
+- **`/api/rooms`** - GET available rooms with building, day, and time parameters
+- **`/api/buildings/{building}/rooms`** - GET all rooms in a building with availability status
+- **`/api/rooms/{building}/{room}`** - GET detailed information about a specific room
 
 ## 📚 Documentation
 
@@ -143,6 +179,7 @@ pip install -r requirements.txt
 - [API Documentation](docs/api-documentation.md) - REST API endpoints and usage
 - [Backend API Endpoints](backend/server/API_ENDPOINTS.md) - Detailed backend API documentation
 - [Setup Instructions](docs/setup-instructions.md) - Detailed development environment setup
+- [Zoom Functionality](docs/zoom-functionality-update.md) - Dual zoom system implementation details
 
 ## 🏢 Building System
 
@@ -156,11 +193,6 @@ Each building in the system includes:
 - **Full Name**: Complete official building name
 - **Display Name**: User-friendly name for the UI
 - **Path**: URL path used in the SVG map for navigation
-
-### Recent Fixes
-
-- **Child Development Laboratory**: Added missing building entry for `/child-development-laboratory/` path
-- **Agricultural Engineering Sciences Building**: Corrected SVG map reference to use existing `/agricultural-engineering-sciences-building/` path instead of duplicate entry
 
 ### Available Buildings
 
@@ -210,11 +242,13 @@ python -m pytest
 
 ## 🤝 Contributing
 
+Contributions are welcome! If you'd like to enhance this project or report issues, please submit a pull request or open an issue.
+
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature`)
-   4.Push to the branch (`git push origin feature/amazing-feature`)
-4. Open a Pull Request
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
 ## 📄 License
 

@@ -4,6 +4,16 @@
 
 This guide provides step-by-step debugging instructions for restoring full interactive map functionality, including drag/pan, building hover effects, and building click navigation.
 
+## Application Features
+
+### Dual Zoom System
+
+The application features a sophisticated dual zoom system that separates browser zoom from map zoom functionality:
+
+- **Browser Zoom**: Standard browser zoom (Cmd+/Ctrl+, Cmd-/Ctrl-, Cmd0/Ctrl0) affects the entire page
+- **Map Zoom**: Custom map zoom controls work independently for the campus map only
+- **Independent Controls**: Both zoom systems operate simultaneously without interference
+
 ## Current Status
 
 ✅ **FIXED**: Event listener setup issues
