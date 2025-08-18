@@ -253,5 +253,7 @@ export function getOccupiedUntilDisplay(room, currentTime) {
  * @returns {boolean} - True if occupied times should be displayed
  */
 export function shouldShowOccupiedTimes(room) {
+  // Always show occupied times if they exist - no conditions
+  // Check for both null/undefined and empty arrays
   return room.occupiedRanges && room.occupiedRanges.length > 0;
 }

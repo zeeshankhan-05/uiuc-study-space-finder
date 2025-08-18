@@ -26,12 +26,11 @@ const CampusMap = forwardRef((props, ref) => {
 
   // Touch support for mobile devices
   const [touchStart, setTouchStart] = useState({ x: 0, y: 0, distance: 0 });
-  const [isPinching, setIsPinching] = useState(false);
   const [lastTouchTime, setLastTouchTime] = useState(0);
 
   const MIN_ZOOM = 0.25;
   const MAX_ZOOM = 2.5;
-  const ZOOM_STEP = 0.1;
+  const ZOOM_STEP = 0.2;
 
   // Enhanced zoom functionality
   const handleZoomIn = useCallback(() => {
@@ -40,20 +39,6 @@ const CampusMap = forwardRef((props, ref) => {
 
   const handleZoomOut = useCallback(() => {
     setZoom((prev) => Math.max(prev - ZOOM_STEP, MIN_ZOOM));
-  }, []);
-
-  // Wheel zoom handler
-  const handleWheelZoom = useCallback((e) => {
-    e.preventDefault();
-    e.stopPropagation();
-
-    const SENSITIVITY = 0.0025;
-    const delta = e.deltaY * SENSITIVITY;
-
-    setZoom((prev) => {
-      const newZoom = prev - delta;
-      return Math.max(MIN_ZOOM, Math.min(MAX_ZOOM, newZoom));
-    });
   }, []);
 
   const resetView = useCallback(() => {
@@ -129,17 +114,6 @@ const CampusMap = forwardRef((props, ref) => {
           distance: 0,
         });
         setLastTouchTime(Date.now());
-      } else if (e.touches.length === 2) {
-        setIsPinching(true);
-        const distance = Math.hypot(
-          e.touches[0].clientX - e.touches[1].clientX,
-          e.touches[0].clientY - e.touches[1].clientY
-        );
-        setTouchStart({
-          x: 0,
-          y: 0,
-          distance: distance,
-        });
       }
     },
     [pan.x, pan.y]
@@ -149,31 +123,19 @@ const CampusMap = forwardRef((props, ref) => {
     (e) => {
       if (isHoveringBuilding) return;
 
-      if (e.touches.length === 1 && !isPinching) {
+      if (e.touches.length === 1) {
         const touch = e.touches[0];
         setPan({
           x: touch.clientX - touchStart.x,
           y: touch.clientY - touchStart.y,
         });
-      } else if (e.touches.length === 2 && isPinching) {
-        const distance = Math.hypot(
-          e.touches[0].clientX - e.touches[1].clientX,
-          e.touches[0].clientY - e.touches[1].clientY
-        );
-
-        if (touchStart.distance > 0) {
-          const scale = distance / touchStart.distance;
-          const newZoom = Math.max(MIN_ZOOM, Math.min(MAX_ZOOM, zoom * scale));
-          setZoom(newZoom);
-        }
       }
     },
-    [isHoveringBuilding, isPinching, touchStart, zoom]
+    [isHoveringBuilding, touchStart]
   );
 
   const handleTouchEnd = useCallback(
     (e) => {
-      setIsPinching(false);
       setTouchStart({ x: 0, y: 0, distance: 0 });
 
       // Prevent click events after touch
@@ -190,11 +152,6 @@ const CampusMap = forwardRef((props, ref) => {
     (buildingPath) => {
       console.log("Building clicked:", buildingPath);
       if (buildingPath && buildingPath !== "#") {
-        // Skip Grainger Library
-        if (buildingPath === "/library/" || buildingPath === "/library") {
-          return;
-        }
-
         setSelectedBuilding(buildingPath);
         const buildingData = getBuildingByPath(buildingPath);
         console.log("Building data found:", buildingData);
@@ -301,11 +258,6 @@ const CampusMap = forwardRef((props, ref) => {
     .replace(/target="---"/g, "")
     .replace(/<a xlink:href="([^"]*)"[^>]*>/g, (match, href) => {
       if (href && href !== "#") {
-        // Skip Grainger Library
-        if (href === "/library/" || href === "/library") {
-          return `<a style="cursor: default; pointer-events: none;" aria-label="Grainger Engineering Library (Not Available)" role="button" tabindex="-1"><title>Grainger Engineering Library (Not Available)</title>`;
-        }
-
         const buildingData = getBuildingByPath(href);
         if (buildingData) {
           return `<a style="cursor: pointer;" aria-label="Click to view ${buildingData.displayName} study spaces" role="button" tabindex="0" data-building-path="${href}"><title>${buildingData.displayName}</title>`;
@@ -315,7 +267,7 @@ const CampusMap = forwardRef((props, ref) => {
       return match;
     });
 
-  // Setup building event listeners - FIXED VERSION
+  // Setup building event listeners
   useEffect(() => {
     console.log("Setting up building event listeners...");
 
@@ -334,13 +286,6 @@ const CampusMap = forwardRef((props, ref) => {
             const buildingPath = parentLink.getAttribute("data-building-path");
             console.log(`Polygon ${index}:`, buildingPath);
 
-            // Skip Grainger Library
-            if (buildingPath === "/library/" || buildingPath === "/library") {
-              polygon.style.cursor = "default";
-              polygon.style.pointerEvents = "none";
-              return;
-            }
-
             // Ensure building is clickable
             polygon.style.cursor = "pointer";
             polygon.style.pointerEvents = "auto";
@@ -352,12 +297,7 @@ const CampusMap = forwardRef((props, ref) => {
 
               const buildingPath =
                 parentLink.getAttribute("data-building-path");
-              if (
-                buildingPath &&
-                buildingPath !== "#" &&
-                buildingPath !== "/library/" &&
-                buildingPath !== "/library"
-              ) {
+              if (buildingPath && buildingPath !== "#") {
                 handleBuildingClick(buildingPath);
               }
             };
@@ -369,12 +309,7 @@ const CampusMap = forwardRef((props, ref) => {
                 e.stopPropagation();
                 const buildingPath =
                   parentLink.getAttribute("data-building-path");
-                if (
-                  buildingPath &&
-                  buildingPath !== "#" &&
-                  buildingPath !== "/library/" &&
-                  buildingPath !== "/library"
-                ) {
+                if (buildingPath && buildingPath !== "#") {
                   handleBuildingClick(buildingPath);
                 }
               }
@@ -497,9 +432,6 @@ const CampusMap = forwardRef((props, ref) => {
     const touchMoveHandler = (e) => handleTouchMove(e);
     const touchEndHandler = (e) => handleTouchEnd(e);
 
-    // Wheel event handler
-    const wheelHandler = (e) => handleWheelZoom(e);
-
     // Add event listeners
     container.addEventListener("mousedown", mouseDownHandler);
     document.addEventListener("mousemove", mouseMoveHandler);
@@ -513,10 +445,6 @@ const CampusMap = forwardRef((props, ref) => {
     });
     container.addEventListener("touchend", touchEndHandler);
 
-    container.addEventListener("wheel", wheelHandler, {
-      passive: false,
-    });
-
     return () => {
       // Clean up event listeners
       if (container) {
@@ -524,7 +452,6 @@ const CampusMap = forwardRef((props, ref) => {
         container.removeEventListener("touchstart", touchStartHandler);
         container.removeEventListener("touchmove", touchMoveHandler);
         container.removeEventListener("touchend", touchEndHandler);
-        container.removeEventListener("wheel", wheelHandler);
       }
 
       document.removeEventListener("mousemove", mouseMoveHandler);
@@ -537,7 +464,6 @@ const CampusMap = forwardRef((props, ref) => {
     handleTouchStart,
     handleTouchMove,
     handleTouchEnd,
-    handleWheelZoom,
   ]);
 
   return (

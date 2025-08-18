@@ -144,6 +144,41 @@ pip install -r requirements.txt
 - [Backend API Endpoints](backend/server/API_ENDPOINTS.md) - Detailed backend API documentation
 - [Setup Instructions](docs/setup-instructions.md) - Detailed development environment setup
 
+## 🏢 Building System
+
+The application includes a comprehensive building mapping system that connects SVG map elements to building data for navigation and information display.
+
+### Building Data Structure
+
+Each building in the system includes:
+
+- **ID**: Unique identifier for the building
+- **Full Name**: Complete official building name
+- **Display Name**: User-friendly name for the UI
+- **Path**: URL path used in the SVG map for navigation
+
+### Recent Fixes
+
+- **Child Development Laboratory**: Added missing building entry for `/child-development-laboratory/` path
+- **Agricultural Engineering Sciences Building**: Corrected SVG map reference to use existing `/agricultural-engineering-sciences-building/` path instead of duplicate entry
+
+### Available Buildings
+
+The system currently supports 50+ buildings across campus, including:
+
+- Academic buildings (Engineering, Sciences, Arts, etc.)
+- Libraries and study spaces
+- Residence halls
+- Administrative buildings
+- Research facilities
+
+### Building Navigation
+
+- Click on any building on the interactive campus map
+- Building data is retrieved using the `getBuildingByPath()` function
+- Users are navigated to dedicated building pages with study space information
+- All building paths are validated against the building data registry
+
 ## 🧪 Testing
 
 ```bash

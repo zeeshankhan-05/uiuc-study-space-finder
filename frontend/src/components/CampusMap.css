@@ -32,9 +32,9 @@
 
 /* Hovered building styles */
 .image-mapper-shape.hovered-building {
-  fill: rgba(19, 41, 75, 0.8) !important; /* UIUC Navy with transparency */
+  fill: rgba(19, 41, 75, 0.8) !important;
   stroke: #E84A27 !important;
-  stroke-width: 3px !important;
+  stroke-width: 4px !important;
   filter: brightness(1.1);
   cursor: pointer !important;
 }

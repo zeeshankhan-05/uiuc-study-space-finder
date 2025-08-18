@@ -7,13 +7,13 @@ import { getAllBuildingData } from './buildingMapper';
 
 // Common building abbreviations and aliases for better search
 const buildingAliases = {
-  'grainger': 'Grainger Engineering Library',
+  'grainger': 'Library',
   'siebel': 'Siebel Center for Computer Science',
   'ece': 'Electrical & Computer Engineering Building',
   'cs': 'Siebel Center for Computer Science',
   'computer science': 'Siebel Center for Computer Science',
   'engineering': 'Electrical & Computer Engineering Building',
-  'library': 'Grainger Engineering Library',
+  'library': 'Library',
   'union': 'Illini Union',
   'krannert': 'Krannert Center for Performing Arts',
   'museum': 'Krannert Art Museum',

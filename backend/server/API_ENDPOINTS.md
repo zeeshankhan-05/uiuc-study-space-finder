@@ -8,7 +8,7 @@ Returns all rooms in a building with their availability status for a specific da
 
 **URL Parameters:**
 
-- `building` (path parameter): The building name (e.g., "Siebel Center", "Grainger Library")
+- `building` (path parameter): The building name (e.g., "Siebel Center", "Library")
 - `day` (query parameter): The day of the week (e.g., "Monday", "Tuesday", "Wednesday", "Thursday", "Friday")
 - `time` (query parameter): The time to check availability in HH:mm format (e.g., "13:00", "14:30")
 

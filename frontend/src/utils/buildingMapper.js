@@ -62,8 +62,8 @@ const buildingData = {
   },
   'grainger-engineering-library': {
     id: 'grainger-engineering-library',
-    fullName: 'Grainger Engineering Library',
-    displayName: 'Grainger Engineering Library',
+    fullName: 'Library',
+    displayName: 'Library',
     path: '/library/'
   },
   'business-instructional-facility': {
@@ -144,6 +144,7 @@ const buildingData = {
     displayName: 'Materials Science & Engineering Building',
     path: '/materials-science-engineering-building/'
   },
+
   'mechanical-engineering-laboratory': {
     id: 'mechanical-engineering-laboratory',
     fullName: 'Mechanical Engineering Laboratory',
@@ -252,12 +253,7 @@ const buildingData = {
     displayName: 'Campus Instructional Facility',
     path: '/campus-instructional-facility/'
   },
-  'agricultural-engineering-sciences-building': {
-    id: 'agricultural-engineering-sciences-building',
-    fullName: 'Agricultural Engineering Sciences Building',
-    displayName: 'Agricultural Engineering Sciences Building',
-    path: '/agricultural-engineering-sciences-building/'
-  },
+
   'animal-sciences-laboratory': {
     id: 'animal-sciences-laboratory',
     fullName: 'Animal Sciences Laboratory',
@@ -395,6 +391,12 @@ const buildingData = {
     fullName: 'Early Childhood Development Laboratory',
     displayName: 'Early Childhood Development Laboratory',
     path: '/early-childhood-development-laboratory/'
+  },
+  'child-development-laboratory': {
+    id: 'child-development-laboratory',
+    fullName: 'Child Development Laboratory',
+    displayName: 'Child Development Laboratory',
+    path: '/child-development-laboratory/'
   },
   'graduate-school-library-information-science': {
     id: 'graduate-school-library-information-science',

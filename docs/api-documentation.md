@@ -18,7 +18,7 @@ http://localhost:8080/api
 [
   {
     "id": "string",
-    "name": "Grainger Library",
+    "name": "Library",
     "location": { "lat": 40.113, "lng": -88.224 },
     "capacity": 200,
     "available": true,

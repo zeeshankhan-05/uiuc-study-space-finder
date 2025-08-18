@@ -71,6 +71,29 @@ export default function EnhancedSearchBar({
     debouncedSearch(searchQuery);
   }, [searchQuery, debouncedSearch]);
 
+  // Handle building selection with navigation
+  const handleBuildingSelect = useCallback(
+    (building) => {
+      setSearchQuery(building.name);
+      setIsDropdownVisible(false);
+      setSelectedIndex(0);
+
+      // Navigate to building page using new ID system
+      if (building.id) {
+        navigate(`/building/${building.id}`);
+      }
+
+      if (onBuildingSelect) {
+        onBuildingSelect(building);
+      }
+
+      // Focus back to input for better UX
+      setTimeout(() => {
+        inputRef.current?.focus();
+      }, 100);
+    },
+    [navigate, onBuildingSelect]
+  );
   // Handle keyboard navigation
   const handleKeyDown = useCallback(
     (e) => {
@@ -109,30 +132,6 @@ export default function EnhancedSearchBar({
       }
     },
     [isDropdownVisible, searchResults, selectedIndex, handleBuildingSelect]
-  );
-
-  // Handle building selection with navigation
-  const handleBuildingSelect = useCallback(
-    (building) => {
-      setSearchQuery(building.name);
-      setIsDropdownVisible(false);
-      setSelectedIndex(0);
-
-      // Navigate to building page using new ID system
-      if (building.id) {
-        navigate(`/building/${building.id}`);
-      }
-
-      if (onBuildingSelect) {
-        onBuildingSelect(building);
-      }
-
-      // Focus back to input for better UX
-      setTimeout(() => {
-        inputRef.current?.focus();
-      }, 100);
-    },
-    [navigate, onBuildingSelect]
   );
 
   // Handle input focus

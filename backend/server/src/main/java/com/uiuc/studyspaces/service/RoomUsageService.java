@@ -146,7 +146,8 @@ public class RoomUsageService {
         } else {
             // Room is open, find when it becomes occupied next
             String availableUntil = findNextOccupiedTime(timeRanges, queryTime);
-            return new RoomStatusResponse(roomNumber, "OPEN", availableUntil, null);
+            // Always include occupied ranges so frontend can display all occupied times
+            return new RoomStatusResponse(roomNumber, "OPEN", availableUntil, timeRanges);
         }
     }
 

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import { highlightMatch } from "../utils/searchUtils";
 
 /**
@@ -11,19 +11,17 @@ import { highlightMatch } from "../utils/searchUtils";
  * @param {boolean} props.isVisible - Whether the dropdown is visible
  * @param {string} props.query - Current search query for highlighting
  */
-export default function SearchDropdown({
-  results,
-  selectedIndex,
-  onSelect,
-  isVisible,
-  query,
-}) {
+const SearchDropdown = forwardRef(function SearchDropdown(
+  { results, selectedIndex, onSelect, isVisible, query },
+  ref
+) {
   if (!isVisible || !results.length) {
     return null;
   }
 
   return (
     <div
+      ref={ref}
       className="absolute top-full left-0 right-0 z-50 mt-1 bg-white border border-storm-gray-lighter rounded-xl shadow-modern-lg overflow-hidden"
       role="listbox"
       aria-label="Building search results"
@@ -47,10 +45,6 @@ export default function SearchDropdown({
             role="option"
             aria-selected={index === selectedIndex}
             onClick={() => onSelect(result)}
-            onMouseEnter={() => {
-              // Update selected index on hover for better UX
-              // This allows the parent to track which item is being hovered
-            }}
           >
             <div className="flex-1">
               {/* Building name with highlighted match */}
@@ -71,4 +65,6 @@ export default function SearchDropdown({
       </div>
     </div>
   );
-}
+});
+
+export default SearchDropdown;
