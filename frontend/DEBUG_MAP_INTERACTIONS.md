@@ -16,11 +16,11 @@ The application features a sophisticated dual zoom system that separates browser
 
 ## Current Status
 
-✅ **FIXED**: Event listener setup issues
-✅ **FIXED**: SVG processing and injection problems  
-✅ **FIXED**: Event handler conflicts between drag and click
-✅ **FIXED**: CSS pointer events blocking interactions
-✅ **FIXED**: Touch event handling for mobile devices
+- Event listener setup issues
+- SVG processing and injection problems  
+- Event handler conflicts between drag and click
+- CSS pointer events blocking interactions
+- Touch event handling for mobile devices
 
 ## Debugging Checklist
 
@@ -253,13 +253,13 @@ if (buildingData) {
 
 ## Success Criteria
 
-✅ **Map Dragging**: Smooth drag/pan functionality on empty areas
-✅ **Building Hover**: Clear highlighting with UIUC theme colors
-✅ **Building Click**: Proper navigation to detail pages
-✅ **Zoom Controls**: Mouse wheel and button zoom functionality
-✅ **Touch Support**: Mobile touch interactions working
-✅ **Performance**: Smooth animations and responsive interactions
-✅ **Accessibility**: Keyboard navigation and screen reader support
+**Map Dragging**: Smooth drag/pan functionality on empty areas
+**Building Hover**: Clear highlighting with UIUC theme colors
+**Building Click**: Proper navigation to detail pages
+**Zoom Controls**: Mouse wheel and button zoom functionality
+**Touch Support**: Mobile touch interactions working
+**Performance**: Smooth animations and responsive interactions
+**Accessibility**: Keyboard navigation and screen reader support
 
 ## Next Steps
 
