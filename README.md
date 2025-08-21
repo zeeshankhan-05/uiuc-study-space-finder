@@ -242,9 +242,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - GitHub: [zeeshankhan-05](https://github.com/zeeshankhan-05)
 - LinkedIn: [zeeshankhan05](https://www.linkedin.com/in/zeeshankhan05/)
-
-## 🙏 Acknowledgments
-
-- UIUC Course Explorer API for course data
-- OpenStreetMap for campus mapping data
-- Spring Boot and React communities for excellent documentation

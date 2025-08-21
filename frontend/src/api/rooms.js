@@ -4,7 +4,7 @@
 
 import { getCleanBuildingNameForAPI } from '../utils/buildingMapper';
 
-const API_BASE_URL = 'http://localhost:8080/api';
+const API_BASE_URL = `${import.meta.env.VITE_REACT_APP_API_URL || 'http://localhost:8080'}`;
 
 /**
  * Fetch all rooms in a building with their availability status for a specific day and time
@@ -19,7 +19,7 @@ export const fetchRoomsForBuilding = async (buildingId, day, time) => {
     const cleanBuildingId = getCleanBuildingNameForAPI(buildingId);
     
     const response = await fetch(
-      `${API_BASE_URL}/buildings/${encodeURIComponent(cleanBuildingId)}/rooms?day=${encodeURIComponent(day)}&time=${encodeURIComponent(time)}`,
+      `${API_BASE_URL}/api/buildings/${encodeURIComponent(cleanBuildingId)}/rooms?day=${encodeURIComponent(day)}&time=${encodeURIComponent(time)}`,
       {
         method: 'GET',
         headers: {
@@ -53,7 +53,7 @@ export const fetchAvailableRooms = async (buildingId, day, time) => {
     const cleanBuildingId = getCleanBuildingNameForAPI(buildingId);
     
     const response = await fetch(
-      `${API_BASE_URL}/rooms?building=${encodeURIComponent(cleanBuildingId)}&day=${encodeURIComponent(day)}&time=${encodeURIComponent(time)}`,
+      `${API_BASE_URL}/api/buildings/${encodeURIComponent(cleanBuildingId)}/rooms?day=${encodeURIComponent(day)}&time=${encodeURIComponent(time)}`,
       {
         method: 'GET',
         headers: {
@@ -80,7 +80,7 @@ export const fetchAvailableRooms = async (buildingId, day, time) => {
  */
 export const fetchAllBuildings = async () => {
   try {
-    const response = await fetch(`${API_BASE_URL}/buildings`, {
+    const response = await fetch(`${API_BASE_URL}/api/buildings`, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
@@ -111,7 +111,7 @@ export const fetchRoomDetails = async (buildingId, roomNumber) => {
     const cleanBuildingId = getCleanBuildingNameForAPI(buildingId);
     
     const response = await fetch(
-      `${API_BASE_URL}/rooms/${encodeURIComponent(cleanBuildingId)}/${encodeURIComponent(roomNumber)}`,
+      `${API_BASE_URL}/api/rooms/${encodeURIComponent(cleanBuildingId)}/${encodeURIComponent(roomNumber)}`,
       {
         method: 'GET',
         headers: {

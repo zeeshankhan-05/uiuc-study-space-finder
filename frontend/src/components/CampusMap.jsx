@@ -23,6 +23,7 @@ const CampusMap = forwardRef((props, ref) => {
   const [isHoveringBuilding, setIsHoveringBuilding] = useState(false);
   const [hoveredBuilding, setHoveredBuilding] = useState(null);
   const [selectedBuilding, setSelectedBuilding] = useState(null);
+  const [svgContent, setSvgContent] = useState("");
 
   // Touch support for mobile devices
   const [touchStart, setTouchStart] = useState({ x: 0, y: 0, distance: 0 });
@@ -150,17 +151,20 @@ const CampusMap = forwardRef((props, ref) => {
   // Building click handler
   const handleBuildingClick = useCallback(
     (buildingPath) => {
-      console.log("Building clicked:", buildingPath);
+      console.log(
+        "🏢 Building click handler triggered! Building path:",
+        buildingPath
+      );
       if (buildingPath && buildingPath !== "#") {
         setSelectedBuilding(buildingPath);
         const buildingData = getBuildingByPath(buildingPath);
-        console.log("Building data found:", buildingData);
+        console.log("📋 Building data found:", buildingData);
         if (buildingData) {
           const navigationPath = `/building/${buildingData.id}`;
-          console.log("Navigating to:", navigationPath);
+          console.log("🚀 Navigating to:", navigationPath);
           navigate(navigationPath);
         } else {
-          console.warn("Unknown building path:", buildingPath);
+          console.warn("⚠️ Unknown building path:", buildingPath);
         }
       }
     },
@@ -249,35 +253,62 @@ const CampusMap = forwardRef((props, ref) => {
     }
   }, [selectedBuilding, hoveredBuilding]);
 
-  // Process SVG with building interactions
-  const processedSVG = campusMap
-    .replace(
-      /xlink:href="\.\/uiuc-campus-map\.png"/g,
-      `xlink:href="${campusMapImage}"`
-    )
-    .replace(/target="---"/g, "")
-    .replace(/<a xlink:href="([^"]*)"[^>]*>/g, (match, href) => {
-      if (href && href !== "#") {
-        const buildingData = getBuildingByPath(href);
-        if (buildingData) {
-          return `<a style="cursor: pointer;" aria-label="Click to view ${buildingData.displayName} study spaces" role="button" tabindex="0" data-building-path="${href}"><title>${buildingData.displayName}</title>`;
-        }
-        return `<a style="cursor: pointer;" aria-label="Click to view building study spaces" role="button" tabindex="0" data-building-path="${href}"><title>${href}</title>`;
-      }
-      return match;
-    });
-
-  // Setup building event listeners
+  // Process SVG content once on mount
   useEffect(() => {
-    console.log("Setting up building event listeners...");
+    const processed = campusMap
+      .replace(
+        /xlink:href="\.\/uiuc-campus-map\.png"/g,
+        `xlink:href="${campusMapImage}"`
+      )
+      .replace(/target="---"/g, "")
+      .replace(/<a xlink:href="([^"]*)"[^>]*>/g, (match, href) => {
+        if (href && href !== "#") {
+          const buildingData = getBuildingByPath(href);
+          if (buildingData) {
+            return `<a style="cursor: pointer;" aria-label="Click to view ${buildingData.displayName} study spaces" role="button" tabindex="0" data-building-path="${href}"><title>${buildingData.displayName}</title>`;
+          }
+          return `<a style="cursor: pointer;" aria-label="Click to view building study spaces" role="button" tabindex="0" data-building-path="${href}"><title>${href}</title>`;
+        }
+        return match;
+      });
 
-    // Capture the ref value at the beginning of the effect
-    const currentSvgRef = svgRef.current;
+    console.log(
+      "🔧 Processed SVG content:",
+      processed.substring(0, 500) + "..."
+    );
+    setSvgContent(processed);
+  }, []);
+
+  // Debug: Log when SVG content changes
+  useEffect(() => {
+    if (svgContent) {
+      console.log("📊 SVG content updated, length:", svgContent.length);
+      console.log("🔍 Looking for building links in SVG...");
+
+      // Create a temporary div to parse the SVG content
+      const tempDiv = document.createElement("div");
+      tempDiv.innerHTML = svgContent;
+
+      const buildingLinks = tempDiv.querySelectorAll("a[data-building-path]");
+      console.log("🏢 Found building links:", buildingLinks.length);
+
+      buildingLinks.forEach((link, index) => {
+        const path = link.getAttribute("data-building-path");
+        console.log(`  ${index + 1}. ${path}`);
+      });
+    }
+  }, [svgContent]);
+
+  // Setup building event listeners after SVG content is set
+  useEffect(() => {
+    if (!svgContent || !svgRef.current) return;
+
+    console.log("Setting up building event listeners...");
 
     // Wait for SVG to be rendered
     const setupEventListeners = () => {
-      if (currentSvgRef) {
-        const polygons = currentSvgRef.querySelectorAll(".image-mapper-shape");
+      if (svgRef.current) {
+        const polygons = svgRef.current.querySelectorAll(".image-mapper-shape");
         console.log("Found", polygons.length, "polygons");
 
         polygons.forEach((polygon, index) => {
@@ -297,6 +328,12 @@ const CampusMap = forwardRef((props, ref) => {
 
               const buildingPath =
                 parentLink.getAttribute("data-building-path");
+              console.log(
+                "🔍 Building polygon clicked! Building path:",
+                buildingPath,
+                "Event:",
+                e
+              );
               if (buildingPath && buildingPath !== "#") {
                 handleBuildingClick(buildingPath);
               }
@@ -367,6 +404,36 @@ const CampusMap = forwardRef((props, ref) => {
             };
           }
         });
+
+        // Add fallback click handler on the SVG container
+        const handleContainerClick = (e) => {
+          // Check if we clicked on a building link
+          const target = e.target;
+          const buildingLink = target.closest("a[data-building-path]");
+
+          if (buildingLink) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            const buildingPath =
+              buildingLink.getAttribute("data-building-path");
+            console.log(
+              "🔄 Fallback click handler triggered! Building path:",
+              buildingPath
+            );
+
+            if (buildingPath && buildingPath !== "#") {
+              handleBuildingClick(buildingPath);
+            }
+          }
+        };
+
+        svgRef.current.addEventListener("click", handleContainerClick);
+
+        // Store cleanup for container handler
+        svgRef.current._containerCleanup = () => {
+          svgRef.current.removeEventListener("click", handleContainerClick);
+        };
       }
     };
 
@@ -375,17 +442,22 @@ const CampusMap = forwardRef((props, ref) => {
 
     return () => {
       clearTimeout(timer);
-      // Clean up event listeners using the captured ref value
-      if (currentSvgRef) {
-        const polygons = currentSvgRef.querySelectorAll(".image-mapper-shape");
+      // Clean up event listeners
+      if (svgRef.current) {
+        const polygons = svgRef.current.querySelectorAll(".image-mapper-shape");
         polygons.forEach((polygon) => {
           if (polygon._cleanup) {
             polygon._cleanup();
           }
         });
+
+        // Clean up container handler
+        if (svgRef.current._containerCleanup) {
+          svgRef.current._containerCleanup();
+        }
       }
     };
-  }, [handleBuildingClick, handleBuildingHover]); // Removed processedSVG.length dependency
+  }, [svgContent, handleBuildingClick, handleBuildingHover]);
 
   // Update building highlight when selection or hover changes
   useEffect(() => {
@@ -475,7 +547,7 @@ const CampusMap = forwardRef((props, ref) => {
       <div
         ref={svgRef}
         className="w-full h-full map-svg-container"
-        dangerouslySetInnerHTML={{ __html: processedSVG }}
+        dangerouslySetInnerHTML={{ __html: svgContent }}
       />
 
       {/* Interactive Controls Overlay */}

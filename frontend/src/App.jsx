@@ -9,6 +9,7 @@ import {
   Route,
   useNavigate,
 } from "react-router-dom";
+import uiucLogo from "./assets/uiuc-block-i-logo.png";
 
 // Enhanced App component with routing
 function AppContent() {
@@ -34,7 +35,7 @@ function AppContent() {
             >
               <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center shadow-modern overflow-hidden">
                 <img
-                  src="/src/assets/UIUC Block I Logo.png"
+                  src={uiucLogo}
                   alt="UIUC Block I Logo"
                   className="w-8 h-8 object-contain"
                 />

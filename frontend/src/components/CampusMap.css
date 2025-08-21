@@ -156,6 +156,25 @@
   pointer-events: auto !important; /* Ensure building shapes receive events */
 }
 
+/* Additional fix: Ensure building shapes are always interactive */
+.map-svg-container .image-mapper-shape {
+  pointer-events: auto !important;
+  cursor: pointer !important;
+}
+
+/* Fix for nested SVG structure */
+.map-svg-container svg svg {
+  pointer-events: none !important;
+}
+
+.map-svg-container svg svg a {
+  pointer-events: auto !important;
+}
+
+.map-svg-container svg svg .image-mapper-shape {
+  pointer-events: auto !important;
+}
+
 /* Responsive adjustments */
 @media (max-width: 1023px) {
   .campus-map-container svg {
