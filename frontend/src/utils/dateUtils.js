@@ -234,17 +234,27 @@ export function getOccupiedUntilDisplay(room, currentTime) {
   if (room.status === "OCCUPIED") {
     const currentClassEnd = getCurrentClassEndTime(room, currentTime);
     if (currentClassEnd) {
-      return currentClassEnd;
+      return `Occupied until ${currentClassEnd}`;
     }
   }
   
   // If room is open, show when next class starts
   if (room.status === "OPEN") {
-    return getOccupiedUntil(room, currentTime);
+    const nextOccupiedTime = getOccupiedUntil(room, currentTime);
+    if (nextOccupiedTime === "Free for rest of day") {
+      return "Free for rest of day";
+    } else {
+      return `Free until ${nextOccupiedTime}`;
+    }
   }
   
   // Fallback: show when next class starts
-  return getOccupiedUntil(room, currentTime);
+  const nextOccupiedTime = getOccupiedUntil(room, currentTime);
+  if (nextOccupiedTime === "Free for rest of day") {
+    return "Free for rest of day";
+  } else {
+    return `Next occupied at ${nextOccupiedTime}`;
+  }
 }
 
 /**
