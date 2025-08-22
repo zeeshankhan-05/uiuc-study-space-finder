@@ -1,21 +1,23 @@
 /**
  * API functions for room-related operations
- * Updated to use correct backend endpoint structure
+ * Updated to call backend server directly for Vercel deployment
  */
 
 import { getCleanBuildingNameForAPI } from '../utils/buildingMapper';
 
 /**
- * Helper function to build the correct backend URL
+ * Helper function to build the backend URL
  */
 const buildBackendUrl = ({ endpoint, building, day, time, roomNumber }) => {
+  const baseUrl = 'http://54.196.82.21';
+  
   if (endpoint === 'rooms' || endpoint === 'available') {
     // Use the correct backend endpoint structure: /api/buildings/{building}/rooms
-    return `/api/buildings/${encodeURIComponent(building)}/rooms?day=${encodeURIComponent(day)}&time=${encodeURIComponent(time)}`;
+    return `${baseUrl}/api/buildings/${encodeURIComponent(building)}/rooms?day=${encodeURIComponent(day)}&time=${encodeURIComponent(time)}`;
   } else if (endpoint === 'buildings') {
-    return `/api/buildings`;
+    return `${baseUrl}/api/buildings`;
   } else if (endpoint === 'roomDetails') {
-    return `/api/rooms/${encodeURIComponent(building)}/${encodeURIComponent(roomNumber)}`;
+    return `${baseUrl}/api/rooms/${encodeURIComponent(building)}/${encodeURIComponent(roomNumber)}`;
   } else {
     throw new Error('Invalid endpoint');
   }
