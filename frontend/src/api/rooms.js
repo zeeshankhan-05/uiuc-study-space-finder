@@ -31,7 +31,10 @@ export const fetchRoomsForBuilding = async (buildingId, day, time) => {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
 
-    return await response.json();
+    const data = await response.json();
+
+    // Ensure we always return an array
+    return Array.isArray(data) ? data : [];
   } catch (error) {
     console.error('Error fetching rooms for building:', error);
     throw error;
@@ -61,7 +64,8 @@ export const fetchAvailableRooms = async (buildingId, day, time) => {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
 
-    return await response.json();
+    const data = await response.json();
+    return Array.isArray(data) ? data : [];
   } catch (error) {
     console.error('Error fetching available rooms:', error);
     throw error;
@@ -86,7 +90,8 @@ export const fetchAllBuildings = async () => {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
 
-    return await response.json();
+    const data = await response.json();
+    return Array.isArray(data) ? data : [];
   } catch (error) {
     console.error('Error fetching buildings:', error);
     throw error;
