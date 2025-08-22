@@ -530,6 +530,98 @@ const buildingNameStandardization = {
   'Prog': 'Program'
 };
 
+// Database to frontend building name mapping
+// This maps the abbreviated names used in the database to the full names used in the frontend
+const databaseToFrontendMapping = {
+  // Clean database names (exact matches)
+  'Noyes Laboratory': 'Noyes Laboratory',
+  'Campbell Hall': 'Campbell Hall',
+  'Siebel Center for Computer Science': 'Siebel Center for Computer Science',
+  'Siebel Center for Design': 'Siebel Center for Design',
+  'Campus Instructional Facility': 'Campus Instructional Facility',
+  'Armory': 'Armory',
+  'Henry Administration Building': 'Henry Administration Building',
+  'Speech & Hearing Science Building': 'Speech & Hearing Science Building',
+  'Literatures, Cultures, & Linguistics Building': 'Literatures, Cultures, & Linguistics Building',
+  'Institute of Government & Public Affairs Building': 'Institute of Government & Public Affairs Building',
+  'Transportation Building': 'Transportation Building',
+  'Art and Design Building': 'Art and Design Building',
+  'Roger Adams Laboratory': 'Roger Adams Laboratory',
+  'Digital Computer Laboratory': 'Digital Computer Laboratory',
+  'Meat Science Laboratory': 'Meat Science Laboratory',
+  'Bevier Hall': 'Bevier Hall',
+  'Burrill Hall': 'Burrill Hall',
+  'Architecture Building': 'Architecture Building',
+  'Astronomy Building': 'Astronomy Building',
+  'Mechanical Engineering Laboratory': 'Mechanical Engineering Laboratory',
+  'Coordinated Science Laboratory': 'Coordinated Science Laboratory',
+  'Early Childhood Development Laboratory': 'Early Childhood Development Laboratory',
+  
+  // Engineering buildings
+  'Electrical & Computer Eng Bldg': 'Electrical & Computer Engineering Building',
+  'Materials Science & Eng Bld': 'Materials Science & Engineering Building',
+  'Civil & Envir Eng Bldg': 'Civil & Environmental Engineering Building',
+  'Agricultural Engr Sciences Bld': 'Agricultural Engineering Sciences Building',
+  'Newmark Civil Engineering Bldg': 'Newmark Civil Engineering Building',
+  'Sidney Lu Mech Engr Bldg': 'Sidney Lu Mechanical Engineering Building',
+  
+  // Siebel Center buildings
+  'Siebel Center for Comp Sci': 'Siebel Center for Computer Science',
+  'Siebel Center for Comp Sci n.a.': 'Siebel Center for Computer Science',
+  
+  // Other abbreviated buildings
+  'Campus Instructional Facility n.a.': 'Campus Instructional Facility',
+  'Armory n.a.': 'Armory',
+  'Henry Administration Bldg': 'Henry Administration Building',
+  'Speech & Hearing Science Bldg': 'Speech & Hearing Science Building',
+  'Literatures, Cultures, & Ling': 'Literatures, Cultures, & Linguistics Building',
+  'Inst Gov & Public Affairs Bldg': 'Institute of Government & Public Affairs Building',
+  
+  // Handle duplicate patterns found in database
+  'Transportation Building 207 Transportation Building': 'Transportation Building',
+  'Electrical & Computer Eng Bldg n.a.': 'Electrical & Computer Engineering Building',
+  'Civil & Envir Eng Bldg 2015 Civil & Envir Eng Bldg': 'Civil & Environmental Engineering Building',
+  'Civil & Envir Eng Bldg 1015 Civil & Envir Eng Bldg': 'Civil & Environmental Engineering Building',
+  'Sidney Lu Mech Engr Bldg 1043 Sidney Lu Mech Engr Bldg': 'Sidney Lu Mechanical Engineering Building',
+  'Art and Design Building 228 Art and Design Building': 'Art and Design Building',
+  'Art and Design Building 12 Art and Design Building': 'Art and Design Building',
+  'Art and Design Building 224 Art and Design Building': 'Art and Design Building',
+  'Noyes Laboratory 204 Noyes Laboratory': 'Noyes Laboratory',
+  'Noyes Laboratory 203 Noyes Laboratory': 'Noyes Laboratory',
+  'Noyes Laboratory 304 Noyes Laboratory': 'Noyes Laboratory',
+  'Noyes Laboratory 300 Noyes Laboratory': 'Noyes Laboratory',
+  'Noyes Laboratory 301 Noyes Laboratory': 'Noyes Laboratory',
+  'Noyes Laboratory 303 Noyes Laboratory': 'Noyes Laboratory',
+  'Noyes Laboratory 300A Noyes Laboratory': 'Noyes Laboratory',
+  'Noyes Laboratory 217 Noyes Laboratory': 'Noyes Laboratory',
+  'Roger Adams Laboratory 116 Roger Adams Laboratory': 'Roger Adams Laboratory',
+  'Digital Computer Laboratory 3217 Everitt Laboratory': 'Digital Computer Laboratory',
+  'Meat Science Laboratory 120 Meat Science Laboratory': 'Meat Science Laboratory',
+  'Agricultural Engr Sciences Bld 208 Agricultural Engr Sciences Bld': 'Agricultural Engineering Sciences Building',
+  'Agricultural Engr Sciences Bld 242 Agricultural Engr Sciences Bld': 'Agricultural Engineering Sciences Building',
+  'Agricultural Engr Sciences Bld 248 Agricultural Engr Sciences Bld': 'Agricultural Engineering Sciences Building',
+  'Agricultural Engr Sciences Bld 272 Agricultural Engr Sciences Bld': 'Agricultural Engineering Sciences Building',
+  'Agricultural Engr Sciences Bld n.a.': 'Agricultural Engineering Sciences Building',
+  
+  // Complex building name mappings
+  'Campbell Hall 1026 Lincoln Hall': 'Campbell Hall',
+  'Richmond Studio 109 Campbell Hall': 'Richmond Studio',
+  
+  // Additional complex building mappings
+  'Bevier Hall 103 Bevier Hall': 'Bevier Hall',
+  'Bevier Hall 108 Bevier Hall': 'Bevier Hall',
+  'Bevier Hall 166 Bevier Hall': 'Bevier Hall',
+  'Bevier Hall 180 Bevier Hall': 'Bevier Hall',
+  'Burrill Hall 7 Burrill Hall': 'Burrill Hall',
+  'Architecture Building 302 Architecture Building': 'Architecture Building',
+  'Astronomy Building 236 Astronomy Building': 'Astronomy Building',
+  
+  // Lab abbreviations
+  'Mechanical Engineering Lab': 'Mechanical Engineering Laboratory',
+  'Coordinated Science Lab': 'Coordinated Science Laboratory',
+  'Early Child Development Lab': 'Early Childhood Development Laboratory'
+};
+
 /**
  * Generate a clean, URL-friendly building ID from a building name
  * @param {string} buildingName - The building name to convert
@@ -642,6 +734,75 @@ export const getAllBuildingData = () => {
 };
 
 /**
+ * Get all database building names (including abbreviated versions)
+ * @returns {Array<string>} Array of database building names
+ */
+export const getDatabaseBuildingNames = () => {
+  return Object.keys(databaseToFrontendMapping);
+};
+
+/**
+ * Get the frontend building name from a database building name
+ * @param {string} databaseName - The building name as stored in the database
+ * @returns {string|null} The corresponding frontend building name or null if not found
+ */
+export const getFrontendBuildingName = (databaseName) => {
+  if (!databaseName) return null;
+  
+  const cleanedName = cleanBuildingName(databaseName);
+  return databaseToFrontendMapping[cleanedName] || cleanedName;
+};
+
+/**
+ * Get the database building name from a frontend building name
+ * @param {string} frontendName - The building name as used in the frontend
+ * @returns {string|null} The corresponding database building name or null if not found
+ */
+export const getDatabaseBuildingName = (frontendName) => {
+  if (!frontendName) return null;
+  
+  // Find all database names that map to this frontend name
+  const matchingDatabaseNames = [];
+  Object.entries(databaseToFrontendMapping).forEach(([dbName, mappedFrontendName]) => {
+    if (mappedFrontendName === frontendName) {
+      matchingDatabaseNames.push(dbName);
+    }
+  });
+  
+  if (matchingDatabaseNames.length === 0) {
+    // If no direct mapping, try to find database names that contain the frontend name
+    const containingDatabaseNames = [];
+    Object.keys(databaseToFrontendMapping).forEach((dbName) => {
+      if (dbName.includes(frontendName) || frontendName.includes(dbName.split(' ')[0])) {
+        containingDatabaseNames.push(dbName);
+      }
+    });
+    
+    if (containingDatabaseNames.length > 0) {
+      // Prioritize cleaner names (without "n.a." or duplicate patterns)
+      const cleanNames = containingDatabaseNames.filter(name => 
+        !name.includes('n.a.') && 
+        !name.match(/\d+\s+\w+/)
+      );
+      
+      // Return the cleanest name, or the first one if all have patterns
+      return cleanNames.length > 0 ? cleanNames[0] : containingDatabaseNames[0];
+    }
+    
+    return frontendName;
+  }
+  
+  // Prioritize cleaner names (without "n.a." or duplicate patterns)
+  const cleanNames = matchingDatabaseNames.filter(name => 
+    !name.includes('n.a.') && 
+    !name.match(/\d+\s+\w+/)
+  );
+  
+  // Return the cleanest name, or the first one if all have patterns
+  return cleanNames.length > 0 ? cleanNames[0] : matchingDatabaseNames[0];
+};
+
+/**
  * Clean a building name by removing duplicates and normalizing it
  * @param {string} buildingName - The building name from JSON data
  * @returns {string} The cleaned building name
@@ -690,15 +851,43 @@ export const getBuildingIdForNavigation = (buildingName) => {
     return standardizedBuilding.id;
   }
   
+  // Try with database mapping
+  if (databaseToFrontendMapping[cleanedName]) {
+    const mappedBuilding = getBuildingByName(databaseToFrontendMapping[cleanedName]);
+    if (mappedBuilding) {
+      return mappedBuilding.id;
+    }
+  }
+  
   return null;
 };
 
 /**
- * Get the clean building name for API calls, handling duplicates
+ * Get the clean building name for API calls, handling duplicates and abbreviated names
  * @param {string} buildingName - The building name from JSON data
  * @returns {string} The clean building name for API calls
  */
 export const getCleanBuildingNameForAPI = (buildingName) => {
-  return cleanBuildingName(buildingName);
+  if (!buildingName) return buildingName;
+  
+  // Try to map frontend name to database name first (before cleaning)
+  const databaseName = getDatabaseBuildingName(buildingName);
+  if (databaseName && databaseName !== buildingName) {
+    return databaseName;
+  }
+  
+  // If no direct mapping, clean the name and try again
+  const cleanedName = cleanBuildingName(buildingName);
+  const cleanedDatabaseName = getDatabaseBuildingName(cleanedName);
+  if (cleanedDatabaseName && cleanedDatabaseName !== cleanedName) {
+    return cleanedDatabaseName;
+  }
+  
+  // Then, map abbreviated database names to full frontend names
+  if (databaseToFrontendMapping[cleanedName]) {
+    return databaseToFrontendMapping[cleanedName];
+  }
+  
+  return cleanedName;
 };
 

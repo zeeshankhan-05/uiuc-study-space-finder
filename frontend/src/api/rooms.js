@@ -4,7 +4,7 @@
 
 import { getCleanBuildingNameForAPI } from '../utils/buildingMapper';
 
-const API_BASE_URL = `${import.meta.env.VITE_REACT_APP_API_URL || 'http://localhost:8080'}`;
+const API_BASE_URL = import.meta.env.VITE_REACT_APP_API_URL || 'http://localhost:8080';
 
 /**
  * Fetch all rooms in a building with their availability status for a specific day and time

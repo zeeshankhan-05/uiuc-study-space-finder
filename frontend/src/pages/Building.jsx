@@ -59,11 +59,13 @@ export default function Building() {
       setLoading(true);
       setError("");
       const day = getDayOfWeek(selectedDate);
+
       const data = await fetchRoomsForBuilding(
         buildingData.fullName, // Use the full name for API calls
         day,
         selectedTime
       );
+
       setRooms(data || []);
     } catch (err) {
       console.error("Error fetching rooms:", err);
