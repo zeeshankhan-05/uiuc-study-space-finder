@@ -9,120 +9,69 @@ import { getCleanBuildingNameForAPI } from '../utils/buildingMapper';
 const API_BASE_URL = '/api/rooms';
 
 /**
- * Fetch all rooms in a building with their availability status for a specific day and time
- * @param {string} buildingId - The building identifier
- * @param {string} day - The day of the week (e.g., "Monday", "Tuesday")
- * @param {string} time - The time in HH:mm format (e.g., "14:30")
- * @returns {Promise<Array>} Array of room status objects
+ * Helper function to build the backend EC2 URL
  */
-export const fetchRoomsForBuilding = async (buildingId, day, time) => {
+const buildBackendUrl = ({ endpoint, building, day, time, roomNumber }) => {
+  const EC2_BASE = 'http://54.196.82.21'; // Your EC2 backend
+  if (endpoint === 'rooms') {
+    return `${EC2_BASE}/api/buildings/${encodeURIComponent(building)}/rooms?day=${encodeURIComponent(day)}&time=${encodeURIComponent(time)}`;
+  } else if (endpoint === 'available') {
+    return `${EC2_BASE}/api/buildings/${encodeURIComponent(building)}/rooms?day=${encodeURIComponent(day)}&time=${encodeURIComponent(time)}`;
+  } else if (endpoint === 'buildings') {
+    return `${EC2_BASE}/api/buildings`;
+  } else if (endpoint === 'roomDetails') {
+    return `${EC2_BASE}/api/rooms/${encodeURIComponent(building)}/${encodeURIComponent(roomNumber)}`;
+  } else {
+    throw new Error('Invalid endpoint');
+  }
+};
+
+/**
+ * Fetch helper
+ */
+const fetchFromBackend = async (params) => {
   try {
-    const cleanBuildingId = getCleanBuildingNameForAPI(buildingId);
-
-    const url = `${API_BASE_URL}?endpoint=rooms&building=${encodeURIComponent(cleanBuildingId)}&day=${encodeURIComponent(day)}&time=${encodeURIComponent(time)}`;
-
-    const response = await fetch(url, {
-      method: 'GET',
-      headers: { 'Content-Type': 'application/json' },
-    });
-
+    const url = buildBackendUrl(params);
+    const response = await fetch(url);
     if (!response.ok) {
-      console.error('Failed fetchRoomsForBuilding:', await response.text());
+      console.error(`Failed ${params.endpoint}:`, await response.text());
       throw new Error(`HTTP error! status: ${response.status}`);
     }
-
     const data = await response.json();
-
-    // Ensure we always return an array
-    return Array.isArray(data) ? data : [];
+    return Array.isArray(data) ? data : data; // Return array or object depending on endpoint
   } catch (error) {
-    console.error('Error fetching rooms for building:', error);
+    console.error(`Error fetching ${params.endpoint}:`, error);
     throw error;
   }
 };
 
 /**
- * Fetch all available rooms in a building for a specific day and time
- * @param {string} buildingId - The building identifier
- * @param {string} day - The day of the week
- * @param {string} time - The time in HH:mm format
- * @returns {Promise<Array>} Array of available room objects
+ * Fetch all rooms in a building
+ */
+export const fetchRoomsForBuilding = async (buildingId, day, time) => {
+  const cleanBuildingId = getCleanBuildingNameForAPI(buildingId);
+  return fetchFromBackend({ endpoint: 'rooms', building: cleanBuildingId, day, time });
+};
+
+/**
+ * Fetch all available rooms in a building
  */
 export const fetchAvailableRooms = async (buildingId, day, time) => {
-  try {
-    const cleanBuildingId = getCleanBuildingNameForAPI(buildingId);
-
-    const url = `${API_BASE_URL}?endpoint=available&building=${encodeURIComponent(cleanBuildingId)}&day=${encodeURIComponent(day)}&time=${encodeURIComponent(time)}`;
-
-    const response = await fetch(url, {
-      method: 'GET',
-      headers: { 'Content-Type': 'application/json' },
-    });
-
-    if (!response.ok) {
-      console.error('Failed fetchAvailableRooms:', await response.text());
-      throw new Error(`HTTP error! status: ${response.status}`);
-    }
-
-    const data = await response.json();
-    return Array.isArray(data) ? data : [];
-  } catch (error) {
-    console.error('Error fetching available rooms:', error);
-    throw error;
-  }
+  const cleanBuildingId = getCleanBuildingNameForAPI(buildingId);
+  return fetchFromBackend({ endpoint: 'available', building: cleanBuildingId, day, time });
 };
 
 /**
  * Fetch all buildings
- * @returns {Promise<Array>} Array of building names
  */
 export const fetchAllBuildings = async () => {
-  try {
-    const url = `${API_BASE_URL}?endpoint=buildings`;
-
-    const response = await fetch(url, {
-      method: 'GET',
-      headers: { 'Content-Type': 'application/json' },
-    });
-
-    if (!response.ok) {
-      console.error('Failed fetchAllBuildings:', await response.text());
-      throw new Error(`HTTP error! status: ${response.status}`);
-    }
-
-    const data = await response.json();
-    return Array.isArray(data) ? data : [];
-  } catch (error) {
-    console.error('Error fetching buildings:', error);
-    throw error;
-  }
+  return fetchFromBackend({ endpoint: 'buildings' });
 };
 
 /**
  * Fetch details for a specific room
- * @param {string} buildingId - The building identifier
- * @param {string} roomNumber - The room number
- * @returns {Promise<Object>} Room details object
  */
 export const fetchRoomDetails = async (buildingId, roomNumber) => {
-  try {
-    const cleanBuildingId = getCleanBuildingNameForAPI(buildingId);
-
-    const url = `${API_BASE_URL}?endpoint=roomDetails&building=${encodeURIComponent(cleanBuildingId)}&roomNumber=${encodeURIComponent(roomNumber)}`;
-
-    const response = await fetch(url, {
-      method: 'GET',
-      headers: { 'Content-Type': 'application/json' },
-    });
-
-    if (!response.ok) {
-      console.error('Failed fetchRoomDetails:', await response.text());
-      throw new Error(`HTTP error! status: ${response.status}`);
-    }
-
-    return await response.json();
-  } catch (error) {
-    console.error('Error fetching room details:', error);
-    throw error;
-  }
+  const cleanBuildingId = getCleanBuildingNameForAPI(buildingId);
+  return fetchFromBackend({ endpoint: 'roomDetails', building: cleanBuildingId, roomNumber });
 };
