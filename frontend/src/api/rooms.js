@@ -5,22 +5,17 @@
 
 import { getCleanBuildingNameForAPI } from '../utils/buildingMapper';
 
-// Vercel serverless proxy endpoint
-const API_BASE_URL = '/api/rooms';
-
 /**
- * Helper function to build the backend EC2 URL
+ * Helper function to build the proxy URL
  */
-const buildBackendUrl = ({ endpoint, building, day, time, roomNumber }) => {
-  const EC2_BASE = 'http://54.196.82.21'; // Your EC2 backend
-  if (endpoint === 'rooms') {
-    return `${EC2_BASE}/api/buildings/${encodeURIComponent(building)}/rooms?day=${encodeURIComponent(day)}&time=${encodeURIComponent(time)}`;
-  } else if (endpoint === 'available') {
-    return `${EC2_BASE}/api/buildings/${encodeURIComponent(building)}/rooms?day=${encodeURIComponent(day)}&time=${encodeURIComponent(time)}`;
+const buildProxyUrl = ({ endpoint, building, day, time, roomNumber }) => {
+  if (endpoint === 'rooms' || endpoint === 'available') {
+    // Both rooms and available use the same proxy endpoint
+    return `/api/rooms?building=${encodeURIComponent(building)}&day=${encodeURIComponent(day)}&time=${encodeURIComponent(time)}`;
   } else if (endpoint === 'buildings') {
-    return `${EC2_BASE}/api/buildings`;
+    return `/api/buildings`;
   } else if (endpoint === 'roomDetails') {
-    return `${EC2_BASE}/api/rooms/${encodeURIComponent(building)}/${encodeURIComponent(roomNumber)}`;
+    return `/api/roomDetails?building=${encodeURIComponent(building)}&roomNumber=${encodeURIComponent(roomNumber)}`;
   } else {
     throw new Error('Invalid endpoint');
   }
@@ -31,7 +26,7 @@ const buildBackendUrl = ({ endpoint, building, day, time, roomNumber }) => {
  */
 const fetchFromBackend = async (params) => {
   try {
-    const url = buildBackendUrl(params);
+    const url = buildProxyUrl(params);
     const response = await fetch(url);
     if (!response.ok) {
       console.error(`Failed ${params.endpoint}:`, await response.text());
