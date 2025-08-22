@@ -1,6 +1,6 @@
 /**
  * API functions for room-related operations
- * Fully updated to use Vercel serverless proxy for HTTPS frontend
+ * Updated to use Vercel serverless proxy for HTTPS frontend
  */
 
 import { getCleanBuildingNameForAPI } from '../utils/buildingMapper';
@@ -19,12 +19,17 @@ export const fetchRoomsForBuilding = async (buildingId, day, time) => {
   try {
     const cleanBuildingId = getCleanBuildingNameForAPI(buildingId);
 
-    const response = await fetch(
-      `${API_BASE_URL}?endpoint=rooms&building=${encodeURIComponent(cleanBuildingId)}&day=${encodeURIComponent(day)}&time=${encodeURIComponent(time)}`,
-      { method: 'GET', headers: { 'Content-Type': 'application/json' } }
-    );
+    const url = `${API_BASE_URL}?endpoint=rooms&building=${encodeURIComponent(cleanBuildingId)}&day=${encodeURIComponent(day)}&time=${encodeURIComponent(time)}`;
 
-    if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+    const response = await fetch(url, {
+      method: 'GET',
+      headers: { 'Content-Type': 'application/json' },
+    });
+
+    if (!response.ok) {
+      console.error('Failed fetchRoomsForBuilding:', await response.text());
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
 
     return await response.json();
   } catch (error) {
@@ -44,12 +49,17 @@ export const fetchAvailableRooms = async (buildingId, day, time) => {
   try {
     const cleanBuildingId = getCleanBuildingNameForAPI(buildingId);
 
-    const response = await fetch(
-      `${API_BASE_URL}?endpoint=available&building=${encodeURIComponent(cleanBuildingId)}&day=${encodeURIComponent(day)}&time=${encodeURIComponent(time)}`,
-      { method: 'GET', headers: { 'Content-Type': 'application/json' } }
-    );
+    const url = `${API_BASE_URL}?endpoint=available&building=${encodeURIComponent(cleanBuildingId)}&day=${encodeURIComponent(day)}&time=${encodeURIComponent(time)}`;
 
-    if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+    const response = await fetch(url, {
+      method: 'GET',
+      headers: { 'Content-Type': 'application/json' },
+    });
+
+    if (!response.ok) {
+      console.error('Failed fetchAvailableRooms:', await response.text());
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
 
     return await response.json();
   } catch (error) {
@@ -64,12 +74,17 @@ export const fetchAvailableRooms = async (buildingId, day, time) => {
  */
 export const fetchAllBuildings = async () => {
   try {
-    const response = await fetch(
-      `${API_BASE_URL}?endpoint=buildings`,
-      { method: 'GET', headers: { 'Content-Type': 'application/json' } }
-    );
+    const url = `${API_BASE_URL}?endpoint=buildings`;
 
-    if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+    const response = await fetch(url, {
+      method: 'GET',
+      headers: { 'Content-Type': 'application/json' },
+    });
+
+    if (!response.ok) {
+      console.error('Failed fetchAllBuildings:', await response.text());
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
 
     return await response.json();
   } catch (error) {
@@ -88,12 +103,17 @@ export const fetchRoomDetails = async (buildingId, roomNumber) => {
   try {
     const cleanBuildingId = getCleanBuildingNameForAPI(buildingId);
 
-    const response = await fetch(
-      `${API_BASE_URL}?endpoint=roomDetails&building=${encodeURIComponent(cleanBuildingId)}&roomNumber=${encodeURIComponent(roomNumber)}`,
-      { method: 'GET', headers: { 'Content-Type': 'application/json' } }
-    );
+    const url = `${API_BASE_URL}?endpoint=roomDetails&building=${encodeURIComponent(cleanBuildingId)}&roomNumber=${encodeURIComponent(roomNumber)}`;
 
-    if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+    const response = await fetch(url, {
+      method: 'GET',
+      headers: { 'Content-Type': 'application/json' },
+    });
+
+    if (!response.ok) {
+      console.error('Failed fetchRoomDetails:', await response.text());
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
 
     return await response.json();
   } catch (error) {
