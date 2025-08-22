@@ -1,6 +1,6 @@
 /**
  * API functions for room-related operations
- * Updated to use Vercel serverless proxy for HTTPS frontend
+ * Fully updated to use Vercel serverless proxy for HTTPS frontend
  */
 
 import { getCleanBuildingNameForAPI } from '../utils/buildingMapper';
@@ -24,9 +24,7 @@ export const fetchRoomsForBuilding = async (buildingId, day, time) => {
       { method: 'GET', headers: { 'Content-Type': 'application/json' } }
     );
 
-    if (!response.ok) {
-      throw new Error(`HTTP error! status: ${response.status}`);
-    }
+    if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
 
     return await response.json();
   } catch (error) {
@@ -51,9 +49,7 @@ export const fetchAvailableRooms = async (buildingId, day, time) => {
       { method: 'GET', headers: { 'Content-Type': 'application/json' } }
     );
 
-    if (!response.ok) {
-      throw new Error(`HTTP error! status: ${response.status}`);
-    }
+    if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
 
     return await response.json();
   } catch (error) {
@@ -73,9 +69,7 @@ export const fetchAllBuildings = async () => {
       { method: 'GET', headers: { 'Content-Type': 'application/json' } }
     );
 
-    if (!response.ok) {
-      throw new Error(`HTTP error! status: ${response.status}`);
-    }
+    if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
 
     return await response.json();
   } catch (error) {
@@ -99,9 +93,7 @@ export const fetchRoomDetails = async (buildingId, roomNumber) => {
       { method: 'GET', headers: { 'Content-Type': 'application/json' } }
     );
 
-    if (!response.ok) {
-      throw new Error(`HTTP error! status: ${response.status}`);
-    }
+    if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
 
     return await response.json();
   } catch (error) {
