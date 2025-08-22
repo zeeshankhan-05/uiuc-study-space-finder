@@ -1,10 +1,12 @@
 /**
  * API functions for room-related operations
+ * Updated to use Vercel serverless proxy for HTTPS frontend
  */
 
 import { getCleanBuildingNameForAPI } from '../utils/buildingMapper';
 
-const API_BASE_URL = import.meta.env.VITE_REACT_APP_API_URL || 'http://localhost:8080';
+// Vercel serverless proxy endpoint
+const API_BASE_URL = '/api/rooms';
 
 /**
  * Fetch all rooms in a building with their availability status for a specific day and time
@@ -15,25 +17,18 @@ const API_BASE_URL = import.meta.env.VITE_REACT_APP_API_URL || 'http://localhost
  */
 export const fetchRoomsForBuilding = async (buildingId, day, time) => {
   try {
-    // Clean the building name to handle duplicates
     const cleanBuildingId = getCleanBuildingNameForAPI(buildingId);
-    
+
     const response = await fetch(
-      `${API_BASE_URL}/api/buildings/${encodeURIComponent(cleanBuildingId)}/rooms?day=${encodeURIComponent(day)}&time=${encodeURIComponent(time)}`,
-      {
-        method: 'GET',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-      }
+      `${API_BASE_URL}?endpoint=rooms&building=${encodeURIComponent(cleanBuildingId)}&day=${encodeURIComponent(day)}&time=${encodeURIComponent(time)}`,
+      { method: 'GET', headers: { 'Content-Type': 'application/json' } }
     );
 
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
 
-    const data = await response.json();
-    return data;
+    return await response.json();
   } catch (error) {
     console.error('Error fetching rooms for building:', error);
     throw error;
@@ -43,31 +38,24 @@ export const fetchRoomsForBuilding = async (buildingId, day, time) => {
 /**
  * Fetch all available rooms in a building for a specific day and time
  * @param {string} buildingId - The building identifier
- * @param {string} day - The day of the week (e.g., "Monday", "Tuesday")
- * @param {string} time - The time in HH:mm format (e.g., "14:30")
+ * @param {string} day - The day of the week
+ * @param {string} time - The time in HH:mm format
  * @returns {Promise<Array>} Array of available room objects
  */
 export const fetchAvailableRooms = async (buildingId, day, time) => {
   try {
-    // Clean the building name to handle duplicates
     const cleanBuildingId = getCleanBuildingNameForAPI(buildingId);
-    
+
     const response = await fetch(
-      `${API_BASE_URL}/api/buildings/${encodeURIComponent(cleanBuildingId)}/rooms?day=${encodeURIComponent(day)}&time=${encodeURIComponent(time)}`,
-      {
-        method: 'GET',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-      }
+      `${API_BASE_URL}?endpoint=available&building=${encodeURIComponent(cleanBuildingId)}&day=${encodeURIComponent(day)}&time=${encodeURIComponent(time)}`,
+      { method: 'GET', headers: { 'Content-Type': 'application/json' } }
     );
 
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
 
-    const data = await response.json();
-    return data;
+    return await response.json();
   } catch (error) {
     console.error('Error fetching available rooms:', error);
     throw error;
@@ -80,19 +68,16 @@ export const fetchAvailableRooms = async (buildingId, day, time) => {
  */
 export const fetchAllBuildings = async () => {
   try {
-    const response = await fetch(`${API_BASE_URL}/api/buildings`, {
-      method: 'GET',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-    });
+    const response = await fetch(
+      `${API_BASE_URL}?endpoint=buildings`,
+      { method: 'GET', headers: { 'Content-Type': 'application/json' } }
+    );
 
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
 
-    const data = await response.json();
-    return data;
+    return await response.json();
   } catch (error) {
     console.error('Error fetching buildings:', error);
     throw error;
@@ -107,28 +92,20 @@ export const fetchAllBuildings = async () => {
  */
 export const fetchRoomDetails = async (buildingId, roomNumber) => {
   try {
-    // Clean the building name to handle duplicates
     const cleanBuildingId = getCleanBuildingNameForAPI(buildingId);
-    
+
     const response = await fetch(
-      `${API_BASE_URL}/api/rooms/${encodeURIComponent(cleanBuildingId)}/${encodeURIComponent(roomNumber)}`,
-      {
-        method: 'GET',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-      }
+      `${API_BASE_URL}?endpoint=roomDetails&building=${encodeURIComponent(cleanBuildingId)}&roomNumber=${encodeURIComponent(roomNumber)}`,
+      { method: 'GET', headers: { 'Content-Type': 'application/json' } }
     );
 
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
 
-    const data = await response.json();
-    return data;
+    return await response.json();
   } catch (error) {
     console.error('Error fetching room details:', error);
     throw error;
   }
 };
-
