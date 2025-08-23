@@ -60,7 +60,7 @@ UIUC Study Space Finder is a full-stack web application designed to help student
 - Building detail pages with room information
 - Search and filtering functionality
 - Responsive design with Tailwind CSS
-- Dual zoom system implementation
+- Interactive map zoom controls
 
 ### Backend ✅
 

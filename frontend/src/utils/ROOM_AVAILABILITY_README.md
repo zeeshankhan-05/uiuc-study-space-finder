@@ -6,13 +6,9 @@ The UIUC Study Space Finder has been enhanced with improved room availability di
 
 ## Application Features
 
-### Dual Zoom System
+### Room Availability System
 
-The application features a sophisticated dual zoom system that separates browser zoom from map zoom functionality:
-
-- **Browser Zoom**: Standard browser zoom (Cmd+/Ctrl+, Cmd-/Ctrl-, Cmd0/Ctrl0) affects the entire page
-- **Map Zoom**: Custom map zoom controls work independently for the campus map only
-- **Independent Controls**: Both zoom systems operate simultaneously without interference
+The application provides comprehensive room availability information with clear display logic.
 
 ## Key Changes
 

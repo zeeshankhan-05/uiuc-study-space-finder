@@ -2,13 +2,9 @@
 
 ## Application Features
 
-### Dual Zoom System
+### API Endpoints
 
-The application features a sophisticated dual zoom system that separates browser zoom from map zoom functionality:
-
-- **Browser Zoom**: Standard browser zoom (Cmd+/Ctrl+, Cmd-/Ctrl-, Cmd0/Ctrl0) affects the entire page
-- **Map Zoom**: Custom map zoom controls work independently for the campus map only
-- **Independent Controls**: Both zoom systems operate simultaneously without interference
+The application provides comprehensive REST API endpoints for building and room data access.
 
 ## Room Status Endpoint
 

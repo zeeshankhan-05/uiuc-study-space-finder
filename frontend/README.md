@@ -10,15 +10,7 @@ A React-based web application for finding study spaces at the University of Illi
 - **Building information pages** accessible by clicking on map buildings
 - **Hover tooltips** showing building names
 - **Responsive design** that works on all screen sizes
-- **Dual zoom system** separating browser zoom from map zoom functionality
-
-### Dual Zoom System
-
-The application features a sophisticated dual zoom system that separates browser zoom from map zoom functionality:
-
-- **Browser Zoom**: Standard browser zoom (Cmd+/Ctrl+, Cmd-/Ctrl-, Cmd0/Ctrl0) affects the entire page
-- **Map Zoom**: Custom map zoom controls work independently for the campus map only
-- **Independent Controls**: Both zoom systems operate simultaneously without interference
+- **Interactive map zoom** with building navigation controls
 
 ### Navigation
 

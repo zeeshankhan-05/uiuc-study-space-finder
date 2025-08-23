@@ -15,7 +15,9 @@ public class WebConfig {
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")
                         .allowedOrigins(
-                                "https://uiuc-study-space-finder-n1wd.vercel.app")
+                                "http://localhost:5713",
+                                "http://uiuc-studyspace-frontend.s3-website-us-east-1.amazonaws.com",
+                                "https://d2ubpvptqlkq4i.cloudfront.net")
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                         .allowedHeaders("*");
             }

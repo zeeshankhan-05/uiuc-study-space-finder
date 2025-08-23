@@ -161,7 +161,7 @@ Use the provided API endpoints to perform operations on study space data:
 - [API Documentation](docs/api-documentation.md) - REST API endpoints and usage
 - [Backend API Endpoints](backend/server/API_ENDPOINTS.md) - Detailed backend API documentation
 - [Setup Instructions](docs/setup-instructions.md) - Detailed development environment setup
-- [Zoom Functionality](docs/zoom-functionality-update.md) - Dual zoom system implementation details
+- [Zoom Functionality](docs/zoom-functionality-update.md) - Map zoom functionality details
 
 ## 🏢 Building System
 

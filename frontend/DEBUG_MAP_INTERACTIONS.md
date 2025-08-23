@@ -6,18 +6,14 @@ This guide provides step-by-step debugging instructions for restoring full inter
 
 ## Application Features
 
-### Dual Zoom System
+### Map Interaction System
 
-The application features a sophisticated dual zoom system that separates browser zoom from map zoom functionality:
-
-- **Browser Zoom**: Standard browser zoom (Cmd+/Ctrl+, Cmd-/Ctrl-, Cmd0/Ctrl0) affects the entire page
-- **Map Zoom**: Custom map zoom controls work independently for the campus map only
-- **Independent Controls**: Both zoom systems operate simultaneously without interference
+The application features interactive map functionality with building navigation and hover effects.
 
 ## Current Status
 
 - Event listener setup issues
-- SVG processing and injection problems  
+- SVG processing and injection problems
 - Event handler conflicts between drag and click
 - CSS pointer events blocking interactions
 - Touch event handling for mobile devices

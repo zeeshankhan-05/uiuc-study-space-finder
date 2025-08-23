@@ -10,15 +10,7 @@ This application helps students find available study spaces on the UIUC campus b
 - **Real-time Room Status**: See which rooms are open or occupied
 - **Time-based Filtering**: Change date and time to see availability
 - **Responsive Design**: Works on desktop and mobile devices
-- **Dual Zoom System**: Separate browser and map zoom controls
-
-### Dual Zoom System
-
-The application features a sophisticated dual zoom system that separates browser zoom from map zoom functionality:
-
-- **Browser Zoom**: Standard browser zoom (Cmd+/Ctrl+, Cmd-/Ctrl-, Cmd0/Ctrl0) affects the entire page
-- **Map Zoom**: Custom map zoom controls work independently for the campus map only
-- **Independent Controls**: Both zoom systems operate simultaneously without interference
+- **Map Zoom Controls**: Interactive map zoom functionality
 
 ## Prerequisites
 
