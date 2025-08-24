@@ -1,8 +1,3 @@
-/**
- * API functions for room-related operations
- * Updated to call backend server directly for Vercel deployment
- */
-
 // ✅ Debug: Log the API base URL to verify it's coming from the correct environment
 console.log("API base URL:", import.meta.env.VITE_REACT_APP_API_URL);
 
