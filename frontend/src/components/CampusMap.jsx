@@ -50,8 +50,18 @@ const CampusMap = forwardRef((props, ref) => {
   // Improved pan functionality
   const handleMouseDown = useCallback(
     (e) => {
-      // Only handle left mouse button and prevent dragging when hovering over buildings
-      if (e.button !== 0 || isHoveringBuilding) return;
+      // Only handle left mouse button
+      if (e.button !== 0) return;
+
+      // Check if the click is directly on a building element
+      const target = e.target;
+      const isBuildingElement =
+        target.classList.contains("image-mapper-shape") ||
+        target.closest(".image-mapper-shape") ||
+        target.closest("a[data-building-path]");
+
+      // If clicking on a building, don't start dragging
+      if (isBuildingElement) return;
 
       e.preventDefault();
       e.stopPropagation();
@@ -67,12 +77,12 @@ const CampusMap = forwardRef((props, ref) => {
         containerRef.current.style.cursor = "grabbing";
       }
     },
-    [isHoveringBuilding, pan.x, pan.y]
+    [pan.x, pan.y]
   );
 
   const handleMouseMove = useCallback(
     (e) => {
-      if (!isDragging || isHoveringBuilding) return;
+      if (!isDragging) return;
 
       e.preventDefault();
       e.stopPropagation();
@@ -82,7 +92,7 @@ const CampusMap = forwardRef((props, ref) => {
         y: e.clientY - dragStart.y,
       });
     },
-    [isDragging, isHoveringBuilding, dragStart.x, dragStart.y]
+    [isDragging, dragStart.x, dragStart.y]
   );
 
   const handleMouseUp = useCallback(
@@ -94,7 +104,7 @@ const CampusMap = forwardRef((props, ref) => {
 
       setIsDragging(false);
 
-      // Reset cursor
+      // Reset cursor based on current hover state
       if (containerRef.current) {
         containerRef.current.style.cursor = isHoveringBuilding
           ? "pointer"
@@ -122,8 +132,6 @@ const CampusMap = forwardRef((props, ref) => {
 
   const handleTouchMove = useCallback(
     (e) => {
-      if (isHoveringBuilding) return;
-
       if (e.touches.length === 1) {
         const touch = e.touches[0];
         setPan({
@@ -132,7 +140,7 @@ const CampusMap = forwardRef((props, ref) => {
         });
       }
     },
-    [isHoveringBuilding, touchStart]
+    [touchStart]
   );
 
   const handleTouchEnd = useCallback(
@@ -352,18 +360,16 @@ const CampusMap = forwardRef((props, ref) => {
               }
             };
 
-            // Hover handlers
+            // Hover handlers - don't prevent default to allow dragging
             const handleMouseEnter = (e) => {
-              e.preventDefault();
-              e.stopPropagation();
+              // Don't prevent default to allow dragging to work
               const buildingPath =
                 parentLink.getAttribute("data-building-path");
               handleBuildingHover(true, buildingPath);
             };
 
             const handleMouseLeave = (e) => {
-              e.preventDefault();
-              e.stopPropagation();
+              // Don't prevent default to allow dragging to work
               handleBuildingHover(false, null);
             };
 

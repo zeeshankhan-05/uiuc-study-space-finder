@@ -4,13 +4,27 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { fetchRoomsForBuilding } from "../api/rooms";
 import RoomTable from "../components/RoomTable";
-import { getBuildingById } from "../utils/buildingMapper";
+import {
+  getBuildingById,
+  debugBuildingMapping,
+  getCleanBuildingNameForAPI,
+  testBuildingMappings,
+} from "../utils/buildingMapper";
+import { adjustWeekendDate } from "../utils/dateUtils";
+
+const API_BASE_URL =
+  import.meta.env.VITE_REACT_APP_API_URL || "http://localhost:8080";
 
 export default function Building() {
   const { buildingId } = useParams();
   const navigate = useNavigate();
 
   console.log("Building component rendered with buildingId:", buildingId); // Debug log
+
+  // Test building mappings on component mount
+  React.useEffect(() => {
+    testBuildingMappings();
+  }, []);
 
   // Get building data from the new mapping system
   const buildingData = buildingId ? getBuildingById(buildingId) : null;
@@ -39,8 +53,10 @@ export default function Building() {
     return cstTime.toTimeString().slice(0, 5); // Get HH:mm format
   };
 
-  // Set default date and time to current CST date/time
-  const [selectedDate, setSelectedDate] = useState(getCurrentDateTime());
+  // Set default date and time to current CST date/time, adjusted for weekends
+  const [selectedDate, setSelectedDate] = useState(
+    adjustWeekendDate(getCurrentDateTime())
+  );
   const [selectedTime, setSelectedTime] = useState(getCurrentTimeString());
   const [rooms, setRooms] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -49,7 +65,9 @@ export default function Building() {
   const [showOpenOnly, setShowOpenOnly] = useState(false);
 
   const getDayOfWeek = (date) => {
-    return date.toLocaleDateString("en-US", { weekday: "long" });
+    // Ensure the date is adjusted to a weekday before getting the day name
+    const adjustedDate = adjustWeekendDate(date);
+    return adjustedDate.toLocaleDateString("en-US", { weekday: "long" });
   };
 
   const fetchRooms = useCallback(async () => {
@@ -60,20 +78,113 @@ export default function Building() {
       setError("");
       const day = getDayOfWeek(selectedDate);
 
+      console.log("🏢 Building Component Debug:", {
+        buildingId: buildingId,
+        buildingData: buildingData,
+        fullName: buildingData.fullName,
+        day: day,
+        selectedTime: selectedTime,
+      });
+
+      // Debug building name mapping for troubleshooting
+      debugBuildingMapping(buildingData.fullName);
+
       const data = await fetchRoomsForBuilding(
         buildingData.fullName, // Use the full name for API calls
         day,
         selectedTime
       );
 
-      setRooms(data || []);
+      console.log("📋 Rooms Data Processing:", {
+        rawData: data,
+        dataType: typeof data,
+        isArray: Array.isArray(data),
+        length: Array.isArray(data) ? data.length : "N/A",
+        firstRoom: Array.isArray(data) && data.length > 0 ? data[0] : null,
+      });
+
+      // Validate and process the data
+      let processedRooms = [];
+
+      if (Array.isArray(data)) {
+        // Data is an array, use it directly
+        processedRooms = data;
+        console.log(
+          "✅ Data is array, using directly:",
+          processedRooms.length,
+          "rooms"
+        );
+      } else if (data && typeof data === "object") {
+        // Data is an object, check if it has a rooms property
+        if (data.rooms && Array.isArray(data.rooms)) {
+          processedRooms = data.rooms;
+          console.log(
+            "✅ Data has rooms property, using data.rooms:",
+            processedRooms.length,
+            "rooms"
+          );
+        } else if (data.data && Array.isArray(data.data)) {
+          processedRooms = data.data;
+          console.log(
+            "✅ Data has data property, using data.data:",
+            processedRooms.length,
+            "rooms"
+          );
+        } else {
+          console.log(
+            "⚠️ Data is object but no rooms array found:",
+            Object.keys(data)
+          );
+          processedRooms = [];
+        }
+      } else {
+        console.log("⚠️ Unexpected data format:", typeof data, data);
+        processedRooms = [];
+      }
+
+      // Validate room structure
+      const validRooms = processedRooms.filter((room) => {
+        const isValid =
+          room &&
+          (room.roomNumber || room.room || room.id) &&
+          (room.status || room.availability);
+
+        if (!isValid) {
+          console.log("⚠️ Invalid room structure:", room);
+        }
+
+        return isValid;
+      });
+
+      console.log("📊 Final processed rooms:", {
+        originalLength: processedRooms.length,
+        validLength: validRooms.length,
+        invalidCount: processedRooms.length - validRooms.length,
+        sampleValidRoom: validRooms.length > 0 ? validRooms[0] : null,
+        allRoomNumbers: validRooms
+          .map((r) => r.roomNumber || r.room || r.id)
+          .slice(0, 10),
+      });
+
+      // If we got an empty response, log additional debugging info
+      if (validRooms.length === 0 && processedRooms.length === 0) {
+        console.log("🚨 Empty room response - possible issues:", {
+          buildingName: buildingData.fullName,
+          cleanBuildingName: getCleanBuildingNameForAPI(buildingData.fullName),
+          day: day,
+          time: selectedTime,
+          apiUrl: `${API_BASE_URL}/api/buildings/${encodeURIComponent(getCleanBuildingNameForAPI(buildingData.fullName))}/rooms?day=${encodeURIComponent(day)}&time=${encodeURIComponent(selectedTime)}`,
+        });
+      }
+
+      setRooms(validRooms);
     } catch (err) {
-      console.error("Error fetching rooms:", err);
+      console.error("❌ Error fetching rooms:", err);
       setError("Failed to fetch room data. Please try again.");
     } finally {
       setLoading(false);
     }
-  }, [buildingData, selectedDate, selectedTime]);
+  }, [buildingData, selectedDate, selectedTime, buildingId]);
 
   useEffect(() => {
     if (buildingData) {
@@ -211,9 +322,41 @@ export default function Building() {
           )}
           {!loading && !error && rooms.length === 0 && (
             <div className="text-center py-8">
-              <p className="text-storm-gray text-lg">
-                No available rooms at this time. Try another date or time.
-              </p>
+              <div className="bg-yellow-50 border border-yellow-200 rounded-xl p-6 mb-4">
+                <div className="flex items-center justify-center mb-3">
+                  <svg
+                    className="w-8 h-8 text-yellow-600 mr-3"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z"
+                    />
+                  </svg>
+                  <h3 className="text-lg font-semibold text-yellow-800">
+                    No Rooms Found
+                  </h3>
+                </div>
+                <p className="text-yellow-700 mb-4">
+                  No available rooms found for <strong>{buildingName}</strong>{" "}
+                  at this time.
+                </p>
+                <div className="text-sm text-yellow-600 space-y-2">
+                  <p>• Try selecting a different date or time</p>
+                  <p>• Check if the building has study spaces available</p>
+                  <p>• Verify the building name is correct</p>
+                </div>
+              </div>
+              <button
+                onClick={fetchRooms}
+                className="bg-uiuc-orange hover:bg-uiuc-orange-light text-white px-6 py-2 rounded-lg font-medium transition-all hover:shadow-modern"
+              >
+                Refresh Data
+              </button>
             </div>
           )}
           {!loading && !error && rooms.length > 0 && (

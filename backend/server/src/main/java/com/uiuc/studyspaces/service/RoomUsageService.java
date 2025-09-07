@@ -108,7 +108,14 @@ public class RoomUsageService {
         }
 
         LocalTime queryTime = LocalTime.parse(timeStr);
+
+        // Debug logging to see what building name is being searched
+        System.out.println("🔍 Searching for building: '" + building + "' (length=" + building.length() + ")");
+
         List<RoomUsage> rooms = repository.findByBuilding(building);
+
+        // Debug logging to see how many rooms were found
+        System.out.println("📊 Found " + rooms.size() + " rooms for building: '" + building + "'");
 
         return rooms.stream()
                 .map(room -> createRoomStatusResponse(room, normalizedDay, queryTime))

@@ -4,6 +4,8 @@ import com.uiuc.studyspaces.model.RoomUsage;
 import com.uiuc.studyspaces.model.RoomStatusResponse;
 import com.uiuc.studyspaces.service.RoomUsageService;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.http.ResponseEntity;
+import org.springframework.http.HttpStatus;
 
 import java.util.List;
 
@@ -19,11 +21,19 @@ public class RoomUsageController {
     }
 
     @GetMapping("/rooms")
-    public List<RoomUsage> getAvailableRooms(
+    public ResponseEntity<?> getAvailableRooms(
             @RequestParam String building,
             @RequestParam String day,
             @RequestParam String time) {
-        return service.getAvailableRooms(building, day, time);
+        try {
+            List<RoomUsage> rooms = service.getAvailableRooms(building, day, time);
+            return ResponseEntity.ok(rooms);
+        } catch (IllegalArgumentException e) {
+            return ResponseEntity.badRequest().body(e.getMessage());
+        } catch (Exception e) {
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
+                    .body("An error occurred while fetching room data: " + e.getMessage());
+        }
     }
 
     @GetMapping("/buildings")
@@ -49,10 +59,18 @@ public class RoomUsageController {
      * @return List of RoomStatusResponse objects containing room status information
      */
     @GetMapping("/buildings/{building}/rooms")
-    public List<RoomStatusResponse> getAllRoomsInBuilding(
+    public ResponseEntity<?> getAllRoomsInBuilding(
             @PathVariable String building,
             @RequestParam String day,
             @RequestParam String time) {
-        return service.getAllRoomsWithStatus(building, day, time);
+        try {
+            List<RoomStatusResponse> rooms = service.getAllRoomsWithStatus(building, day, time);
+            return ResponseEntity.ok(rooms);
+        } catch (IllegalArgumentException e) {
+            return ResponseEntity.badRequest().body(e.getMessage());
+        } catch (Exception e) {
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
+                    .body("An error occurred while fetching room data: " + e.getMessage());
+        }
     }
 }

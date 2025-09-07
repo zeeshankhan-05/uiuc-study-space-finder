@@ -114,12 +114,6 @@ const buildingData = {
     displayName: 'English Building',
     path: '/english-building/'
   },
-  'altgeld-hall': {
-    id: 'altgeld-hall',
-    fullName: 'Altgeld Hall',
-    displayName: 'Altgeld Hall',
-    path: '/altgeld-hall/'
-  },
   'natural-history-building': {
     id: 'natural-history-building',
     fullName: 'Natural History Building',
@@ -536,6 +530,7 @@ const databaseToFrontendMapping = {
   // Clean database names (exact matches)
   'Noyes Laboratory': 'Noyes Laboratory',
   'Campbell Hall': 'Campbell Hall',
+  'Campbell Hall 1026 Lincoln Hall': 'Campbell Hall',
   'Siebel Center for Computer Science': 'Siebel Center for Computer Science',
   'Siebel Center for Design': 'Siebel Center for Design',
   'Campus Instructional Facility': 'Campus Instructional Facility',
@@ -556,6 +551,8 @@ const databaseToFrontendMapping = {
   'Mechanical Engineering Laboratory': 'Mechanical Engineering Laboratory',
   'Coordinated Science Laboratory': 'Coordinated Science Laboratory',
   'Early Childhood Development Laboratory': 'Early Childhood Development Laboratory',
+  'Beckman Institute': 'Beckman Institute',
+  'Everitt Laboratory': 'Everitt Laboratory',
   
   // Engineering buildings
   'Electrical & Computer Eng Bldg': 'Electrical & Computer Engineering Building',
@@ -568,6 +565,55 @@ const databaseToFrontendMapping = {
   // Siebel Center buildings
   'Siebel Center for Comp Sci': 'Siebel Center for Computer Science',
   'Siebel Center for Comp Sci n.a.': 'Siebel Center for Computer Science',
+  'Siebel Center for Computer Science': 'Siebel Center for Comp Sci',
+  
+  // Beckman Institute variations
+  'Beckman Institute n.a.': 'Beckman Institute',
+  'Beckman Inst': 'Beckman Institute',
+  
+  // Everitt Laboratory variations
+  'Everitt Laboratory n.a.': 'Everitt Laboratory',
+  'Everitt Lab': 'Everitt Laboratory',
+  
+  // Campbell Hall variations
+  'Campbell Hall': 'Campbell Hall 1026 Lincoln Hall',
+  
+  // Engineering building reverse mappings
+  'Civil & Environmental Engineering Building': 'Civil & Envir Eng Bldg',
+  'Coordinated Science Laboratory': 'Coordinated Science Lab',
+  'Mechanical Engineering Laboratory': 'Mechanical Engineering Lab',
+  'Electrical & Computer Engineering Building': 'Electrical & Computer Eng Bldg',
+  'Materials Science & Engineering Building': 'Materials Science & Eng Bld',
+  'Newmark Civil Engineering Building': 'Newmark Civil Engineering Bldg',
+  'Sidney Lu Mechanical Engineering Building': 'Sidney Lu Mech Engr Bldg',
+  
+  // Business and other building mappings
+  'Business Instructional Facility': 'Business Instructional Fac',
+  
+  // Fix Lincoln Hall mapping - override the incorrect automatic mapping
+  'Lincoln Hall': 'Lincoln Hall',
+  
+  // Fix buildings showing no data - add correct database mappings
+  'Henry Administration Building': 'Henry Administration Bldg',
+  'Krannert Center for Performing Arts': 'Krannert Center for Perf Arts',
+  'Student Dining & Residential Program': 'Student Dining & Res Program',
+  'National Soybean Research Center': 'National Soybean Res Ctr',
+  'Veterinary Medicine Basic Sciences Building': 'Veterinary Teaching Hospital',
+  'Speech & Hearing Science Building': 'Speech & Hearing Science Bldg',
+  'Early Childhood Development Laboratory': 'Early Child Development Lab',
+  'Child Development Laboratory': 'Early Child Development Lab',
+  'Graduate School of Library & Information Science': 'Library',
+  'Institute of Government & Public Affairs Building': 'Inst Gov & Public Affairs Bldg',
+  'Institute of Labor & Industrial Relations': 'Inst Labor & Industrial Rel',
+  'Literatures, Cultures, & Linguistics': 'Literatures, Cultures, & Ling',
+  'Illinois Street Residence Long': 'Illinois Street Residence Lng',
+  'ARR Art-East Annex Studio': 'ARR Art-East Annex, Studio',
+  'FAB LAB Art-East Annex Studio': 'FAB LAB Art-East Annex, Studio',
+  
+  // Fix buildings missing some rooms - override incorrect automatic mappings
+  'Ceramics Kiln House': 'Ceramics Kiln House',
+  'Astronomy Building': 'Astronomy Building',
+  'Stock Pavilion': 'Stock Pavilion 111 Stock Pavilion',
   
   // Other abbreviated buildings
   'Campus Instructional Facility n.a.': 'Campus Instructional Facility',
@@ -605,7 +651,12 @@ const databaseToFrontendMapping = {
   
   // Complex building name mappings
   'Campbell Hall 1026 Lincoln Hall': 'Campbell Hall',
-  'Richmond Studio 109 Campbell Hall': 'Richmond Studio',
+  // Note: Richmond Studio 109 Campbell Hall maps to Richmond Studio, but we want the main Richmond Studio entry
+  // 'Richmond Studio 109 Campbell Hall': 'Richmond Studio', // Commented out to prevent incorrect mapping
+  
+  // Fix incorrect mappings that are causing wrong building names
+  // Remove the mapping that incorrectly maps Lincoln Hall to Campbell Hall
+  // 'Campbell Hall 1026 Lincoln Hall': 'Campbell Hall', // This was causing Lincoln Hall to map incorrectly
   
   // Additional complex building mappings
   'Bevier Hall 103 Bevier Hall': 'Bevier Hall',
@@ -619,7 +670,12 @@ const databaseToFrontendMapping = {
   // Lab abbreviations
   'Mechanical Engineering Lab': 'Mechanical Engineering Laboratory',
   'Coordinated Science Lab': 'Coordinated Science Laboratory',
-  'Early Child Development Lab': 'Early Childhood Development Laboratory'
+  'Early Child Development Lab': 'Early Childhood Development Laboratory',
+  
+  // Additional building name variations found in database
+  'Digital Computer Laboratory 3217 Everitt Laboratory': 'Digital Computer Laboratory',
+  'Everitt Laboratory 3109 Everitt Laboratory': 'Everitt Laboratory',
+  'Ceramics Kiln House 1306 Everitt Laboratory': 'Ceramics Kiln House'
 };
 
 /**
@@ -737,6 +793,41 @@ export const getAllBuildingData = () => {
  * Get all database building names (including abbreviated versions)
  * @returns {Array<string>} Array of database building names
  */
+
+/**
+ * Get multiple database building names for a single frontend building
+ * This handles cases where one frontend building maps to multiple database entries
+ * @param {string} frontendBuildingName - The frontend building name
+ * @returns {Array<string>} Array of database building names
+ */
+export const getMultipleDatabaseBuildingNames = (frontendBuildingName) => {
+  if (!frontendBuildingName) return [];
+
+  // Define buildings that have multiple database entries
+  const multiEntryBuildings = {
+    'Astronomy Building': [
+      'Astronomy Building',
+      'Astronomy Building 236 Astronomy Building'
+    ],
+    'Stock Pavilion': [
+      'Stock Pavilion',
+      'Stock Pavilion 111 Stock Pavilion',
+      'Stock Pavilion ARENA Stock Pavilion'
+    ]
+  };
+
+  if (multiEntryBuildings[frontendBuildingName]) {
+    console.log('🏗️ Multi-Building Mapping:', {
+      frontendName: frontendBuildingName,
+      databaseNames: multiEntryBuildings[frontendBuildingName]
+    });
+    return multiEntryBuildings[frontendBuildingName];
+  }
+
+  // Fallback to single mapping
+  const singleName = getCleanBuildingNameForAPI(frontendBuildingName);
+  return singleName ? [singleName] : [];
+};
 export const getDatabaseBuildingNames = () => {
   return Object.keys(databaseToFrontendMapping);
 };
@@ -771,9 +862,27 @@ export const getDatabaseBuildingName = (frontendName) => {
   
   if (matchingDatabaseNames.length === 0) {
     // If no direct mapping, try to find database names that contain the frontend name
+    // But be more strict to avoid false matches
     const containingDatabaseNames = [];
     Object.keys(databaseToFrontendMapping).forEach((dbName) => {
-      if (dbName.includes(frontendName) || frontendName.includes(dbName.split(' ')[0])) {
+      // Only match if the frontend name is contained in the database name as a whole word
+      // or if the database name is contained in the frontend name as a whole word
+      const frontendWords = frontendName.toLowerCase().split(/\s+/);
+      const dbWords = dbName.toLowerCase().split(/\s+/);
+      
+      // Check if all words in frontend name are present in database name
+      // But require at least 2 words to match to avoid false positives
+      const allFrontendWordsInDb = frontendWords.length >= 2 && frontendWords.every(word => 
+        dbWords.some(dbWord => dbWord.includes(word) || word.includes(dbWord))
+      );
+      
+      // Check if all words in database name are present in frontend name
+      // But require at least 2 words to match to avoid false positives
+      const allDbWordsInFrontend = dbWords.length >= 2 && dbWords.every(dbWord => 
+        frontendWords.some(word => word.includes(dbWord) || dbWord.includes(word))
+      );
+      
+      if (allFrontendWordsInDb || allDbWordsInFrontend) {
         containingDatabaseNames.push(dbName);
       }
     });
@@ -870,24 +979,122 @@ export const getBuildingIdForNavigation = (buildingName) => {
 export const getCleanBuildingNameForAPI = (buildingName) => {
   if (!buildingName) return buildingName;
   
+  console.log('🏗️ Building Name Mapping Debug:', {
+    originalName: buildingName,
+    step: 'Starting mapping process'
+  });
+  
+  // First, check if there's a direct mapping in databaseToFrontendMapping
+  if (databaseToFrontendMapping[buildingName]) {
+    console.log('🏗️ Building Name Mapping Debug:', {
+      originalName: buildingName,
+      step: 'Direct mapping found',
+      result: databaseToFrontendMapping[buildingName]
+    });
+    return databaseToFrontendMapping[buildingName];
+  }
+  
   // Try to map frontend name to database name first (before cleaning)
   const databaseName = getDatabaseBuildingName(buildingName);
+  console.log('🏗️ Building Name Mapping Debug:', {
+    originalName: buildingName,
+    step: 'Direct database mapping',
+    databaseName: databaseName,
+    isDifferent: databaseName !== buildingName
+  });
+  
   if (databaseName && databaseName !== buildingName) {
+    console.log('🏗️ Building Name Mapping Debug:', {
+      originalName: buildingName,
+      step: 'Using direct database mapping',
+      result: databaseName
+    });
     return databaseName;
   }
   
   // If no direct mapping, clean the name and try again
   const cleanedName = cleanBuildingName(buildingName);
   const cleanedDatabaseName = getDatabaseBuildingName(cleanedName);
+  console.log('🏗️ Building Name Mapping Debug:', {
+    originalName: buildingName,
+    step: 'Cleaned name mapping',
+    cleanedName: cleanedName,
+    cleanedDatabaseName: cleanedDatabaseName,
+    isDifferent: cleanedDatabaseName !== cleanedName
+  });
+  
   if (cleanedDatabaseName && cleanedDatabaseName !== cleanedName) {
+    console.log('🏗️ Building Name Mapping Debug:', {
+      originalName: buildingName,
+      step: 'Using cleaned database mapping',
+      result: cleanedDatabaseName
+    });
     return cleanedDatabaseName;
   }
   
   // Then, map abbreviated database names to full frontend names
   if (databaseToFrontendMapping[cleanedName]) {
+    console.log('🏗️ Building Name Mapping Debug:', {
+      originalName: buildingName,
+      step: 'Using database to frontend mapping',
+      result: databaseToFrontendMapping[cleanedName]
+    });
     return databaseToFrontendMapping[cleanedName];
   }
   
-  return cleanedName;
+  console.log('🏗️ Building Name Mapping Debug:', {
+    originalName: buildingName,
+    step: 'No mapping found, returning original name',
+    result: buildingName
+  });
+  
+  return buildingName;
+};
+
+/**
+ * Debug function to test building name mappings
+ * @param {string} frontendName - The frontend building name to test
+ * @returns {Object} Debug information about the mapping process
+ */
+export const debugBuildingMapping = (frontendName) => {
+  console.log('🔍 Building Mapping Debug for:', frontendName);
+  
+  const result = {
+    frontendName,
+    databaseName: getDatabaseBuildingName(frontendName),
+    cleanName: cleanBuildingName(frontendName),
+    apiName: getCleanBuildingNameForAPI(frontendName),
+    hasDirectMapping: !!databaseToFrontendMapping[frontendName],
+    hasCleanedMapping: !!databaseToFrontendMapping[cleanBuildingName(frontendName)]
+  };
+  
+  console.log('🔍 Mapping Result:', result);
+  return result;
+};
+
+/**
+ * Test function to verify building mappings work correctly
+ * @returns {Object} Test results for common problematic buildings
+ */
+export const testBuildingMappings = () => {
+  const testBuildings = [
+    'Beckman Institute',
+    'Everitt Laboratory', 
+    'Siebel Center for Computer Science',
+    'Institute of Government & Public Affairs Building'
+  ];
+  
+  const results = {};
+  
+  testBuildings.forEach(building => {
+    results[building] = {
+      original: building,
+      apiName: getCleanBuildingNameForAPI(building),
+      isCorrect: getCleanBuildingNameForAPI(building) === building
+    };
+  });
+  
+  console.log('🧪 Building Mapping Test Results:', results);
+  return results;
 };
 

@@ -143,9 +143,9 @@
   user-select: none; /* Non-prefixed version */
 }
 
-/* CRITICAL FIX: Ensure SVG elements don't interfere with dragging */
+/* CRITICAL FIX: Allow SVG to receive events for dragging while preserving building interactions */
 .map-svg-container svg {
-  pointer-events: none !important; /* Prevent SVG from blocking events */
+  pointer-events: auto !important; /* Allow SVG to receive events for dragging */
 }
 
 .map-svg-container svg a {
@@ -162,9 +162,9 @@
   cursor: pointer !important;
 }
 
-/* Fix for nested SVG structure */
+/* Fix for nested SVG structure - allow events for dragging */
 .map-svg-container svg svg {
-  pointer-events: none !important;
+  pointer-events: auto !important;
 }
 
 .map-svg-container svg svg a {

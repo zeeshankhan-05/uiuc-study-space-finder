@@ -13,11 +13,24 @@ export default function RoomTable({
   setShowOpenOnly,
   selectedTime = "12:00", // Add selectedTime prop with default
 }) {
+  // Debug logging for room data
+  console.log("🏠 RoomTable Debug:", {
+    rooms: rooms,
+    roomsType: typeof rooms,
+    isArray: Array.isArray(rooms),
+    length: Array.isArray(rooms) ? rooms.length : "N/A",
+    firstRoom: Array.isArray(rooms) && rooms.length > 0 ? rooms[0] : null,
+    searchQuery: searchQuery,
+    showOpenOnly: showOpenOnly,
+    selectedTime: selectedTime,
+  });
+
   // Sort rooms by room number in the specified order (00xx first, 10xx second, 20xx third, etc.)
   const sortRoomsByNumber = (roomList) => {
     return roomList.sort((a, b) => {
-      const roomA = a.roomNumber || "";
-      const roomB = b.roomNumber || "";
+      // Handle different possible room number field names
+      const roomA = a.roomNumber || a.room || a.id || "";
+      const roomB = b.roomNumber || b.room || b.id || "";
 
       // Extract the floor number (first digit) from room numbers
       const floorA = parseInt(roomA.charAt(0)) || 0;
@@ -38,14 +51,18 @@ export default function RoomTable({
 
   // Filter rooms based on search query and open-only toggle
   const filteredRooms = sortedRooms.filter((room) => {
+    // Handle different possible room number field names
+    const roomNumber = room.roomNumber || room.room || room.id || "";
+    const roomStatus = room.status || room.availability || "";
+
     // First filter by open-only toggle
-    if (showOpenOnly && room.status !== "OPEN") {
+    if (showOpenOnly && roomStatus !== "OPEN") {
       return false;
     }
 
     // Then filter by search query
     if (!searchQuery.trim()) return true;
-    return room.roomNumber.toLowerCase().includes(searchQuery.toLowerCase());
+    return roomNumber.toLowerCase().includes(searchQuery.toLowerCase());
   });
 
   return (
@@ -105,50 +122,58 @@ export default function RoomTable({
               </tr>
             </thead>
             <tbody className="divide-y divide-storm-gray-lighter">
-              {filteredRooms.map((room, idx) => (
-                <tr
-                  key={room.roomNumber || idx}
-                  className="hover:bg-storm-gray-lighter/10 transition-colors"
-                >
-                  <td className="px-3 py-3 whitespace-nowrap">
-                    <span className="font-semibold text-sm text-uiuc-blue">
-                      {room.roomNumber}
-                    </span>
-                  </td>
-                  <td className="px-3 py-3 whitespace-nowrap">
-                    <span
-                      className={`px-3 py-1 rounded-full text-xs font-semibold ${
-                        room.status === "OPEN"
-                          ? "bg-green-100 text-green-800 border border-green-200"
-                          : "bg-red-100 text-red-800 border border-red-200"
-                      }`}
-                    >
-                      {room.status}
-                    </span>
-                  </td>
-                  <td className="px-3 py-3 whitespace-nowrap text-sm text-storm-gray">
-                    {getOccupiedUntilDisplay(room, selectedTime)}
-                  </td>
-                  <td className="px-3 py-3 whitespace-nowrap text-sm text-storm-gray">
-                    {shouldShowOccupiedTimes(room) ? (
-                      <div className="space-y-1">
-                        {room.occupiedRanges.map((range, rangeIdx) => (
-                          <div
-                            key={rangeIdx}
-                            className="text-xs bg-storm-gray-lighter/30 px-2 py-1 rounded-lg border border-storm-gray-lighter"
-                          >
-                            {convertTimeRangeTo12Hour(range.start, range.end)}
-                          </div>
-                        ))}
-                      </div>
-                    ) : (
-                      <span className="text-green-600 font-semibold text-sm">
-                        Free all day
+              {filteredRooms.map((room, idx) => {
+                // Handle different possible field names
+                const roomNumber =
+                  room.roomNumber || room.room || room.id || `Room ${idx + 1}`;
+                const roomStatus =
+                  room.status || room.availability || "UNKNOWN";
+
+                return (
+                  <tr
+                    key={roomNumber || idx}
+                    className="hover:bg-storm-gray-lighter/10 transition-colors"
+                  >
+                    <td className="px-3 py-3 whitespace-nowrap">
+                      <span className="font-semibold text-sm text-uiuc-blue">
+                        {roomNumber}
                       </span>
-                    )}
-                  </td>
-                </tr>
-              ))}
+                    </td>
+                    <td className="px-3 py-3 whitespace-nowrap">
+                      <span
+                        className={`px-3 py-1 rounded-full text-xs font-semibold ${
+                          roomStatus === "OPEN"
+                            ? "bg-green-100 text-green-800 border border-green-200"
+                            : "bg-red-100 text-red-800 border border-red-200"
+                        }`}
+                      >
+                        {roomStatus}
+                      </span>
+                    </td>
+                    <td className="px-3 py-3 whitespace-nowrap text-sm text-storm-gray">
+                      {getOccupiedUntilDisplay(room, selectedTime)}
+                    </td>
+                    <td className="px-3 py-3 whitespace-nowrap text-sm text-storm-gray">
+                      {shouldShowOccupiedTimes(room) ? (
+                        <div className="space-y-1">
+                          {room.occupiedRanges.map((range, rangeIdx) => (
+                            <div
+                              key={rangeIdx}
+                              className="text-xs bg-storm-gray-lighter/30 px-2 py-1 rounded-lg border border-storm-gray-lighter"
+                            >
+                              {convertTimeRangeTo12Hour(range.start, range.end)}
+                            </div>
+                          ))}
+                        </div>
+                      ) : (
+                        <span className="text-green-600 font-semibold text-sm">
+                          Free all day
+                        </span>
+                      )}
+                    </td>
+                  </tr>
+                );
+              })}
             </tbody>
           </table>
         </div>
