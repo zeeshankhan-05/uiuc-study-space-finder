@@ -313,10 +313,13 @@ const CampusMap = forwardRef((props, ref) => {
 
     console.log("Setting up building event listeners...");
 
+    // Store ref value to avoid stale closure warning
+    const currentSvgRef = svgRef.current;
+
     // Wait for SVG to be rendered
     const setupEventListeners = () => {
-      if (svgRef.current) {
-        const polygons = svgRef.current.querySelectorAll(".image-mapper-shape");
+      if (currentSvgRef) {
+        const polygons = currentSvgRef.querySelectorAll(".image-mapper-shape");
         console.log("Found", polygons.length, "polygons");
 
         polygons.forEach((polygon, index) => {
@@ -361,14 +364,14 @@ const CampusMap = forwardRef((props, ref) => {
             };
 
             // Hover handlers - don't prevent default to allow dragging
-            const handleMouseEnter = (e) => {
+            const handleMouseEnter = () => {
               // Don't prevent default to allow dragging to work
               const buildingPath =
                 parentLink.getAttribute("data-building-path");
               handleBuildingHover(true, buildingPath);
             };
 
-            const handleMouseLeave = (e) => {
+            const handleMouseLeave = () => {
               // Don't prevent default to allow dragging to work
               handleBuildingHover(false, null);
             };
@@ -434,11 +437,11 @@ const CampusMap = forwardRef((props, ref) => {
           }
         };
 
-        svgRef.current.addEventListener("click", handleContainerClick);
+        currentSvgRef.addEventListener("click", handleContainerClick);
 
         // Store cleanup for container handler
-        svgRef.current._containerCleanup = () => {
-          svgRef.current.removeEventListener("click", handleContainerClick);
+        currentSvgRef._containerCleanup = () => {
+          currentSvgRef.removeEventListener("click", handleContainerClick);
         };
       }
     };
@@ -449,8 +452,8 @@ const CampusMap = forwardRef((props, ref) => {
     return () => {
       clearTimeout(timer);
       // Clean up event listeners
-      if (svgRef.current) {
-        const polygons = svgRef.current.querySelectorAll(".image-mapper-shape");
+      if (currentSvgRef) {
+        const polygons = currentSvgRef.querySelectorAll(".image-mapper-shape");
         polygons.forEach((polygon) => {
           if (polygon._cleanup) {
             polygon._cleanup();
@@ -458,8 +461,8 @@ const CampusMap = forwardRef((props, ref) => {
         });
 
         // Clean up container handler
-        if (svgRef.current._containerCleanup) {
-          svgRef.current._containerCleanup();
+        if (currentSvgRef._containerCleanup) {
+          currentSvgRef._containerCleanup();
         }
       }
     };
