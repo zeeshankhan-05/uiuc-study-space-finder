@@ -4,7 +4,12 @@ A modern web application that helps University of Illinois Urbana-Champaign stud
 
 ## Project Overview
 
-This project is a comprehensive study space finder designed for the University of Illinois Urbana-Champaign, benefiting over 50,000 students. It utilizes a MongoDB database to store all building and room availability information, a Spring Boot application to create a RESTful API for the backend, and a ReactJS frontend for intuitive user interaction.
+This project is a comprehensive study space finder designed for the University of Illinois Urbana-Champaign, benefiting over 50,000 students. It leverages modern web technologies to help students find available study spaces across campus. Key components include:
+
+- A MongoDB database storing building and room availability information from 180+ UIUC departments
+- A Spring Boot application providing a RESTful API backend with room availability calculations
+- A React-based frontend with an interactive SVG campus map and building navigation
+- A Python-based scraper that processes course schedules to determine room usage patterns
 
 ## Visit The Site
 
@@ -14,17 +19,29 @@ Feel free to check out the project here!
 
 ## 🚀 Features
 
-- **MongoDB Database**: Stores detailed information about buildings, rooms, and course schedules, including availability times, room types, and capacity.
-- **Spring Boot Backend**: Provides a robust RESTful API to manage study space data efficiently. The backend is packaged with Maven and can be deployed to any cloud platform.
-- **ReactJS Frontend**: A user-friendly interface for viewing building information, checking room availability, and navigating the interactive campus map. The frontend is built with Vite and can be hosted on any static hosting service.
-- **Interactive Campus Map**: Visual representation of study spaces with clickable building areas
-- **Smart Scheduling**: Tracks classroom schedules to predict study space availability
-- **Real-time Updates**: Live data on space occupancy and availability
-- **Room Status API**: Comprehensive endpoint to get all rooms in a building with their availability status
-- **Mobile Responsive**: Optimized for both desktop and mobile devices
-- **Course Integration**: Links study spaces to course schedules for better planning
-- **Keyboard Navigation**: Full keyboard support for map interaction and navigation
-- **Smart Date Filtering**: Automatically adjusts weekend dates to nearest valid weekday for optimal study space availability
+### Core Features
+
+- **Interactive Campus Map**: Built with Leaflet for smooth, responsive map interactions
+- **Smart Scheduling**: Real-time tracking of classroom schedules and availability
+- **Department-wise Data**: Organized course data for all UIUC departments
+- **Mobile Responsive**: Tailwind-powered responsive design for all devices
+
+### User Experience
+
+- **Enhanced Search**: Advanced search functionality with dropdown suggestions
+- **Building Information**: Detailed modal views for each campus building
+- **Room Availability**: Real-time room status and scheduling information
+- **Date-based Filtering**: Smart date selection with React DatePicker
+- **Keyboard Navigation**: Full keyboard support for map interactions
+
+### Technical Features
+
+- **RESTful API**: Comprehensive Spring Boot backend endpoints with room availability calculations
+- **MongoDB Integration**: Efficient NoSQL data storage and retrieval with 180+ department datasets
+- **Data Scraping**: Automated course and room data collection using BeautifulSoup and Selenium
+- **Data Normalization**: Standardized room and building information across all departments
+- **SVG Map Integration**: Custom campus map with interactive building elements and routing
+- **Real-time Availability**: Dynamic room status calculation based on course schedules
 
 ## 🗺️ Map Interaction & Zoom
 
@@ -65,84 +82,123 @@ When the map is focused (Tab navigation), these shortcuts are available:
 - **MongoDB** - NoSQL database for flexible data storage
 - **Maven** - Dependency management and build tool
 - **Java 17** - Runtime environment
+- **Spring Data MongoDB** - Database integration
+- **SpringDoc OpenAPI UI 1.6.14** - API documentation
+- **Spring Boot Validation** - Input validation
 
 ### Frontend
 
-- **React 19** - Modern UI framework with hooks
-- **Vite** - Fast build tool and development server
-- **Tailwind CSS** - Utility-first CSS framework
-- **React Router** - Client-side routing
-- **SVG** - Interactive campus map with clickable building areas
-- **Axios** - HTTP client for API communication
+- **React 19.1.0** - Modern UI framework with hooks
+- **Vite 7.0.4** - Fast build tool and development server
+- **Tailwind CSS 3.4.17** - Utility-first CSS framework
+- **React Router DOM 7.7.0** - Client-side routing
+- **Leaflet 1.9.4 / React-Leaflet 5.0.0** - Interactive mapping library
+- **Axios 1.10.0** - HTTP client for API communication
+- **React DatePicker 8.4.0** - Date selection component
+- **Tailwind Forms & Typography** - Enhanced form styling
 
 ### Data Pipeline
 
-- **Python 3.8+** - Web scraping and data processing
-- **BeautifulSoup** - HTML parsing
-- **Selenium** - Dynamic content scraping
-- **PyMongo** - MongoDB Python driver
+- **Python 3.x** - Web scraping and data processing
+- **BeautifulSoup 4.12.2** - HTML parsing for course data
+- **Selenium 4.15.2** - Dynamic web scraping
+- **PyMongo 4.6.0** - MongoDB integration
+- **Requests 2.31.0** - HTTP client for web scraping
+- **Room Normalizer** - Custom room data standardization
+- **JSON Data Storage** - Structured course and room data
+- **Department-wise Organization** - Modular data management (180+ departments)
 
 ## 📁 Project Structure
 
 ```
 uiuc-study-space-finder/
-├── backend/server/          # Spring Boot API server
+├── backend/
+│   └── server/              # Spring Boot API server
+│       ├── src/main/java/   # Java source code
+│       ├── src/main/resources/ # Application properties and data files
+│       └── pom.xml          # Maven configuration
 ├── frontend/                # React + Vite application
+│   ├── src/                 # React source code
+│   ├── public/              # Static assets
+│   └── package.json         # Node.js dependencies
 ├── scraper/                 # Python data collection scripts
+│   ├── data/                # Scraped course and room data
+│   ├── course_scraper.py    # Web scraping logic
+│   └── room_normalizer.py   # Data processing utilities
 ├── docs/                    # Project documentation
-└── .github/workflows/       # CI/CD pipelines
+└── LICENSE                  # MIT License
 ```
 
 ## Prerequisites
 
 Before running this project locally, ensure you have the following installed:
 
-- **Java Development Kit (JDK) 17 or higher**
-- **Node.js 18+ and npm (Node Package Manager)**
+- **Java Development Kit (JDK) 17**
+- **Node.js (for npm)**
 - **MongoDB database (local or cloud instance)**
-- **Python 3.8+ (for data scraping)**
-- **IDE (IntelliJ IDEA, Eclipse, VS Code, etc.)**
+- **Python (for data scraping)**
+- **Visual Studio Code or another preferred IDE**
 
 ## 🚀 Installation
 
 ### Backend Setup
 
-1. **Clone this repository**
-2. **Open the backend/server directory in your preferred IDE**
-3. **Configure the application.properties file in the src/main/resources directory with your MongoDB database credentials**
-4. **Run the Spring Boot application**
+1. Clone the repository
+2. Navigate to the backend server directory:
 
 ```bash
 cd backend/server
+```
+
+3. Configure MongoDB credentials in `src/main/resources/application.properties`
+4. Run the Spring Boot application:
+
+```bash
 ./mvnw spring-boot:run
 ```
 
-The backend will start on `http://localhost:8080`
+The backend API will be available at `http://localhost:8080`
+
+**Note:** The application uses MongoDB for data storage. Ensure you have MongoDB running locally or configure a cloud MongoDB instance.
 
 ### Frontend Setup
 
-1. **Navigate to the frontend directory in your terminal**
-2. **Run npm install to install the necessary dependencies**
-3. **Update the API configuration if needed**
-4. **Run npm run dev to start the React application**
+1. Navigate to the frontend directory:
 
 ```bash
 cd frontend
+```
+
+2. Install dependencies and start the development server:
+
+```bash
 npm install
 npm run dev
 ```
 
-The frontend will start on `http://localhost:5173`
+The frontend will be available at `http://localhost:5173`
 
-### Data Scraper Setup (Optional)
+### Data Scraper Setup
+
+1. Navigate to the scraper directory:
 
 ```bash
 cd scraper
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-pip install -r requirements.txt
-python main.py --push-only
 ```
+
+2. Install Python requirements:
+
+```bash
+pip install -r requirements.txt
+```
+
+3. Run the scraper to collect course data:
+
+```bash
+python main.py
+```
+
+**Note:** The scraper processes 180+ UIUC departments and can take significant time to complete. Use `--push-only` flag to only push existing data to MongoDB without re-scraping.
 
 ## Usage
 
@@ -150,10 +206,36 @@ Access the frontend application via `http://localhost:5173`.
 
 Use the provided API endpoints to perform operations on study space data:
 
-- **`/api/buildings`** - GET all available buildings
-- **`/api/rooms`** - GET available rooms with building, day, and time parameters
-- **`/api/buildings/{building}/rooms`** - GET all rooms in a building with availability status
-- **`/api/rooms/{building}/{room}`** - GET detailed information about a specific room
+- **`GET /api/buildings`** - Get all available buildings
+- **`GET /api/rooms`** - Get available rooms with building, day, and time parameters
+- **`GET /api/buildings/{building}/rooms`** - Get all rooms in a building with availability status for specific day/time
+- **`GET /api/rooms/{building}/{room}`** - Get detailed information about a specific room
+
+### API Response Examples
+
+**Room Status Response:**
+
+```json
+[
+  {
+    "roomNumber": "2405",
+    "status": "OPEN",
+    "availableUntil": "14:00",
+    "occupiedRanges": null
+  },
+  {
+    "roomNumber": "2406",
+    "status": "OCCUPIED",
+    "availableUntil": null,
+    "occupiedRanges": [
+      {
+        "start": "12:00",
+        "end": "13:00"
+      }
+    ]
+  }
+]
+```
 
 ## 📚 Documentation
 
@@ -242,3 +324,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - GitHub: [zeeshankhan-05](https://github.com/zeeshankhan-05)
 - LinkedIn: [zeeshankhan05](https://www.linkedin.com/in/zeeshankhan05/)
+- Portfolio: [https://zeeshan-khan-portfolio.vercel.app/]
