@@ -15,7 +15,7 @@ This project is a comprehensive study space finder designed for the University o
 
 Feel free to check out the project here!
 
-[EMBED_LINK_PLACEHOLDER]
+[UIUC Study Space Finder](https://d2ubpvptqlkq4i.cloudfront.net/)
 
 ## 🚀 Features
 
@@ -320,8 +320,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👨‍💻 Author
 
-**Zeeshan Khan** - Computer Science 26' @ UIUC
+**Zeeshan Khan** - Computer Science 27' @ UIUC
 
 - GitHub: [zeeshankhan-05](https://github.com/zeeshankhan-05)
 - LinkedIn: [zeeshankhan05](https://www.linkedin.com/in/zeeshankhan05/)
-- Portfolio: [https://zeeshan-khan-portfolio.vercel.app/]
+- Portfolio: https://zeeshan-khan-portfolio.vercel.app/
